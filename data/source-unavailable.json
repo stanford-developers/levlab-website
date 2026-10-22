@@ -1,0 +1,24 @@
+[
+  {
+    "sourcePath": "/sites/default/files/headshot.jpg",
+    "status": 404,
+    "reviewed": true,
+    "limitation": "The full original is unavailable on the source. Its exact currently published 120x120 image is preserved; this does not recover the original.",
+    "receiptEvidence": {
+      "file": "request-receipts.jsonl",
+      "startedUtc": "2026-10-22T00:36:42.465159+00:00",
+      "url": "https://levlab.stanford.edu/sites/default/files/headshot.jpg",
+      "status": 404
+    },
+    "replacementSourcePath": "/sites/default/files/styles/120x120/public/headshot.jpg?itok=UJ_XkAdm",
+    "replacementLocalPath": "/media/source-headshot-lowercase-120.jpg",
+    "replacementSha256": "10ca7821f7fd93284eac6c9d30f0d3421f97e66c62b2d2a2a5a0400730dcd98a",
+    "replacementBytes": 11512,
+    "replacementReceiptEvidence": {
+      "file": "request-receipts.jsonl",
+      "startedUtc": "2026-10-22T00:39:12.081441+00:00",
+      "url": "https://levlab.stanford.edu/sites/default/files/styles/120x120/public/headshot.jpg?itok=UJ_XkAdm",
+      "status": 200
+    }
+  }
+]

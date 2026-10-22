@@ -1,0 +1,632 @@
+[
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/LevDQNCPRX.png",
+    "canonicalOriginal": "/sites/default/files/LevDQNCPRX.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/LevDQNCPRX.png",
+        "bytes": 10566,
+        "sha256": "38879deee3495b88c98ee555e5c8e54acb22caeaf0047a59b00dad312ecbc378"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/Feshbach_0.jpg",
+    "canonicalOriginal": "/sites/default/files/Feshbach_0.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/Feshbach_0.jpg",
+        "bytes": 8899,
+        "sha256": "7793e7fa5f11c4a20b09b0851f4bd63132279035f9176bb0a6600b206f362889"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/UltracoldDyMOT_small_1.jpg",
+    "canonicalOriginal": "/sites/default/files/UltracoldDyMOT_small_1.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/UltracoldDyMOT_small_1.jpg",
+        "bytes": 6559,
+        "sha256": "ed6a2e4bec1f68e1498bc1b43c842fa5437f9be92c27ef54af1dadd71f67175f"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/UltracoldDyMOT_small_2.jpg",
+    "canonicalOriginal": "/sites/default/files/UltracoldDyMOT_small_2.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/UltracoldDyMOT_small_2.jpg",
+        "bytes": 6559,
+        "sha256": "ed6a2e4bec1f68e1498bc1b43c842fa5437f9be92c27ef54af1dadd71f67175f"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/DyMOT_1.png",
+    "canonicalOriginal": "/sites/default/files/DyMOT_1.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DyMOT_1.png",
+        "bytes": 14350,
+        "sha256": "e44e10d8cc2a26972b97582dc17609a837f28cb1433cb2522680d90af1e4f040"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/scatteringlengths.jpg",
+    "canonicalOriginal": "/sites/default/files/scatteringlengths.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/scatteringlengths.jpg",
+        "bytes": 6951,
+        "sha256": "b5526c0f8066510abc18da0c13065bde5fdffb98e4fecb4190b39ea09b5d2799"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/SOC.jpg",
+    "canonicalOriginal": "/sites/default/files/SOC.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/SOC.jpg",
+        "bytes": 7961,
+        "sha256": "fe5da515a5013be8b29943d225f9d2578202eb36529beae35c807fd41df06a17"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/DySOC.jpg",
+    "canonicalOriginal": "/sites/default/files/DySOC.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DySOC.jpg",
+        "bytes": 12699,
+        "sha256": "1825462e969f30be39bdef9ae6e86e07493cd979e34b7ad85d2cdb358fe7d294"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/fig3.png",
+    "canonicalOriginal": "/sites/default/files/fig3.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/fig3.png",
+        "bytes": 4016,
+        "sha256": "4230289b6daa2a277cf94aba3adeb70cb68df6cd01e8bfa3f118cb3088fa94dc"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/Suppression.jpg",
+    "canonicalOriginal": "/sites/default/files/Suppression.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/Suppression.jpg",
+        "bytes": 7989,
+        "sha256": "214dfba17bea90f9ff276586a40b9bacfe46c01810b087a0b05450d99bceaaa7"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/figure2a_2f.png",
+    "canonicalOriginal": "/sites/default/files/figure2a_2f.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/figure2a_2f.png",
+        "bytes": 10238,
+        "sha256": "8f8951b3c8bc2563b170a1886262ca2752cf79014e110d81a2b6d74e985828ba"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/cradle_lev.jpeg",
+    "canonicalOriginal": "/sites/default/files/cradle_lev.jpeg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/cradle_lev.jpeg",
+        "bytes": 11043,
+        "sha256": "a680539d0f87e31ed690b2f8c037bc552974340feb308d9657ca8629b1daed12"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/schematicv2.png",
+    "canonicalOriginal": "/sites/default/files/schematicv2.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/schematicv2.png",
+        "bytes": 9846,
+        "sha256": "68d123e4e154b45b9072430637e2937e26819b1335c092f9bea142e38fe03892"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/SQCRAMscopeBlend_Raised.jpg",
+    "canonicalOriginal": "/sites/default/files/SQCRAMscopeBlend_Raised.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/SQCRAMscopeBlend_Raised.jpg",
+        "bytes": 10136,
+        "sha256": "685c5b0587d179df6b6f4244f7aa3fdd7706ef08e01e72a947a3b8f45a6ab4e8"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/SQCRAMscope_illustration.jpg",
+    "canonicalOriginal": "/sites/default/files/SQCRAMscope_illustration.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/SQCRAMscope_illustration.jpg",
+        "bytes": 9594,
+        "sha256": "3a925a9d1bb4c4508489e27437021aff1b625f4730a589c2fb72354b999a0b2b"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/ThermalAnio.png",
+    "canonicalOriginal": "/sites/default/files/ThermalAnio.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/ThermalAnio.png",
+        "bytes": 6273,
+        "sha256": "1d0f46cfef1ee7225baa805d3e2f3337b3b205543ad1b3aacd0678d3f903df50"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/DSC_0002-brightened 1.jpg",
+    "canonicalOriginal": "/sites/default/files/DSC_0002-brightened 1.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DSC_0002-brightened 1.jpg",
+        "bytes": 8568,
+        "sha256": "fa2ce4df60cabd39a998c2bbcc038ca0f3cb92c9ca08886182262379422c0ac1"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/DyMOT_0.png",
+    "canonicalOriginal": "/sites/default/files/DyMOT_0.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DyMOT_0.png",
+        "bytes": 14350,
+        "sha256": "e44e10d8cc2a26972b97582dc17609a837f28cb1433cb2522680d90af1e4f040"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/viewpoint.png",
+    "canonicalOriginal": "/sites/default/files/viewpoint.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/viewpoint.png",
+        "bytes": 10906,
+        "sha256": "01a7300c9c7004b1c4a552dfc44bd013595ce43fea493baf7c9b28be5153dca8"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/screenshot_0.png",
+    "canonicalOriginal": "/sites/default/files/screenshot_0.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/screenshot_0.png",
+        "bytes": 7483,
+        "sha256": "fcdd69203cdb33e3936720b6680aa5b4748d8dfb2b46acdc261d1d491fb61494"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/TOFV7.png",
+    "canonicalOriginal": "/sites/default/files/TOFV7.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/TOFV7.png",
+        "bytes": 11191,
+        "sha256": "ef50f194bff02c9804bf39ab29ae97ee09b0d8421b512f85ff1ae579329672c3"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/medium/public/EmergentBEC_key.jpg",
+    "canonicalOriginal": "/sites/default/files/EmergentBEC_key.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/EmergentBEC_key.jpg",
+        "bytes": 5082,
+        "sha256": "95ccad1f64b1dc7ea83afa87c8f453f3cf557e6e873d871b50e6c173234852da"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/cradle_lev.jpeg",
+    "canonicalOriginal": "/sites/default/files/cradle_lev.jpeg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/cradle_lev.jpeg",
+        "bytes": 11043,
+        "sha256": "a680539d0f87e31ed690b2f8c037bc552974340feb308d9657ca8629b1daed12"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/DrYijun.jpeg",
+    "canonicalOriginal": "/sites/default/files/DrYijun.jpeg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/medium/public/DrYijun.jpeg",
+        "bytes": 32247,
+        "sha256": "5336889a37e53fe55c0e874f20ce4be40d261b81743599da3ba820f6fcbdd95a"
+      },
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DrYijun.jpeg",
+        "bytes": 9074,
+        "sha256": "9ccb725d668eaee7bbd5e1d4c448d92c464caf92fed4f883f6cf3ab906716734"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/LevDQNCPRX.png",
+    "canonicalOriginal": "/sites/default/files/LevDQNCPRX.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/LevDQNCPRX.png",
+        "bytes": 10566,
+        "sha256": "38879deee3495b88c98ee555e5c8e54acb22caeaf0047a59b00dad312ecbc378"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/DQNC small copy.png",
+    "canonicalOriginal": "/sites/default/files/DQNC small copy.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/medium/public/DQNC small copy.png",
+        "bytes": 47868,
+        "sha256": "f56c88651359d7c92c289b15670e06ae248d5d658dad4d602c880305d9c434d7"
+      },
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DQNC small copy.png",
+        "bytes": 10460,
+        "sha256": "26987305454dc97f544af420167610fef3424a25398c7edab00f5d13f5ed9427"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/screenshot_0.png",
+    "canonicalOriginal": "/sites/default/files/screenshot_0.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/screenshot_0.png",
+        "bytes": 7483,
+        "sha256": "fcdd69203cdb33e3936720b6680aa5b4748d8dfb2b46acdc261d1d491fb61494"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/SQCRAMscope_illustration.jpg",
+    "canonicalOriginal": "/sites/default/files/SQCRAMscope_illustration.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/SQCRAMscope_illustration.jpg",
+        "bytes": 9594,
+        "sha256": "3a925a9d1bb4c4508489e27437021aff1b625f4730a589c2fb72354b999a0b2b"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/fig3.png",
+    "canonicalOriginal": "/sites/default/files/fig3.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/fig3.png",
+        "bytes": 4016,
+        "sha256": "4230289b6daa2a277cf94aba3adeb70cb68df6cd01e8bfa3f118cb3088fa94dc"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/SQCRAMscopeBlend_Raised.jpg",
+    "canonicalOriginal": "/sites/default/files/SQCRAMscopeBlend_Raised.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/SQCRAMscopeBlend_Raised.jpg",
+        "bytes": 10136,
+        "sha256": "685c5b0587d179df6b6f4244f7aa3fdd7706ef08e01e72a947a3b8f45a6ab4e8"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/schematicv2.png",
+    "canonicalOriginal": "/sites/default/files/schematicv2.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/schematicv2.png",
+        "bytes": 9846,
+        "sha256": "68d123e4e154b45b9072430637e2937e26819b1335c092f9bea142e38fe03892"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/ThermalAnio.png",
+    "canonicalOriginal": "/sites/default/files/ThermalAnio.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/ThermalAnio.png",
+        "bytes": 6273,
+        "sha256": "1d0f46cfef1ee7225baa805d3e2f3337b3b205543ad1b3aacd0678d3f903df50"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/melasers2_0.jpg",
+    "canonicalOriginal": "/sites/default/files/melasers2_0.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/medium/public/melasers2_0.jpg",
+        "bytes": 8417,
+        "sha256": "c551a6196f5390848e3061fc90811403a2b12d74908371510f2f2de2dab42a94"
+      },
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/melasers2_0.jpg",
+        "bytes": 8763,
+        "sha256": "2523c37372cafb55338af1ec380cf651ec5a057a135b36edc0f91c96dcaf10a8"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/viewpoint.png",
+    "canonicalOriginal": "/sites/default/files/viewpoint.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/viewpoint.png",
+        "bytes": 10906,
+        "sha256": "01a7300c9c7004b1c4a552dfc44bd013595ce43fea493baf7c9b28be5153dca8"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/DySOC.jpg",
+    "canonicalOriginal": "/sites/default/files/DySOC.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DySOC.jpg",
+        "bytes": 12699,
+        "sha256": "1825462e969f30be39bdef9ae6e86e07493cd979e34b7ad85d2cdb358fe7d294"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/scatteringlengths.jpg",
+    "canonicalOriginal": "/sites/default/files/scatteringlengths.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/scatteringlengths.jpg",
+        "bytes": 6951,
+        "sha256": "b5526c0f8066510abc18da0c13065bde5fdffb98e4fecb4190b39ea09b5d2799"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/figure2a_2f.png",
+    "canonicalOriginal": "/sites/default/files/figure2a_2f.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/figure2a_2f.png",
+        "bytes": 10238,
+        "sha256": "8f8951b3c8bc2563b170a1886262ca2752cf79014e110d81a2b6d74e985828ba"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/Suppression.jpg",
+    "canonicalOriginal": "/sites/default/files/Suppression.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/Suppression.jpg",
+        "bytes": 7989,
+        "sha256": "214dfba17bea90f9ff276586a40b9bacfe46c01810b087a0b05450d99bceaaa7"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/MLu_0.jpg",
+    "canonicalOriginal": "/sites/default/files/MLu_0.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/medium/public/MLu_0.jpg",
+        "bytes": 58133,
+        "sha256": "c9707217963e526315fdb7ef8c75b9944df89418dbac96fe7609f36b4718d8ea"
+      },
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/MLu_0.jpg",
+        "bytes": 11156,
+        "sha256": "a6e9295ac938651a3d4aa2c30736879615e7f93d518c56ab1a871668d42ad63d"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/MattNaides Headshot_0.jpg",
+    "canonicalOriginal": "/sites/default/files/MattNaides Headshot_0.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/medium/public/MattNaides Headshot_0.jpg",
+        "bytes": 14158,
+        "sha256": "b729854dd4269b33a70097f47099925c256e4f04a0783c9d74eddb2c5372e3b3"
+      },
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/MattNaides Headshot_0.jpg",
+        "bytes": 8255,
+        "sha256": "e08bf1f5c1b014b285f1e2289397d2fe29f7d8fc00305c05364ed16f3ed7f8b9"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/Feshbach_0.jpg",
+    "canonicalOriginal": "/sites/default/files/Feshbach_0.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/Feshbach_0.jpg",
+        "bytes": 8899,
+        "sha256": "7793e7fa5f11c4a20b09b0851f4bd63132279035f9176bb0a6600b206f362889"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/Acm.jpg",
+    "canonicalOriginal": "/sites/default/files/Acm.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/medium/public/Acm.jpg",
+        "bytes": 15892,
+        "sha256": "627e77f57e80ace583c525b57f537e283fd3471e58e4ed3b92ade238efb2c8d0"
+      },
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/Acm.jpg",
+        "bytes": 7978,
+        "sha256": "700e06bf9362856bd732159292bbea533364c3532734cb13537fd7a8b2013a88"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/SOC.jpg",
+    "canonicalOriginal": "/sites/default/files/SOC.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/SOC.jpg",
+        "bytes": 7961,
+        "sha256": "fe5da515a5013be8b29943d225f9d2578202eb36529beae35c807fd41df06a17"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/TOFV7.png",
+    "canonicalOriginal": "/sites/default/files/TOFV7.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/TOFV7.png",
+        "bytes": 11191,
+        "sha256": "ef50f194bff02c9804bf39ab29ae97ee09b0d8421b512f85ff1ae579329672c3"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/EmergentBEC_key.jpg",
+    "canonicalOriginal": "/sites/default/files/EmergentBEC_key.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/EmergentBEC_key.jpg",
+        "bytes": 5082,
+        "sha256": "95ccad1f64b1dc7ea83afa87c8f453f3cf557e6e873d871b50e6c173234852da"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/DyMOT_1.png",
+    "canonicalOriginal": "/sites/default/files/DyMOT_1.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DyMOT_1.png",
+        "bytes": 14350,
+        "sha256": "e44e10d8cc2a26972b97582dc17609a837f28cb1433cb2522680d90af1e4f040"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/UltracoldDyMOT_small_2.jpg",
+    "canonicalOriginal": "/sites/default/files/UltracoldDyMOT_small_2.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/UltracoldDyMOT_small_2.jpg",
+        "bytes": 6559,
+        "sha256": "ed6a2e4bec1f68e1498bc1b43c842fa5437f9be92c27ef54af1dadd71f67175f"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/DyMOT_0.png",
+    "canonicalOriginal": "/sites/default/files/DyMOT_0.png",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DyMOT_0.png",
+        "bytes": 14350,
+        "sha256": "e44e10d8cc2a26972b97582dc17609a837f28cb1433cb2522680d90af1e4f040"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/UltracoldDyMOT_small_1.jpg",
+    "canonicalOriginal": "/sites/default/files/UltracoldDyMOT_small_1.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/UltracoldDyMOT_small_1.jpg",
+        "bytes": 6559,
+        "sha256": "ed6a2e4bec1f68e1498bc1b43c842fa5437f9be92c27ef54af1dadd71f67175f"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  },
+  {
+    "requestedPath": "/sites/default/files/styles/people_image_100/public/DSC_0002-brightened 1.jpg",
+    "canonicalOriginal": "/sites/default/files/DSC_0002-brightened 1.jpg",
+    "availableVariants": [
+      {
+        "path": "/sites/default/files/styles/news_project_pages/public/DSC_0002-brightened 1.jpg",
+        "bytes": 8568,
+        "sha256": "fa2ce4df60cabd39a998c2bbcc038ca0f3cb92c9ca08886182262379422c0ac1"
+      }
+    ],
+    "note": "Same Drupal image source path; saved derivative only. Original and requested derivative remain unavailable."
+  }
+]

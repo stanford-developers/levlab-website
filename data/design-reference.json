@@ -1,0 +1,201 @@
+{
+  "projects": [
+    {
+      "slug": "dysprosium",
+      "shortTitle": "Dysprosium",
+      "title": "Dysprosium quantum-gas cavity QED",
+      "image": "/images/dy-banner.png",
+      "summary": "Topological pumping of one-dimensional dysprosium gases meets cavity photon-mediated interactions.",
+      "intro": "A new experiment provides a unique platform for creating and controlling highly excited states of quantum matter by combining topological pumping of 1D dysprosium gases, the most magnetic element, and cavity photon-mediated interactions.",
+      "questions": [
+        {
+          "question": "How do nearly integrable quantum gases relax and thermalize?",
+          "answer": "Our group has pioneered the creation and study of Bose and Fermi-degenerate gases of dysprosium, the most magnetic element. In our experiments, we exploit the long-range and anisotropic character of the dipole-dipole interaction among Dy atoms to create novel testbeds for quantum many-body physics, both within and away from equilibrium. For example, we recently made a quantum and magnetic version of the famous Newton's cradle toy. We used it to explore the breakdown of quantum integrability and the onset of thermalization in a strongly interacting quantum 1D system."
+        },
+        {
+          "question": "What new phases emerge when magnetic atoms interact through cavity photons?",
+          "answer": "We've also used a new topological pumping scheme—that works like an Archimedes screw—to drive the 1D gas to highly excited “quantum many-body scar” states."
+        },
+        {
+          "question": "How does topology shape transport far from equilibrium?",
+          "answer": "We will now aim to explore these prethermal states and others using the coupling of the gas to photons in our new confocal cavity QED system."
+        }
+      ],
+      "methods": [
+        "Ultracold dysprosium quantum gases",
+        "Topological pumping in one dimension",
+        "Multimode confocal cavity QED",
+        "Momentum- and rapidity-resolved measurements"
+      ],
+      "publications": [
+        {
+          "title": "Effects of intertube dipole-dipole interactions in nearly integrable one-dimensional 162Dy gases",
+          "journal": "Physical Review A 113, 023314",
+          "href": "https://journals.aps.org/pra/abstract/10.1103/1tgd-d793"
+        },
+        {
+          "title": "Observation of a finite-energy phase transition in a one-dimensional quantum simulator",
+          "journal": "Science",
+          "href": "https://www.science.org/"
+        },
+        {
+          "title": "Phantom energy of a quenched, prethermal quantum many-body scar state",
+          "journal": "Science 385, 1063",
+          "href": "https://arxiv.org/abs/2308.11615"
+        },
+        {
+          "title": "Rapidity and momentum distributions of one-dimensional dipolar quantum gases",
+          "journal": "Physical Review A 107, L061302",
+          "href": "https://arxiv.org/abs/2211.09118"
+        },
+        {
+          "title": "Topological pumping of a 1D dipolar gas into strongly correlated prethermal states",
+          "journal": "Science 371, 296",
+          "href": "https://arxiv.org/abs/2002.10475"
+        },
+        {
+          "title": "Dipolar physics with atomic quantum gases",
+          "journal": "Reports on Progress in Physics 86, 026401",
+          "href": "https://arxiv.org/abs/2201.02672"
+        }
+      ],
+      "team": [
+        "Benjamin Lev",
+        "Kuan-Yu Lin",
+        "Kangning Yang",
+        "Derek Baldwin",
+        "Tony (Peiyang) He",
+        "Zhiwei (Henry) He"
+      ]
+    },
+    {
+      "slug": "rubidium",
+      "shortTitle": "Rubidium",
+      "title": "Rubidium quantum-optical spin glass",
+      "image": "/images/cavity.jpg",
+      "summary": "Rubidium atoms wired together by photons realize spin glasses and quantum neural networks.",
+      "intro": "We create and study quantum spin glasses—and the quantum neural networks they enable—using photon-mediated interactions provided by our new technique, confocal cavity QED.",
+      "questions": [
+        {
+          "question": "What is a quantum neural network and how might it exhibit computational advantage?",
+          "answer": "Can we create a spin glass made of atomic spins and photons and use it to resolve longstanding mysteries surrounding spin-glass order? We are tackling these fundamental and technologically relevant questions using our novel multimode cavity QED-BEC apparatus. The system provides strong, photon-mediated interactions among atoms trapped within the cavity resonator."
+        },
+        {
+          "question": "Can an atomic spin glass store and retrieve associative memories?",
+          "answer": "Photons virtually scattered among the atoms cause the system to superradiate and self-organize into various exotic forms of quantum matter such as quantum spin glasses—which can be used as quantum neural networks and associative memories—and quantum liquid crystals."
+        },
+        {
+          "question": "What does replica symmetry breaking look like in a controlled experiment?",
+          "answer": "As a first step toward the latter, we recently created a super solid that vibrates by forming an optical lattice with sound."
+        }
+      ],
+      "methods": [
+        "Ultracold rubidium atoms",
+        "Multimode confocal optical cavities",
+        "Programmable photon-mediated interactions",
+        "Imaging of spin-glass order and correlations"
+      ],
+      "publications": [
+        {
+          "title": "A multimode cavity QED Ising spin glass",
+          "journal": "Physical Review Letters 135, 160403",
+          "href": "https://journals.aps.org/prl/abstract/10.1103/x19r-pzyb"
+        },
+        {
+          "title": "High-capacity associative memory in a quantum-optical spin glass",
+          "journal": "arXiv:2509.12202",
+          "href": "https://arxiv.org/abs/2509.12202"
+        },
+        {
+          "title": "Directly observing replica symmetry breaking in a vector quantum-optical spin glass",
+          "journal": "Science 389, 1122",
+          "href": "https://www.science.org/doi/10.1126/science.ado5978"
+        },
+        {
+          "title": "An optical lattice with sound",
+          "journal": "Nature 599, 211",
+          "href": "https://arxiv.org/abs/2104.13922"
+        },
+        {
+          "title": "Enhancing associative memory recall and storage capacity using confocal cavity QED",
+          "journal": "Physical Review X 11, 021048",
+          "href": "https://arxiv.org/abs/2009.01227"
+        },
+        {
+          "title": "High Cooperativity Using a Confocal-Cavity–QED Microscope",
+          "journal": "PRX Quantum 4, 020326",
+          "href": "https://arxiv.org/abs/2212.06716"
+        }
+      ],
+      "team": [
+        "Benjamin Lev",
+        "David Atri Schuller",
+        "Giulia Socolof",
+        "Deven Bowman",
+        "Rin Kuroda"
+      ]
+    },
+    {
+      "slug": "cavmat",
+      "shortTitle": "CavMat",
+      "title": "CavMat: Materials in Cavities",
+      "image": "/images/hero.jpg",
+      "summary": "A cryogenic instrument couples two-dimensional quantum materials to a multimode optical cavity.",
+      "intro": "We are building a new experiment for driving quantum materials into new phases via cavity photons. The CavMat project aims to enhance critical temperatures of correlated phases in a continuous manner. We use our newly invented SQCRAMscope scanning probe microscope to directly image electron transport in quantum materials.",
+      "questions": [
+        {
+          "question": "Can cavity photons continuously reshape a material phase diagram?",
+          "answer": "Our newest experiment is CavMat: Materials in Cavities. The project merges our confocal cavity QED technique with that of the SQCRAMscope, a novel quantum sensor we invented. We aim to influence, in continuous rather than pulsed manner, the collective excitations of a correlated material."
+        },
+        {
+          "question": "How can light enhance critical temperatures of correlated phases?",
+          "answer": "A grand goal is to enhance the critical temperature for superconductivity through the photon-material interaction."
+        },
+        {
+          "question": "What can local imaging reveal about electronic transport and collective order?",
+          "answer": "The SQCRAMscope (Scanning Quantum Cryogenic Atom Microscope) uses an ultracold quantum gas as a micron-resolution magnetometer. It is capable of imaging DC electron transport and magnetization in both room-temperature and cryogenically cooled quantum materials with unprecedented sensitivity. This novel microscope was the first example of the direct marriage of ultracold AMO physics with condensed matter physics for the exploration of technologically relevant strongly correlated and topologically nontrivial materials. For example, we used the SQCRAMscope to locally image the electron nematic domains that arise in an iron-pnictide high-Tc superconductor."
+        }
+      ],
+      "methods": [
+        "Cryogenic atom-chip microscopy",
+        "Twisted two-dimensional materials",
+        "Confocal multimode cavities",
+        "Local probes of transport and collective excitations"
+      ],
+      "publications": [
+        {
+          "title": "A cryogenic apparatus for coupling two-dimensional materials to a confocal multimode optical cavity",
+          "journal": "arXiv:2605.28815",
+          "href": "https://arxiv.org/abs/2605.28815v1"
+        },
+        {
+          "title": "Superradiant Charge Density Waves in a Driven Cavity-Matter Hybrid",
+          "journal": "arXiv:2603.28432",
+          "href": "https://arxiv.org/abs/2603.28432v1"
+        },
+        {
+          "title": "Raman-phonon-polariton condensation in a transversely pumped cavity",
+          "journal": "npj Quantum Materials 9, 81",
+          "href": "https://arxiv.org/abs/2405.05257"
+        },
+        {
+          "title": "High Cooperativity Using a Confocal-Cavity–QED Microscope",
+          "journal": "PRX Quantum 4, 020326",
+          "href": "https://arxiv.org/abs/2212.06716"
+        },
+        {
+          "title": "A scanning quantum cryogenic atom microscope at 6 K",
+          "journal": "SciPost Physics 10, 060",
+          "href": "https://www.scipost.org/"
+        }
+      ],
+      "team": [
+        "Benjamin Lev",
+        "Han Hiller",
+        "Pranav Parakh",
+        "Samuel Aronson",
+        "Kenji Maeda"
+      ]
+    }
+  ]
+}

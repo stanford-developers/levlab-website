@@ -1,0 +1,106 @@
+[
+  {
+    "path": "/news-events/physics-world-press-article",
+    "title": "Physics World press article",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "\"Ultracold atoms put high-temperature superconductors under the microscope\" appears in Physics World ."
+  },
+  {
+    "path": "/news-events/improved-sqcramscope",
+    "title": "Improved SQCRAMscope",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "New and improved SQCRAMscope can cool samples to 6 K."
+  },
+  {
+    "path": "/news-events/physorg-article-sqcramscope",
+    "title": "Phys.org article on SQCRAMscope",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Phys.org article on our recent work with the SQCRAMscope: \"Imaging nematic transitions in iron pnictide superconductors\""
+  },
+  {
+    "path": "/news-events/cooking-quantum-gas",
+    "title": "Cooking with a quantum gas",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "News & Views in Nature Physics on imaging iron superconductors using\u00a0SQCRAMscope."
+  },
+  {
+    "path": "/news-events/imaging-sqcramscope",
+    "title": "Imaging with SQCRAMscope",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "First science from SQCRAMscope! \u00a0We have imaged the electron nematic transport in iron-based pnictide high-Tc superconductors. Read about it in Nature Physics here ."
+  },
+  {
+    "path": "/news-events/congratulations-dr-edkins",
+    "title": "Congratulations to Dr. Edkins!",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Historical team milestone, not CavMat apparatus research. Source Stephen Edkins profile is Former Postdocs; its linked publication is the SQCRAMscope nematic-transition study. Body concerns his 2016 superconductivity thesis award; preserve as historical team news without implying the award was for SQCRAMscope."
+  },
+  {
+    "path": "/news-events/pnas-sqcramscope",
+    "title": "PNAS on SQCRAMscope",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "PNAS Journal Club article on the SQCRAMscope. pdf"
+  },
+  {
+    "path": "/news-events/viewpoint-article",
+    "title": "Viewpoint article",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Physics Viewpoint on SQCRAMscope"
+  },
+  {
+    "path": "/news-events/sqcramscope-news-article",
+    "title": "SQCRAMscope news article",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Check-out recent news !"
+  },
+  {
+    "path": "/news-events/sqcramscope-lives",
+    "title": "The SQCRAMscope lives!",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Introducing the SQCRAMscope. \u00a0ArXiv paper describes new microscope functionality."
+  },
+  {
+    "path": "/news-events/congratulations-dr-naides",
+    "title": "Congratulations Dr. Naides!",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Historical atom-chip team milestone. Source Matthew Naides profile is Former Graduate Students; linked publication is the SQCRAMscope precursor Trapping ultracold gases near cryogenic materials with rapid reconfigurability. Thesis announcement is not CavMat."
+  },
+  {
+    "path": "/news-events/cryogenic-atom-chip",
+    "title": "Cryogenic atom chip",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Paper on the reconfigurable atom chip trapping of atoms near cryogenic materials published in Appl. Phys. Lett.\u00a0 We demonstrate a novel atom chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns from any <100 um-thin, UHV-compatible material, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system."
+  },
+  {
+    "path": "/news-events/topological-insulator-proposal",
+    "title": "Topological insulator proposal",
+    "projects": [
+      "sqcramscope"
+    ],
+    "evidence": "Lev publishes proposal for atom chip microscopy of transport in topological insulators Phys. Rev. B ."
+  }
+]

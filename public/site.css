@@ -1526,9 +1526,8 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   .people-directory .directory-principal .person-card p:last-child { font-size: 15px; }
 }
 
-/* Preserve the approved paper photograph, including its scale bar. */
+/* Fit the complete CavMat photograph while sharing the project-card hover effect. */
 .postcard-image.cavmat-apparatus img { object-fit: contain; background: #fff; }
-.vertical-postcard:hover .postcard-image.cavmat-apparatus img { transform: none; }
 
 /* Final presentation review: a consistent reading grid and restrained hierarchy. */
 .page-intro + .section { padding-top: 24px; }

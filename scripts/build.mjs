@@ -48,6 +48,7 @@ const researchProjects = [
   pastProject,
 ];
 
+const styleVersion = createHash("sha256").update(fs.readFileSync("public/site.css")).digest("hex").slice(0, 12);
 const contentHash = createHash("sha256").update(contentSource).digest("hex");
 const sourceAssetPaths = JSON.parse(
   fs.readFileSync("data/source-asset-paths.json", "utf8"),
@@ -360,7 +361,7 @@ function shell(title, body, active = "home", route = "/") {
 <meta name="description" content="${e(description)}">
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="${e(origin + local(route))}">
-<link rel="stylesheet" href="${basePath}/site.css">
+<link rel="stylesheet" href="${basePath}/site.css?v=${styleVersion}">
 <script defer src="${basePath}/site.js">
 </script>
 </head>

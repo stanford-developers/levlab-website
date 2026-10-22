@@ -416,7 +416,7 @@ const breadcrumb = (label, url) =>
 const landingBreadcrumb = (label) =>
   `<nav class="breadcrumbs site-width" aria-label="Breadcrumb"><a href="${local("/")}">Home</a><span aria-hidden="true">/</span><span>${e(label)}</span></nav>`;
 const projectCards = () =>
-  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(p.title)}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus.png" : p.image, p.title)}</a><div class="postcard-body"><h3><a href="${local(p.path)}">${e(p.title)}</a></h3><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
+  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(p.title)}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, p.title)}</a><div class="postcard-body"><h3><a href="${local(p.path)}">${e(p.title)}</a></h3><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
 const supporters = () =>
   section(
     `<div class="section-heading centered"><h2>Our work is made possible by</h2></div>
@@ -853,7 +853,7 @@ for (const project of researchProjects) {
     project.path,
     project.title,
     breadcrumb("Research", "/research") +
-      `<section class="project-heading"><div class="site-width project-heading-grid"><div>${project.past ? '<p class="project-status">Past project</p>' : ""}<h1>${e(project.title)}</h1><p>${e(project.summary)}</p></div>${image(project.slug === "cavmat" ? "/images/cavmat-apparatus.png" : project.image, project.title, project.slug === "cavmat" || project.past ? "project-heading-image apparatus-photo" : "project-heading-image", "eager")}</div></section>` +
+      `<section class="project-heading"><div class="site-width project-heading-grid"><div>${project.past ? '<p class="project-status">Past project</p>' : ""}<h1>${e(project.title)}</h1><p>${e(project.summary)}</p></div>${image(project.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : project.image, project.title, project.slug === "cavmat" || project.past ? "project-heading-image apparatus-photo" : "project-heading-image", "eager")}</div></section>` +
       section(
         `<div class="research-intro"><div class="prose">${rich(project.bodyHtml)}<nav class="related-projects" aria-label="Other research">${data.projects
           .filter((other) => other.slug !== project.slug)

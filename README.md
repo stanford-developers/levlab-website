@@ -114,14 +114,14 @@ Directory cards use current source project associations, approved display names,
 
 ### Homepage imagery
 
-Every page uses the same compact plain masthead and navigation positions. The header, contact band, and footer share a single dark navy color; there is no Stanford top strip or interior-only header image. The homepage keeps one 2992×2000 chamber photograph, with “Where Quantum Matters” as the hero heading. The original CavMat card photo is only 300×200 pixels; no higher-resolution copy of that exact photo was found in the local source archive. The CavMat cards and project introduction now use the user-supplied 976×760 apparatus photograph at `public/images/cavmat-apparatus.png`, fitted without cropping so its scale bar remains visible. The original source image remains archived.
+Every page uses the same compact plain masthead and navigation positions. The header, contact band, and footer share a single dark navy color; there is no Stanford top strip or interior-only header image. The homepage keeps one 2992×2000 chamber photograph, with “Where Quantum Matters” as the hero heading. The original CavMat card photo is only 300×200 pixels; no higher-resolution copy of that exact photo was found in the local source archive. The CavMat cards and project introduction use `public/images/cavmat-apparatus-clean.png`, an image-edited version of the user-supplied photograph with the b) panel label, 50 mm text, and scale bar removed at Pranav’s request on October 22. The original 976×760 paper panel remains unchanged at `public/images/cavmat-apparatus.png`.
 
 
 ### Layout and image maintenance
 
 Main content uses one 1160 px grid; long-form details and profiles use a 900 px reading width. Keep compact landing headings, the mobile brand/menu row, the photo-first directory introduction with Ben’s compact profile beneath it, and three active project introductions consistent. Sponsor logos remain logo-only. Avoid restoring oversized title banners or repeated publication-detail links.
 
-`scripts/image-dimensions.mjs` reads intrinsic dimensions from local PNG, GIF, and JPEG files (including JPEG orientation). Shared images reserve that space; primary images use `image(src, alt, className, "eager")`, while cards stay lazy. Keep original scientific image files unchanged and preserve the CavMat scale bar. The image tests verify dimension parsing and primary-image loading.
+`scripts/image-dimensions.mjs` reads intrinsic dimensions from local PNG, GIF, and JPEG files (including JPEG orientation). Shared images reserve that space; primary images use `image(src, alt, className, "eager")`, while cards stay lazy. Keep original scientific image files archived unchanged; the CavMat display derivative intentionally omits its paper annotations. The image tests verify dimension parsing and primary-image loading.
 
 
 News project corrections are centralized in `data/news-curation.json` and applied through `scripts/news-curation.mjs`. CavMat has one current story; thirteen inherited historical stories are in the SQCRAMscope news archive and remain in the main News list. Keep exact path/title identities and evidence when adding corrections. The release gate requires rebuilding after changes to this file.

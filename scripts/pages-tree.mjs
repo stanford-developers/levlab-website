@@ -15,7 +15,7 @@ export function createPagesTree(repository, output, aliases = []) {
     if (!fs.statSync(path.join(output, required), { throwIfNoEntry: false })?.isFile())
       throw Error(`Missing finished website file: ${required}`);
   }
-  for (const forbidden of [".git", ".github", "node_modules", "scripts", "tests", "data", "package.json", "README.md"]) {
+  for (const forbidden of [".git", ".github", "node_modules", "scripts", "tests", "data", "package.json"]) {
     if (fs.existsSync(path.join(output, forbidden)))
       throw Error(`Source or private material cannot be published: ${forbidden}`);
   }

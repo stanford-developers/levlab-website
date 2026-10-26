@@ -1,6 +1,6 @@
 # LevLab website
 
-Portable, pre-rendered website for Stanford LevLab. The `main` branch holds editable source; GitHub Pages publishes finished files from `gh-pages` / root using **Deploy from a branch**. There is no custom GitHub Actions workflow. The source Drupal website and approved HSDP mockup are unchanged. Do not upload the surrounding project workspace.
+Portable, pre-rendered website for Stanford LevLab. The `source` branch holds editable source; GitHub Pages publishes finished files from `main` / root using **Deploy from a branch**. There is no custom GitHub Actions workflow. The source Drupal website and approved HSDP mockup are unchanged. Do not upload the surrounding project workspace.
 
 ## Preview locally
 
@@ -68,27 +68,32 @@ Tests check captured routes, local links/media under the configured path, citati
 
 ## GitHub Pages
 
-Repository Settings → Pages must use **Deploy from a branch → gh-pages → / (root)**. `gh-pages` contains finished HTML, CSS, JavaScript, media, and `.nojekyll` directly at its root. `main` contains the editable source. Pushing source to `main` alone does not update the website. Do not select `main` / root: it contains source files rather than the finished homepage.
+Repository Settings → Pages uses **Deploy from a branch → main → / (root)**, matching Stanford's [KB00020629](https://stanford.service-now.com/it_services/en?id=kb_article&number=KB00020629). The public `main` branch contains finished HTML, CSS, JavaScript, media, `.nojekyll`, and a public README directly at its root. Its homepage is `index.html`. Editable source and this maintenance guide are on the `source` branch. Pushing source alone does not update the website. There is no custom GitHub Actions workflow.
 
-When publication is approved, fetch and review any newer remote source before copying the **contents** of this directory into the source checkout: `package.json`, `README.md`, `.gitignore`, `data/`, `scripts/`, `tests/`, and `public/`. Remove the retired `.github/workflows/pages.yml` if present. Do not nest these under another `github-site/` directory. Do not copy the surrounding workspace, `outputs/`, raw captures, correspondence, backup archives, credentials, dependencies, or generated `dist/` into `main`. Commit and push the reviewed source changes.
+When publication is approved, fetch and review newer remote changes on `source` before copying the **contents** of this directory into the standalone source checkout: `package.json`, `README.md`, `.gitignore`, `data/`, `scripts/`, `tests/`, and `public/`. Do not copy the surrounding workspace, `outputs/`, raw captures, correspondence, backup archives, credentials, dependencies, or generated `dist/` into `source`. Commit and push the reviewed source changes.
 
-From the standalone source checkout (this workspace uses `.deploy/levlab-website/`), with Git, Node.js, npm, and the authenticated GitHub CLI available:
+From the standalone checkout on `source` (this workspace uses `.deploy/levlab-website/`), with Git, Node.js, npm, and the authenticated GitHub CLI available:
 
 ```sh
+git push origin source
 npm run prepare:pages
-git show --stat gh-pages
-git push origin gh-pages
+git show --stat main
+git push origin main
 ```
 
-`prepare:pages` requires a clean `main` checkout, fetches the latest remote state, and reads the existing Pages hostname. It builds locally, runs all checks and the mandatory release gate, and creates a local publishing commit containing **only the finished website**. It does not push, change Pages settings, or modify the source checkout/index. It preserves both exact-case legacy asset paths in Git even on a case-insensitive Mac. Review the commit before pushing; use a normal push, never force-push. If a release is already prepared locally, review/push it before preparing another. If the remote changes after preparation, review those changes before preparing a replacement release.
+`prepare:pages` requires a clean `source` checkout, fetches remote state, reads the existing Pages hostname, builds locally, runs all checks and the mandatory release gate, then creates a local publishing commit on `main` containing only finished website files and the public README. It never pushes, changes Pages settings, or modifies the source checkout/index. It preserves exact-case legacy asset paths even on a case-insensitive Mac. Review the commit before pushing normally; never force-push. If a local release is already prepared, review/push it before preparing another. If the remote changes, reconcile those changes before preparing a replacement release. Routine edits belong on `source`; a prepared release replaces the published tree, so preserve any direct HTML corrections in source before rebuilding.
 
-The current Pages hostname produces `/levlab-website` links. When Stanford IT coordinates the custom domain, configure the approved domain in Pages, then prepare and publish a new release: the command uses the configured domain root, updates canonical URLs/sitemap entries, and adds the matching `CNAME` file. Do not change DNS or configure the custom domain before the coordinated launch. Retain the old host for the agreed rollback period.
+The current Pages hostname produces `/levlab-website` links. When Stanford IT coordinates the custom domain, configure the approved domain in Pages, then prepare/publish a new release: the command uses the domain root, updates canonical URLs/sitemap entries, and adds its `CNAME`. Retain the old host for the agreed rollback period. The former `gh-pages` branch is a historical release retained for recovery; it is no longer the publishing source.
 
-GitHub's own built-in Pages deployment may still appear under the Actions tab. It only publishes the prepared branch; this repository supplies no custom build/deployment workflow. Verify that native deployment succeeds, then check the public pages and assets before reporting a release live.
+GitHub's built-in branch Pages deployment still appears under Actions. This repository supplies no custom workflow. Verify the native deployment and public pages/assets after every release.
+
+### Stanford launch preparation
+
+Site owner: Professor Benjamin Lev (benlev@stanford.edu). Technical web administrator: Pranav Parakh (pdparakh@stanford.edu). The public Contact & Jobs page identifies both; all pages include Stanford's Accessibility reporting link. The launch workflow also requires the owner's Siteimprove sign-in and the `stanford-developers/SWS` team with repository Admin access. SWS arranges Siteimprove site registration and the coordinated domain launch after the owner submits the request. A successful build is not a full accessibility certification: review Siteimprove findings, keyboard use, media, and documents during ongoing maintenance.
 
 ### Undo a change
 
-Identify the last working source commit, then use `git revert <bad-source-commit-id>` on `main` to undo the unwanted change without deleting history. Validate and review the local preview, commit/push the corrected source, then prepare/review/push `gh-pages` as above. Do not restore an older hostname configuration accidentally. This restores website content; it does not undo DNS or custom-domain changes, which require a separate coordinated rollback with Stanford IT. Confirm Ben's administrator access and a backup maintainer before launch; do not share credentials.
+Revert the unwanted source change on `source`, validate/review, commit/push the source, then prepare/review/push `main` as above. Preserve history and hostname configuration. This restores website content; DNS/custom-domain rollback requires coordination with Stanford IT. Confirm Ben's administrator access and a backup maintainer before launch; do not share credentials.
 
 ## Migration scope
 

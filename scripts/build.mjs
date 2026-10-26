@@ -401,6 +401,7 @@ function shell(title, body, active = "home", route = "/") {
 </div>
 <p>Departments of Physics and Applied Physics<br>Ginzton Laboratory · Q-FARM</p>
 </div>
+<nav aria-label="Site information"><ul class="footer-links"><li><a href="${local("/contact-jobs")}#site-ownership">Site contacts</a></li><li><a href="https://www.stanford.edu/site/accessibility">Accessibility</a></li></ul></nav>
 </div>
 </footer>
 </body>
@@ -416,12 +417,12 @@ const breadcrumb = (label, url) =>
   `<nav class="breadcrumbs site-width" aria-label="Breadcrumb"><a href="${local("/")}">Home</a><span aria-hidden="true">/</span><a href="${local(url)}">${e(label)}</a></nav>`;
 const landingBreadcrumb = (label) =>
   `<nav class="breadcrumbs site-width" aria-label="Breadcrumb"><a href="${local("/")}">Home</a><span aria-hidden="true">/</span><span>${e(label)}</span></nav>`;
-const projectCards = () =>
-  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(p.title)}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, p.title)}</a><div class="postcard-body"><h3><a href="${local(p.path)}">${e(p.title)}</a></h3><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
+const projectCards = (headingTag = "h3") =>
+  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(p.title)}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, p.title)}</a><div class="postcard-body"><${headingTag}><a href="${local(p.path)}">${e(p.title)}</a></${headingTag}><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
 const supporters = () =>
   section(
     `<div class="section-heading centered"><h2>Our work is made possible by</h2></div>
-    <div class="supporter-logos" aria-label="Research supporters">${(
+    <div class="supporter-logos" role="group" aria-label="Research supporters">${(
       data.supporters || []
     )
       .filter((supporter) => supporter.image)
@@ -441,7 +442,8 @@ function newsSummary(story) {
     : readable.slice(0, 210).replace(/\s+\S*$/, "") + "…";
 }
 function newsCards(items, searchable = false, paginated = false) {
-  return `<div class="news-cards">${items.map((n, index) => `<article${paginated && index % 10 === 0 ? ` id="news-page-${Math.floor(index / 10) + 1}"` : ""} class="news-card${n.image ? "" : " no-image"}"${searchable ? ` data-record data-projects="${e(n.projects.join(","))}"` : ""}>${n.image ? `<a class="news-card-image" href="${local(canonical(n.path))}" aria-label="${e(n.title)}">${image(n.image)}</a>` : ""}<div class="news-card-body"><h3><a href="${local(canonical(n.path))}">${e(n.title)}</a></h3>${n.dateLabel ? `<time class="content-date"${n.date ? ` datetime="${e(n.date)}"` : ""}>${e(n.dateLabel)}</time>` : ""}<p class="content-summary">${e(newsSummary(n))}</p></div></article>`).join("")}</div>`;
+  const headingTag = searchable ? "h2" : "h3";
+  return `<div class="news-cards">${items.map((n, index) => `<article${paginated && index % 10 === 0 ? ` id="news-page-${Math.floor(index / 10) + 1}"` : ""} class="news-card${n.image ? "" : " no-image"}"${searchable ? ` data-record data-projects="${e(n.projects.join(","))}"` : ""}>${n.image ? `<a class="news-card-image" href="${local(canonical(n.path))}" aria-label="${e(n.title)}">${image(n.image)}</a>` : ""}<div class="news-card-body"><${headingTag}><a href="${local(canonical(n.path))}">${e(n.title)}</a></${headingTag}>${n.dateLabel ? `<time class="content-date"${n.date ? ` datetime="${e(n.date)}"` : ""}>${e(n.dateLabel)}</time>` : ""}<p class="content-summary">${e(newsSummary(n))}</p></div></article>`).join("")}</div>`;
 }
 const searchBox = (label, placeholder) =>
   `<div class="search-control"><label for="content-search">${e(label)}</label><input id="content-search" data-search type="search" placeholder="${e(placeholder)}"><p data-result-count data-label="${label === "Search publications" ? "publications" : "stories"}" data-singular-label="${label === "Search publications" ? "publication" : "story"}" role="status" aria-live="polite"></p></div>`;
@@ -533,7 +535,7 @@ const directoryOrder = [
   "Zhiwei (Henry) He",
   "Kenji Maeda",
 ];
-function personCard(p, small = false, loading = "lazy") {
+function personCard(p, small = false, loading = "lazy", headingTag = "h3") {
   const role =
     p.name === "Benjamin Lev"
       ? "Principal Investigator"
@@ -552,7 +554,7 @@ function personCard(p, small = false, loading = "lazy") {
     p.name === "Benjamin Lev" && !small
       ? "Experimental atomic, molecular and optical physics; condensed matter physics; quantum science."
       : "";
-  return `<article class="person-card">${image(p.image, p.name, "", loading)}<div><h3><a href="${local(canonical(p.path))}">${e(displayName(p.name))}</a></h3>${!small || p.name === "Benjamin Lev" ? `<p class="person-role">${e(role)}</p>` : ""}${description ? `<p>${e(description)}</p>` : ""}</div></article>`;
+  return `<article class="person-card">${image(p.image, p.name, "", loading)}<div><${headingTag}><a href="${local(canonical(p.path))}">${e(displayName(p.name))}</a></${headingTag}>${!small || p.name === "Benjamin Lev" ? `<p class="person-role">${e(role)}</p>` : ""}${description ? `<p>${e(description)}</p>` : ""}</div></article>`;
 }
 function profileFieldContent(node) {
   if (!node || hasClass(node, "field__label")) return "";
@@ -701,7 +703,7 @@ add(
       "<p>We use ultracold atoms, quantum optics, and cavity QED to explore new states of quantum matter—from nonequilibrium gases to two-dimensional materials.</p>",
     ).replace("page-intro", "page-intro research-landing-intro") +
     section(
-      `${projectCards()}<details class="research-background research-overview-details"><summary>More about our research</summary><div class="prose">${rich((data.currentResearchHtml || "").replace(/`Wire together'/g, "Wire together").replace(/`CavMat'/g, "CavMat"))}</div></details>`,
+      `${projectCards("h2")}<details class="research-background research-overview-details"><summary>More about our research</summary><div class="prose">${rich((data.currentResearchHtml || "").replace(/`Wire together'/g, "Wire together").replace(/`CavMat'/g, "CavMat"))}</div></details>`,
       true,
     ) +
     section(`<div class="past-projects"><h2>Past projects</h2><article class="past-project-card"><a href="${local(pastProject.path)}" aria-label="SQCRAMscope research">${image(pastProject.image, "Illustration of the SQCRAMscope atom-chip microscope")}</a><div><h3><a href="${local(pastProject.path)}">SQCRAMscope</a></h3><p>Quantum gas microscopy of transport and magnetism in quantum materials.</p><a class="arrow-link" href="${local(pastProject.path)}">Explore past research <span aria-hidden="true">→</span></a></div></article></div>`, false, "past-projects-section") +
@@ -794,14 +796,15 @@ add(
         <p>348 Via Pueblo Mall<br>Stanford University<br>Stanford, CA 94305-4088</p>
         <div class="contact-directions"><a class="text-button" href="${e(contactLink("Spilker Building"))}">Campus map and directions</a><a href="${e(contactLink("Parking Directions"))}">Parking Directions</a></div>
       </div>
-      <aside class="callout-box"><h2>Administrative assistance</h2><h3>Nyein Su Mon</h3>
+      <aside class="callout-box" aria-label="Administrative assistance"><h2>Administrative assistance</h2><h3>Nyein Su Mon</h3>
         <p><a href="tel:6507254942">650-725-4942</a><br><a href="mailto:nyeinmon@stanford.edu">nyeinmon@stanford.edu</a></p>
         <p>Prof. Lev: <a href="mailto:benlev@stanford.edu">benlev@stanford.edu</a></p>
         <p><strong>Letters:</strong> <a href="${e(contactLink("Ginzton Laboratory"))}">Ginzton Laboratory</a> Box 305, Stanford University, Stanford, CA 94305-4088</p>
         <p><strong>Packages:</strong> 348 Via Pueblo, Room 136, Stanford CA 94305-4013</p>
       </aside>
     </div></section>` +
-    `<section class="section section-soft contact-section"><div class="site-width"><div class="section-heading centered"><h2>Jobs</h2></div><div class="callout-box jobs-callout"><p>Interested in cutting-edge quantum many-body physics? Positions open for exceptional postdocs, graduate students, and undergraduates. <a href="mailto:benlev@stanford.edu">Contact Prof. Lev</a>.</p></div></div></section>`,
+    `<section class="section section-soft contact-section"><div class="site-width"><div class="section-heading centered"><h2>Jobs</h2></div><div class="callout-box jobs-callout"><p>Interested in cutting-edge quantum many-body physics? Positions open for exceptional postdocs, graduate students, and undergraduates. <a href="mailto:benlev@stanford.edu">Contact Prof. Lev</a>.</p></div></div></section>` +
+    `<section class="contact-section site-ownership" id="site-ownership"><div class="site-width"><h2>Website contacts</h2><p>Site owner: Professor Benjamin Lev — <a href="mailto:benlev@stanford.edu">benlev@stanford.edu</a>.<br>Technical web administrator: Pranav Parakh — <a href="mailto:pdparakh@stanford.edu">pdparakh@stanford.edu</a>.</p></div></section>`,
   "contact",
 );
 add(
@@ -811,7 +814,7 @@ add(
     '<div class="people-directory">' +
     intro("People") +
     section(
-      `<div class="directory-introduction">${data.groupPhoto ? `<figure class="group-photo">${image(data.groupPhoto, "LevLab group at Stanford", "", "eager")}</figure>` : ""}<div class="directory-principal">${personCard(data.people.find((person) => person.name === "Benjamin Lev"), false, "eager")}</div></div>`,
+      `<div class="directory-introduction">${data.groupPhoto ? `<figure class="group-photo">${image(data.groupPhoto, "LevLab group at Stanford", "", "eager")}</figure>` : ""}<div class="directory-principal">${personCard(data.people.find((person) => person.name === "Benjamin Lev"), false, "eager", "h2")}</div></div>`,
       false,
       "directory-opening",
     ) +
@@ -864,7 +867,7 @@ for (const project of researchProjects) {
           )
           .join("")}</nav></div>${
           relatedNews.length
-            ? `<aside class="spotlight project-news"><h2>Project news</h2><div class="project-news-list">${relatedNews
+            ? `<aside class="spotlight project-news" aria-label="Project news"><h2>Project news</h2><div class="project-news-list">${relatedNews
                 .slice(0, 4)
                 .map(
                   (n) =>
@@ -946,7 +949,7 @@ for (const person of data.people) {
     breadcrumb("People", "/people") +
       intro(displayName(person.name)).replace("page-intro", "page-intro detail-intro") +
       section(
-        `<div class="person-detail profile-layout${biography ? "" : " summary-only"}"><aside class="profile-summary">${image(person.image, person.name, "", "eager")}<p class="person-role">${e(person.role)}</p>${person.group.startsWith("Former") ? '<p class="profile-context">Former lab member</p>' : ""}${person.office ? `<p>${e(person.office)}</p>` : ""}<div class="profile-contacts">${person.phone ? `<p><a href="tel:${e(person.phone.replace(/[^+\d]/g, ""))}">${e(person.phone)}</a></p>` : ""}${person.email ? `<p><a href="${e(person.email)}">${e(emailAddress)}</a></p>` : ""}</div>${
+        `<div class="person-detail profile-layout${biography ? "" : " summary-only"}"><aside class="profile-summary" aria-label="Profile details">${image(person.image, person.name, "", "eager")}<p class="person-role">${e(person.role)}</p>${person.group.startsWith("Former") ? '<p class="profile-context">Former lab member</p>' : ""}${person.office ? `<p>${e(person.office)}</p>` : ""}<div class="profile-contacts">${person.phone ? `<p><a href="tel:${e(person.phone.replace(/[^+\d]/g, ""))}">${e(person.phone)}</a></p>` : ""}${person.email ? `<p><a href="${e(person.email)}">${e(emailAddress)}</a></p>` : ""}</div>${
           person.projects.length
             ? `<nav class="profile-projects" aria-label="Associated research">${person.projects
                 .map((id) => {

@@ -171,7 +171,7 @@ summary {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgb(0 0 0 / 82%) 0%, rgb(0 0 0 / 58%) 42%, transparent 78%),
+    linear-gradient(90deg, rgb(0 0 0 / 82%) 0%, rgb(0 0 0 / 58%) 42%, rgb(0 0 0 / 55%) 78%),
     linear-gradient(0deg, rgb(0 52 61 / 35%), transparent 60%);
 }
 
@@ -302,9 +302,9 @@ summary {
   padding: 28px 28px 30px;
 }
 
-.postcard-body h3,
-.news-card-body h3,
-.person-card h3,
+.postcard-body :is(h2, h3),
+.news-card-body :is(h2, h3),
+.person-card :is(h2, h3),
 .publication-cards h3 {
   margin: 0 0 12px;
   font-family: var(--serif);
@@ -312,13 +312,13 @@ summary {
   line-height: 1.18;
 }
 
-.postcard-body h3 a,
+.postcard-body :is(h2, h3) a,
 .publication-cards h3 a {
   text-decoration-color: transparent;
   text-underline-offset: 4px;
 }
 
-.postcard-body h3 a:hover,
+.postcard-body :is(h2, h3) a:hover,
 .publication-cards h3 a:hover {
   text-decoration-color: currentColor;
 }
@@ -495,7 +495,7 @@ summary {
   text-transform: uppercase;
 }
 
-.news-card-body h3 {
+.news-card-body :is(h2, h3) {
   margin-bottom: 2px;
   font-size: 22px;
   line-height: 1.25;
@@ -769,7 +769,7 @@ summary {
   font-weight: 700;
 }
 
-.person-card h3 {
+.person-card :is(h2, h3) {
   margin-top: 18px;
   font-size: 27px;
   text-decoration: underline;
@@ -1132,7 +1132,7 @@ summary {
   }
 
   .hero-overlay {
-    background: linear-gradient(90deg, rgb(0 0 0 / 84%), rgb(0 0 0 / 45%));
+    background: linear-gradient(90deg, rgb(0 0 0 / 84%), rgb(0 0 0 / 55%));
   }
 
   .hero-content {
@@ -1229,8 +1229,8 @@ a { overflow-wrap: anywhere; }
 .detail-content::after { content: ''; display: block; clear: both; }
 .news-card.no-image { grid-template-columns: 1fr; }
 .news-card-image { max-height: 180px; }
-.news-card-body h3 a { text-decoration-color: transparent; }
-.news-card-body h3 a:hover { text-decoration-color: currentColor; }
+.news-card-body :is(h2, h3) a { text-decoration-color: transparent; }
+.news-card-body :is(h2, h3) a:hover { text-decoration-color: currentColor; }
 .search-control { max-width: none; margin: 0 auto 30px; }
 .search-control label { display: block; font-weight: 700; margin-bottom: 8px; }
 .search-control input { width: 100%; border: 1px solid #918c84; border-radius: 3px; padding: 12px 16px; background: white; color: var(--ink); }
@@ -1352,7 +1352,7 @@ img.intrinsic-source-image {
   aspect-ratio: 1;
   object-fit: cover;
 }
-.people-grid .person-card h3 {
+.people-grid .person-card :is(h2, h3) {
   margin-top: 14px;
   font-size: 24px;
 }
@@ -1369,7 +1369,7 @@ img.intrinsic-source-image {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px 20px;
   }
-  .people-grid .person-card h3 { font-size: 22px; }
+  .people-grid .person-card :is(h2, h3) { font-size: 22px; }
 }
 
 /* Shared profile and contact bodies follow the approved compact page components. */
@@ -1415,7 +1415,7 @@ img.intrinsic-source-image {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, h5 a:focus-visible, h6 a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
-.person-card h3 { text-decoration: none; }
+.person-card :is(h2, h3) { text-decoration: none; }
 
 /* Every page uses the same compact header and navigation geometry. */
 .site-header .brand-shell {
@@ -1473,7 +1473,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   aspect-ratio: 1;
   object-fit: cover;
 }
-.people-directory .person-card h3 {
+.people-directory .person-card :is(h2, h3) {
   margin: 2px 0 10px;
   font-size: 23px;
   line-height: 1.18;
@@ -1501,7 +1501,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   margin-inline: auto;
 }
 .people-directory .directory-principal .person-card > img { width: 160px; height: 160px; }
-.people-directory .directory-principal .person-card h3 { font-size: 32px; }
+.people-directory .directory-principal .person-card :is(h2, h3) { font-size: 32px; }
 .people-directory .directory-principal .person-role { color: var(--cardinal); font-weight: 700; margin-bottom: 12px; }
 .people-directory .directory-principal .person-card p:last-child { max-width: 540px; font-size: 17px; line-height: 1.5; }
 .people-directory .alumni-list { gap: 0 30px; }
@@ -1516,13 +1516,13 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   .people-directory .directory-group .people-grid,
   .people-directory .directory-small-group .people-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; }
   .people-directory .person-card { display: block; }
-  .people-directory .person-card h3 { margin-top: 12px; font-size: 22px; }
+  .people-directory .person-card :is(h2, h3) { margin-top: 12px; font-size: 22px; }
   .people-directory .person-card > img,
   .people-directory .person-card-placeholder { width: min(100%, 120px); height: auto; aspect-ratio: 1; }
   .people-directory .directory-principal .people-grid { grid-template-columns: 1fr; }
   .people-directory .directory-principal .person-card { display: grid; grid-template-columns: 108px minmax(0, 1fr); gap: 20px; align-items: start; }
   .people-directory .directory-principal .person-card > img { width: 108px; height: 108px; }
-  .people-directory .directory-principal .person-card h3 { margin-top: 0; font-size: 27px; }
+  .people-directory .directory-principal .person-card :is(h2, h3) { margin-top: 0; font-size: 27px; }
   .people-directory .directory-principal .person-card p:last-child { font-size: 15px; }
 }
 
@@ -1540,11 +1540,11 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .section-heading { margin-bottom: 28px; }
 .section-heading > p { font-size: 18px; }
 .postcard-body { padding: 24px; }
-.postcard-body h3 { font-size: 27px; }
+.postcard-body :is(h2, h3) { font-size: 27px; }
 .news-card-image { background: var(--stone); }
 .news-card-image img { height: 100%; object-position: center; }
 .news-card-body { padding: 18px 22px; }
-.news-card-body h3 { font-size: 23px; }
+.news-card-body :is(h2, h3) { font-size: 23px; }
 .news-card { align-items: center; }
 .news-card-image { align-self: stretch; height: auto; min-height: 144px; }
 .news-card-image img { height: 144px; }
@@ -1564,7 +1564,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .people-directory .directory-introduction .directory-principal { padding: 0; }
 .people-directory .directory-introduction .person-card { display: block; max-width: 390px; margin: 0; }
 .people-directory .directory-introduction .person-card > img { width: 128px; height: 128px; margin-bottom: 20px; }
-.people-directory .directory-introduction .person-card h3 { font-size: 30px; }
+.people-directory .directory-introduction .person-card :is(h2, h3) { font-size: 30px; }
 .people-directory .directory-group > .site-width { max-width: var(--width); }
 .contact-layout { grid-template-columns: 1fr 1fr; gap: 32px; }
 .contact-section .address-card { border: 1px solid var(--line); border-top: 3px solid var(--cardinal); padding: 28px; }
@@ -1591,7 +1591,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   .project-heading p { font-size: 18px; }
   .people-directory .directory-introduction .person-card { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 18px; max-width: none; }
   .people-directory .directory-introduction .person-card > img { width: 96px; height: 96px; margin: 0; }
-  .people-directory .directory-introduction .person-card h3 { font-size: 26px; }
+  .people-directory .directory-introduction .person-card :is(h2, h3) { font-size: 26px; }
   .people-directory .directory-opening { padding-bottom: 30px; }
   .news-card-image { min-height: 0; height: 180px; }
   .news-card-image img { height: 180px; aspect-ratio: auto; }
@@ -1650,15 +1650,20 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .people-directory .directory-introduction .directory-principal { margin-top: 24px; }
 .people-directory .directory-introduction .person-card { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 24px; align-items: center; max-width: none; margin: 0; }
 .people-directory .directory-introduction .person-card > img { width: 100px; height: 100px; margin: 0; }
-.people-directory .directory-introduction .person-card h3 { margin: 0 0 5px; font-size: 28px; }
+.people-directory .directory-introduction .person-card :is(h2, h3) { margin: 0 0 5px; font-size: 28px; }
 .people-directory .directory-introduction .person-role { margin-bottom: 6px; }
 .people-directory .directory-introduction .person-card p:last-child { max-width: 760px; font-size: 16px; }
 .people-grid.team-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 26px; }
-.team-grid .person-card h3 { font-size: 22px; }
+.team-grid .person-card :is(h2, h3) { font-size: 22px; }
 .footer-grid { display: block; padding-block: 24px; }
 .footer-grid > div { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
 .footer-brand, .footer-grid p { margin: 0; }
 .footer-grid p { font-size: 15px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 16px 0 0; padding: 0; list-style: none; font-size: 15px; }
+.footer-links a { margin: 0; text-decoration: underline; }
+.site-ownership { padding-block: 28px; }
+.site-ownership h2 { margin: 0 0 8px; font-size: 22px; }
+.site-ownership p { margin: 0; font-size: 16px; overflow-wrap: anywhere; }
 @media (max-width: 960px) {
   .people-directory .directory-introduction .group-photo img { height: 300px; }
 }
@@ -1668,7 +1673,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   .people-directory .directory-introduction .group-photo img { height: auto; object-fit: contain; }
   .people-directory .directory-introduction .person-card { grid-template-columns: 80px minmax(0, 1fr); gap: 18px; align-items: start; }
   .people-directory .directory-introduction .person-card > img { width: 80px; height: 80px; }
-  .people-directory .directory-introduction .person-card h3 { font-size: 25px; }
+  .people-directory .directory-introduction .person-card :is(h2, h3) { font-size: 25px; }
   .people-directory .directory-introduction .person-card p:last-child { font-size: 15px; }
   .people-grid.team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 18px; }
   .footer-grid > div { display: block; }

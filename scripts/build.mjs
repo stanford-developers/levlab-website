@@ -480,7 +480,7 @@ function publicationList(items, filters = true) {
   const years = [...new Set(items.map((p) => p.year || "Other"))].sort(
     (a, b) => (a === "Other" ? 1 : b === "Other" ? -1 : Number(b) - Number(a)),
   );
-  return `${filters ? searchBox("Search publications", "Search titles, authors, journals…") : ""}<div class="publication-browser ${filters ? "" : "without-filters"}">${
+  return `${filters ? '<div class="publication-catalog">' + searchBox("Search publications", "Search titles, authors, journals…") : ""}<div class="publication-browser ${filters ? "" : "without-filters"}">${
     filters
       ? `<aside class="publication-filters" aria-label="Filter publications by project">${Object.entries(
           labels,
@@ -502,7 +502,7 @@ function publicationList(items, filters = true) {
           )
           .join("")}</div></details>`,
     )
-    .join("")}</div></div>`;
+    .join("")}</div></div>${filters ? "</div>" : ""}`;
 }
 function projectPublicationCards(items) {
   return `<div class="publication-cards">${items

@@ -1,6 +1,6 @@
 # LevLab website
 
-Portable, pre-rendered website for Stanford LevLab, prepared for GitHub Pages. The source Drupal website and approved HSDP mockup are unchanged. This directory is the repository root to publish after local review; do not upload the surrounding project workspace.
+Portable, pre-rendered website for Stanford LevLab. The `main` branch holds editable source; GitHub Pages publishes finished files from `gh-pages` / root using **Deploy from a branch**. There is no custom GitHub Actions workflow. The source Drupal website and approved HSDP mockup are unchanged. Do not upload the surrounding project workspace.
 
 ## Preview locally
 
@@ -68,13 +68,27 @@ Tests check captured routes, local links/media under the configured path, citati
 
 ## GitHub Pages
 
-The prepared `.github/workflows/pages.yml` builds, checks, and publishes `dist/` on pushes to `main`. In repository Settings → Pages, the publishing source must be GitHub Actions. The workflow takes the configured base path and origin from GitHub Pages: the project preview uses `/levlab-website`, and a later custom domain uses the root path.
+Repository Settings → Pages must use **Deploy from a branch → gh-pages → / (root)**. `gh-pages` contains finished HTML, CSS, JavaScript, media, and `.nojekyll` directly at its root. `main` contains the editable source. Pushing source to `main` alone does not update the website. Do not select `main` / root: it contains source files rather than the finished homepage.
 
-When publication is approved, copy the **contents** of this directory into the root of `stanford-developers/levlab-website`: `package.json`, `README.md`, `.gitignore`, `.github/`, `data/`, `scripts/`, `tests/`, and `public/`. Include the hidden `.github` directory so the workflow is found. Do not nest these under another `github-site/` directory. Do not copy the surrounding workspace, `outputs/`, raw captures, correspondence, backup archives, credentials, or generated `dist/`; the workflow builds its own output. Preview and validate locally, review the changed files, then push the approved change. No `CNAME` is included, and local builds make no remote changes. Coordinate domain verification/DNS with Stanford IT. Keep the old host for the agreed rollback period.
+When publication is approved, fetch and review any newer remote source before copying the **contents** of this directory into the source checkout: `package.json`, `README.md`, `.gitignore`, `data/`, `scripts/`, `tests/`, and `public/`. Remove the retired `.github/workflows/pages.yml` if present. Do not nest these under another `github-site/` directory. Do not copy the surrounding workspace, `outputs/`, raw captures, correspondence, backup archives, credentials, dependencies, or generated `dist/` into `main`. Commit and push the reviewed source changes.
+
+From the standalone source checkout (this workspace uses `.deploy/levlab-website/`), with Git, Node.js, npm, and the authenticated GitHub CLI available:
+
+```sh
+npm run prepare:pages
+git show --stat gh-pages
+git push origin gh-pages
+```
+
+`prepare:pages` requires a clean `main` checkout, fetches the latest remote state, and reads the existing Pages hostname. It builds locally, runs all checks and the mandatory release gate, and creates a local publishing commit containing **only the finished website**. It does not push, change Pages settings, or modify the source checkout/index. It preserves both exact-case legacy asset paths in Git even on a case-insensitive Mac. Review the commit before pushing; use a normal push, never force-push. If a release is already prepared locally, review/push it before preparing another. If the remote changes after preparation, review those changes before preparing a replacement release.
+
+The current Pages hostname produces `/levlab-website` links. When Stanford IT coordinates the custom domain, configure the approved domain in Pages, then prepare and publish a new release: the command uses the configured domain root, updates canonical URLs/sitemap entries, and adds the matching `CNAME` file. Do not change DNS or configure the custom domain before the coordinated launch. Retain the old host for the agreed rollback period.
+
+GitHub's own built-in Pages deployment may still appear under the Actions tab. It only publishes the prepared branch; this repository supplies no custom build/deployment workflow. Verify that native deployment succeeds, then check the public pages and assets before reporting a release live.
 
 ### Undo a change
 
-Identify the last working commit, then use `git revert <bad-commit-id>` to create a new commit undoing the unwanted change without deleting history. For several commits, revert newest first and resolve any conflicts. Run the validation commands above and review the local preview before pushing the revert. After the publishing workflow succeeds, check the affected live pages. This restores website content; it does not undo DNS or custom-domain changes, which require a separate coordinated rollback with Stanford IT. Confirm Ben's administrator access and a backup maintainer before launch; do not share credentials.
+Identify the last working source commit, then use `git revert <bad-source-commit-id>` on `main` to undo the unwanted change without deleting history. Validate and review the local preview, commit/push the corrected source, then prepare/review/push `gh-pages` as above. Do not restore an older hostname configuration accidentally. This restores website content; it does not undo DNS or custom-domain changes, which require a separate coordinated rollback with Stanford IT. Confirm Ben's administrator access and a backup maintainer before launch; do not share credentials.
 
 ## Migration scope
 
@@ -88,7 +102,7 @@ The live homepage's featured-news order is preserved independently from the full
 
 ### Mandatory release gate
 
-`npm run check:release` verifies every expected published record was actually captured and has a rendered destination, and rejects missing local media or unresolved internal links. The workflow runs it before uploading an artifact. Local preview builds and structural tests can pass while this gate fails; that is intentional so incomplete imports cannot be published accidentally. The one documented pre-existing malformed “In Science Journals” URL is allowlisted as preserved text; no replacement URL is guessed. `data/expected-records.json` contains only public record paths and content types.
+`npm run check:release` verifies every expected published record was actually captured and has a rendered destination, and rejects missing local media or unresolved internal links. `prepare:pages` runs it locally before creating a publishing commit. Local preview builds and structural tests can pass while this gate fails; that is intentional so incomplete imports cannot be published accidentally. The one documented pre-existing malformed “In Science Journals” URL is allowlisted as preserved text; no replacement URL is guessed. `data/expected-records.json` contains only public record paths and content types.
 
 ### Offline preview fallbacks
 
@@ -98,7 +112,7 @@ The release report is refreshed on both success and failure. Content and curatio
 
 ### Case-distinct source files
 
-`data/source-asset-paths.json` explicitly maps colliding source filenames to separate portable assets. Drupal's `Headshot.jpg` and `headshot.jpg` belong to different people; the latter reserves `/media/source-headshot-lowercase.jpg` for the full original. Resolution checks exact filename case and the override first, never substitutes the other photo, and inventory entries retain the exact source URL, local path, and SHA-256. A Linux Pages build emits legacy file aliases only for mapped files actually available. On case-insensitive macOS, the preview server routes available lowercase legacy URLs directly to their mapped assets without replacing uppercase files. Missing media required by a published page remains a migration blocker.
+`data/source-asset-paths.json` explicitly maps colliding source filenames to separate portable assets. Drupal's `Headshot.jpg` and `headshot.jpg` belong to different people; the latter reserves `/media/source-headshot-lowercase.jpg` for the full original. Resolution checks exact filename case and the override first, never substitutes the other photo, and inventory entries retain the exact source URL, local path, and SHA-256. The build emits legacy aliases for mapped files actually available. On case-insensitive macOS, the preview server routes available lowercase legacy URLs directly to their mapped assets; `prepare:pages` also inserts their exact distinct paths into the publishing Git tree without replacing uppercase files. Missing media required by a published page remains a migration blocker.
 
 The lowercase full original currently returns 404 on the source. Its exact published 120×120 image is preserved separately at `/media/source-headshot-lowercase-120.jpg` and displayed at its intrinsic size. This is Alec's actual published photograph, not Jack's uppercase file and not a recovered full original. `data/source-unavailable.json` preserves the source evidence and limitation; it does not broadly exempt missing media from release checks.
 

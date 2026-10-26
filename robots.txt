@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stanford-developers.github.io/levlab-website/sitemap.xml

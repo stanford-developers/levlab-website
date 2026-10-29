@@ -19,9 +19,20 @@ import {
   sanitize,
   escape as e,
 } from "./html.mjs";
+import { getPublicationDisplay } from "./publication-display.mjs";
+import {
+  hiddenDirectoryNames, hiddenDirectoryGroups, benTitle, terminology,
+  editorialHtml, projectDescription, newsTitle, projectNewsPreview, withoutPdfLinks,
+} from "./site-editorial.mjs";
 const contentSource = fs.readFileSync("data/content.json", "utf8");
 const data = JSON.parse(contentSource);
-const news = curateNews(data.news);
+// User-supplied portrait, October 29; apply to every profile/card surface.
+data.people = data.people.map((person) => person.name === "Samuel Aronson"
+  ? { ...person, image: "/images/samuel-aronson.png" } : person);
+const news = curateNews(data.news).map((story) => ({
+  ...story, title: newsTitle(story.title),
+  bodyHtml: editorialHtml(story.bodyHtml), summary: terminology(story.summary || ""),
+}));
 const publications = curatePublications(data.publications);
 // Split the captured combined project description without changing the archive.
 const cavmatSource = data.projects.find((project) => project.slug === "cavmat");
@@ -301,7 +312,7 @@ function previewImageClass(source, resolved) {
 }
 const clean = (html, p = "/") =>
   sanitize(
-    html,
+    withoutPdfLinks(html),
     (value, attr) => rewriteUrl(value, attr, p),
     previewImageClass,
   );
@@ -387,21 +398,14 @@ function shell(title, body, active = "home", route = "/") {
 </header>
 <main id="main-content" tabindex="-1">${body}</main>
 <footer class="site-footer">
-<section class="contact-band" aria-labelledby="footer-visit">
-<div class="site-width contact-band-grid">
-<h2 id="footer-visit">Visit LevLab at Stanford</h2>
-<p>Spilker Building, Room 335<br>348 Via Pueblo Mall<br>Stanford, CA 94305-4088</p>
-<a class="hero-button" href="${local("/contact-jobs")}">Contact &amp; directions</a>
-</div>
-</section>
 <div class="site-width footer-grid">
 <div>
 <div class="footer-brand">
 <span class="lab-word">LevLab</span>
 </div>
-<p>Departments of Physics and Applied Physics<br>Ginzton Laboratory · Q-FARM</p>
+<p class="footer-affiliations"><a href="https://physics.stanford.edu/">Department of Physics</a> · <a href="https://appliedphysics.stanford.edu/">Department of Applied Physics</a><br><a href="https://ginzton.stanford.edu/">Ginzton Laboratory</a> · <a href="https://qfarm.stanford.edu/">Q-FARM</a></p>
 </div>
-<nav aria-label="Site information"><ul class="footer-links"><li><a href="${local("/contact-jobs")}#site-ownership">Site contacts</a></li><li><a href="https://www.stanford.edu/site/accessibility">Accessibility</a></li></ul></nav>
+<nav class="footer-contact" aria-label="Site information"><ul class="footer-links"><li><a href="${local("/contact-jobs")}">Contact &amp; directions</a></li><li><a href="https://www.stanford.edu/site/accessibility">Accessibility</a></li></ul></nav>
 </div>
 </footer>
 </body>
@@ -418,14 +422,14 @@ const breadcrumb = (label, url) =>
 const landingBreadcrumb = (label) =>
   `<nav class="breadcrumbs site-width" aria-label="Breadcrumb"><a href="${local("/")}">Home</a><span aria-hidden="true">/</span><span>${e(label)}</span></nav>`;
 const projectCards = (headingTag = "h3") =>
-  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(p.title)}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, p.title)}</a><div class="postcard-body"><${headingTag}><a href="${local(p.path)}">${e(p.title)}</a></${headingTag}><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
+  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(terminology(p.title))}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, terminology(p.title))}</a><div class="postcard-body"><${headingTag}><a href="${local(p.path)}">${e(terminology(p.title))}</a></${headingTag}><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
 const supporters = () =>
   section(
     `<div class="section-heading centered"><h2>Our work is made possible by</h2></div>
     <div class="supporter-logos" role="group" aria-label="Research supporters">${(
       data.supporters || []
     )
-      .filter((supporter) => supporter.image)
+      .filter((supporter) => supporter.image && !/Packard/i.test(supporter.name))
       .map(
         (supporter) =>
           `<div class="supporter-logo-slot">${image(supporter.image, supporter.name, "supporter-logo")}</div>`,
@@ -446,11 +450,10 @@ function newsCards(items, searchable = false, paginated = false) {
   return `<div class="news-cards">${items.map((n, index) => `<article${paginated && index % 10 === 0 ? ` id="news-page-${Math.floor(index / 10) + 1}"` : ""} class="news-card${n.image ? "" : " no-image"}"${searchable ? ` data-record data-projects="${e(n.projects.join(","))}"` : ""}>${n.image ? `<a class="news-card-image" href="${local(canonical(n.path))}" aria-label="${e(n.title)}">${image(n.image)}</a>` : ""}<div class="news-card-body"><${headingTag}><a href="${local(canonical(n.path))}">${e(n.title)}</a></${headingTag}>${n.dateLabel ? `<time class="content-date"${n.date ? ` datetime="${e(n.date)}"` : ""}>${e(n.dateLabel)}</time>` : ""}<p class="content-summary">${e(newsSummary(n))}</p></div></article>`).join("")}</div>`;
 }
 const searchBox = (label, placeholder) =>
-  `<div class="search-control"><label for="content-search">${e(label)}</label><input id="content-search" data-search type="search" placeholder="${e(placeholder)}"><p data-result-count data-label="${label === "Search publications" ? "publications" : "stories"}" data-singular-label="${label === "Search publications" ? "publication" : "story"}" role="status" aria-live="polite"></p></div>`;
+  `<div class="search-control"><label for="content-search">${e(label)}</label><input id="content-search" data-search type="search" placeholder="${e(placeholder)}"></div>`;
 function newsArchive(items, placeholder) {
   const pageCount = Math.max(1, Math.ceil(items.length / 10));
   return (
-    searchBox("Search news", placeholder) +
     `<div id="news-results" data-news-archive data-page-size="10" tabindex="-1">${newsCards(items, true, true)}</div>
     <nav class="news-pagination" data-news-pagination aria-label="News pages">
       <div class="news-pagination-links">
@@ -469,12 +472,16 @@ const labels = {
   dysprosium: "Dysprosium",
   sqcramscope: "SQCRAMscope",
 };
-function linkedPublicationCitation(publication) {
-  const citation = rich(publication.citationHtml, publication.path || "/publications");
-  if (!publication.path) return citation;
-  return citation.replace(/<(strong|b)>([\s\S]*?)<\/\1>/, (_, tag, title) =>
-    `<${tag}><a class="publication-title-link" href="${local(canonical(publication.path))}">${title}</a></${tag}>`,
-  );
+function formattedPublication(publication, linkTitle = false) {
+  const display = getPublicationDisplay(publication);
+  const title = rich(display.titleHtml, publication.path);
+  const linkedTitle = linkTitle && publication.path
+    ? `<a class="publication-title-link" href="${local(canonical(publication.path))}">${title}</a>` : title;
+  return `<div class="publication-citation"><p class="publication-title"><strong>${linkedTitle}</strong></p>${
+    [["authors", display.authorsHtml], ["journal", display.journalHtml], ["preprint", display.preprintHtml]]
+      .filter(([, value]) => value)
+      .map(([name, value]) => `<p class="publication-${name}">${rich(value, publication.path)}</p>`).join("")
+  }${display.highlightsHtml.length ? `<div class="publication-highlights">${display.highlightsHtml.map((value) => `<p>${rich(value, publication.path)}</p>`).join("")}</div>` : ""}</div>`;
 }
 function publicationList(items, filters = true) {
   if (!items.length)
@@ -496,11 +503,11 @@ function publicationList(items, filters = true) {
   }<div class="timeline">${years
     .map(
       (year, i) =>
-        `<details data-year${i < 2 ? " open" : ""}><summary><span>${year}</span><span data-year-count>${items.filter((p) => (p.year || "Other") === year).length} ${items.filter((p) => (p.year || "Other") === year).length === 1 ? "publication" : "publications"}</span></summary><div class="timeline-items">${items
+        `<details data-year${i < 2 ? " open" : ""}><summary><span>${year}</span></summary><div class="timeline-items">${items
           .filter((p) => (p.year || "Other") === year)
           .map(
             (p) =>
-              `<article id="${e(p.id)}" data-record data-projects="${e(p.projects.join(","))}">${linkedPublicationCitation(p)}</article>`,
+              `<article id="${e(p.id)}" data-record data-projects="${e(p.projects.join(","))}">${formattedPublication(p, true)}</article>`,
           )
           .join("")}</div></details>`,
     )
@@ -508,14 +515,7 @@ function publicationList(items, filters = true) {
 }
 function projectPublicationCards(items) {
   return `<div class="publication-cards">${items
-    .map((p) => {
-      const citationLinks = all(parse(p.citationHtml), (n) => n.tag === "a");
-      const journal =
-        citationLinks.find(
-          (n) => text(n).length > 8 && !text(n).toLowerCase().includes("arxiv"),
-        ) || citationLinks.find((n) => /arxiv/i.test(text(n)));
-      return `<article id="${e(p.id)}"><h3><a href="${p.path ? local(canonical(p.path)) : local("/publications") + "#" + p.id}">${e(p.title)}</a></h3><p>${journal ? e(text(journal).replace(/\s+([,.;:!?])/g, "$1")) : e(p.year || "Preprint")}</p></article>`;
-    })
+    .map((publication) => `<article id="${e(publication.id)}">${formattedPublication(publication, true)}</article>`)
     .join("")}</div>`;
 }
 // Approved mockup directory order; card affiliations derive from current source records.
@@ -538,13 +538,13 @@ const directoryOrder = [
 function personCard(p, small = false, loading = "lazy", headingTag = "h3") {
   const role =
     p.name === "Benjamin Lev"
-      ? "Principal Investigator"
+      ? benTitle
       : p.projects
           .map(
             (project) =>
               ({
                 cavmat: "CavMat",
-                rubidium: "Spin Glass Machine",
+                rubidium: "Rb Spin Glass Machine",
                 dysprosium: "Dysprosium Cavity Machine",
               })[project],
           )
@@ -554,7 +554,7 @@ function personCard(p, small = false, loading = "lazy", headingTag = "h3") {
     p.name === "Benjamin Lev" && !small
       ? "Experimental atomic, molecular and optical physics; condensed matter physics; quantum science."
       : "";
-  return `<article class="person-card">${image(p.image, p.name, "", loading)}<div><${headingTag}><a href="${local(canonical(p.path))}">${e(displayName(p.name))}</a></${headingTag}>${!small || p.name === "Benjamin Lev" ? `<p class="person-role">${e(role)}</p>` : ""}${description ? `<p>${e(description)}</p>` : ""}</div></article>`;
+  return `<article class="person-card">${image(p.image, p.name, "", loading)}<div><${headingTag}><a href="${local(canonical(p.path))}">${e(displayName(p.name))}</a></${headingTag}>${!small ? `<p class="person-role">${e(role).replace("; ", "<br>")}</p>` : ""}${description ? `<p>${e(description)}</p>` : ""}</div></article>`;
 }
 function profileFieldContent(node) {
   if (!node || hasClass(node, "field__label")) return "";
@@ -605,7 +605,6 @@ function publicationMetadata(publication) {
   for (const [field, label] of [
     ["field-authors-1", "Author profiles"],
     ["field-associated-projects-2", "Research"],
-    ["field-files", "Downloads"],
   ]) {
     const node = byClass(tree, "field--name-" + field)[0];
     if (field === "field-associated-projects-2") {
@@ -674,9 +673,9 @@ function add(route, title, body, active) {
 add(
   "/",
   "Home",
-  `<section class="hero" aria-labelledby="hero-title"><div class="hero-overlay"></div><div class="site-width hero-content"><h1 id="hero-title">Where Quantum Matters</h1><p>LevLab explores whether new states and phases of quantum matter can be created far from equilibrium—and what those states can teach us.</p><a class="hero-button" href="${local("/research")}">Learn about our research</a></div></section>` +
+  `<section class="hero" aria-labelledby="hero-title"><div class="hero-overlay"></div><div class="site-width hero-content"><div class="hero-copy"><h1 id="hero-title">Where Quantum Matters</h1><p>LevLab explores the new forms of quantum matter that can be created far from equilibrium—and how we can use them for devices.</p><a class="hero-button" href="${local("/research")}">Learn about our research</a></div></div></section>` +
     section(
-      `<div class="section-heading centered"><h2>Our research</h2><p>Across three experimental platforms, LevLab explores uncharted regimes of quantum matter using ultracold atoms, quantum optics, and condensed matter physics.</p></div>${projectCards()}`,
+      `<div class="section-heading centered"><h2>Our research</h2><p>Across three experimental platforms, LevLab explores uncharted regimes of quantum matter using ultracold atoms, quantum optics, and condensed matter physics.</p></div>${projectCards()}`, false, "home-research",
     ) +
     section(
       heading("News") +
@@ -686,7 +685,7 @@ add(
               news.find((n) => canonical(n.path) === canonical(p)),
             )
             .filter(Boolean)
-            .slice(0, 3),
+            .slice(0, 5),
         ) +
         `<div class="section-action"><a class="text-button" href="${local("/news")}">See more news</a></div>`,
       true,
@@ -703,10 +702,10 @@ add(
       "<p>We use ultracold atoms, quantum optics, and cavity QED to explore new states of quantum matter—from nonequilibrium gases to two-dimensional materials.</p>",
     ).replace("page-intro", "page-intro research-landing-intro") +
     section(
-      `${projectCards("h2")}<details class="research-background research-overview-details"><summary>More about our research</summary><div class="prose">${rich((data.currentResearchHtml || "").replace(/`Wire together'/g, "Wire together").replace(/`CavMat'/g, "CavMat"))}</div></details>`,
+      `${projectCards("h2")}<div class="research-background research-overview-details"><h2>More about our research</h2><div class="prose">${rich(editorialHtml(data.currentResearchHtml || "").replace(/`Wire together'/g, "Wire together").replace(/`CavMat'/g, "CavMat"))}</div></div>`,
       true,
     ) +
-    section(`<div class="past-projects"><h2>Past projects</h2><article class="past-project-card"><a href="${local(pastProject.path)}" aria-label="SQCRAMscope research">${image(pastProject.image, "Illustration of the SQCRAMscope atom-chip microscope")}</a><div><h3><a href="${local(pastProject.path)}">SQCRAMscope</a></h3><p>Quantum gas microscopy of transport and magnetism in quantum materials.</p><a class="arrow-link" href="${local(pastProject.path)}">Explore past research <span aria-hidden="true">→</span></a></div></article></div>`, false, "past-projects-section") +
+    section(`<div class="past-projects"><h2>Past projects</h2><article class="past-project-card"><a href="${local(pastProject.path)}" aria-label="SQCRAMscope research">${image(pastProject.image, "Illustration of the SQCRAMscope atom-chip microscope")}</a><div><h3><a href="${local(pastProject.path)}">SQCRAMscope</a></h3><p>Quantum gas microscopy of transport and magnetism in quantum materials.</p></div></article></div>`, false, "past-projects-section") +
     supporters(),
   "research",
 );
@@ -792,7 +791,7 @@ add(
   landingBreadcrumb("Contact & Jobs") +
     intro("Contact & Jobs") +
     `<section class="section contact-section"><div class="site-width contact-layout">
-      <div class="address-card"><h2>Visit LevLab</h2><h3><a href="${e(contactLink("Spilker Building"))}">Spilker Building</a>, Room 335</h3>
+      <div class="address-card"><h2>Contact and directions</h2>
         <p>348 Via Pueblo Mall<br>Stanford University<br>Stanford, CA 94305-4088</p>
         <div class="contact-directions"><a class="text-button" href="${e(contactLink("Spilker Building"))}">Campus map and directions</a><a href="${e(contactLink("Parking Directions"))}">Parking Directions</a></div>
       </div>
@@ -800,11 +799,11 @@ add(
         <p><a href="tel:6507254942">650-725-4942</a><br><a href="mailto:nyeinmon@stanford.edu">nyeinmon@stanford.edu</a></p>
         <p>Prof. Lev: <a href="mailto:benlev@stanford.edu">benlev@stanford.edu</a></p>
         <p><strong>Letters:</strong> <a href="${e(contactLink("Ginzton Laboratory"))}">Ginzton Laboratory</a> Box 305, Stanford University, Stanford, CA 94305-4088</p>
-        <p><strong>Packages:</strong> 348 Via Pueblo, Room 136, Stanford CA 94305-4013</p>
+        <p><strong>Packages:</strong> 348 Via Pueblo, Stanford CA 94305-4013</p>
       </aside>
     </div></section>` +
     `<section class="section section-soft contact-section"><div class="site-width"><div class="section-heading centered"><h2>Jobs</h2></div><div class="callout-box jobs-callout"><p>Interested in cutting-edge quantum many-body physics? Positions open for exceptional postdocs, graduate students, and undergraduates. <a href="mailto:benlev@stanford.edu">Contact Prof. Lev</a>.</p></div></div></section>` +
-    `<section class="contact-section site-ownership" id="site-ownership"><div class="site-width"><h2>Website contacts</h2><p>Site owner: Professor Benjamin Lev — <a href="mailto:benlev@stanford.edu">benlev@stanford.edu</a>.<br>Technical web administrator: Pranav Parakh — <a href="mailto:pdparakh@stanford.edu">pdparakh@stanford.edu</a>.</p></div></section>`,
+    "",
   "contact",
 );
 add(
@@ -819,10 +818,10 @@ add(
       "directory-opening",
     ) +
     data.peopleGroups
-      .filter((group) => group.title !== "Principal Investigator")
+      .filter((group) => !hiddenDirectoryGroups.has(group.title))
       .map((g, i) => {
         const order = directoryOrder;
-        const people = data.people.filter((p) => g.people.includes(p.path));
+        const people = data.people.filter((p) => g.people.includes(p.path) && !hiddenDirectoryNames.has(p.name));
         if (!g.title.startsWith("Former"))
           people.sort((a, b) => {
             const first = order.indexOf(a.name),
@@ -852,30 +851,23 @@ for (const project of researchProjects) {
   const pubs = publications.filter((p) => p.projects.includes(project.slug));
   const publicationArchive = publicationCatalogs[project.slug].path;
   const recentPublications = pubs.slice(0, 3);
-  const team = data.people.filter((p) => project.team.includes(p.path));
+  const team = data.people.filter((p) => project.team.includes(p.path) && !hiddenDirectoryNames.has(p.name));
   add(
     project.path,
-    project.title,
+    terminology(project.title),
     breadcrumb("Research", "/research") +
-      `<section class="project-heading"><div class="site-width project-heading-grid"><div>${project.past ? '<p class="project-status">Past project</p>' : ""}<h1>${e(project.title)}</h1><p>${e(project.summary)}</p></div>${image(project.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : project.image, project.title, project.slug === "cavmat" || project.past ? "project-heading-image apparatus-photo" : "project-heading-image", "eager")}</div></section>` +
+      `<section class="project-heading"><div class="site-width project-heading-grid"><div>${project.past ? '<p class="project-status">Past project</p>' : ""}<h1>${e(terminology(project.title))}</h1><p>${e(terminology(project.summary))}</p></div>${image(project.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : project.image, terminology(project.title), project.slug === "cavmat" || project.past ? "project-heading-image apparatus-photo" : "project-heading-image", "eager")}</div></section>` +
       section(
-        `<div class="research-intro"><div class="prose">${rich(project.bodyHtml)}<nav class="related-projects" aria-label="Other research">${data.projects
-          .filter((other) => other.slug !== project.slug)
-          .map(
-            (other) =>
-              `<a class="text-button" href="${local(other.path)}">${e(other.shortTitle)} research</a>`,
-          )
-          .join("")}</nav></div>${
+        `<div class="research-intro"><div class="prose">${rich(projectDescription(project))}</div>${
           relatedNews.length
-            ? `<aside class="spotlight project-news" aria-label="Project news"><h2>Project news</h2><div class="project-news-list">${relatedNews
-                .slice(0, 4)
+            ? `<aside class="spotlight project-news" aria-label="Project news"><h2><a href="${local(project.path + "/news")}">Project news</a></h2><div class="project-news-list">${projectNewsPreview(relatedNews, project.slug)
                 .map(
                   (n) =>
                     `<article><h3><a href="${local(canonical(n.path))}">${e(n.title)}</a></h3></article>`,
                 )
                 .join(
                   "",
-                )}</div><a href="${local(project.path + "/news")}">All project news →</a></aside>`
+                )}</div></aside>`
             : ""
         }</div>`,
       ) +
@@ -949,13 +941,13 @@ for (const person of data.people) {
     breadcrumb("People", "/people") +
       intro(displayName(person.name)).replace("page-intro", "page-intro detail-intro") +
       section(
-        `<div class="person-detail profile-layout${biography ? "" : " summary-only"}"><aside class="profile-summary" aria-label="Profile details">${image(person.image, person.name, "", "eager")}<p class="person-role">${e(person.role)}</p>${person.group.startsWith("Former") ? '<p class="profile-context">Former lab member</p>' : ""}${person.office ? `<p>${e(person.office)}</p>` : ""}<div class="profile-contacts">${person.phone ? `<p><a href="tel:${e(person.phone.replace(/[^+\d]/g, ""))}">${e(person.phone)}</a></p>` : ""}${person.email ? `<p><a href="${e(person.email)}">${e(emailAddress)}</a></p>` : ""}</div>${
+        `<div class="person-detail profile-layout${biography ? "" : " summary-only"}"><aside class="profile-summary" aria-label="Profile details">${image(person.image, person.name, "", "eager")}<p class="person-role">${e(person.name === "Benjamin Lev" ? benTitle : terminology(person.role)).replace("; ", "<br>")}</p>${person.group.startsWith("Former") ? '<p class="profile-context">Former lab member</p>' : ""}${person.office ? `<p>${e(person.office)}</p>` : ""}<div class="profile-contacts">${person.phone ? `<p><a href="tel:${e(person.phone.replace(/[^+\d]/g, ""))}">${e(person.phone)}</a></p>` : ""}${person.email ? `<p><a href="${e(person.email)}">${e(emailAddress)}</a></p>` : ""}</div>${
           person.projects.length
             ? `<nav class="profile-projects" aria-label="Associated research">${person.projects
                 .map((id) => {
                   const p = data.projects.find((p) => p.slug === id);
                   return p
-                    ? `<p><a href="${local(p.path)}">${e(p.title)}</a></p>`
+                    ? `<p><a href="${local(p.path)}">${e(terminology(p.title))}</a></p>`
                     : "";
                 })
                 .join("")}</nav>`
@@ -974,14 +966,14 @@ for (const publication of publications.filter((p) => p.path)) {
   if (routes.has(route)) continue;
   add(
     route,
-    publication.title,
+    publication.displayTitle || publication.title,
     breadcrumb("Publications", "/publications") +
-      intro(publication.title).replace(
+      intro(publication.displayTitle || publication.title).replace(
         "page-intro",
         "page-intro detail-intro",
       ) +
       section(
-        `<div class="prose legacy-content">${rich(publication.citationHtml, publication.path)}<div class="publication-metadata">${publicationMetadata(publication)}</div></div>`,
+        `<div class="prose legacy-content">${formattedPublication(publication)}<div class="publication-metadata">${publicationMetadata(publication)}</div></div>`,
       ),
     "publications",
   );
@@ -1003,18 +995,18 @@ for (const p of data.pages) {
   } else if (p.kind === "publications") {
     const pub = publications.find((pub) => pub.sourcePaths.includes(p.path));
     body = pub
-      ? rich(pub.citationHtml, p.path) +
+      ? formattedPublication(pub) +
         `<div class="publication-metadata">${publicationMetadata(pub)}</div>`
-      : clean(p.bodyHtml, p.path);
+      : clean(editorialHtml(p.bodyHtml), p.path);
     active = "publications";
   } else {
     const fields = byClass(tree, "field--name-body");
     const articles = all(tree, (n) => n.tag === "article");
     body = fields.length
-      ? fields.map((n) => clean(raw(n), p.path)).join("")
+      ? fields.map((n) => clean(editorialHtml(raw(n)), p.path)).join("")
       : articles.length
-        ? articles.map((n) => clean(raw(n), p.path)).join("")
-        : clean(p.bodyHtml, p.path);
+        ? articles.map((n) => clean(editorialHtml(raw(n)), p.path)).join("")
+        : clean(editorialHtml(p.bodyHtml), p.path);
   }
   if (route === "/contact-jobs") {
     title = "Contact & Jobs";

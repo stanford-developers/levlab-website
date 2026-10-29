@@ -290,7 +290,8 @@ test("all 86 publication classifications and primary-citation years agree across
     "Full paper explicitly discusses Dy",
   );
   assert.match(html(find("fabrication-of-micro-magnetic").path), /Pre-LevLab/);
-  assert.match(html(find("superradiant-charge-density").path), /Preprint year/);
+  assert.match(html(find("superradiant-charge-density").path), /Publication year/);
+  assert.match(html(find("superradiant-charge-density").path), /s41467-026-78382-3/);
 });
 
 test("news and people are complete and project associations render", () => {
@@ -363,12 +364,13 @@ test("news and people are complete and project associations render", () => {
       `Pre-LevLab archive missing ${publication.id}`,
     );
 });
-test("news pagination keeps the full archive searchable and restores URL history", () => {
+test("news pagination keeps the full archive readable without search and restores URL history", () => {
   for (const route of [
     "/news",
     ...data.projects.map((p) => p.path + "/news"),
   ]) {
     const tree = parse(html(route));
+    assert.doesNotMatch(html(route), /data-search|data-result-count/);
     const entries = all(tree, (n) =>
       Object.hasOwn(n.attrs || {}, "data-record"),
     );
@@ -412,13 +414,6 @@ test("news pagination keeps the full archive searchable and restores URL history
   const steps = [-1, 1].map((n) => makeLink({ pageStep: String(n) }));
   const summary = {};
   const handlers = {};
-  const search = {
-    value: "",
-    addEventListener(type, fn) {
-      handlers[type] = fn;
-    },
-  };
-  const status = { dataset: { label: "stories", singularLabel: "story" } };
   const archive = {
     dataset: { pageSize: "10" },
     focus() {},
@@ -436,10 +431,8 @@ test("news pagination keeps the full archive searchable and restores URL history
     },
   };
   const elements = {
-    "[data-search]": search,
     "[data-news-archive]": archive,
     "[data-news-pagination]": pagination,
-    "[data-result-count]": status,
   };
   const document = {
     querySelector(selector) {
@@ -490,18 +483,8 @@ test("news pagination keeps the full archive searchable and restores URL history
     Array.from({ length: 8 }, (_, i) => i + 90),
   );
   assert.equal(steps[1].hidden, true);
-  search.value = "Unique oldest";
-  handlers.input();
-  assert.deepEqual(visible(), [97], "Search must find a story on a later page");
-  assert.equal(status.textContent, "1 story");
-  assert.equal(new URL(window.location.href).searchParams.get("page"), null);
-  assert.equal(
-    new URL(window.location.href).searchParams.get("q"),
-    "Unique oldest",
-  );
   window.location.href = "https://local.test/levlab-website/news/?page=2";
   handlers.popstate();
-  assert.equal(search.value, "");
   assert.deepEqual(
     visible(),
     Array.from({ length: 10 }, (_, i) => i + 10),
@@ -511,13 +494,9 @@ test("news pagination keeps the full archive searchable and restores URL history
   handlers.popstate();
   assert.deepEqual(
     visible(),
-    [97],
-    "Out-of-range pages clamp within filtered results",
+    Array.from({ length: 8 }, (_, i) => i + 90),
+    "Out-of-range pages clamp to the final page; old search URLs do not hide stories",
   );
-  search.value = "No such story";
-  handlers.input();
-  assert.deepEqual(visible(), []);
-  assert.equal(status.textContent, "0 stories");
 });
 test("imported HTML is inert while scientific markup survives", () => {
   const malicious =
@@ -599,13 +578,12 @@ test("directory, profiles and contact use consistent public-facing structures", 
   }
   const contact = html("/contact-jobs");
   for (const value of [
-    "Visit LevLab",
+    "Contact and directions",
     "Administrative assistance",
     "Nyein Su Mon",
     "650-725-4942",
     "Ginzton Laboratory",
     "Box 305",
-    "Room 136",
     "94305-4013",
     "Parking Directions",
     "Jobs",
@@ -613,6 +591,7 @@ test("directory, profiles and contact use consistent public-facing structures", 
     assert.ok(contact.includes(value), value);
   assert.ok(contact.includes('class="site-width contact-layout"'));
   assert.doesNotMatch(contact, /class="contact-us/);
+  assert.doesNotMatch(contact, /Visit LevLab|Spilker Building|Room 335|Room 136|Website contacts|site-ownership/);
   const publicationTree = parse(html("/publications"));
   const filters = all(publicationTree, (node) => node.attrs?.["data-filter"]);
   assert.deepEqual(
@@ -646,7 +625,7 @@ test("production homepage survives legacy Drupal home aliases", () => {
   assert.equal(html("/home"), page);
 });
 
-test("individual publication pages preserve separately attached PDFs and authoritative years", () => {
+test("publication pages retain authoritative years and archived files without PDF download links", () => {
   for (const publication of publications.filter((p) => p.path)) {
     const page = html(publication.path);
     if (publication.year)
@@ -662,10 +641,11 @@ test("individual publication pages preserve separately attached PDFs and authori
       );
       if (fs.existsSync(path.join("public", file)))
         assert.ok(
-          page.includes(attachment.label),
-          publication.path + " missing PDF attachment label",
+          fs.existsSync(path.join("dist", file)),
+          publication.path + " must preserve existing files for legacy URLs",
         );
     }
+    assert.equal(all(parse(page), (node) => node.tag === "a" && /\.pdf(?:[?#]|$)|\/pdf(?:\/|$)/i.test(node.attrs.href || "")).length, 0);
   }
 });
 

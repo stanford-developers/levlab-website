@@ -11,8 +11,8 @@ export const publicationCurationHash = createHash("sha256")
   .digest("hex");
 export const publicationCatalogs = publicationCuration.catalogs;
 
-// Preserve source objects and citation HTML. Every rendered surface consumes
-// this same curated list rather than applying isolated filter-only overrides.
+// Preserve source identities and captured citation HTML. Reviewed display
+// metadata is shared by every surface without rewriting the captured records.
 export function curatePublications(sourcePublications) {
   const records = new Map(
     sourcePublications.map((publication) => [publication.id, publication]),
@@ -32,6 +32,12 @@ export function curatePublications(sourcePublications) {
         override.year > 2100)
     )
       throw Error(`Invalid curated publication year for ${id}`);
+    for (const field of ["displayTitle", "journalCitationHtml", "journalUrl"])
+      if (override[field] !== undefined &&
+          (typeof override[field] !== "string" || !override[field].trim()))
+        throw Error(`Invalid curated publication ${field} for ${id}`);
+    if (override.journalUrl && !/^https:\/\//.test(override.journalUrl))
+      throw Error(`Invalid curated publication journal URL for ${id}`);
   }
   return sourcePublications
     .map((publication) => {
@@ -41,6 +47,11 @@ export function curatePublications(sourcePublications) {
         projects: [...(override.projects ?? publication.projects)],
         year: override.year ?? publication.year,
         yearLabel: override.yearLabel || "Publication year",
+        ...Object.fromEntries(
+          ["displayTitle", "journalCitationHtml", "journalUrl"]
+            .filter((field) => override[field] !== undefined)
+            .map((field) => [field, override[field]]),
+        ),
       };
     })
     .sort((a, b) => Number(b.year || 0) - Number(a.year || 0));

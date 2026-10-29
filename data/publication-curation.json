@@ -1,6 +1,6 @@
 {
-  "reviewedOn": "2026-10-21",
-  "policy": "Apply reviewed publication projects and primary-citation years consistently without modifying captured content. Unlisted records retain audited source projects/year. Preserve source order within the same publication year. Keep the 2006 primary conference year for Precision measurement; its separate 2007 republication remains in the full citation.",
+  "reviewedOn": "2026-10-29",
+  "policy": "Apply reviewed publication projects and primary-citation years consistently without modifying captured content. Unlisted records retain audited source projects/year. Preserve source order within the same publication year. Keep the 2006 primary conference year for Precision measurement; its separate 2007 republication remains in the full citation. Reviewed display titles and journal destinations are presentation metadata; immutable captured identities and citation HTML remain intact. October 29 normalization removes displayed PDF download links while preserving archived files, citation text, authors, preprints, and highlight text.",
   "catalogs": {
     "dysprosium": {
       "label": "Dysprosium",
@@ -33,8 +33,18 @@
       "title": "Superradiant Charge Density Waves in a Driven Cavity-Matter Hybrid",
       "projects": ["cavmat"],
       "evidence": "2026 theory proposes optically driven transition-metal dichalcogenides inside a cavity, controlling electronic charge-density order: CavMat.",
-      "yearLabel": "Preprint year",
-      "yearEvidence": "Only an arXiv citation is supplied: arXiv:2603.28432 establishes the 2026 preprint year; no journal publication date is inferred."
+      "yearLabel": "Publication year",
+      "yearEvidence": "Nature primary article page reports published 19 October 2026 and cites Nat Commun (2026), DOI 10.1038/s41467-026-78382-3. It is an early accepted manuscript; no volume or article number is supplied. Preserve arXiv:2603.28432.",
+      "displayTitle": "Superradiant charge density waves in a driven hybrid cavity-matter system",
+      "journalCitationHtml": "<a href=\"https://www.nature.com/articles/s41467-026-78382-3\">Nature Communications (2026)</a>",
+      "year": 2026,
+      "citationEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://www.nature.com/articles/s41467-026-78382-3",
+        "doi": "10.1038/s41467-026-78382-3",
+        "published": "2026-10-19",
+        "status": "Early accepted article, pending final Version of Record; no volume/article number shown."
+      }
     },
     "publication-raman-phonon-polariton-condensation-in-a-transversely-pumped-cavity": {
       "title": "Raman-phonon-polariton condensation in a transversely pumped cavity",
@@ -69,7 +79,13 @@
     "publication-fabrication-of-micro-magnetic-traps-for-cold-neutral-atoms": {
       "title": "Fabrication of Micro-Magnetic Traps for Cold Neutral Atoms",
       "projects": ["sqcramscope"],
-      "evidence": "2003 Caltech/pre-LevLab atom-chip fabrication methods paper: lithographic microwires make magnetic traps for neutral atoms. Retain as historical SQCRAMscope/atom-chip foundation per user direction and original combined-project association, not as a CavMat paper or a report of the later SQCRAMscope instrument. Preserve its separate Pre-LevLab metadata."
+      "evidence": "2003 Caltech/pre-LevLab atom-chip fabrication methods paper: lithographic microwires make magnetic traps for neutral atoms. Retain as historical SQCRAMscope/atom-chip foundation per user direction and original combined-project association, not as a CavMat paper or a report of the later SQCRAMscope instrument. Preserve its separate Pre-LevLab metadata.",
+      "journalUrl": "https://doi.org/10.26421/QIC3.5-5",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://api.crossref.org/works/10.26421/QIC3.5-5",
+        "note": "Publisher-deposited Crossref DOI metadata verifies the article title, journal and volume/pages; use its DOI landing page instead of the original PDF or unlinked citation."
+      }
     },
     "publication-dynamic-polarizabilities-and-magic-wavelengths-for-dysprosium": {
       "title": "Dynamic polarizabilities and magic wavelengths for dysprosium",
@@ -84,7 +100,67 @@
     "publication-exploring-models-of-associative-memory-via-cavity-quantum-electrodynamics": {
       "title": "Exploring models of associative memory via cavity quantum electrodynamics",
       "year": 2012,
-      "yearEvidence": "Use final journal citation year 2012 rather than earlier source/preprint timestamp 2011. Primary citation: S. Gopalakrishnan, B. L. Lev, and P. Goldbart Exploring models of associative memory via cavity quantum electrodynamics Philosophical Magazine, 92 , 353 (2012). Special issue in honor of David Sherrington"
+      "yearEvidence": "Use final journal citation year 2012 rather than earlier source/preprint timestamp 2011. Primary citation: S. Gopalakrishnan, B. L. Lev, and P. Goldbart Exploring models of associative memory via cavity quantum electrodynamics Philosophical Magazine, 92 , 353 (2012). Special issue in honor of David Sherrington",
+      "journalUrl": "https://doi.org/10.1080/14786435.2011.637980",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/14786435.2011.637980",
+        "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
+      }
+    },
+    "publication-quantum-information-processing-in-optical-lattices-and-magnetic-microtraps": {
+      "title": "Quantum Information Processing in Optical Lattices and Magnetic Microtraps",
+      "journalUrl": "https://doi.org/10.1002/prop.200610325",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/prop.200610325",
+        "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
+      }
+    },
+    "publication-feasibility-of-detecting-single-atoms-using-photonic-bandgap-cavities": {
+      "title": "Feasibility of Detecting Single Atoms using Photonic Bandgap Cavities",
+      "journalUrl": "https://doi.org/10.1088/0957-4484/15/10/010",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://authors.library.caltech.edu/records/gmx1k-s3x59",
+        "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
+      }
+    },
+    "publication-quantum-networks-based-on-cavity-qed": {
+      "title": "Quantum Networks Based on Cavity QED",
+      "journalUrl": "https://doi.org/10.26421/QIC1.s-3",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://api.crossref.org/works/10.26421/QIC1.s-3",
+        "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
+      }
+    },
+    "publication-radiation-hardness-evaluation-of-the-analog-devices-ad9042-adc-for-use-in-the-cms-electromagnetic-calorimeter": {
+      "title": "Radiation Hardness Evaluation of the Analog Devices AD9042 ADC for Use in the CMS Electromagnetic Calorimeter",
+      "journalUrl": "https://doi.org/10.1016/S0168-9002(98)00775-X",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://api.crossref.org/works/10.1016/S0168-9002(98)00775-X",
+        "note": "Publisher-deposited Crossref DOI metadata verifies the article title, journal and volume/pages; use its DOI landing page instead of the original PDF or unlinked citation."
+      }
+    },
+    "publication-powerful-narrow-line-source-of-blue-light-for-laser-cooling-yb-er-and-dysprosium-atoms": {
+      "title": "Powerful narrow-line source of blue light for laser cooling Yb/Er and Dysprosium atoms",
+      "journalUrl": "https://doi.org/10.1117/12.841632",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://api.crossref.org/works/10.1117/12.841632",
+        "note": "Publisher-deposited Crossref DOI metadata verifies the article title, journal and volume/pages; use its DOI landing page instead of the original PDF or unlinked citation."
+      }
+    },
+    "publication-precision-measurement-based-on-ultracold-atoms-and-cold-molecules": {
+      "title": "Precision measurement based on ultracold atoms and cold molecules",
+      "journalUrl": "https://doi.org/10.1063/1.2400637",
+      "journalUrlEvidence": {
+        "verifiedOn": "2026-10-29",
+        "url": "https://api.crossref.org/works/10.1063/1.2400637",
+        "note": "Publisher-deposited Crossref metadata verifies the 2006 primary AIP Conference Proceedings 869, 80–91 citation. Keep its separate 2007 republication text and the 2006 catalog year."
+      }
     }
   },
   "reviewEvidence": "publication-review.json"

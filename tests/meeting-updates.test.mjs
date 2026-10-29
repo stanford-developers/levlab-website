@@ -24,7 +24,7 @@ test("home and footer reflect the meeting decisions", () => {
     assert.ok(footer.includes(label), `Footer needs ${label}`);
 });
 
-test("People directory hides selected alumni while retaining profiles and the new portrait", () => {
+test("People directory reflects alumni status and supplied portraits while retaining profiles", () => {
   const directory = page("/people");
   for (const name of ["Alec Shelley", "Brandon Freudenstein", "Alex Kiral", "Henry Hunt"])
     assert.doesNotMatch(directory, new RegExp(name));
@@ -36,6 +36,18 @@ test("People directory hides selected alumni while retaining profiles and the ne
   ]) assert.ok(info.routes.includes(route), `${route} historical profile remains available`);
   for (const route of ["/people", "/research/cavmat", "/node/636"])
     assert.match(page(route), /samuel-aronson\.png/, `${route} shows Sam's supplied portrait`);
+  for (const route of ["/people", "/research/rubidium", "/node/631"])
+    assert.match(page(route), /giulia-socolof\.jpg/, `${route} shows Giulia's supplied portrait`);
+  const directoryGroups = nodes("/people", (node) => node.tag === "section" && (node.attrs.class || "").includes("directory-group"));
+  const formerPostdocs = directoryGroups.find((node) => /^Former Postdocs\b/.test(text(node).trim()));
+  assert.ok(formerPostdocs);
+  assert.match(text(formerPostdocs), /Kuan-Yu Lin/);
+  for (const group of directoryGroups.filter((node) => (node.attrs.class || "").includes("directory-current")))
+    assert.doesNotMatch(text(group), /Kuan-Yu Lin/);
+  const dyTeam = nodes("/research/dysprosium", (node) => (node.attrs?.class || "").includes("team-grid"))[0];
+  assert.doesNotMatch(text(dyTeam), /Kuan-Yu Lin/);
+  assert.match(visible("/people/mr-kuan-yu-lin"), /Former lab member/);
+  assert.match(visible("/people/mr-kuan-yu-lin"), /Topological pumping of a 1D dipolar gas/);
   assert.match(visible("/people"), /Stanford Fortitude Professor Professor of Physics and Applied Physics/);
   assert.match(visible("/people"), /Rb Spin Glass Machine/);
   assert.match(page("/people/person-3-0"), /Stanford Fortitude Professor/);
@@ -65,6 +77,10 @@ test("project descriptions, related news, and research overview match approved c
   assert.match(research, /More about our research/);
   assert.doesNotMatch(research, /<details[^>]*class="[^"]*research-overview/);
   for (const route of [dy, rb, "/research/cavmat", sq]) {
+    const previews = nodes(route, (node) => node.tag === "div" && (node.attrs.class || "").includes("publication-cards"))[0];
+    assert.doesNotMatch(text(previews), /arXiv|Featured in|Selected for|Highlighted in/i);
+    assert.equal(all(previews, (node) => node.tag === "article").length, 3);
+    assert.equal(all(previews, (node) => (node.attrs?.class || "").includes("publication-highlights")).length, 0);
     const team = nodes(route, (node) => node.tag === "div" && (node.attrs.class || "").includes("team-grid"))[0];
     if (team) assert.doesNotMatch(text(team), /Principal Investigator|\bPI\b/);
   }

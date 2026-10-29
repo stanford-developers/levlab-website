@@ -8,6 +8,11 @@ export const hiddenDirectoryNames = new Set([
 export const hiddenDirectoryGroups = new Set([
   "Principal Investigator", "Former Undergraduate & Masters Students",
 ]);
+export const personUpdates = {
+  "Samuel Aronson": { image: "/images/samuel-aronson.png" },
+  "Giulia Socolof": { image: "/images/giulia-socolof.jpg" },
+  "Kuan-Yu Lin": { group: "Former Postdocs" },
+};
 export const benTitle = "Stanford Fortitude Professor; Professor of Physics and Applied Physics";
 export function terminology(value = "") {
   return value.replace(/confocal\s+multimode/gi, "multimode")

@@ -25,7 +25,7 @@ Re-run the default build before reviewing the GitHub preview path. `BASE_PATH` i
 - `data/content.json`: editable publications, news, projects, people, directory groups, and source page records. `importedAt` records capture time, not live synchronization.
 - `public/sites/default/files/`: copies of public Drupal images, PDFs, and media. Existing filenames are retained so file links work after the domain switch.
 - `public/extracted/`: the original supporter logos; the Packard logo is archived but no longer displayed.
-- `public/images/`: approved science imagery and user-supplied portraits, including Samuel Aronson’s October 29 photo.
+- `public/images/`: approved science imagery and user-supplied portraits, including Samuel Aronson’s and Giulia Socolof’s October 29 photos.
 - `public/site.css`: approved beige/white sections, scientific hero, compact news, responsive layout.
 - `scripts/build.mjs`: renders complete HTML with support for project preview and final root paths.
 - `public/site.js`: publication search/filtering and numbered news pagination. All content and navigation work without JavaScript.
@@ -152,4 +152,6 @@ Research separates the three active projects from a compact Past projects entry.
 
 `scripts/site-editorial.mjs` applies the meeting’s descriptive wording and directory omissions without changing captured records. Use “multimode” in editorial copy; preserve exact published paper titles. Research background is always visible; project news previews show at most three stories, with “Cooking with a quantum gas” included for SQCRAMscope. The News archive has pagination without search or a story count.
 
-`scripts/publication-display.mjs` renders bold title, authors, linked journal citation, arXiv, then highlights on all publication surfaces. Counts are hidden. `data/publication-curation.json` also supports `displayTitle`, `journalCitationHtml`, and `journalUrl` for verified final journal citations; the superradiant charge-density-wave paper now links to its October 2026 Nature Communications accepted article. Retain the original title as the curation identity guard.
+`scripts/publication-display.mjs` renders bold title, authors, linked journal citation, arXiv, then highlights in full publication listings and detail pages. Project preview cards retain their compact linked title and journal citation (year only for unpublished work), without arXiv or highlights; full author lists and highlights stay on the linked publication pages. Counts are hidden. `data/publication-curation.json` also supports `displayTitle`, `journalCitationHtml`, and `journalUrl` for verified final journal citations; the superradiant charge-density-wave paper now links to its October 2026 Nature Communications accepted article. Retain the original title as the curation identity guard.
+
+`personUpdates` in `scripts/site-editorial.mjs` applies supplied portraits and current membership changes to directory, project-team, and profile surfaces. Kuan-Yu Lin belongs in Former Postdocs and is excluded from the current Dysprosium team; his historical profile and publications remain available.

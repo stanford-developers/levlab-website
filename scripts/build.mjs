@@ -21,14 +21,13 @@ import {
 } from "./html.mjs";
 import { getPublicationDisplay } from "./publication-display.mjs";
 import {
-  hiddenDirectoryNames, hiddenDirectoryGroups, benTitle, terminology,
+  hiddenDirectoryNames, hiddenDirectoryGroups, personUpdates, benTitle, terminology,
   editorialHtml, projectDescription, newsTitle, projectNewsPreview, withoutPdfLinks,
 } from "./site-editorial.mjs";
 const contentSource = fs.readFileSync("data/content.json", "utf8");
 const data = JSON.parse(contentSource);
-// User-supplied portrait, October 29; apply to every profile/card surface.
-data.people = data.people.map((person) => person.name === "Samuel Aronson"
-  ? { ...person, image: "/images/samuel-aronson.png" } : person);
+// Apply approved people updates across directory, team, and profile surfaces.
+data.people = data.people.map((person) => ({ ...person, ...personUpdates[person.name] }));
 const news = curateNews(data.news).map((story) => ({
   ...story, title: newsTitle(story.title),
   bodyHtml: editorialHtml(story.bodyHtml), summary: terminology(story.summary || ""),
@@ -515,14 +514,21 @@ function publicationList(items, filters = true) {
 }
 function projectPublicationCards(items) {
   return `<div class="publication-cards">${items
-    .map((publication) => `<article id="${e(publication.id)}">${formattedPublication(publication, true)}</article>`)
+    .map((publication) => {
+      // Project cards preview the paper; full citations and highlights live on its page.
+      const display = getPublicationDisplay(publication);
+      const destination = publication.path
+        ? local(canonical(publication.path))
+        : `${local("/publications")}#${e(publication.id)}`;
+      const citation = display.journalHtml || e(publication.year || "");
+      return `<article id="${e(publication.id)}"><h3><a href="${destination}">${rich(display.titleHtml, publication.path)}</a></h3><p>${rich(citation, publication.path)}</p></article>`;
+    })
     .join("")}</div>`;
 }
 // Approved mockup directory order; card affiliations derive from current source records.
 const directoryOrder = [
   "Benjamin Lev",
   "Samuel Aronson",
-  "Kuan-Yu Lin",
   "Kangning Yang",
   "Han Hiller",
   "Derek Baldwin",
@@ -821,7 +827,7 @@ add(
       .filter((group) => !hiddenDirectoryGroups.has(group.title))
       .map((g, i) => {
         const order = directoryOrder;
-        const people = data.people.filter((p) => g.people.includes(p.path) && !hiddenDirectoryNames.has(p.name));
+        const people = data.people.filter((p) => p.group === g.title && !hiddenDirectoryNames.has(p.name));
         if (!g.title.startsWith("Former"))
           people.sort((a, b) => {
             const first = order.indexOf(a.name),
@@ -851,7 +857,7 @@ for (const project of researchProjects) {
   const pubs = publications.filter((p) => p.projects.includes(project.slug));
   const publicationArchive = publicationCatalogs[project.slug].path;
   const recentPublications = pubs.slice(0, 3);
-  const team = data.people.filter((p) => project.team.includes(p.path) && !hiddenDirectoryNames.has(p.name));
+  const team = data.people.filter((p) => project.team.includes(p.path) && !p.group.startsWith("Former") && !hiddenDirectoryNames.has(p.name));
   add(
     project.path,
     terminology(project.title),

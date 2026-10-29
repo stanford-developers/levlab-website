@@ -125,4 +125,4 @@ if (archive && pagination) {
     filter();
   });
 }
-if (search) filter();
+if (search || archive) filter();

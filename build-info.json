@@ -1,7 +1,7 @@
 {
   "basePath": "/levlab-website",
   "origin": "https://stanford-developers.github.io",
-  "builtAt": "2026-10-29T22:34:15.454Z",
+  "builtAt": "2026-10-29T23:13:59.433Z",
   "contentHash": "c56cc23339da298e01554f4f8ad561c57a263a9c046474262377912251b05fd9",
   "publicationCurationHash": "6075f7aa9309652bcaec13c679cf537b51ba7734fd0f5c2ee626758fbb437b5f",
   "newsCurationHash": "362d8d2567e1b7604460aa07b80c1a319cdfe7a3a766741377312969ebe71ab3",
@@ -531,7 +531,7 @@
   },
   "publication": {
     "branch": "main",
-    "sourceCommit": "aec6280edbcaa04de45140151ec6788c02705084",
+    "sourceCommit": "d1507471e2c96b22bcec5ba8c1dac732c9761998",
     "method": "branch"
   }
 }

@@ -7,6 +7,31 @@ const pageSize = Number(archive?.dataset.pageSize) || 10;
 let project = "all";
 let page = 1;
 
+function updateProjectButtons() {
+  filters.forEach((button) => {
+    const active = button.dataset.filter === project;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+function readPublicationLocation() {
+  const url = new URL(window.location.href);
+  const requested = url.searchParams.get("project");
+  project = filters.some((button) => button.dataset.filter === requested)
+    ? requested
+    : "all";
+  if (search) search.value = url.searchParams.get("q") || "";
+  updateProjectButtons();
+}
+function publicationUrl() {
+  const url = new URL(window.location.href);
+  const query = (search?.value || "").trim();
+  if (project !== "all") url.searchParams.set("project", project);
+  else url.searchParams.delete("project");
+  if (query) url.searchParams.set("q", query);
+  else url.searchParams.delete("q");
+  return url.pathname + url.search + url.hash;
+}
 function readArchiveLocation() {
   const url = new URL(window.location.href);
   const requested = Number(url.searchParams.get("page"));
@@ -86,18 +111,27 @@ function filter() {
 filters.forEach((button) =>
   button.addEventListener("click", () => {
     project = button.dataset.filter;
-    filters.forEach((b) => {
-      b.classList.toggle("active", b === button);
-      b.setAttribute("aria-pressed", String(b === button));
-    });
+    updateProjectButtons();
     filter();
+    const destination = publicationUrl();
+    if (new URL(destination, window.location.href).href !== window.location.href)
+      window.history.pushState(null, "", destination);
   }),
 );
 search?.addEventListener("input", () => {
   page = 1;
   filter();
   if (archive) window.history.replaceState(null, "", archiveUrl(page));
+  else if (filters.length)
+    window.history.replaceState(null, "", publicationUrl());
 });
+if (filters.length && !archive) {
+  readPublicationLocation();
+  window.addEventListener("popstate", () => {
+    readPublicationLocation();
+    filter();
+  });
+}
 if (archive && pagination) {
   readArchiveLocation();
   pagination.addEventListener("click", (event) => {
@@ -125,4 +159,4 @@ if (archive && pagination) {
     filter();
   });
 }
-if (search || archive) filter();
+if (search || archive || filters.length) filter();

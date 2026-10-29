@@ -1687,6 +1687,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .past-project-card img { display: block; width: 180px; height: 135px; object-fit: contain; }
 .past-project-card h3 { font-family: var(--serif); margin: 0 0 6px; font-size: 25px; }
 .past-project-card h3 a { text-decoration: none; }
+.past-project-card h3 a:is(:hover, :focus-visible) { text-decoration: underline; text-underline-offset: 4px; }
 .past-project-card p { margin: 0 0 10px; font-size: 16px; }
 .project-heading .project-status { font-family: var(--sans); font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: var(--cardinal, #8c1515); margin: 0 0 10px; }
 @media (max-width: 680px) {
@@ -1722,7 +1723,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   margin: 0 0 28px;
   font-size: 21px;
   line-height: 1.55;
-  text-align: justify;
+  text-align: left;
   text-wrap: pretty;
   hyphens: none;
 }
@@ -1742,7 +1743,13 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   object-fit: cover;
   transition: transform 180ms ease;
 }
-.project-cards .postcard-image.cavmat-apparatus img { padding: 0; object-fit: cover; }
+/* Crop the white side margins embedded in this asset, preserving its original file. */
+.project-cards .postcard-image.cavmat-apparatus img {
+  width: 108%;
+  margin-left: -4.7%;
+  padding: 0;
+  object-fit: cover;
+}
 .project-cards .vertical-postcard:is(:hover, :focus-within) .postcard-image img { transform: scale(1.025); }
 .postcard-body > p { text-align: left; }
 .project-heading p:not(.project-status),
@@ -1802,8 +1809,8 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
   .hero::before { inset: 0 0 auto; height: 210px; background-position: center 46%; }
   .hero-overlay { background: linear-gradient(180deg, transparent 0, rgb(8 27 37 / 8%) 140px, var(--shell-background) 210px); }
   .hero-content { padding-top: 234px; }
-  .hero-content h1 { max-width: 460px; font-size: clamp(36px, 7vw, 44px); }
-  .hero-copy > p { max-width: 340px; font-size: 18px; }
+  .hero-content h1 { max-width: 460px; font-size: clamp(34px, 7vw, 44px); }
+  .hero-copy > p { max-width: 280px; font-size: 18px; }
   .hero-button { padding-inline: 18px; font-size: 16px; }
   .home-research .section-heading > p { font-size: 20px; }
   .project-news { padding: 22px; }

@@ -335,9 +335,10 @@ test("news and people are complete and project associations render", () => {
       archiveLink,
       `${p.slug} must link to its full publication catalog`,
     );
-    const archiveRoute = archiveLink.attrs.href
-      .slice(info.basePath.length)
-      .replace(/\/$/, "");
+    const archiveUrl = new URL(archiveLink.attrs.href, info.origin);
+    assert.equal(archiveUrl.pathname, `${info.basePath}/publications/`);
+    assert.equal(archiveUrl.searchParams.get("project"), p.slug);
+    const archiveRoute = "/publications";
     for (const id of relatedIds)
       assert.ok(
         html(archiveRoute).includes(`id="${id}"`),
@@ -804,7 +805,7 @@ test("Past SQCRAMscope project separates historical science from active CavMat",
   assert.ok(past.includes("micron-resolution magnetometer"));
   assert.ok(past.includes("locally image the electron nematic domains"));
   assert.ok(past.includes("/research/sqcramscope/news/"));
-  assert.ok(past.includes("/publications/cryogenic-atom-chip-microscope/"));
+  assert.ok(past.includes("/publications/?project=sqcramscope"));
   const current = html("/research/cavmat");
   assert.ok(!current.includes("micron-resolution magnetometer"));
   assert.ok(current.includes("photon-material interaction"));

@@ -28,7 +28,7 @@ Re-run the default build before reviewing the GitHub preview path. `BASE_PATH` i
 - `public/images/`: approved science imagery and user-supplied portraits, including Samuel Aronson’s and Giulia Socolof’s October 29 photos.
 - `public/site.css`: approved beige/white sections, scientific hero, compact news, responsive layout.
 - `scripts/build.mjs`: renders complete HTML with support for project preview and final root paths.
-- `public/site.js`: publication search/filtering and numbered news pagination. All content and navigation work without JavaScript.
+- `public/site.js`: publication search/filtering and numbered news pagination. Project publication links open `/publications/?project=<project>` with the matching filter selected; the URL tracks project/search state and supports reload and browser history. Without JavaScript, the full catalog remains readable.
 
 ### Add a publication
 

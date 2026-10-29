@@ -59,6 +59,7 @@ const researchProjects = [
 ];
 
 const styleVersion = createHash("sha256").update(fs.readFileSync("public/site.css")).digest("hex").slice(0, 12);
+const scriptVersion = createHash("sha256").update(fs.readFileSync("public/site.js")).digest("hex").slice(0, 12);
 const contentHash = createHash("sha256").update(contentSource).digest("hex");
 const sourceAssetPaths = JSON.parse(
   fs.readFileSync("data/source-asset-paths.json", "utf8"),
@@ -135,6 +136,7 @@ const canonical = (p) => {
   return p;
 };
 const local = (p) => basePath + (p === "/" ? "/" : p.replace(/\/$/, "") + "/");
+const publicationFilterUrl = (project) => `${local("/publications")}?project=${encodeURIComponent(project)}`;
 const problems = [];
 const previewFallbacks = new Map();
 if (fs.existsSync("data/preview-image-fallbacks.json")) {
@@ -260,6 +262,8 @@ function rewriteUrl(value, attr = "href", pagePath = "/") {
     if (/^\/(admin|user)(\/|$)/.test(u.pathname)) return "";
     const p = canonical(u.pathname.replace(/\/$/, "") || "/");
     if (p === "/news" && u.searchParams.has("page")) return local("/news");
+    const publicationProject = Object.entries(publicationCatalogs).find(([, catalog]) => catalog.path === p)?.[0];
+    if (attr === "href" && publicationProject) return publicationFilterUrl(publicationProject) + u.hash;
     if (
       !known.has(u.pathname) &&
       !known.has(p) &&
@@ -372,7 +376,7 @@ function shell(title, body, active = "home", route = "/") {
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="${e(origin + local(route))}">
 <link rel="stylesheet" href="${basePath}/site.css?v=${styleVersion}">
-<script defer src="${basePath}/site.js">
+<script defer src="${basePath}/site.js?v=${scriptVersion}">
 </script>
 </head>
 <body>
@@ -855,7 +859,7 @@ for (const project of researchProjects) {
     n.projects.includes(project.slug),
   );
   const pubs = publications.filter((p) => p.projects.includes(project.slug));
-  const publicationArchive = publicationCatalogs[project.slug].path;
+  const publicationArchive = publicationFilterUrl(project.slug);
   const recentPublications = pubs.slice(0, 3);
   const team = data.people.filter((p) => project.team.includes(p.path) && !p.group.startsWith("Former") && !hiddenDirectoryNames.has(p.name));
   add(
@@ -881,7 +885,7 @@ for (const project of researchProjects) {
         ? section(
             heading("Related publications") +
               projectPublicationCards(recentPublications) +
-              `<div class="section-action"><a class="text-button" href="${local(publicationArchive)}">View all publications</a></div>`,
+              `<div class="section-action"><a class="text-button" href="${publicationArchive}">View all publications</a></div>`,
             true,
           )
         : "") +

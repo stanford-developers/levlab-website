@@ -11,6 +11,7 @@ export const hiddenDirectoryGroups = new Set([
 export const personUpdates = {
   "Samuel Aronson": { image: "/images/samuel-aronson.png" },
   "Giulia Socolof": { image: "/images/giulia-socolof.jpg" },
+  "Pranav Parakh": { image: "/images/pranav-parakh-headshot.png" },
   "Kuan-Yu Lin": { group: "Former Postdocs", role: "Graduate Student and Postdoc" },
 };
 export const benTitle = "Stanford Fortitude Professor; Professor of Physics and Applied Physics";

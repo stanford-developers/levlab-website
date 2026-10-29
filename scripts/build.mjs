@@ -866,7 +866,7 @@ for (const project of researchProjects) {
     project.path,
     terminology(project.title),
     breadcrumb("Research", "/research") +
-      `<section class="project-heading"><div class="site-width project-heading-grid"><div>${project.past ? '<p class="project-status">Past project</p>' : ""}<h1>${e(terminology(project.title))}</h1><p>${e(terminology(project.summary))}</p></div>${image(project.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : project.image, terminology(project.title), project.slug === "cavmat" || project.past ? "project-heading-image apparatus-photo" : "project-heading-image", "eager")}</div></section>` +
+      `<section class="project-heading"><div class="site-width project-heading-grid"><div>${project.past ? '<p class="project-status">Past project</p>' : ""}<h1>${e(terminology(project.title))}</h1><p>${e(terminology(project.summary))}</p></div>${image(project.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : project.image, terminology(project.title), project.slug === "cavmat" ? "project-heading-image apparatus-photo cavmat-apparatus-photo" : project.past ? "project-heading-image apparatus-photo" : "project-heading-image", "eager")}</div></section>` +
       section(
         `<div class="research-intro"><div class="prose">${rich(projectDescription(project))}</div>${
           relatedNews.length

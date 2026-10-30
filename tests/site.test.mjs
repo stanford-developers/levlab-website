@@ -580,6 +580,7 @@ test("directory, profiles and contact use consistent public-facing structures", 
   const contact = html("/contact-jobs");
   for (const value of [
     "Contact and directions",
+    "Spilker Building",
     "Administrative assistance",
     "Nyein Su Mon",
     "650-725-4942",
@@ -592,7 +593,7 @@ test("directory, profiles and contact use consistent public-facing structures", 
     assert.ok(contact.includes(value), value);
   assert.ok(contact.includes('class="site-width contact-layout"'));
   assert.doesNotMatch(contact, /class="contact-us/);
-  assert.doesNotMatch(contact, /Visit LevLab|Spilker Building|Room 335|Room 136|Website contacts|site-ownership/);
+  assert.doesNotMatch(contact, /Visit LevLab|Room 335|Room 136|Website contacts|site-ownership/);
   const publicationTree = parse(html("/publications"));
   const filters = all(publicationTree, (node) => node.attrs?.["data-filter"]);
   assert.deepEqual(

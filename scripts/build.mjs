@@ -802,7 +802,7 @@ add(
     intro("Contact & Jobs") +
     `<section class="section contact-section"><div class="site-width contact-layout">
       <div class="address-card"><h2>Contact and directions</h2>
-        <p>348 Via Pueblo Mall<br>Stanford University<br>Stanford, CA 94305-4088</p>
+        <p>Spilker Building<br>348 Via Pueblo Mall<br>Stanford University<br>Stanford, CA 94305-4088</p>
         <div class="contact-directions"><a class="text-button" href="${e(contactLink("Spilker Building"))}">Campus map and directions</a><a href="${e(contactLink("Parking Directions"))}">Parking Directions</a></div>
       </div>
       <aside class="callout-box" aria-label="Administrative assistance"><h2>Administrative assistance</h2><h3>Nyein Su Mon</h3>

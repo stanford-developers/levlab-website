@@ -161,7 +161,7 @@ summary {
   align-items: center;
   overflow: hidden;
   background:
-    url("/levlab-website/images/cavity.jpg") center 46% / cover no-repeat,
+    url("/images/cavity.jpg") center 46% / cover no-repeat,
     var(--teal-deep);
   color: var(--white);
 }
@@ -1717,7 +1717,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .hero::before {
   position: absolute;
   inset: 0 0 0 25%;
-  background: url("/levlab-website/images/cavity.jpg") center 46% / cover no-repeat;
+  background: url("/images/cavity.jpg") center 46% / cover no-repeat;
   content: "";
 }
 .hero-overlay {

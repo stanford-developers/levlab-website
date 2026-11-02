@@ -161,7 +161,7 @@ summary {
   align-items: center;
   overflow: hidden;
   background:
-    url("/images/cavity.jpg") center 46% / cover no-repeat,
+    url("/images/optimized/chamber-1920.webp") center 46% / cover no-repeat,
     var(--teal-deep);
   color: var(--white);
 }
@@ -1717,7 +1717,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .hero::before {
   position: absolute;
   inset: 0 0 0 25%;
-  background: url("/images/cavity.jpg") center 46% / cover no-repeat;
+  background: url("/images/optimized/chamber-1920.webp") center 46% / cover no-repeat;
   content: "";
 }
 .hero-overlay {
@@ -1819,7 +1819,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 }
 @media (max-width: 680px) {
   .hero { min-height: 470px; }
-  .hero::before { inset: 0 0 auto; height: 210px; background-position: center 46%; }
+  .hero::before { inset: 0 0 auto; height: 210px; background-position: center 46%; background-image: url("/images/optimized/chamber-960.webp"); }
   .hero-overlay { background: linear-gradient(180deg, transparent 0, rgb(8 27 37 / 8%) 140px, var(--shell-background) 210px); }
   .hero-content { padding-top: 234px; }
   .hero-content h1 { max-width: 460px; font-size: clamp(34px, 7vw, 44px); }

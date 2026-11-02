@@ -1619,7 +1619,7 @@ h1 a:focus-visible, h2 a:focus-visible, h3 a:focus-visible, h4 a:focus-visible, 
 .timeline summary::after { content: "+"; flex: none; width: 20px; margin-left: auto; color: var(--teal); font-size: 24px; text-align: center; }
 .timeline details[open] > summary::after { content: "−"; }
 @media (max-width: 960px) {
-  .site-header .brand-shell { display: grid; grid-template-columns: 1fr auto; position: relative; align-items: center; }
+  .site-header .brand-shell { display: grid; grid-template-columns: 1fr auto; position: relative; z-index: 2; align-items: center; }
   .site-header .header-navigation { border: 0; }
   .site-header .mobile-nav { padding: 0; }
   .site-header .mobile-nav summary { padding: 12px; }

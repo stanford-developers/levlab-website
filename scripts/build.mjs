@@ -4,6 +4,7 @@ import { curateNews, newsCurationHash } from "./news-curation.mjs";
 import { createHash } from "node:crypto";
 import { createAssetResolver, encodedAssetPath } from "./assets.mjs";
 import { imageDimensions } from "./image-dimensions.mjs";
+import { loadOptimizedImages } from "./optimized-images.mjs";
 import {
   curatePublications,
   publicationCatalogs,
@@ -65,6 +66,7 @@ const sourceAssetPaths = JSON.parse(
   fs.readFileSync("data/source-asset-paths.json", "utf8"),
 );
 const assets = createAssetResolver("public", sourceAssetPaths);
+const optimizedImages = loadOptimizedImages();
 const reviewedHistoricalLinks = new Set(
   JSON.parse(fs.readFileSync("data/legacy-source-limitations.json", "utf8"))
     .filter(
@@ -322,7 +324,7 @@ const clean = (html, p = "/") =>
 const rich = (n, sourcePath = "/") => clean(n || "", sourcePath);
 const strip = (s) => text(parse(s));
 const displayName = (name) => name.replace(/`([^']+)'/g, "“$1”");
-function image(src, alt = "", className = "", loading = "lazy") {
+function image(src, alt = "", className = "", loading = "lazy", sizes = null) {
   if (!src) return "";
   // Prefer the full original image when the public archive includes it.
   const full = src
@@ -348,7 +350,18 @@ function image(src, alt = "", className = "", loading = "lazy") {
     ? decodeURIComponent(new URL(url, "https://local.test").pathname.slice(basePath.length))
     : null;
   const dimensions = imageDimensions(localPath ? assets.exactFile(localPath) : null);
-  return `<img src="${e(url)}" alt="${e(alt)}"${dimensions ? ` width="${dimensions.width}" height="${dimensions.height}"` : ""}${className ? ` class="${e(className)}"` : ""} loading="${loading === "eager" ? "eager" : "lazy"}">`;
+  const optimized = optimizedImages.get(localPath);
+  const displayUrl = optimized ? basePath + optimized.variants.at(-1).src : url;
+  // Cover-cropped news photos must have enough pixels for their full scaled
+  // width, including the part hidden outside the 180 × 144 desktop thumbnail.
+  if (sizes === "news-card" && dimensions) {
+    const ratio = dimensions.width / dimensions.height;
+    sizes = `(max-width: 680px) max(calc(100vw - 32px), ${Math.ceil(180 * ratio)}px), ${Math.ceil(Math.max(180, 144 * ratio))}px`;
+  }
+  const responsive = optimized && sizes
+    ? ` srcset="${e(optimized.variants.map((variant) => `${basePath}${variant.src} ${variant.width}w`).join(", "))}" sizes="${e(sizes)}"`
+    : "";
+  return `<img src="${e(displayUrl)}"${responsive} alt="${e(alt)}"${dimensions ? ` width="${dimensions.width}" height="${dimensions.height}"` : ""}${className ? ` class="${e(className)}"` : ""} loading="${loading === "eager" ? "eager" : "lazy"}">`;
 }
 const nav = [
   ["/", "Home", "home"],
@@ -375,6 +388,8 @@ function shell(title, body, active = "home", route = "/") {
 <meta name="description" content="${e(description)}">
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="${e(origin + local(route))}">
+${route === "/" ? `<link rel="preload" as="image" type="image/webp" href="${basePath}/images/optimized/chamber-1920.webp" media="not all and (max-width: 680px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="${basePath}/images/optimized/chamber-960.webp" media="(max-width: 680px)" fetchpriority="high">` : ""}
 <link rel="stylesheet" href="${basePath}/site.css?v=${styleVersion}">
 <script defer src="${basePath}/site.js?v=${scriptVersion}">
 </script>
@@ -425,7 +440,7 @@ const breadcrumb = (label, url) =>
 const landingBreadcrumb = (label) =>
   `<nav class="breadcrumbs site-width" aria-label="Breadcrumb"><a href="${local("/")}">Home</a><span aria-hidden="true">/</span><span>${e(label)}</span></nav>`;
 const projectCards = (headingTag = "h3") =>
-  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(terminology(p.title))}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, terminology(p.title))}</a><div class="postcard-body"><${headingTag}><a href="${local(p.path)}">${e(terminology(p.title))}</a></${headingTag}><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
+  `<div class="project-cards">${data.projects.map((p) => `<article class="vertical-postcard"><a class="postcard-image${p.slug === "cavmat" ? " cavmat-apparatus" : ""}" href="${local(p.path)}" aria-label="${e(terminology(p.title))}">${image(p.slug === "cavmat" ? "/images/cavmat-apparatus-clean.png" : p.image, terminology(p.title), "", "lazy", "(max-width: 680px) calc(120vw - 38px), (max-width: 960px) calc(60vw - 47px), (max-width: 1208px) calc(40vw - 43px), 440px")}</a><div class="postcard-body"><${headingTag}><a href="${local(p.path)}">${e(terminology(p.title))}</a></${headingTag}><p>${e(p.summary)}</p><a class="arrow-link" href="${local(p.path)}">Explore ${e(p.shortTitle)} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div>`;
 const supporters = () =>
   section(
     `<div class="section-heading centered"><h2>Our work is made possible by</h2></div>
@@ -450,7 +465,7 @@ function newsSummary(story) {
 }
 function newsCards(items, searchable = false, paginated = false) {
   const headingTag = searchable ? "h2" : "h3";
-  return `<div class="news-cards">${items.map((n, index) => `<article${paginated && index % 10 === 0 ? ` id="news-page-${Math.floor(index / 10) + 1}"` : ""} class="news-card${n.image ? "" : " no-image"}"${searchable ? ` data-record data-projects="${e(n.projects.join(","))}"` : ""}>${n.image ? `<a class="news-card-image" href="${local(canonical(n.path))}" aria-label="${e(n.title)}">${image(n.image)}</a>` : ""}<div class="news-card-body"><${headingTag}><a href="${local(canonical(n.path))}">${e(n.title)}</a></${headingTag}>${n.dateLabel ? `<time class="content-date"${n.date ? ` datetime="${e(n.date)}"` : ""}>${e(n.dateLabel)}</time>` : ""}<p class="content-summary">${e(newsSummary(n))}</p></div></article>`).join("")}</div>`;
+  return `<div class="news-cards">${items.map((n, index) => `<article${paginated && index % 10 === 0 ? ` id="news-page-${Math.floor(index / 10) + 1}"` : ""} class="news-card${n.image ? "" : " no-image"}"${searchable ? ` data-record data-projects="${e(n.projects.join(","))}"` : ""}>${n.image ? `<a class="news-card-image" href="${local(canonical(n.path))}" aria-label="${e(n.title)}">${image(n.image, "", "", "lazy", "news-card")}</a>` : ""}<div class="news-card-body"><${headingTag}><a href="${local(canonical(n.path))}">${e(n.title)}</a></${headingTag}>${n.dateLabel ? `<time class="content-date"${n.date ? ` datetime="${e(n.date)}"` : ""}>${e(n.dateLabel)}</time>` : ""}<p class="content-summary">${e(newsSummary(n))}</p></div></article>`).join("")}</div>`;
 }
 const searchBox = (label, placeholder) =>
   `<div class="search-control"><label for="content-search">${e(label)}</label><input id="content-search" data-search type="search" placeholder="${e(placeholder)}"></div>`;

@@ -1,0 +1,289 @@
+{
+  "/images/cavity.jpg": {
+    "sourceSha256": "4ee5ec4ef61b5a6fcaf494562339f52a188b5132d5c2b9dc92922d10e47a7498",
+    "width": 2992,
+    "height": 2000,
+    "variants": [
+      {
+        "src": "/images/optimized/chamber-240.webp",
+        "width": 240,
+        "height": 160,
+        "bytes": 20238,
+        "sha256": "a015c0600bf01462d7913d82f58c523d3c933d65e7f3097eacaa4e039209deff"
+      },
+      {
+        "src": "/images/optimized/chamber-480.webp",
+        "width": 480,
+        "height": 321,
+        "bytes": 53830,
+        "sha256": "35847159c74e9c55060a3ad6a528c295c82a253bd66f8925a0eda03a272e7b22"
+      },
+      {
+        "src": "/images/optimized/chamber-640.webp",
+        "width": 640,
+        "height": 428,
+        "bytes": 80652,
+        "sha256": "64926ea0733f30fd206cbaf8b2524f8110043f611b56df97bc1222f8e6b16c75"
+      },
+      {
+        "src": "/images/optimized/chamber-960.webp",
+        "width": 960,
+        "height": 642,
+        "bytes": 132100,
+        "sha256": "1677f84acdde5e01ac6919228e915dc65fa4e4384005ae34c9b7cb07978e1ba2"
+      },
+      {
+        "src": "/images/optimized/chamber-1440.webp",
+        "width": 1440,
+        "height": 963,
+        "bytes": 236350,
+        "sha256": "b724250c2dd163a9458264d6f1e35ad7f2b66306b3f227002ea740dd59b09746"
+      },
+      {
+        "src": "/images/optimized/chamber-1920.webp",
+        "width": 1920,
+        "height": 1283,
+        "bytes": 358410,
+        "sha256": "122c0af77eb410ee529f916b7aedee5866504a176f087500aea0923dcfcceeb5"
+      },
+      {
+        "src": "/images/optimized/chamber-2992.webp",
+        "width": 2992,
+        "height": 2000,
+        "bytes": 658524,
+        "sha256": "3b84d9ba71f3b2aea63947e76779217efef40ec364a44adc1e4f335901a79f11"
+      }
+    ]
+  },
+  "/images/dy-banner.png": {
+    "sourceSha256": "486da681cbf608c315db62a9d59bef4bdd11c81db619ab83c2efd7ab9db2350f",
+    "width": 942,
+    "height": 557,
+    "variants": [
+      {
+        "src": "/images/optimized/dysprosium-240.webp",
+        "width": 240,
+        "height": 142,
+        "bytes": 7898,
+        "sha256": "77f44135c741348fb42ce42ba2c800176c3bdd847f83b9a412d409aef6904759"
+      },
+      {
+        "src": "/images/optimized/dysprosium-480.webp",
+        "width": 480,
+        "height": 284,
+        "bytes": 23112,
+        "sha256": "93a49e1a93980e96cf28024587d026cb3de01c197325bd89e36245df66f2c9ae"
+      },
+      {
+        "src": "/images/optimized/dysprosium-640.webp",
+        "width": 640,
+        "height": 378,
+        "bytes": 34116,
+        "sha256": "5cc802b6aef8ed9304883616498b0115e70bedbd1f6d087a6fd4b77ef6a70241"
+      },
+      {
+        "src": "/images/optimized/dysprosium-942.webp",
+        "width": 942,
+        "height": 557,
+        "bytes": 55300,
+        "sha256": "2e089d6941b7c5dedbc98d1a42e1a28d2549232b0858aee39beb67370a5d562e"
+      }
+    ]
+  },
+  "/images/cavmat-apparatus-clean.png": {
+    "sourceSha256": "08fdb227ea167a30e8ca1ed64fb3f320bdfdb0fd5cc9b454fe9cf40b94bb7b6b",
+    "width": 1422,
+    "height": 1106,
+    "variants": [
+      {
+        "src": "/images/optimized/cavmat-240.webp",
+        "width": 240,
+        "height": 187,
+        "bytes": 11212,
+        "sha256": "3897b2f7e6baefd5a854845b66ef56d22954f87651ec9642adebe24173e6053b"
+      },
+      {
+        "src": "/images/optimized/cavmat-480.webp",
+        "width": 480,
+        "height": 373,
+        "bytes": 28808,
+        "sha256": "f9c59a400064920ad63de96f240f363816f20d736174dc2d02c63614131919ad"
+      },
+      {
+        "src": "/images/optimized/cavmat-640.webp",
+        "width": 640,
+        "height": 498,
+        "bytes": 43416,
+        "sha256": "a271e47757bb09545a0ba5368c85a56f0f8b73bda1d619f6b9d888c7d6e07518"
+      },
+      {
+        "src": "/images/optimized/cavmat-960.webp",
+        "width": 960,
+        "height": 747,
+        "bytes": 73286,
+        "sha256": "9f1d49712ee7aaabb133148ab2c6578a066417e2c041655f82d04bb072c1d87f"
+      },
+      {
+        "src": "/images/optimized/cavmat-1422.webp",
+        "width": 1422,
+        "height": 1106,
+        "bytes": 120918,
+        "sha256": "03b363765c95f37cec22273611f8dd1a353bf66d79cdad94f98235ca42c27742"
+      }
+    ]
+  },
+  "/sites/default/files/Screenshot 2026-09-19 at 12.40.18 PM.png": {
+    "sourceSha256": "b9f91641f39fb06415974469e2d2ed4e21a9d5d3be2514e66f094244a0ead018",
+    "width": 1050,
+    "height": 432,
+    "variants": [
+      {
+        "src": "/images/optimized/news-associative-report-240.webp",
+        "width": 240,
+        "height": 99,
+        "bytes": 11548,
+        "sha256": "d33a196b06245369724f6a9b6799d89591373b79c9403c2969cb98f0597abd66"
+      },
+      {
+        "src": "/images/optimized/news-associative-report-480.webp",
+        "width": 480,
+        "height": 197,
+        "bytes": 25056,
+        "sha256": "d807ca5504c035fa2d728acebd3fdb41dcf1417532430cd109e4036bc155895e"
+      },
+      {
+        "src": "/images/optimized/news-associative-report-640.webp",
+        "width": 640,
+        "height": 263,
+        "bytes": 33188,
+        "sha256": "a47e198a0643fbbb7d871123f22d53df5169a2ead9d9816591817914f121ab49"
+      },
+      {
+        "src": "/images/optimized/news-associative-report-960.webp",
+        "width": 960,
+        "height": 395,
+        "bytes": 52870,
+        "sha256": "bb3950a17cd749864162cdc23df83c641b28c8a3148842873f9c5064cf8a39e8"
+      },
+      {
+        "src": "/images/optimized/news-associative-report-1050.webp",
+        "width": 1050,
+        "height": 432,
+        "bytes": 56706,
+        "sha256": "a2d3bfc81aa2939afd738394010143ed1f821781163c1f2f19268a3cf17f1081"
+      }
+    ]
+  },
+  "/sites/default/files/LevAssocMem2025.png": {
+    "sourceSha256": "d87903cd1c096b36bacd33cf02ceec814114db5f6a6488cae617a6b3ca44e7a8",
+    "width": 1086,
+    "height": 822,
+    "variants": [
+      {
+        "src": "/images/optimized/news-associative-memory-240.webp",
+        "width": 240,
+        "height": 182,
+        "bytes": 15868,
+        "sha256": "567ef7b4474d834e5ba27393102d26aa5170bf27c622ddbe20ba5b5b704afadc"
+      },
+      {
+        "src": "/images/optimized/news-associative-memory-480.webp",
+        "width": 480,
+        "height": 363,
+        "bytes": 30392,
+        "sha256": "3521aca92f3ae3c635e1f518bbbd6039476b9dcd3d657be051f1d7ce26f06ffb"
+      },
+      {
+        "src": "/images/optimized/news-associative-memory-640.webp",
+        "width": 640,
+        "height": 484,
+        "bytes": 40316,
+        "sha256": "29a6c0074dbeaece514eff08997979ef17ea6c4e7c60e5bd0684ea532bd790a3"
+      },
+      {
+        "src": "/images/optimized/news-associative-memory-960.webp",
+        "width": 960,
+        "height": 727,
+        "bytes": 66650,
+        "sha256": "89bcc03f2756322b637a1f53a2bd00afed4551b2d339aa2f6fe9402f80d6890c"
+      },
+      {
+        "src": "/images/optimized/news-associative-memory-1086.webp",
+        "width": 1086,
+        "height": 822,
+        "bytes": 66110,
+        "sha256": "824acb57f2ccbb9294fb4e11555abc04709fb7d5d73eb4024398d477771b7ad6"
+      }
+    ]
+  },
+  "/sites/default/files/BenLev2024_0.png": {
+    "sourceSha256": "7b2a70a137336e43065424c6bacc8219c41103db23c18de937c31848778053cb",
+    "width": 596,
+    "height": 640,
+    "variants": [
+      {
+        "src": "/images/optimized/news-ben-chair-240.webp",
+        "width": 240,
+        "height": 258,
+        "bytes": 13842,
+        "sha256": "0f099c846c377f18e0d971b475581a932cad89631bf7c81407147abe3a247ae7"
+      },
+      {
+        "src": "/images/optimized/news-ben-chair-480.webp",
+        "width": 480,
+        "height": 515,
+        "bytes": 34442,
+        "sha256": "35a090fc75287edc73e0fdf691f58b75fe3a99c570466ab131f5c9168a748d4f"
+      },
+      {
+        "src": "/images/optimized/news-ben-chair-596.webp",
+        "width": 596,
+        "height": 640,
+        "bytes": 50892,
+        "sha256": "0b8f3b902bd348fecbd5ecbfc1ddfd5a2a86249d2cc331e17445b08dca52ea26"
+      }
+    ]
+  },
+  "/sites/default/files/LevLabCavMat.png": {
+    "sourceSha256": "a99049d84da5911373e842fec2057e7cb9a5deb8787b40ad8f466cf8b9ab9e0a",
+    "width": 186,
+    "height": 166,
+    "variants": [
+      {
+        "src": "/images/optimized/news-cavmat-186.webp",
+        "width": 186,
+        "height": 166,
+        "bytes": 12146,
+        "sha256": "4826340bd2ed431800c6a9f3b4463eff702dd62e7b1e8040eba5d32b009cfa5b"
+      }
+    ]
+  },
+  "/sites/default/files/LevCastiHeadShot2.png": {
+    "sourceSha256": "7b4fac57d115d59afdfa73550f4f1d3fa018e9c1de2f31632dced7316f384424",
+    "width": 568,
+    "height": 600,
+    "variants": [
+      {
+        "src": "/images/optimized/news-castilleja-240.webp",
+        "width": 240,
+        "height": 254,
+        "bytes": 12578,
+        "sha256": "0b0029f5d9a94da383f303bd3d79253b995807a1050ee28a7039586c2d50cc6d"
+      },
+      {
+        "src": "/images/optimized/news-castilleja-480.webp",
+        "width": 480,
+        "height": 507,
+        "bytes": 46926,
+        "sha256": "ad485e106152353cae9d90b18ad832ae671e6d722ce59836c15da16093638bab"
+      },
+      {
+        "src": "/images/optimized/news-castilleja-568.webp",
+        "width": 568,
+        "height": 600,
+        "bytes": 63136,
+        "sha256": "8ed8ff378e3886c1df9f599eb66edc502233e11401e173058f7963fd945039e6"
+      }
+    ]
+  }
+}

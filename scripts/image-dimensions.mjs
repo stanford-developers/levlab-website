@@ -45,6 +45,27 @@ export function imageDimensions(file) {
     /^GIF8[79]a$/.test(bytes.toString("ascii", 0, 6))
   ) {
     size = { width: bytes.readUInt16LE(6), height: bytes.readUInt16LE(8) };
+  } else if (
+    bytes.length >= 20 &&
+    bytes.toString("ascii", 0, 4) === "RIFF" &&
+    bytes.toString("ascii", 8, 12) === "WEBP"
+  ) {
+    for (let offset = 12; offset + 8 <= bytes.length;) {
+      const chunk = bytes.toString("ascii", offset, offset + 4);
+      const length = bytes.readUInt32LE(offset + 4);
+      const start = offset + 8;
+      if (start + length > bytes.length) break;
+      if (chunk === "VP8X" && length >= 10) {
+        size = { width: bytes.readUIntLE(start + 4, 3) + 1, height: bytes.readUIntLE(start + 7, 3) + 1 };
+      } else if (chunk === "VP8 " && length >= 10 && bytes.toString("hex", start + 3, start + 6) === "9d012a") {
+        size = { width: bytes.readUInt16LE(start + 6) & 0x3fff, height: bytes.readUInt16LE(start + 8) & 0x3fff };
+      } else if (chunk === "VP8L" && length >= 5 && bytes[start] === 0x2f) {
+        const packed = bytes.readUInt32LE(start + 1);
+        size = { width: (packed & 0x3fff) + 1, height: ((packed >>> 14) & 0x3fff) + 1 };
+      }
+      if (size) break;
+      offset = start + length + (length % 2);
+    }
   } else if (bytes.length >= 4 && bytes.readUInt16BE(0) === 0xffd8) {
     let offset = 2,
       orientation = 1;

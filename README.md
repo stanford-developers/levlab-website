@@ -138,9 +138,13 @@ Every page uses the same compact plain masthead and navigation positions. The he
 
 ### Layout and image maintenance
 
+Eight frequently displayed homepage/research/news images have optimized WebP copies in `public/images/optimized/`, with responsive sizes for cards and separate desktop/mobile homepage hero copies. Original scientific files and legacy URLs remain unchanged. `data/optimized-images.json` ties every copy to its original with a checksum; the build rejects stale or missing copies. Intrinsic dimensions, layout, crop rules, and detail-page resolution are preserved. Only the homepage preloads its matching hero image.
+
+Normal builds need only Node.js and use the committed copies. After replacing one of the eight mapped originals, regenerate them with `python3 scripts/optimize-images.py` in an environment with Pillow installed (verified with Pillow 13), then run the normal build/check/release gates and review desktop/mobile appearance. The generator preserves the complete image frame, orientation, transparency and color profile, and never enlarges or overwrites an original. Its source list is deliberately limited; adding other images requires review rather than silently converting the historical archive.
+
 Main content uses one 1160 px grid; long-form details and profiles use a 900 px reading width. Keep compact landing headings, the mobile brand/menu row, the photo-first directory introduction with Ben’s compact profile beneath it, and three active project introductions consistent. Sponsor logos remain logo-only. Avoid restoring oversized title banners or repeated publication-detail links.
 
-`scripts/image-dimensions.mjs` reads intrinsic dimensions from local PNG, GIF, and JPEG files (including JPEG orientation). Shared images reserve that space; primary images use `image(src, alt, className, "eager")`, while cards stay lazy. Keep original scientific image files archived unchanged; the CavMat display derivative intentionally omits its paper annotations. The image tests verify dimension parsing and primary-image loading.
+`scripts/image-dimensions.mjs` reads intrinsic dimensions from local PNG, GIF, WebP, and JPEG files (including JPEG orientation). Shared images reserve that space; primary images use `image(src, alt, className, "eager")`, while cards stay lazy. Keep original scientific image files archived unchanged; the CavMat display derivative intentionally omits its paper annotations. The image tests verify dimension parsing and primary-image loading.
 
 
 News project corrections are centralized in `data/news-curation.json` and applied through `scripts/news-curation.mjs`. CavMat has one current story; thirteen inherited historical stories are in the SQCRAMscope news archive and remain in the main News list. Keep exact path/title identities and evidence when adding corrections. The release gate requires rebuilding after changes to this file.

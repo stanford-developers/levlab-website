@@ -4,6 +4,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 const contentSource = fs.readFileSync("data/content.json", "utf8");
 const content = JSON.parse(contentSource);
+const publicationAuthorReviewHash = createHash("sha256").update(fs.readFileSync("data/publication-author-review.json")).digest("hex");
 const build = JSON.parse(fs.readFileSync("dist/build-info.json", "utf8"));
 const curationPath = "data/publication-curation.json";
 const publicationCurationHash = fs.existsSync(curationPath)
@@ -13,6 +14,7 @@ const staleBuild =
   build.contentHash !==
     createHash("sha256").update(contentSource).digest("hex") ||
   (build.publicationCurationHash ?? null) !== publicationCurationHash ||
+  build.publicationAuthorReviewHash !== publicationAuthorReviewHash ||
   build.newsCurationHash !== createHash("sha256").update(fs.readFileSync("data/news-curation.json")).digest("hex");
 const expected = JSON.parse(
   fs.readFileSync("data/expected-records.json", "utf8"),

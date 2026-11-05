@@ -32,12 +32,17 @@ export function curatePublications(sourcePublications) {
         override.year > 2100)
     )
       throw Error(`Invalid curated publication year for ${id}`);
-    for (const field of ["displayTitle", "journalCitationHtml", "journalUrl"])
+    for (const field of ["displayTitle", "authorsHtml", "journalCitationHtml", "journalUrl"])
       if (override[field] !== undefined &&
           (typeof override[field] !== "string" || !override[field].trim()))
         throw Error(`Invalid curated publication ${field} for ${id}`);
     if (override.journalUrl && !/^https:\/\//.test(override.journalUrl))
       throw Error(`Invalid curated publication journal URL for ${id}`);
+    if (override.authorPaths !== undefined &&
+        (!Array.isArray(override.authorPaths) ||
+         override.authorPaths.some((authorPath) => typeof authorPath !== "string" || !authorPath.startsWith("/")) ||
+         new Set(override.authorPaths).size !== override.authorPaths.length))
+      throw Error(`Invalid curated publication author profiles for ${id}`);
   }
   return sourcePublications
     .map((publication) => {
@@ -45,10 +50,11 @@ export function curatePublications(sourcePublications) {
       return {
         ...publication,
         projects: [...(override.projects ?? publication.projects)],
+        authorPaths: [...(override.authorPaths ?? publication.authorPaths ?? [])],
         year: override.year ?? publication.year,
         yearLabel: override.yearLabel || "Publication year",
         ...Object.fromEntries(
-          ["displayTitle", "journalCitationHtml", "journalUrl"]
+          ["displayTitle", "authorsHtml", "journalCitationHtml", "journalUrl"]
             .filter((field) => override[field] !== undefined)
             .map((field) => [field, override[field]]),
         ),

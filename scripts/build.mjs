@@ -21,6 +21,7 @@ import {
   escape as e,
 } from "./html.mjs";
 import { getPublicationDisplay } from "./publication-display.mjs";
+import { validatePublicationAuthors, publicationAuthorReviewHash } from "./publication-authors.mjs";
 import {
   hiddenDirectoryNames, hiddenDirectoryGroups, personUpdates, benTitle, terminology,
   editorialHtml, projectDescription, newsTitle, projectNewsPreview, withoutPdfLinks,
@@ -34,6 +35,7 @@ const news = curateNews(data.news).map((story) => ({
   bodyHtml: editorialHtml(story.bodyHtml), summary: terminology(story.summary || ""),
 }));
 const publications = curatePublications(data.publications);
+validatePublicationAuthors(publications, data.people);
 // Split the captured combined project description without changing the archive.
 const cavmatSource = data.projects.find((project) => project.slug === "cavmat");
 const splitMarker = "<br><br>The SQCRAMscope";
@@ -627,11 +629,17 @@ function publicationMetadata(publication) {
       `<dt>${e(publication.yearLabel || "Publication year")}</dt><dd><a href="${local(`/publications/${publication.year}`)}">${e(publication.year)}</a></dd>`,
     );
   }
-  for (const [field, label] of [
-    ["field-authors-1", "Author profiles"],
-    ["field-associated-projects-2", "Research"],
-  ]) {
+  for (const field of ["field-authors-1", "field-associated-projects-2"]) {
     const node = byClass(tree, "field--name-" + field)[0];
+    if (field === "field-authors-1") {
+      const authors = publication.authorPaths.map((authorPath) => {
+        const person = data.people.find((person) => person.path === authorPath);
+        return `<li><a href="${local(canonical(authorPath))}">${e(displayName(person.name))}</a></li>`;
+      });
+      if (authors.length)
+        parts.push(`<dt>Author profiles</dt><dd><ul class="metadata-links">${authors.join("")}</ul></dd>`);
+      continue;
+    }
     if (field === "field-associated-projects-2") {
       const related = publication.projects
         .map((id) => publicationCatalogs[id])
@@ -663,29 +671,6 @@ function publicationMetadata(publication) {
         );
       continue;
     }
-    if (!node) continue;
-    let items = byClass(node, "field__item");
-    if (!items.length) items = [node];
-    const rendered = items
-      .map((item) => {
-        if (field === "field-authors-1") {
-          const author = all(item, (n) => n.tag === "a" && n.attrs.href)[0];
-          const authorPath = author
-            ? canonical(new URL(author.attrs.href, data.sourceOrigin).pathname)
-            : "";
-          const person = data.people.find(
-            (p) => canonical(p.path) === authorPath,
-          );
-          if (person)
-            return `<li><a href="${local(authorPath)}">${e(displayName(person.name))}</a></li>`;
-        }
-        return `<li>${clean(profileFieldContent(item), publication.path)}</li>`;
-      })
-      .join("");
-    if (text(parse(rendered)).trim())
-      parts.push(
-        `<dt>${label}</dt><dd><ul class="metadata-links">${rendered}</ul></dd>`,
-      );
   }
   return parts.length
     ? `<dl class="publication-facts">${parts.join("")}</dl>`
@@ -955,7 +940,6 @@ for (const person of data.people) {
   if (routes.has(route)) continue;
   const pubs = publications.filter(
     (p) =>
-      person.publicationIds?.includes(p.id) ||
       p.authorPaths?.includes(person.path),
   );
   const emailAddress = (person.email || "").replace(/^mailto:/i, "");
@@ -1114,6 +1098,7 @@ fs.writeFileSync(
       builtAt: new Date().toISOString(),
       contentHash,
       publicationCurationHash,
+      publicationAuthorReviewHash,
       newsCurationHash,
       sourceImportedAt: data.importedAt,
       routes: [...routes.keys()],

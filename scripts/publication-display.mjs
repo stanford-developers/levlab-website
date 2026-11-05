@@ -78,7 +78,7 @@ export function getPublicationDisplay(publication) {
   // <strong>. Retain it with the title rather than inventing an author/highlight.
   if (/^[a-z]$/i.test(text(parse(after[0] || "")))) titleHtml += after.shift();
   if (!before.length) before = [after.shift() || ""];
-  const authorsHtml = cleanWhitespace(before.join(" ")).replace(/,\s*$/, "");
+  const authorsHtml = publication.authorsHtml ?? cleanWhitespace(before.join(" ")).replace(/,\s*$/, "");
 
   // Preprints can occur after news coverage, as plain text, in split anchors,
   // or linked to a local PDF. Extract all before placing highlights afterward.

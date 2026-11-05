@@ -1,6 +1,6 @@
 {
-  "reviewedOn": "2026-10-29",
-  "policy": "Apply reviewed publication projects and primary-citation years consistently without modifying captured content. Unlisted records retain audited source projects/year. Preserve source order within the same publication year. Keep the 2006 primary conference year for Precision measurement; its separate 2007 republication remains in the full citation. Reviewed display titles and journal destinations are presentation metadata; immutable captured identities and citation HTML remain intact. October 29 normalization removes displayed PDF download links while preserving archived files, citation text, authors, preprints, and highlight text.",
+  "reviewedOn": "2026-11-05",
+  "policy": "Apply reviewed publication projects and primary-citation years consistently without modifying captured content. Unlisted records retain audited source projects/year. Preserve source order within the same publication year. Keep the 2006 primary conference year for Precision measurement; its separate 2007 republication remains in the full citation. Reviewed display titles and journal destinations are presentation metadata; immutable captured identities and citation HTML remain intact. October 29 normalization removes displayed PDF download links while preserving archived files, citation text, authors, preprints, and highlight text. November 5 author identity review corrects authorPaths and two incorrect citation bylines; both publication details and person publication lists use the same curated authorPaths. Archived source fields remain unchanged.",
   "catalogs": {
     "dysprosium": {
       "label": "Dysprosium",
@@ -26,8 +26,26 @@
   "overrides": {
     "publication-a-cryogenic-apparatus-for-coupling-two-dimensional-materials-to-a-confocal-multimode-optical-cavity": {
       "title": "A cryogenic apparatus for coupling two-dimensional materials to a confocal multimode optical cavity",
-      "projects": ["cavmat"],
-      "evidence": "2026 apparatus couples cryogenic two-dimensional van der Waals materials/transition-metal dichalcogenides to a confocal multimode cavity. This is CavMat, not atom-chip magnetometry."
+      "projects": [
+        "cavmat"
+      ],
+      "evidence": "2026 apparatus couples cryogenic two-dimensional van der Waals materials/transition-metal dichalcogenides to a confocal multimode cavity. This is CavMat, not atom-chip magnetometry.",
+      "authorPaths": [
+        "/people/person-3-0",
+        "/people/mr-han-hiller",
+        "/node/630",
+        "/node/636",
+        "/node/646",
+        "/people/dr-di-lao"
+      ],
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "removed": [],
+        "added": [
+          "Di Lao"
+        ],
+        "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
+      }
     },
     "publication-superradiant-charge-density-waves-in-a-driven-cavity-matter-hybrid": {
       "title": "Superradiant Charge Density Waves in a Driven Cavity-Matter Hybrid",
@@ -133,6 +151,12 @@
         "verifiedOn": "2026-10-29",
         "url": "https://api.crossref.org/works/10.26421/QIC1.s-3",
         "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
+      },
+      "authorsHtml": "H. Mabuchi, M. Armen, B. Lev, M. Loncar, J. Vuckovic, H. J. Kimble, J. Preskill, M. L. Roukes, A. Scherer, and S. J. van Enk",
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "url": "https://people.seas.harvard.edu/~loncar/publications/hideo_paper.pdf",
+        "reason": "The paper first page lists S. J. van Enk after the nine Caltech authors. Restore the omitted final coauthor."
       }
     },
     "publication-radiation-hardness-evaluation-of-the-analog-devices-ad9042-adc-for-use-in-the-cms-electromagnetic-calorimeter": {
@@ -142,6 +166,12 @@
         "verifiedOn": "2026-10-29",
         "url": "https://api.crossref.org/works/10.1016/S0168-9002(98)00775-X",
         "note": "Publisher-deposited Crossref DOI metadata verifies the article title, journal and volume/pages; use its DOI landing page instead of the original PDF or unlinked citation."
+      },
+      "authorsHtml": "P. Denes, B. Lev, and R. Wixted",
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S016890029800775X",
+        "reason": "Publisher byline is P. Denes, B. Lev, R. Wixted. Correct Wixted’s first initial and restore published author order."
       }
     },
     "publication-powerful-narrow-line-source-of-blue-light-for-laser-cooling-yb-er-and-dysprosium-atoms": {
@@ -160,6 +190,99 @@
         "verifiedOn": "2026-10-29",
         "url": "https://api.crossref.org/works/10.1063/1.2400637",
         "note": "Publisher-deposited Crossref metadata verifies the 2006 primary AIP Conference Proceedings 869, 80–91 citation. Keep its separate 2007 republication text and the 2006 catalog year."
+      }
+    },
+    "publication-phantom-energy-in-the-nonlinear-response-of-a-quantum-many-body-scar-state": {
+      "title": "Phantom energy in the nonlinear response of a quantum many-body scar state",
+      "authorPaths": [
+        "/people/person-3-0",
+        "/people/mr-kangning-yang",
+        "/people/dr-kuan-yu-li",
+        "/people/mr-kuan-yu-lin"
+      ],
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "removed": [
+          "Ronen Kroeze",
+          "Brendan Marsh",
+          "David Atri Schuller",
+          "Henry Hunt"
+        ],
+        "added": [
+          "Kangning Yang",
+          "Kuan-Yu Li",
+          "Kuan-Yu Lin"
+        ],
+        "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
+      }
+    },
+    "publication-high-cooperativity-using-a-confocal-cavity-qed-microscope": {
+      "title": "High Cooperativity Using a Confocal-Cavity–QED Microscope",
+      "authorPaths": [
+        "/people/person-3-0",
+        "/people/mr-ronen-kroeze",
+        "/people/mr-brendan-marsh",
+        "/people/mr-kuan-yu-lin"
+      ],
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "removed": [],
+        "added": [
+          "Ronen Kroeze",
+          "Brendan Marsh",
+          "Kuan-Yu Lin"
+        ],
+        "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
+      }
+    },
+    "publication-an-optical-lattice-with-sound": {
+      "title": "An optical lattice with sound",
+      "authorPaths": [
+        "/people/person-3-0",
+        "/people/dr-yudan-guo",
+        "/people/mr-ronen-kroeze",
+        "/people/mr-brendan-marsh"
+      ],
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "removed": [
+          "Brandon Freudenstein"
+        ],
+        "added": [
+          "Brendan Marsh"
+        ],
+        "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
+      }
+    },
+    "publication-quantum-simulators-architectures-and-opportunities": {
+      "title": "Quantum Simulators: Architectures and Opportunities",
+      "authorPaths": [
+        "/people/person-3-0",
+        "/people/dr-alicia-koll%C3%A1r"
+      ],
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "removed": [],
+        "added": [
+          "Alicia Kollár"
+        ],
+        "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
+      }
+    },
+    "publication-anisotropic-collisions-of-dipolar-bose-einstein-condensates-in-the-universal-regime": {
+      "title": "Anisotropic collisions of dipolar Bose-Einstein condensates in the universal regime",
+      "authorPaths": [
+        "/people/person-3-0",
+        "/people/dr-nathaniel-burdick",
+        "/people/dr-yijun-tang"
+      ],
+      "authorEvidence": {
+        "reviewedOn": "2026-11-05",
+        "removed": [
+          "Wil Kao"
+        ],
+        "added": [],
+        "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
       }
     }
   },

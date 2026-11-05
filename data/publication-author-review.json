@@ -1,0 +1,2242 @@
+{
+  "reviewedOn": "2026-11-05",
+  "policy": "Manually reviewed author identities against paper bylines. Preserve intentional citation initials/et al. and source identities. Re-review changed citations, associations, and the people inventory; never regenerate this ledger from unchecked imported fields.",
+  "people": [
+    {
+      "path": "/people/person-3-0",
+      "name": "Benjamin Lev"
+    },
+    {
+      "path": "/node/636",
+      "name": "Samuel Aronson"
+    },
+    {
+      "path": "/people/mr-kuan-yu-lin",
+      "name": "Kuan-Yu Lin"
+    },
+    {
+      "path": "/people/mr-kangning-yang",
+      "name": "Kangning Yang"
+    },
+    {
+      "path": "/people/mr-david-atri-schuller",
+      "name": "David Atri Schuller"
+    },
+    {
+      "path": "/people/mr-han-hiller",
+      "name": "Han Hiller"
+    },
+    {
+      "path": "/node/625",
+      "name": "Derek Baldwin"
+    },
+    {
+      "path": "/node/630",
+      "name": "Pranav Parakh"
+    },
+    {
+      "path": "/node/631",
+      "name": "Giulia Socolof"
+    },
+    {
+      "path": "/node/632",
+      "name": "Deven Bowman"
+    },
+    {
+      "path": "/node/633",
+      "name": "Tony (Peiyang) He"
+    },
+    {
+      "path": "/node/644",
+      "name": "Rin Kuroda"
+    },
+    {
+      "path": "/node/645",
+      "name": "Zhiwei (Henry) He"
+    },
+    {
+      "path": "/node/646",
+      "name": "Kenji Maeda"
+    },
+    {
+      "path": "/people/dr-kristian-baumann",
+      "name": "Kristian Baumann"
+    },
+    {
+      "path": "/people/dr-jack-disciacca",
+      "name": "Jack DiSciacca"
+    },
+    {
+      "path": "/people/dr-varun-vaidya",
+      "name": "Varun Vaidya"
+    },
+    {
+      "path": "/people/dr-sangwon-seo",
+      "name": "Sangwon Seo"
+    },
+    {
+      "path": "/people/dr-stephen-edkins",
+      "name": "Stephen Edkins"
+    },
+    {
+      "path": "/people/dr-brian-kasch",
+      "name": "Brian Kasch"
+    },
+    {
+      "path": "/people/dr-di-lao",
+      "name": "Di Lao"
+    },
+    {
+      "path": "/people/dr-zhendong-zhang",
+      "name": "Zhendong Zhang"
+    },
+    {
+      "path": "/node/626",
+      "name": "Yunpeng Ji"
+    },
+    {
+      "path": "/people/dr-michael-armen",
+      "name": "Michael Armen"
+    },
+    {
+      "path": "/people/dr-seo-ho-youn",
+      "name": "Seo Ho Youn"
+    },
+    {
+      "path": "/people/dr-mingwu-lu",
+      "name": "Mingwu Lu"
+    },
+    {
+      "path": "/people/dr-matthew-naides",
+      "name": "Matthew Naides"
+    },
+    {
+      "path": "/people/dr-richard-turner",
+      "name": "Richard Turner"
+    },
+    {
+      "path": "/people/dr-alicia-koll%C3%A1r",
+      "name": "Alicia Kollár"
+    },
+    {
+      "path": "/people/dr-nathaniel-burdick",
+      "name": "Nathaniel Burdick"
+    },
+    {
+      "path": "/people/dr-alexander-papageorge",
+      "name": "Alexander Papageorge"
+    },
+    {
+      "path": "/people/dr-yijun-tang",
+      "name": "Yijun Tang"
+    },
+    {
+      "path": "/people/dr-fan-yang",
+      "name": "Fan Yang"
+    },
+    {
+      "path": "/people/dr-wil-kao",
+      "name": "Wil Kao"
+    },
+    {
+      "path": "/people/dr-stephen-taylor",
+      "name": "Stephen Taylor"
+    },
+    {
+      "path": "/people/dr-yudan-guo",
+      "name": "Yudan Guo"
+    },
+    {
+      "path": "/people/dr-kuan-yu-li",
+      "name": "Kuan-Yu Li"
+    },
+    {
+      "path": "/people/mr-ronen-kroeze",
+      "name": "Ronen Kroeze"
+    },
+    {
+      "path": "/people/mr-brandon-freudenstein",
+      "name": "Brandon Freudenstein"
+    },
+    {
+      "path": "/people/mr-brendan-marsh",
+      "name": "Brendan Marsh"
+    },
+    {
+      "path": "/people/mr-alexander-n-bourzutschky",
+      "name": "Alexander N. Bourzutschky"
+    },
+    {
+      "path": "/people/mr-alec-shelley",
+      "name": "Alec Shelley"
+    },
+    {
+      "path": "/people/mr-henry-hunt",
+      "name": "Henry Hunt"
+    },
+    {
+      "path": "/node/616",
+      "name": "Alex Kiral"
+    },
+    {
+      "path": "/people/mr-chen-wu",
+      "name": "Chen Wu"
+    },
+    {
+      "path": "/people/mr-jeffrey-brown",
+      "name": "Jeffrey Brown"
+    },
+    {
+      "path": "/people/mr-yosheb-getachew",
+      "name": "Yosheb Getachew"
+    },
+    {
+      "path": "/people/mr-inigo-valenzuela-lombera",
+      "name": "Inigo Valenzuela Lombera"
+    },
+    {
+      "path": "/people/ms-jingjin-jenny-hu",
+      "name": "Jingjin `Jenny' Hu"
+    },
+    {
+      "path": "/people/mr-hunter-swan",
+      "name": "Hunter Swan"
+    },
+    {
+      "path": "/people/mr-dai-shen",
+      "name": "Dai Shen"
+    },
+    {
+      "path": "/people/mr-anjun-chu",
+      "name": "Anjun Chu"
+    },
+    {
+      "path": "/people/mr-naijun-jin",
+      "name": "Naijun Jin"
+    },
+    {
+      "path": "/people/ms-melis-tekant",
+      "name": "Melis Tekant"
+    },
+    {
+      "path": "/people/ms-anna-widder",
+      "name": "Anna Widder"
+    },
+    {
+      "path": "/people/mr-sammy-goldman",
+      "name": "Sammy Goldman"
+    },
+    {
+      "path": "/people/mr-josh-kazdan",
+      "name": "Josh Kazdan"
+    },
+    {
+      "path": "/people/mr-john-stayner",
+      "name": "John Stayner"
+    },
+    {
+      "path": "/people/ms-siyun-zhou",
+      "name": "Siyun Zhou"
+    },
+    {
+      "path": "/people/mr-brett-harvey",
+      "name": "Brett Harvey"
+    },
+    {
+      "path": "/people/mr-tudor-ciobanu",
+      "name": "Tudor Ciobanu"
+    },
+    {
+      "path": "/people/mr-cristian-zanoci",
+      "name": "Cristian Zanoci"
+    }
+  ],
+  "publications": {
+    "publication-a-cryogenic-apparatus-for-coupling-two-dimensional-materials-to-a-confocal-multimode-optical-cavity": {
+      "title": "A cryogenic apparatus for coupling two-dimensional materials to a confocal multimode optical cavity",
+      "authorsText": "H. S. Hiller, P. D. Parakh, S. H. Aronson, K. Maeda, D. Lao, J. Stewart, Z. She, J. Wang, X. Xu, T. Heinz, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-han-hiller",
+          "name": "Han Hiller"
+        },
+        {
+          "path": "/node/630",
+          "name": "Pranav Parakh"
+        },
+        {
+          "path": "/node/636",
+          "name": "Samuel Aronson"
+        },
+        {
+          "path": "/node/646",
+          "name": "Kenji Maeda"
+        },
+        {
+          "path": "/people/dr-di-lao",
+          "name": "Di Lao"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2605.28815v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "Same 11 author identities and order. Site includes D. in P. D. Parakh; cached v1 prints Pranav Parakh without a middle initial. The cached v1 cannot substantiate that added initial; do not infer a wrong identity from this alone."
+    },
+    "publication-high-capacity-associative-memory-in-a-quantum-optical-spin-glass": {
+      "title": "High-capacity associative memory in a quantum-optical spin glass",
+      "authorsText": "B. P. Marsh, D. Atri Schuller, Y. Ji, H. S. Hunt, S. Ganguli, S. Gopalakrishnan, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        },
+        {
+          "path": "/people/mr-david-atri-schuller",
+          "name": "David Atri Schuller"
+        },
+        {
+          "path": "/people/mr-henry-hunt",
+          "name": "Henry Hunt"
+        },
+        {
+          "path": "/node/626",
+          "name": "Yunpeng Ji"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2509.12202v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-superradiant-charge-density-waves-in-a-driven-cavity-matter-hybrid": {
+      "title": "Superradiant Charge Density Waves in a Driven Cavity-Matter Hybrid",
+      "authorsText": "L. Skolc, S. Chattopadhyay, F. Marijanović, Q. Li, J. Keeling, B. L. Lev, and E. Demler",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2603.28432v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "Marijanović diacritic is correctly represented in site; PDF text extraction uses combining accent artifacts."
+    },
+    "publication-effects-of-intertube-dipole-dipole-interactions-in-nearly-integrable-one-dimensional-162dy-gases": {
+      "title": "Effects of intertube dipole-dipole interactions in nearly integrable one-dimensional 162Dy gases",
+      "authorsText": "Y. Zhang, K. Yang, B. L. Lev, and M. Rigol",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-kangning-yang",
+          "name": "Kangning Yang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2510.05212v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-a-multimode-cavity-qed-ising-spin-glass": {
+      "title": "A multimode cavity QED Ising spin glass",
+      "authorsText": "B. P. Marsh, D. Atri Schuller, Y. Ji, H. S. Hunt, G. Z. Socolof, D. P. Bowman, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        },
+        {
+          "path": "/people/mr-david-atri-schuller",
+          "name": "David Atri Schuller"
+        },
+        {
+          "path": "/people/mr-henry-hunt",
+          "name": "Henry Hunt"
+        },
+        {
+          "path": "/node/626",
+          "name": "Yunpeng Ji"
+        },
+        {
+          "path": "/node/631",
+          "name": "Giulia Socolof"
+        },
+        {
+          "path": "/node/632",
+          "name": "Deven Bowman"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2505.22658v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-directly-observing-replica-symmetry-breaking-in-a-vector-quantum-optical-spin-glass": {
+      "title": "Directly observing replica symmetry breaking in a vector quantum-optical spin glass",
+      "authorsText": "R. M. Kroeze, B. P. Marsh, D. Atri Schuller, H. Hunt, A. N. Bourzutschky, M. Winer, S. Gopalakrishnan, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        },
+        {
+          "path": "/people/mr-alexander-n-bourzutschky",
+          "name": "Alexander N. Bourzutschky"
+        },
+        {
+          "path": "/people/mr-david-atri-schuller",
+          "name": "David Atri Schuller"
+        },
+        {
+          "path": "/people/mr-henry-hunt",
+          "name": "Henry Hunt"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/2311.04216"
+        }
+      ],
+      "reviewNote": "Archived 2023 v1 has seven authors. Current site has nine, adding A. N. Bourzutschky and M. Winer; parent primary-source check of current arXiv version confirms the nine-author site list. Henry S. Hunt is abbreviated H. Hunt harmlessly. This is a byline change between versions, not a site omission."
+    },
+    "publication-phantom-energy-in-the-nonlinear-response-of-a-quantum-many-body-scar-state": {
+      "title": "Phantom energy in the nonlinear response of a quantum many-body scar state",
+      "authorsText": "K. Yang, Y. Zhang, K.-Y. Li, K. -Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-kangning-yang",
+          "name": "Kangning Yang"
+        },
+        {
+          "path": "/people/dr-kuan-yu-li",
+          "name": "Kuan-Yu Li"
+        },
+        {
+          "path": "/people/mr-kuan-yu-lin",
+          "name": "Kuan-Yu Lin"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Lev2308.11615.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "K. -Y. Lin contains stray spacing but correctly identifies Kuan-Yu Lin; all seven names/order match."
+    },
+    "publication-raman-phonon-polariton-condensation-in-a-transversely-pumped-cavity": {
+      "title": "Raman-phonon-polariton condensation in a transversely pumped cavity",
+      "authorsText": "A. N. Bourzutschky, B. L. Lev, and J. Keeling",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-alexander-n-bourzutschky",
+          "name": "Alexander N. Bourzutschky"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2405.05257v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-entanglement-and-replica-symmetry-breaking-in-a-driven-dissipative-quantum-spin-glass": {
+      "title": "Entanglement and replica symmetry breaking in a driven-dissipative quantum spin glass",
+      "authorsText": "B. P. Marsh, R. M. Kroeze, S. Ganguli, S. Gopalakrishnan, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2307.10176.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-rapidity-and-momentum-distributions-of-one-dimensional-dipolar-quantum-gases": {
+      "title": "Rapidity and momentum distributions of one-dimensional dipolar quantum gases",
+      "authorsText": "K.-Y. Li, Y. Zhang, K. Yang, K.-Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-kuan-yu-li",
+          "name": "Kuan-Yu Li"
+        },
+        {
+          "path": "/people/mr-kuan-yu-lin",
+          "name": "Kuan-Yu Lin"
+        },
+        {
+          "path": "/people/mr-kangning-yang",
+          "name": "Kangning Yang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2211.09118.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-high-cooperativity-using-a-confocal-cavity-qed-microscope": {
+      "title": "High Cooperativity Using a Confocal-Cavity–QED Microscope",
+      "authorsText": "R. M. Kroeze, B. P. Marsh, K.-Y. Lin, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        },
+        {
+          "path": "/people/mr-kuan-yu-lin",
+          "name": "Kuan-Yu Lin"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2212.06716.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-review-article-dipolar-physics-with-atomic-quantum-gases": {
+      "title": "Review article: Dipolar physics with atomic quantum gases",
+      "authorsText": "L. Chomaz, I. Ferrier-Barbut, F. Ferlaino, B. Laburthe-Tolra, B. L. Lev, and T. Pfau",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Chomaz_2023_Rep._Prog._Phys._86_026401.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-an-optical-lattice-with-sound": {
+      "title": "An optical lattice with sound",
+      "authorsText": "Y. Guo, R. M. Kroeze, B. P. Marsh, S. Gopalakrishnan, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/2104.13922"
+        }
+      ]
+    },
+    "publication-enhancing-associative-memory-recall-and-storage-capacity-using-confocal-cavity-qed": {
+      "title": "Enhancing associative memory recall and storage capacity using confocal cavity QED",
+      "authorsText": "B. P. Marsh, Y. Guo, R. M. Kroeze, S. Gopalakrishnan, S. Ganguli, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        },
+        {
+          "path": "/people/mr-brendan-marsh",
+          "name": "Brendan Marsh"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2009.01227.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-a-scanning-quantum-cryogenic-atom-microscope-at-6-k": {
+      "title": "A scanning quantum cryogenic atom microscope at 6 K",
+      "authorsText": "S. F. Taylor, F. Yang, B. A. Freudenstein, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-fan-yang",
+          "name": "Fan Yang"
+        },
+        {
+          "path": "/people/dr-stephen-taylor",
+          "name": "Stephen Taylor"
+        },
+        {
+          "path": "/people/mr-brandon-freudenstein",
+          "name": "Brandon Freudenstein"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2010.03559.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-quantum-simulators-architectures-and-opportunities": {
+      "title": "Quantum Simulators: Architectures and Opportunities",
+      "authorsText": "E. Altman et al.",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-alicia-koll%C3%A1r",
+          "name": "Alicia Kollár"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://doi.org/10.1103/PRXQuantum.2.017003"
+        }
+      ]
+    },
+    "publication-topological-pumping-of-a-1d-dipolar-gas-into-strongly-correlated-prethermal-states": {
+      "title": "Topological pumping of a 1D dipolar gas into strongly correlated prethermal states​",
+      "authorsText": "W. Kao, K.-Y. Li, K.-Y. Lin, S. Gopalakrishnan, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-wil-kao",
+          "name": "Wil Kao"
+        },
+        {
+          "path": "/people/dr-kuan-yu-li",
+          "name": "Kuan-Yu Li"
+        },
+        {
+          "path": "/people/mr-kuan-yu-lin",
+          "name": "Kuan-Yu Lin"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/2020 Kao_0.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-photon-mediated-peierls-transition-of-a-1d-gas-in-a-multimode-optical-cavity": {
+      "title": "Photon-mediated Peierls Transition of a 1D Gas in a Multimode Optical Cavity",
+      "authorsText": "C. Rylands, Y. Guo, B. L. Lev, J. Keeling, and V. Galitski",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhysRevLett.125.010404.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-nematic-transitions-in-iron-pnictide-superconductors-imaged-with-a-quantum-gas": {
+      "title": "Nematic Transitions in Iron-Pnictide Superconductors Imaged with a Quantum Gas",
+      "authorsText": "F. Yang, S. F. Taylor, S. D. Edkins, J. Palmstrom, Ian R. Fisher, and Benjamin L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-fan-yang",
+          "name": "Fan Yang"
+        },
+        {
+          "path": "/people/dr-stephen-taylor",
+          "name": "Stephen Taylor"
+        },
+        {
+          "path": "/people/dr-stephen-edkins",
+          "name": "Stephen Edkins"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1907.12601.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "J. Palmstrom omits middle initial C.; same author identity and order."
+    },
+    "publication-dynamical-spin-orbit-coupling-of-a-quantum-gas": {
+      "title": "Dynamical spin-orbit coupling of a quantum gas",
+      "authorsText": "R. M. Kroeze, Y. Guo, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1904.08388.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-emergent-and-broken-symmetries-of-atomic-self-organization-arising-from-gouy-phase-shifts-in-multimode-cavity-qed": {
+      "title": "Emergent and broken symmetries of atomic self-organization arising from Gouy phase shifts in multimode cavity QED",
+      "authorsText": "Y. Guo, V. D. Vaidya, R. M. Kroeze, R. A. Lunney, B. L. Lev, and J. Keeling",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-varun-vaidya",
+          "name": "Varun Vaidya"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1810.11085.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-sign-changing-photon-mediated-atom-interactions-in-multimode-cavity-qed": {
+      "title": "Sign-changing photon-mediated atom interactions in multimode cavity QED",
+      "authorsText": "Y. Guo, R. M. Kroeze, V. D. Vaidya, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-varun-vaidya",
+          "name": "Varun Vaidya"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1810.11086.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-spinor-self-ordering-of-a-quantum-gas-in-a-cavity": {
+      "title": "Spinor self-ordering of a quantum gas in a cavity",
+      "authorsText": "R. M. Kroeze, Y. Guo, V. D. Vaidya, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-varun-vaidya",
+          "name": "Varun Vaidya"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1807.04915.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-thermalization-near-integrability-in-a-dipolar-quantum-newton-s-cradle": {
+      "title": "Thermalization near integrability in a dipolar quantum Newton's cradle",
+      "authorsText": "Y. Tang, W. Kao, K.-Y. Li, S. Seo, K. Mallayya, M. Rigol, S. Gopalakrishnan, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        },
+        {
+          "path": "/people/dr-wil-kao",
+          "name": "Wil Kao"
+        },
+        {
+          "path": "/people/dr-kuan-yu-li",
+          "name": "Kuan-Yu Li"
+        },
+        {
+          "path": "/people/dr-sangwon-seo",
+          "name": "Sangwon Seo"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Phys. Rev. X 2018 Tang.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-tuning-the-dipole-dipole-interaction-in-a-quantum-gas-with-a-rotating-magnetic-field": {
+      "title": "Tuning the dipole-dipole interaction in a quantum gas with a rotating magnetic field",
+      "authorsText": "Y. Tang, W. Kao, K.-Y. Li, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        },
+        {
+          "path": "/people/dr-wil-kao",
+          "name": "Wil Kao"
+        },
+        {
+          "path": "/people/dr-kuan-yu-li",
+          "name": "Kuan-Yu Li"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1803.10867.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-tunable-range-photon-mediated-atomic-interactions-in-multimode-cavity-qed": {
+      "title": "Tunable-range, photon-mediated atomic interactions in multimode cavity QED​",
+      "authorsText": "V. D. Vaidya, Y. Guo, R. M. Kroeze, K. E. Ballantine, A. J. Kollár, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-alicia-koll%C3%A1r",
+          "name": "Alicia Kollár"
+        },
+        {
+          "path": "/people/dr-varun-vaidya",
+          "name": "Varun Vaidya"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        },
+        {
+          "path": "/people/mr-ronen-kroeze",
+          "name": "Ronen Kroeze"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1708.08933.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-a-scanning-quantum-cryogenic-atom-microscope": {
+      "title": "A Scanning Quantum Cryogenic Atom Microscope",
+      "authorsText": "F. Yang, A. J. Kollár, S. F. Taylor, R. W. Turner, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-richard-turner",
+          "name": "Richard Turner"
+        },
+        {
+          "path": "/people/dr-alicia-koll%C3%A1r",
+          "name": "Alicia Kollár"
+        },
+        {
+          "path": "/people/dr-fan-yang",
+          "name": "Fan Yang"
+        },
+        {
+          "path": "/people/dr-stephen-taylor",
+          "name": "Stephen Taylor"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Yang Phys. Rev. Applied 2017 Scanning Quantum Cryogenic Atom Microscope.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-supermode-density-wave-polariton-condensation": {
+      "title": "Supermode-density-wave-polariton condensation",
+      "authorsText": "A. J. Kollár, A. T. Papageorge, V. D. Vaidya, Y. Guo, J. Keeling, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-alicia-koll%C3%A1r",
+          "name": "Alicia Kollár"
+        },
+        {
+          "path": "/people/dr-alexander-papageorge",
+          "name": "Alexander Papageorge"
+        },
+        {
+          "path": "/people/dr-varun-vaidya",
+          "name": "Varun Vaidya"
+        },
+        {
+          "path": "/people/dr-yudan-guo",
+          "name": "Yudan Guo"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/SupermodeLev2016.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-meissner-like-effect-for-synthetic-gauge-field-in-multimode-cavity-qed": {
+      "title": "Meissner-like effect for synthetic gauge field in multimode cavity QED​",
+      "authorsText": "K. E. Ballantine, B. L. Lev, and J. Keeling",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1608.07246v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-anisotropic-dependence-of-tune-out-wavelength-near-dy-741-nm-transition": {
+      "title": "Anisotropic dependence of tune-out wavelength near Dy 741-nm transition",
+      "authorsText": "W. Kao, Y. Tang, N. Burdick, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        },
+        {
+          "path": "/people/dr-wil-kao",
+          "name": "Wil Kao"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1609.02111v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "N. Burdick omits middle initial Q.; same author identity and order."
+    },
+    "publication-anisotropic-collisions-of-dipolar-bose-einstein-condensates-in-the-universal-regime": {
+      "title": "Anisotropic collisions of dipolar Bose-Einstein condensates in the universal regime",
+      "authorsText": "N. Q. Burdick, A. G. Sykes, Y. Tang, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1607.06743v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-anisotropic-expansion-of-a-thermal-dipolar-bose-gas": {
+      "title": "Anisotropic expansion of a thermal dipolar Bose gas",
+      "authorsText": "Y. Tang, A. G. Sykes, N. Q. Burdick, J. M. DiSciacca, D. S. Petrov, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        },
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhysRevLett.117.155301.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-viewpoint-an-arrested-implosion": {
+      "title": "Viewpoint: An Arrested Implosion",
+      "authorsText": "L. D. Carr and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Final version.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-a-long-lived-spin-orbit-coupled-dipolar-fermi-gas": {
+      "title": "A long-lived spin-orbit-coupled dipolar Fermi gas",
+      "authorsText": "N. Q. Burdick, Y. Tang, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Lev_SOC_PRX_2016.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-coupling-to-modes-of-a-near-confocal-optical-resonator-using-a-digital-light-modulator": {
+      "title": "Coupling to Modes of a Near-Confocal Optical Resonator Using a Digital Light Modulator",
+      "authorsText": "A. T. Papageorge, A. J. Kollár, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-alicia-koll%C3%A1r",
+          "name": "Alicia Kollár"
+        },
+        {
+          "path": "/people/dr-alexander-papageorge",
+          "name": "Alexander Papageorge"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1603.06900v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-s-wave-scattering-lengths-of-the-strongly-dipolar-bosons-162-dy-and-164-dy": {
+      "title": "s -wave scattering lengths of the strongly dipolar bosons 162 Dy and 164 Dy",
+      "authorsText": "Y. Tang, A. Sykes, N. Burdick, J. Bohn, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1506.03393v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "A. Sykes, N. Burdick, and J. Bohn omit middle initials or full given names; same author identities and order."
+    },
+    "publication-bilayer-fractional-quantum-hall-states-with-dipoles": {
+      "title": "Bilayer fractional quantum Hall states with dipoles",
+      "authorsText": "N. Y. Yao, S. D. Bennett, C. R. Laumann, B. L. Lev, and A. V. Gorshkov",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1505.03099v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-bose-einstein-condensation-of-162-dy-and-160-dy": {
+      "title": "Bose-Einstein condensation of 162 Dy and 160 Dy",
+      "authorsText": "Y. Tang, N. Burdick, K. Baumann, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1367-2630_17_4_045006.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "N. Burdick omits Q.; all four identities/order match."
+    },
+    "publication-an-adjustable-length-cavity-and-bose-einstein-condensate-apparatus-for-multimode-cavity-qed": {
+      "title": "An adjustable-length cavity and Bose-Einstein condensate apparatus for multimode cavity QED",
+      "authorsText": "A. Kollár, A. Papageorge, K. Baumann, M. Armen, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-michael-armen",
+          "name": "Michael Armen"
+        },
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        },
+        {
+          "path": "/people/dr-alicia-koll%C3%A1r",
+          "name": "Alicia Kollár"
+        },
+        {
+          "path": "/people/dr-alexander-papageorge",
+          "name": "Alexander Papageorge"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/1411.5443v1.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "A. Kollár, A. Papageorge, M. Armen omit middle initials; same identities/order."
+    },
+    "publication-fermionic-suppression-of-dipolar-relaxation": {
+      "title": "Fermionic suppression of dipolar relaxation",
+      "authorsText": "N. Q. Burdick, K. Baumann, Y. Tang, M. Lu, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        },
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        },
+        {
+          "path": "/people/dr-yijun-tang",
+          "name": "Yijun Tang"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhysRevLett.114.023201.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-observation-of-low-field-fano-feshbach-resonances-in-ultracold-gases-of-dysprosium": {
+      "title": "Observation of low-field Fano-Feshbach resonances in ultracold gases of dysprosium",
+      "authorsText": "K. Baumann, N. Q. Burdick, M. Lu, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        },
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/LevFeshbach_1312.6401.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ]
+    },
+    "publication-trapping-ultracold-gases-near-cryogenic-materials-with-rapid-reconfigurability": {
+      "title": "Trapping ultracold gases near cryogenic materials with rapid reconfigurability",
+      "authorsText": "M. A. Naides, R. W. Turner, R. A. Lai, J. M. DiSciacca, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-matthew-naides",
+          "name": "Matthew Naides"
+        },
+        {
+          "path": "/people/dr-richard-turner",
+          "name": "Richard Turner"
+        },
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Cryogenic atom chip Lev13.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-synthetic-gauge-field-with-highly-magnetic-lanthanide-atoms": {
+      "title": "Synthetic gauge field with highly magnetic lanthanide atoms",
+      "authorsText": "X. Cui, B. Lian, T.-L. Ho, B. L. Lev, and H. Zhai",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Cui Physical Review A 2013 Synthetic gauge field with highly magnetic lanthanide atoms.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-resolving-an-individual-one-proton-spin-flip-to-determine-a-proton-spin-state": {
+      "title": "Resolving an Individual One-Proton Spin Flip to Determine a Proton Spin State",
+      "authorsText": "J. DiSciacca, M. Marshall, K. Marable, and G. Gabrielse",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/SingleSpinFlip.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-one-particle-measurement-of-the-antiproton-magnetic-moment": {
+      "title": "One-Particle Measurement of the Antiproton Magnetic Moment",
+      "authorsText": "J. DiSciacca, M. Marshall, K. Marable, G. Gabrielse, S. Ettenauer, E. Tardiff, R. Kalra, D. W. Fitzakerley, M. C. George, E. A. Hessels, C. H. Storry, M. Weel, D. Grzonka, W. Oelert, and T. Sefzick (ATRAP Collaboration)",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Antiproton.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-real-time-observation-of-fluctuations-at-the-driven-dissipative-dicke-phase-transition": {
+      "title": "Real-time observation of fluctuations at the driven-dissipative Dicke phase transition",
+      "authorsText": "F. Brennecke, R. Mottl, K. Baumann, R. Landig, T. Donner, and T. Esslinger",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/1304.4939"
+        }
+      ],
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+    },
+    "publication-imaging-topologically-protected-transport-with-quantum-degenerate-gases": {
+      "title": "Imaging topologically protected transport with quantum degenerate gases",
+      "authorsText": "B. Dellabetta, T. L. Hughes, M. J. Gilbert, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Dellabetta Physical Review B 2012 Imaging topologically protected transport with quantum degenerate gases.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-quantum-degenerate-dipolar-fermi-gas": {
+      "title": "Quantum Degenerate Dipolar Fermi Gas",
+      "authorsText": "M. Lu, N. Q. Burdick, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhysRevLett.108.215301.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-an-atomic-interface-between-microwave-and-optical-photons": {
+      "title": "An atomic interface between microwave and optical photons",
+      "authorsText": "M. Hafezi, Z. Kim, S. Rolston, L. Orozco, B. L. Lev, and J. Taylor",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Hafezi.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "S. Rolston, L. Orozco, and J. Taylor omit middle initials L., A., M.; identities/order match."
+    },
+    "publication-exploring-models-of-associative-memory-via-cavity-quantum-electrodynamics": {
+      "title": "Exploring models of associative memory via cavity quantum electrodynamics",
+      "authorsText": "S. Gopalakrishnan, B. L. Lev, and P. Goldbart",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhilMag_0.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "P. Goldbart omits middle initial M.; identities/order match."
+    },
+    "publication-direct-measurement-of-the-proton-magnetic-moment": {
+      "title": "Direct Measurement of the Proton Magnetic Moment",
+      "authorsText": "J. DiSciacca and G. Gabrielse",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Proton.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-roton-type-mode-softening-in-a-quantum-gas-with-cavity-mediated-long-range-interactions": {
+      "title": "Roton-type mode softening in a quantum gas with cavity-mediated long-range interactions",
+      "authorsText": "R. Mottl, F. Brennecke, K. Baumann, R. Landig, T. Donner, and T. Esslinger",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/1203.1322"
+        }
+      ],
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+    },
+    "publication-frustration-and-glassiness-in-spin-models-with-cavity-mediated-interactions": {
+      "title": "Frustration and glassiness in spin models with cavity-mediated interactions",
+      "authorsText": "S. Gopalakrishnan, B. L. Lev, and P. Goldbart",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Spins.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "P. Goldbart omits middle initial M.; identities/order match."
+    },
+    "publication-strongly-dipolar-bose-einstein-condensate-of-dysprosium": {
+      "title": "Strongly Dipolar Bose-Einstein Condensate of Dysprosium",
+      "authorsText": "M. Lu, N. Q. Burdick, S.-H. Youn, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-seo-ho-youn",
+          "name": "Seo Ho Youn"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        },
+        {
+          "path": "/people/dr-nathaniel-burdick",
+          "name": "Nathaniel Burdick"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhysRevLett.107.190401.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-dynamic-polarizabilities-and-magic-wavelengths-for-dysprosium": {
+      "title": "Dynamic polarizabilities and magic wavelengths for dysprosium",
+      "authorsText": "V. A. Dzuba, V. V. Flambaum, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Dzuba.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-spectroscopy-of-a-narrow-line-laser-cooling-transition-in-atomic-dysprosium": {
+      "title": "Spectroscopy of a narrow-line laser cooling transition in atomic dysprosium",
+      "authorsText": "M. Lu, S.-H. Youn, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-seo-ho-youn",
+          "name": "Seo Ho Youn"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/PhysRevA.83.012510.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-exploring-symmetry-breaking-at-the-dicke-quantum": {
+      "title": "Exploring symmetry breaking at the Dicke quantum",
+      "authorsText": "K. Baumann, R. Mottl, F. Brennecke and T. Esslinger",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/1105.0426"
+        }
+      ],
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+    },
+    "publication-dysprosium-magneto-optical-traps": {
+      "title": "Dysprosium magneto-optical traps",
+      "authorsText": "S.-H. Youn, M. Lu, U. Ray, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-seo-ho-youn",
+          "name": "Seo Ho Youn"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/DyMOT.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-atom-light-crystallization-of-becs-in-multimode-cavities-nonequilibrium-classical-and-quantum-phase-transitions-emergent-lattices-supersolidity-and-frustration": {
+      "title": "Atom-light crystallization of BECs in multimode cavities: Nonequilibrium classical and quantum phase transitions, emergent lattices, supersolidity, and frustration",
+      "authorsText": "S. Gopalakrishnan, B. L. Lev, and P. Goldbart",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/GopalaPRA.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "P. Goldbart omits middle initial M.; identities/order match."
+    },
+    "publication-anisotropic-sub-doppler-laser-cooling-in-dysprosium-magneto-optical-traps": {
+      "title": "Anisotropic sub-Doppler laser cooling in dysprosium magneto-optical traps",
+      "authorsText": "S.-H. Youn, M. Lu, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-seo-ho-youn",
+          "name": "Seo Ho Youn"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/AnisoDy.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-trapping-ultracold-dysprosium-a-highly-magnetic-gas-for-dipolar-physics": {
+      "title": "Trapping ultracold dysprosium: A highly magnetic gas for dipolar physics",
+      "authorsText": "M. Lu, S.-H. Youn, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-seo-ho-youn",
+          "name": "Seo Ho Youn"
+        },
+        {
+          "path": "/people/dr-mingwu-lu",
+          "name": "Mingwu Lu"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/F9E1D582-3D1D-430C-AD6F-568582D83DA1.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-powerful-narrow-line-source-of-blue-light-for-laser-cooling-yb-er-and-dysprosium-atoms": {
+      "title": "Powerful narrow-line source of blue light for laser cooling Yb/Er and Dysprosium atoms",
+      "authorsText": "S. Kobtsev, B. Lev, J. Fortagh, and V. Baraulia",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/SPIE.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-closed-orbit-recurrences-in-molecular-hydrogen": {
+      "title": "Closed-orbit recurrences in molecular hydrogen",
+      "authorsText": "J. D. Wright, J. M. DiSciacca, J. M. Lambert, and T. J. Morgan",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/ClosedOrbit.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-self-excitation-and-feedback-cooling-of-an-isolated-proton": {
+      "title": "Self-Excitation and Feedback Cooling of an Isolated Proton",
+      "authorsText": "N. Guise, J. DiSciacca, and G. Gabrielse",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-jack-disciacca",
+          "name": "Jack DiSciacca"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/SelfExcitation.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-dicke-quantum-phase-transition-with-a-superfluid-gas-in-an-optical-cavity": {
+      "title": "Dicke quantum phase transition with a superfluid gas in an optical cavity",
+      "authorsText": "K. Baumann, C. Guerlin, F. Brennecke , and T. Esslinger",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/0912.3261"
+        }
+      ],
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+    },
+    "publication-emergent-crystallinity-and-frustration-with-bose-einstein-condensates-in-multimode-cavities": {
+      "title": "Emergent crystallinity and frustration with Bose-Einstein condensates in multimode cavities",
+      "authorsText": "S. Gopalakrishnan, B. L. Lev, and P. Goldbart",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/GopalaNatPhys.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "P. Goldbart omits middle initial M.; identities/order match."
+    },
+    "publication-biaxial-nematic-phases-in-ultracold-dipolar-fermi-gases": {
+      "title": "Biaxial nematic phases in ultracold dipolar Fermi gases",
+      "authorsText": "B. Fregoso, K. Sun, E. Fradkin, and B. L. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/biaxial.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "B. Fregoso omits middle initial M.; identities/order match."
+    },
+    "publication-dynamical-coupling-between-a-bose-einstein-condensate-and-a-cavity-optical-lattice": {
+      "title": "Dynamical coupling between a Bose-Einstein condensate and a cavity optical lattice",
+      "authorsText": "S. Ritter, F. Brennecke, K. Baumann, T. Donner, C. Guerlin and T. Esslinger",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/0811.3967"
+        }
+      ],
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+    },
+    "publication-optical-interferometers-with-reduced-sensitivity-to-thermal-noise": {
+      "title": "Optical interferometers with reduced sensitivity to thermal noise",
+      "authorsText": "H. J. Kimble, B. L. Lev, and J. Ye",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Kimble.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-loss-of-molecules-in-magneto-electrostatic-traps-due-to-nonadiabatic-transitions": {
+      "title": "Loss of molecules in magneto-electrostatic traps due to nonadiabatic transitions",
+      "authorsText": "M. Lara, B. L. Lev, and J. Bohn",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Majorana.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "J. Bohn omits middle initial L.; identities/order match."
+    },
+    "publication-prospects-for-the-cavity-assisted-laser-cooling-of-molecules": {
+      "title": "Prospects for the cavity-assisted laser cooling of molecules",
+      "authorsText": "B. L. Lev, A. Vukics, E. Hudson, B. Sawyer, P. Domokos, H. Ritsch, and J. Ye",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/OH_cavitycooling.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "E. Hudson and B. Sawyer omit middle initials R. and C.; identities/order match."
+    },
+    "publication-mitigation-of-loss-within-a-molecular-stark-decelerato": {
+      "title": "Mitigation of loss within a molecular Stark decelerato",
+      "authorsText": "B. Sawyer, B. Stuhl, B. L. Lev, J. Ye, and E. Hudson",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/EPJD.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "B. Sawyer, B. Stuhl, E. Hudson omit C., K., R.; identities/order match."
+    },
+    "publication-magneto-electrostatic-trapping-of-ground-state-oh-molecules": {
+      "title": "Magneto-electrostatic trapping of ground state OH molecules",
+      "authorsText": "B. Sawyer, B. L. Lev, E. Hudson, B. Stuhl, M. Lara, J. Bohn, and J. Ye",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/magtrap.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "Short initials omit C., R., K., L. from Sawyer, Hudson, Stuhl, Bohn; identities/order match."
+    },
+    "publication-organic-mixed-order-photonic-crystal-lasers-with-ultrasmall-footprint": {
+      "title": "Organic mixed-order photonic crystal lasers with ultrasmall footprint",
+      "authorsText": "K. Baumann, T. Stöferle, N. Moll, R.F. Mahrt, T. Wahlbrink, J. Bolten, T. Mollenhauer, C. Moormann and U. Scherf",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://research.ibm.com/publications/organic-mixed-order-photonic-crystal-lasers-with-ultrasmall-footprint"
+        }
+      ],
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+    },
+    "publication-superfluid-helium-converter-for-accumulation-and-extraction-of-ultracold-neutrons": {
+      "title": "Superfluid-Helium Converter for Accumulation and Extraction of Ultracold Neutrons",
+      "authorsText": "O. Zimmer, K. Baumann, M. Fertl, B. Franke, S. Mironov, C. Plonka,D. Rich, P. Schmidt-Wellenburg, H.F. Wirth and B. van den Brandt",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/0705.3960"
+        }
+      ],
+      "reviewNote": "All ten author identities/order match; H.F. Wirth versus H.-F. Wirth and missing space after Plonka comma are harmless formatting."
+    },
+    "publication-oh-hyperfine-ground-state-from-precision-measurement-to-molecular-qubits": {
+      "title": "OH hyperfine ground state: from precision measurement to molecular qubits",
+      "authorsText": "B. L. Lev, E. Meyer, E. Hudson, B. Sawyer, J. Bohn, and J. Ye",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/OH_microwave.pdf",
+          "version": "cached paper"
+        }
+      ],
+      "reviewNote": "E. Meyer, E. Hudson, B. Sawyer, J. Bohn omit middle initials; identities/order match. Jun Y e in extraction is a PDF text artifact."
+    },
+    "publication-integration-of-fiber-coupled-high-q-silicon-nitride-microdisks-with-magnetostatic-atom-chips": {
+      "title": "Integration of Fiber Coupled High-Q Silicon Nitride Microdisks with Magnetostatic Atom Chips",
+      "authorsText": "P. E. Barclay, K. Srinivasan, O. Painter, B. Lev, and H. Mabuchi",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/microdisk.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-precision-measurement-based-on-ultracold-atoms-and-cold-molecules": {
+      "title": "Precision measurement based on ultracold atoms and cold molecules",
+      "authorsText": "J. Ye, S. Blatt, M. M. Boyd, S. M. Foreman, E. R. Hudson, T. Ido, B. Lev, A. D. Ludlow, B. C. Sawyer, B. Stuhl, and T. Zelevinsky",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/precision.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-quantum-information-processing-in-optical-lattices-and-magnetic-microtraps": {
+      "title": "Quantum Information Processing in Optical Lattices and Magnetic Microtraps",
+      "authorsText": "P. Treutlein, T. Steinmetz, Y. Colombe, B. Lev, P. Hommelhoff, J. Reichel, M. Greiner, O. Mandel, A. Widera, T. Rom, I. Bloch, and T. W. Haensch",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/fibercavity.pdf",
+          "version": "cached arXiv version (not final-paper verification)"
+        }
+      ],
+      "reviewNote": "Haensch is a conventional transliteration of Hänsch; no missing author."
+    },
+    "publication-time-lens-for-high-resolution-neutron-time-of-flight-spectrometers": {
+      "title": "Time lens for high-resolution neutron time-of-flight spectrometers",
+      "authorsText": "K. Baumann, R. Gähler, P. Grigoriev and E.I. Kats",
+      "authorProfiles": [
+        {
+          "path": "/people/dr-kristian-baumann",
+          "name": "Kristian Baumann"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://arxiv.org/abs/cond-mat/0509132"
+        }
+      ],
+      "reviewNote": "All four author identities/order match. Gaehler is transliteration of Gähler; P. Grigoriev omits middle initial D. harmlessly."
+    },
+    "publication-proposed-magneto-electrostatic-ring-trap-for-neutral-atoms": {
+      "title": "Proposed Magneto-Electrostatic Ring Trap for Neutral Atoms",
+      "authorsText": "A. Hopkins, B. Lev, and H. Mabuchi",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/HLM04.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-feasibility-of-detecting-single-atoms-using-photonic-bandgap-cavities": {
+      "title": "Feasibility of Detecting Single Atoms using Photonic Bandgap Cavities",
+      "authorsText": "B. Lev, K. Srinivasan, P. Barclay, O. Painter, and H. Mabuchi",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/cQEDPBG.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-fabrication-of-micro-magnetic-traps-for-cold-neutral-atoms": {
+      "title": "Fabrication of Micro-Magnetic Traps for Cold Neutral Atoms",
+      "authorsText": "B. Lev",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/QICfab.pdf",
+          "version": "published Quantum Information and Computation 3(5), 450–464 (2003), page 1"
+        }
+      ],
+      "reviewNote": "Original published QICfab.pdf first-page byline confirms sole author Benjamin Lev. Replaced evidence selector’s thesis-chapter excerpt with the actual paper byline."
+    },
+    "publication-atom-mirror-etched-from-a-hard-drive": {
+      "title": "Atom Mirror Etched from a Hard Drive",
+      "authorsText": "B. Lev, Y. Lassailly, C. Lee, A. Scherer, and H. Mabuchi",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/atommirror.pdf",
+          "version": "cached paper"
+        }
+      ]
+    },
+    "publication-quantum-networks-based-on-cavity-qed": {
+      "title": "Quantum Networks Based on Cavity QED",
+      "authorsText": "H. Mabuchi, M. Armen, B. Lev, M. Loncar, J. Vuckovic, H. J. Kimble, J. Preskill, M. L. Roukes, A. Scherer, and S. J. van Enk",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        },
+        {
+          "path": "/people/dr-michael-armen",
+          "name": "Michael Armen"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "archived-paper-byline",
+          "path": "/sites/default/files/Mabuchi01.pdf",
+          "version": "cached paper"
+        },
+        {
+          "type": "primary-byline",
+          "url": "https://people.seas.harvard.edu/~loncar/publications/hideo_paper.pdf"
+        }
+      ],
+      "reviewNote": "Corrected on November 5 after comparison with the primary byline. Original capture retained unchanged."
+    },
+    "publication-radiation-hardness-evaluation-of-the-analog-devices-ad9042-adc-for-use-in-the-cms-electromagnetic-calorimeter": {
+      "title": "Radiation Hardness Evaluation of the Analog Devices AD9042 ADC for Use in the CMS Electromagnetic Calorimeter",
+      "authorsText": "P. Denes, B. Lev, and R. Wixted",
+      "authorProfiles": [
+        {
+          "path": "/people/person-3-0",
+          "name": "Benjamin Lev"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "primary-byline",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S016890029800775X"
+        }
+      ],
+      "reviewNote": "Corrected on November 5 after comparison with the primary byline. Original capture retained unchanged."
+    }
+  }
+}

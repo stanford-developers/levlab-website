@@ -664,6 +664,7 @@ test("release check refreshes successful reports and rejects stale content or un
     });
     fs.writeFileSync(path.join(directory, "data/content.json"), content);
     fs.writeFileSync(path.join(directory, "data/news-curation.json"), "[]");
+    fs.writeFileSync(path.join(directory, "data/publication-author-review.json"), "{}");
     fs.writeFileSync(
       path.join(directory, "data/expected-records.json"),
       JSON.stringify([{ path: "/sample" }]),
@@ -677,6 +678,7 @@ test("release check refreshes successful reports and rejects stale content or un
       JSON.stringify({
         contentHash: createHash("sha256").update(content).digest("hex"),
         newsCurationHash: createHash("sha256").update("[]").digest("hex"),
+        publicationAuthorReviewHash: createHash("sha256").update("{}").digest("hex"),
         builtAt: "2026-10-21T00:00:00Z",
       }),
     );
@@ -691,6 +693,9 @@ test("release check refreshes successful reports and rejects stale content or un
         encoding: "utf8",
       });
     assert.equal(run().status, 0);
+    fs.writeFileSync(path.join(directory, "data/publication-author-review.json"), "{\"changed\":true}");
+    assert.equal(run().status, 1, "Changed author review must require rebuilding");
+    fs.writeFileSync(path.join(directory, "data/publication-author-review.json"), "{}");
     fs.writeFileSync(path.join(directory, "data/news-curation.json"), "[{}]");
     assert.equal(run().status, 1, "Changed news curation must require rebuilding");
     fs.writeFileSync(path.join(directory, "data/news-curation.json"), "[]");

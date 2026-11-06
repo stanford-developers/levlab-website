@@ -33,7 +33,13 @@ function removeFinalPeriod(html) {
  * Consumers sanitize each returned HTML fragment before adding trusted classes.
  */
 export function getPublicationDisplay(publication) {
-  const tree = parse(publication.citationHtml || "");
+  let citationHtml = publication.citationHtml || "";
+  for (const replacement of publication.citationReplacements || []) {
+    if (citationHtml.split(replacement.before).length !== 2)
+      throw Error(`Publication citation copy-edit requires review after source anchor changed: ${publication.id}`);
+    citationHtml = citationHtml.replace(replacement.before, replacement.after);
+  }
+  const tree = parse(citationHtml);
   const titleNode = all(tree, (node) =>
     ["strong", "b"].includes(node.tag) && text(node).length > 15,
   )[0];
@@ -122,7 +128,8 @@ export function getPublicationDisplay(publication) {
   }
   journalHtml = removeFinalPeriod(journalHtml);
   return {
-    titleHtml: publication.displayTitle ? escape(publication.displayTitle) : cleanWhitespace(titleHtml),
+    titleHtml: publication.displayTitle && !publication.preserveCitationTitle
+      ? escape(publication.displayTitle) : cleanWhitespace(titleHtml),
     authorsHtml,
     journalHtml,
     preprintHtml: [...preprints.values()].join(" · "),

@@ -300,7 +300,7 @@ test("news and people are complete and project associations render", () => {
     /href="[^"]*tue-academic-awards-ceremony/,
     "The independently confirmed dead award link must retain plain text only",
   );
-  assert.match(html("/news-events/congratulations-ronen"), /winning master's thesis prize!/);
+  assert.match(html("/news-events/congratulations-ronen"), /winning a master's thesis prize!/);
   assert.equal(
     (html("/news").match(/data-record/g) || []).length,
     data.news.length,
@@ -588,7 +588,7 @@ test("directory, profiles and contact use consistent public-facing structures", 
     "Ginzton Laboratory",
     "Box 305",
     "94305-4013",
-    "Parking Directions",
+    "Parking directions",
     "Jobs",
   ])
     assert.ok(contact.includes(value), value);
@@ -664,6 +664,7 @@ test("release check refreshes successful reports and rejects stale content or un
       pages: [{ path: "/sample" }],
     });
     fs.writeFileSync(path.join(directory, "data/content.json"), content);
+    fs.writeFileSync(path.join(directory, "data/profile-copy-edits.json"), "[]");
     fs.writeFileSync(path.join(directory, "data/news-curation.json"), "[]");
     fs.writeFileSync(path.join(directory, "data/external-link-curation.json"), "[]");
     fs.writeFileSync(path.join(directory, "data/publication-author-review.json"), "{}");
@@ -679,6 +680,7 @@ test("release check refreshes successful reports and rejects stale content or un
       path.join(directory, "dist/build-info.json"),
       JSON.stringify({
         contentHash: createHash("sha256").update(content).digest("hex"),
+        profileCopyEditsHash: createHash("sha256").update("[]").digest("hex"),
         newsCurationHash: createHash("sha256").update("[]").digest("hex"),
         externalLinkCurationHash: createHash("sha256").update("[]").digest("hex"),
         publicationAuthorReviewHash: createHash("sha256").update("{}").digest("hex"),
@@ -696,6 +698,9 @@ test("release check refreshes successful reports and rejects stale content or un
         encoding: "utf8",
       });
     assert.equal(run().status, 0);
+    fs.writeFileSync(path.join(directory, "data/profile-copy-edits.json"), "[{}]");
+    assert.equal(run().status, 1, "Changed profile copy must require rebuilding");
+    fs.writeFileSync(path.join(directory, "data/profile-copy-edits.json"), "[]");
     fs.writeFileSync(path.join(directory, "data/external-link-curation.json"), "[{}]");
     assert.equal(run().status, 1, "Changed external links must require rebuilding");
     fs.writeFileSync(path.join(directory, "data/external-link-curation.json"), "[]");

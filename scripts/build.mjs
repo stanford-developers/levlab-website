@@ -1,3 +1,5 @@
+import { readableText, excerpt, pageDescription } from "./readable-copy.mjs";
+import { profileCopyEditsHash } from "./profile-copy-edits.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { curateNews, newsCurationHash } from "./news-curation.mjs";
@@ -27,6 +29,7 @@ import {
   hiddenDirectoryNames, hiddenDirectoryGroups, personUpdates, benTitle, terminology,
   editorialHtml, projectDescription, newsTitle, projectNewsPreview, withoutPdfLinks,
   profileEditorialHtml,
+  researchOverviewHtml,
 } from "./site-editorial.mjs";
 const contentSource = fs.readFileSync("data/content.json", "utf8");
 const data = JSON.parse(contentSource);
@@ -374,7 +377,7 @@ function shell(title, body, active = "home", route = "/") {
         `<a href="${local(url)}"${key === active ? ' class="active" aria-current="page"' : ""}>${e(label)}</a>`,
     )
     .join("");
-  const description = strip(body).replace(/\s+/g, " ").slice(0, 165);
+  const description = pageDescription(title, body, route);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -454,11 +457,9 @@ function newsSummary(story) {
   const original = text(parse(story.bodyHtml || ""));
   const legacy = original.slice(0, 210).replace(/\s+\S*$/, "") + "…";
   if (story.summary && story.summary !== legacy) return story.summary.replace(/---/g, "—");
-  const full = text(parse(withoutPdfLinks(story.bodyHtml || "")));
+  const full = readableText(withoutPdfLinks(story.bodyHtml || ""));
   const readable = full.replace(/\s+([,.;:!?])/g, "$1").replace(/---/g, "—");
-  return readable.length <= 210
-    ? readable
-    : readable.slice(0, 210).replace(/\s+\S*$/, "") + "…";
+  return excerpt(readable, 210);
 }
 function newsCards(items, searchable = false, paginated = false) {
   const headingTag = searchable ? "h2" : "h3";
@@ -577,7 +578,7 @@ function personCard(p, small = false, loading = "lazy", headingTag = "h3") {
     p.name === "Benjamin Lev" && !small
       ? "Experimental atomic, molecular and optical physics; condensed matter physics; quantum science."
       : "";
-  return `<article class="person-card">${image(p.image, p.name, "", loading)}<div><${headingTag}><a href="${local(canonical(p.path))}">${e(displayName(p.name))}</a></${headingTag}>${!small ? `<p class="person-role">${e(role).replace("; ", "<br>")}</p>` : ""}${description ? `<p>${e(description)}</p>` : ""}</div></article>`;
+  return `<article class="person-card">${image(p.image, displayName(p.name), "", loading)}<div><${headingTag}><a href="${local(canonical(p.path))}">${e(displayName(p.name))}</a></${headingTag}>${!small ? `<p class="person-role">${e(role).replace("; ", "<br>")}</p>` : ""}${description ? `<p>${e(description)}</p>` : ""}</div></article>`;
 }
 function profileFieldContent(node) {
   if (!node || hasClass(node, "field__label")) return "";
@@ -715,7 +716,7 @@ add(
       "<p>We use ultracold atoms, quantum optics, and cavity QED to explore new states of quantum matter—from nonequilibrium gases to two-dimensional materials.</p>",
     ).replace("page-intro", "page-intro research-landing-intro") +
     section(
-      `${projectCards("h2")}<div class="research-background research-overview-details"><h2>More about our research</h2><div class="prose">${rich(editorialHtml(data.currentResearchHtml || "").replace(/`Wire together'/g, "Wire together").replace(/`CavMat'/g, "CavMat"))}</div></div>`,
+      `${projectCards("h2")}<div class="research-background research-overview-details"><h2>More about our research</h2><div class="prose">${rich(researchOverviewHtml(data.currentResearchHtml || ""))}</div></div>`,
       true,
     ) +
     section(`<div class="past-projects"><h2>Past projects</h2><article class="past-project-card"><a href="${local(pastProject.path)}" aria-label="SQCRAMscope research">${image(pastProject.image, "Illustration of the SQCRAMscope atom-chip microscope")}</a><div><h3><a href="${local(pastProject.path)}">SQCRAMscope</a></h3><p>Quantum gas microscopy of transport and magnetism in quantum materials.</p></div></article></div>`, false, "past-projects-section") +
@@ -806,16 +807,16 @@ add(
     `<section class="section contact-section"><div class="site-width contact-layout">
       <div class="address-card"><h2>Contact and directions</h2>
         <p>Spilker Building<br>348 Via Pueblo Mall<br>Stanford University<br>Stanford, CA 94305-4088</p>
-        <div class="contact-directions"><a class="text-button" href="${e(contactLink("Spilker Building"))}">Campus map and directions</a><a href="${e(contactLink("Parking Directions"))}">Parking Directions</a></div>
+        <div class="contact-directions"><a class="text-button" href="${e(contactLink("Spilker Building"))}">Campus map and directions</a><a href="${e(contactLink("Parking Directions"))}">Parking directions</a></div>
       </div>
       <aside class="callout-box" aria-label="Administrative assistance"><h2>Administrative assistance</h2><h3>Nyein Su Mon</h3>
         <p><a href="tel:6507254942">650-725-4942</a><br><a href="mailto:nyeinmon@stanford.edu">nyeinmon@stanford.edu</a></p>
         <p>Prof. Lev: <a href="mailto:benlev@stanford.edu">benlev@stanford.edu</a></p>
         <p><strong>Letters:</strong> <a href="${e(contactLink("Ginzton Laboratory"))}">Ginzton Laboratory</a> Box 305, Stanford University, Stanford, CA 94305-4088</p>
-        <p><strong>Packages:</strong> 348 Via Pueblo, Stanford CA 94305-4013</p>
+        <p><strong>Packages:</strong> 348 Via Pueblo, Stanford, CA 94305-4013</p>
       </aside>
     </div></section>` +
-    `<section class="section section-soft contact-section"><div class="site-width"><div class="section-heading centered"><h2>Jobs</h2></div><div class="callout-box jobs-callout"><p>Interested in cutting-edge quantum many-body physics? Positions open for exceptional postdocs, graduate students, and undergraduates. <a href="mailto:benlev@stanford.edu">Contact Prof. Lev</a>.</p></div></div></section>` +
+    `<section class="section section-soft contact-section"><div class="site-width"><div class="section-heading centered"><h2>Jobs</h2></div><div class="callout-box jobs-callout"><p>Interested in cutting-edge quantum many-body physics? Positions are open for exceptional postdocs, graduate students, and undergraduates. <a href="mailto:benlev@stanford.edu">Contact Prof. Lev</a>.</p></div></div></section>` +
     "",
   "contact",
 );
@@ -953,7 +954,7 @@ for (const person of data.people) {
     breadcrumb("People", "/people") +
       intro(displayName(person.name)).replace("page-intro", "page-intro detail-intro") +
       section(
-        `<div class="person-detail profile-layout${biography ? "" : " summary-only"}"><aside class="profile-summary" aria-label="Profile details">${image(person.image, person.name, "", "eager")}<p class="person-role">${e(person.name === "Benjamin Lev" ? benTitle : terminology(person.role)).replace("; ", "<br>")}</p>${person.group.startsWith("Former") ? '<p class="profile-context">Former lab member</p>' : ""}${person.office ? `<p>${e(person.office)}</p>` : ""}<div class="profile-contacts">${person.phone ? `<p><a href="tel:${e(person.phone.replace(/[^+\d]/g, ""))}">${e(person.phone)}</a></p>` : ""}${person.email ? `<p><a href="${e(person.email)}">${e(emailAddress)}</a></p>` : ""}</div>${
+        `<div class="person-detail profile-layout${biography ? "" : " summary-only"}"><aside class="profile-summary" aria-label="Profile details">${image(person.image, displayName(person.name), "", "eager")}<p class="person-role">${e(person.name === "Benjamin Lev" ? benTitle : terminology(person.role)).replace("; ", "<br>")}</p>${person.group.startsWith("Former") ? '<p class="profile-context">Former lab member</p>' : ""}${person.office ? `<p>${e(person.office)}</p>` : ""}<div class="profile-contacts">${person.phone ? `<p><a href="tel:${e(person.phone.replace(/[^+\d]/g, ""))}">${e(person.phone)}</a></p>` : ""}${person.email ? `<p><a href="${e(person.email)}">${e(emailAddress)}</a></p>` : ""}</div>${
           person.projects.length
             ? `<nav class="profile-projects" aria-label="Associated research">${person.projects
                 .map((id) => {
@@ -1020,6 +1021,7 @@ for (const p of data.pages) {
         ? articles.map((n) => clean(editorialHtml(raw(n)), p.path)).join("")
         : clean(editorialHtml(p.bodyHtml), p.path);
   }
+  if (route === "/about-lab") body = rich(researchOverviewHtml(data.currentResearchHtml || ""));
   if (route === "/contact-jobs") {
     title = "Contact & Jobs";
     active = "contact";
@@ -1104,6 +1106,7 @@ fs.writeFileSync(
       publicationAuthorReviewHash,
       newsCurationHash,
       externalLinkCurationHash,
+      profileCopyEditsHash,
       sourceImportedAt: data.importedAt,
       routes: [...routes.keys()],
       counts: {

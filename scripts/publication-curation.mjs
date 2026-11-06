@@ -38,6 +38,22 @@ export function curatePublications(sourcePublications) {
         throw Error(`Invalid curated publication ${field} for ${id}`);
     if (override.journalUrl && !/^https:\/\//.test(override.journalUrl))
       throw Error(`Invalid curated publication journal URL for ${id}`);
+    if (override.preserveCitationTitle !== undefined &&
+        (typeof override.preserveCitationTitle !== "boolean" || !override.displayTitle))
+      throw Error(`Invalid curated publication scientific title handling for ${id}`);
+    if (override.citationReplacements !== undefined) {
+      if (!Array.isArray(override.citationReplacements))
+        throw Error(`Invalid curated publication citation replacements for ${id}`);
+      let reviewedCitation = sourceRecord.citationHtml;
+      for (const replacement of override.citationReplacements) {
+        if (!replacement || typeof replacement.before !== "string" ||
+            !replacement.before || typeof replacement.after !== "string" ||
+            typeof replacement.reason !== "string" || !replacement.reason.trim() ||
+            reviewedCitation.split(replacement.before).length !== 2)
+          throw Error(`Publication citation copy-edit requires review after source anchor changed: ${id}`);
+        reviewedCitation = reviewedCitation.replace(replacement.before, replacement.after);
+      }
+    }
     if (override.authorPaths !== undefined &&
         (!Array.isArray(override.authorPaths) ||
          override.authorPaths.some((authorPath) => typeof authorPath !== "string" || !authorPath.startsWith("/")) ||
@@ -54,7 +70,7 @@ export function curatePublications(sourcePublications) {
         year: override.year ?? publication.year,
         yearLabel: override.yearLabel || "Publication year",
         ...Object.fromEntries(
-          ["displayTitle", "authorsHtml", "journalCitationHtml", "journalUrl"]
+          ["displayTitle", "authorsHtml", "journalCitationHtml", "journalUrl", "preserveCitationTitle", "citationReplacements"]
             .filter((field) => override[field] !== undefined)
             .map((field) => [field, override[field]]),
         ),

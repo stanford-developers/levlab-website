@@ -1,5 +1,5 @@
 {
-  "reviewedOn": "2026-11-05",
+  "reviewedOn": "2026-11-06",
   "policy": "Manually reviewed author identities against paper bylines. Preserve intentional citation initials/et al. and source identities. Re-review changed citations, associations, and the people inventory; never regenerate this ledger from unchecked imported fields.",
   "people": [
     {
@@ -442,7 +442,7 @@
     },
     "publication-phantom-energy-in-the-nonlinear-response-of-a-quantum-many-body-scar-state": {
       "title": "Phantom energy in the nonlinear response of a quantum many-body scar state",
-      "authorsText": "K. Yang, Y. Zhang, K.-Y. Li, K. -Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev",
+      "authorsText": "K. Yang, Y. Zhang, K.-Y. Li, K.-Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev",
       "authorProfiles": [
         {
           "path": "/people/person-3-0",
@@ -468,7 +468,13 @@
           "version": "cached arXiv version (not final-paper verification)"
         }
       ],
-      "reviewNote": "K. -Y. Lin contains stray spacing but correctly identifies Kuan-Yu Lin; all seven names/order match."
+      "reviewNote": "K. -Y. Lin contains stray spacing but correctly identifies Kuan-Yu Lin; all seven names/order match.",
+      "copyeditEvidence": {
+        "reviewedOn": "2026-11-06",
+        "reason": "Reviewed initial/spacing typography only; all author identities, order, profile associations and original evidence retained.",
+        "before": "K. Yang, Y. Zhang, K.-Y. Li, K. -Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev",
+        "after": "K. Yang, Y. Zhang, K.-Y. Li, K.-Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev"
+      }
     },
     "publication-raman-phonon-polariton-condensation-in-a-transversely-pumped-cavity": {
       "title": "Raman-phonon-polariton condensation in a transversely pumped cavity",
@@ -1848,7 +1854,7 @@
     },
     "publication-dicke-quantum-phase-transition-with-a-superfluid-gas-in-an-optical-cavity": {
       "title": "Dicke quantum phase transition with a superfluid gas in an optical cavity",
-      "authorsText": "K. Baumann, C. Guerlin, F. Brennecke , and T. Esslinger",
+      "authorsText": "K. Baumann, C. Guerlin, F. Brennecke, and T. Esslinger",
       "authorProfiles": [
         {
           "path": "/people/dr-kristian-baumann",
@@ -1861,7 +1867,13 @@
           "url": "https://arxiv.org/abs/0912.3261"
         }
       ],
-      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless.",
+      "copyeditEvidence": {
+        "reviewedOn": "2026-11-06",
+        "reason": "Reviewed initial/spacing typography only; all author identities, order, profile associations and original evidence retained.",
+        "before": "K. Baumann, C. Guerlin, F. Brennecke , and T. Esslinger",
+        "after": "K. Baumann, C. Guerlin, F. Brennecke, and T. Esslinger"
+      }
     },
     "publication-emergent-crystallinity-and-frustration-with-bose-einstein-condensates-in-multimode-cavities": {
       "title": "Emergent crystallinity and frustration with Bose-Einstein condensates in multimode cavities",
@@ -2007,7 +2019,7 @@
     },
     "publication-organic-mixed-order-photonic-crystal-lasers-with-ultrasmall-footprint": {
       "title": "Organic mixed-order photonic crystal lasers with ultrasmall footprint",
-      "authorsText": "K. Baumann, T. Stöferle, N. Moll, R.F. Mahrt, T. Wahlbrink, J. Bolten, T. Mollenhauer, C. Moormann and U. Scherf",
+      "authorsText": "K. Baumann, T. Stöferle, N. Moll, R. F. Mahrt, T. Wahlbrink, J. Bolten, T. Mollenhauer, C. Moormann and U. Scherf",
       "authorProfiles": [
         {
           "path": "/people/dr-kristian-baumann",
@@ -2020,11 +2032,17 @@
           "url": "https://research.ibm.com/publications/organic-mixed-order-photonic-crystal-lasers-with-ultrasmall-footprint"
         }
       ],
-      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless."
+      "reviewNote": "All named author identities and author order match. Citation abbreviations are harmless.",
+      "copyeditEvidence": {
+        "reviewedOn": "2026-11-06",
+        "reason": "Reviewed initial/spacing typography only; all author identities, order, profile associations and original evidence retained.",
+        "before": "K. Baumann, T. Stöferle, N. Moll, R.F. Mahrt, T. Wahlbrink, J. Bolten, T. Mollenhauer, C. Moormann and U. Scherf",
+        "after": "K. Baumann, T. Stöferle, N. Moll, R. F. Mahrt, T. Wahlbrink, J. Bolten, T. Mollenhauer, C. Moormann and U. Scherf"
+      }
     },
     "publication-superfluid-helium-converter-for-accumulation-and-extraction-of-ultracold-neutrons": {
       "title": "Superfluid-Helium Converter for Accumulation and Extraction of Ultracold Neutrons",
-      "authorsText": "O. Zimmer, K. Baumann, M. Fertl, B. Franke, S. Mironov, C. Plonka,D. Rich, P. Schmidt-Wellenburg, H.F. Wirth and B. van den Brandt",
+      "authorsText": "O. Zimmer, K. Baumann, M. Fertl, B. Franke, S. Mironov, C. Plonka, D. Rich, P. Schmidt-Wellenburg, H.-F. Wirth and B. van den Brandt",
       "authorProfiles": [
         {
           "path": "/people/dr-kristian-baumann",
@@ -2037,7 +2055,13 @@
           "url": "https://arxiv.org/abs/0705.3960"
         }
       ],
-      "reviewNote": "All ten author identities/order match; H.F. Wirth versus H.-F. Wirth and missing space after Plonka comma are harmless formatting."
+      "reviewNote": "All ten author identities/order match; H.F. Wirth versus H.-F. Wirth and missing space after Plonka comma are harmless formatting.",
+      "copyeditEvidence": {
+        "reviewedOn": "2026-11-06",
+        "reason": "Reviewed initial/spacing typography only; all author identities, order, profile associations and original evidence retained.",
+        "before": "O. Zimmer, K. Baumann, M. Fertl, B. Franke, S. Mironov, C. Plonka,D. Rich, P. Schmidt-Wellenburg, H.F. Wirth and B. van den Brandt",
+        "after": "O. Zimmer, K. Baumann, M. Fertl, B. Franke, S. Mironov, C. Plonka, D. Rich, P. Schmidt-Wellenburg, H.-F. Wirth and B. van den Brandt"
+      }
     },
     "publication-oh-hyperfine-ground-state-from-precision-measurement-to-molecular-qubits": {
       "title": "OH hyperfine ground state: from precision measurement to molecular qubits",
@@ -2111,7 +2135,7 @@
     },
     "publication-time-lens-for-high-resolution-neutron-time-of-flight-spectrometers": {
       "title": "Time lens for high-resolution neutron time-of-flight spectrometers",
-      "authorsText": "K. Baumann, R. Gähler, P. Grigoriev and E.I. Kats",
+      "authorsText": "K. Baumann, R. Gähler, P. Grigoriev and E. I. Kats",
       "authorProfiles": [
         {
           "path": "/people/dr-kristian-baumann",
@@ -2124,7 +2148,13 @@
           "url": "https://arxiv.org/abs/cond-mat/0509132"
         }
       ],
-      "reviewNote": "All four author identities/order match. Gaehler is transliteration of Gähler; P. Grigoriev omits middle initial D. harmlessly."
+      "reviewNote": "All four author identities/order match. Gaehler is transliteration of Gähler; P. Grigoriev omits middle initial D. harmlessly.",
+      "copyeditEvidence": {
+        "reviewedOn": "2026-11-06",
+        "reason": "Reviewed initial/spacing typography only; all author identities, order, profile associations and original evidence retained.",
+        "before": "K. Baumann, R. Gähler, P. Grigoriev and E.I. Kats",
+        "after": "K. Baumann, R. Gähler, P. Grigoriev and E. I. Kats"
+      }
     },
     "publication-proposed-magneto-electrostatic-ring-trap-for-neutral-atoms": {
       "title": "Proposed Magneto-Electrostatic Ring Trap for Neutral Atoms",

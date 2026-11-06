@@ -1,4 +1,5 @@
 import { parse, raw, text } from "./html.mjs";
+import { profileCopyEditedHtml } from "./profile-copy-edits.mjs";
 
 // Presentation decisions from the October 29 meeting. Captured records, legacy
 // paths, and files stay intact; scholarly titles are not rewritten.
@@ -13,6 +14,7 @@ export const personUpdates = {
   "Samuel Aronson": { image: "/images/samuel-aronson.png" },
   "Giulia Socolof": { image: "/images/giulia-socolof.jpg" },
   "Pranav Parakh": { image: "/images/pranav-parakh-headshot.png" },
+  "Chen Wu": { role: "Master’s Student" },
   "Kuan-Yu Lin": { group: "Former Postdocs", role: "Graduate Student and Postdoc" },
   // Reviewed historical contributions: the old combined materials/atom-chip
   // category must not relabel SQCRAMscope work as the current CavMat experiment.
@@ -70,7 +72,7 @@ export function profileEditorialHtml(person) {
     "Jack DiSciacca": ["PostDoc, Group of B. Lev, Stanford University 2013-", "Postdoc, Group of B. Lev, Stanford University (started 2013)"],
   };
   if (corrections[person.name]) replaceOnce(...corrections[person.name]);
-  return html;
+  return profileCopyEditedHtml(person, html);
 }
 export function projectDescription(project) {
   let body = editorialHtml(project.bodyHtml);
@@ -81,7 +83,37 @@ export function projectDescription(project) {
   if (project.past)
     body = body.replace(/\buses an ultracold/, "used an ultracold")
       .replace(/It is([\s\u00a0]+)capable/, "It was$1capable");
-  return body;
+  const edits = {
+    dysprosium: [
+      ["Bose and Fermi-degenerate", "Bose- and Fermi-degenerate"],
+      ["both within and away from equilibrium", "both at and away from equilibrium"],
+      ["we recently made", "we created"],
+      ["We will now aim to explore", "We aim to explore"],
+    ],
+    rubidium: [["We recently created a supersolid", "We created a supersolid"]],
+    cavmat: [["in continuous rather than pulsed manner", "in a continuous rather than pulsed manner"]],
+  };
+  for (const [before, after] of edits[project.slug] || []) {
+    if (body.split(before).length !== 2) throw new Error(`Review ${project.slug} copy: ${before}`);
+    body = body.replace(before, after);
+  }
+  return body.split(/(<[^>]+>)/g).map((part) => part.startsWith("<") ? part : part.replace(/---/g, "—")).join("");
+}
+export function researchOverviewHtml(value) {
+  let html = editorialHtml(value);
+  const edits = [
+    ["a joint AMO &amp; CM experimental group", "an experimental group spanning atomic, molecular, and optical (AMO) physics and condensed matter physics"],
+    ["far away from equilibrium", "far from equilibrium"],
+    ["to both engineer", "both to engineer"],
+    ["`Wire together'", "Wire together"],
+    ["`CavMat'", "CavMat"],
+    ["all curious experiment and theory grad students and postdocs", "all curious graduate students and postdocs working in experiment or theory"],
+  ];
+  for (const [before, after] of edits) {
+    if (html.split(before).length !== 2) throw new Error(`Review research overview copy: ${before}`);
+    html = html.replace(before, after);
+  }
+  return html;
 }
 export function newsTitle(title) {
   return terminology(title).replace(/\bAssoc\b\.?/g, "Associative");

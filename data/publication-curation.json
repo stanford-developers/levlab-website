@@ -1,6 +1,6 @@
 {
-  "reviewedOn": "2026-11-05",
-  "policy": "Apply reviewed publication projects and primary-citation years consistently without modifying captured content. Unlisted records retain audited source projects/year. Preserve source order within the same publication year. Keep the 2006 primary conference year for Precision measurement; its separate 2007 republication remains in the full citation. Reviewed display titles and journal destinations are presentation metadata; immutable captured identities and citation HTML remain intact. October 29 normalization removes displayed PDF download links while preserving archived files, citation text, authors, preprints, and highlight text. November 5 author identity review corrects authorPaths and two incorrect citation bylines; both publication details and person publication lists use the same curated authorPaths. Archived source fields remain unchanged.",
+  "reviewedOn": "2026-11-06",
+  "policy": "Apply reviewed publication projects and primary-citation years consistently without modifying captured content. Unlisted records retain audited source projects/year. Preserve source order within the same publication year. Keep the 2006 primary conference year for Precision measurement; its separate 2007 republication remains in the full citation. Reviewed display titles and journal destinations are presentation metadata; immutable captured identities and citation HTML remain intact. October 29 normalization removes displayed PDF download links while preserving archived files, citation text, authors, preprints, and highlight text. November 5 author identity review corrects authorPaths and two incorrect citation bylines; both publication details and person publication lists use the same curated authorPaths. Archived source fields remain unchanged. November 6 copy-edit review adds exact citation replacements for grammar, punctuation, initials, and invisible artifacts. Captured records remain immutable; scientific citation markup is retained when a separate plain heading title is supplied.",
   "catalogs": {
     "dysprosium": {
       "label": "Dysprosium",
@@ -49,7 +49,9 @@
     },
     "publication-superradiant-charge-density-waves-in-a-driven-cavity-matter-hybrid": {
       "title": "Superradiant Charge Density Waves in a Driven Cavity-Matter Hybrid",
-      "projects": ["cavmat"],
+      "projects": [
+        "cavmat"
+      ],
       "evidence": "2026 theory proposes optically driven transition-metal dichalcogenides inside a cavity, controlling electronic charge-density order: CavMat.",
       "yearLabel": "Publication year",
       "yearEvidence": "Nature primary article page reports published 19 October 2026 and cites Nat Commun (2026), DOI 10.1038/s41467-026-78382-3. It is an early accepted manuscript; no volume or article number is supplied. Preserve arXiv:2603.28432.",
@@ -66,49 +68,117 @@
     },
     "publication-raman-phonon-polariton-condensation-in-a-transversely-pumped-cavity": {
       "title": "Raman-phonon-polariton condensation in a transversely pumped cavity",
-      "projects": ["cavmat"],
-      "evidence": "2024 theory couples Raman-active material phonons to cavity photons and evaluates transition-metal dichalcogenide parameters: CavMat."
+      "projects": [
+        "cavmat"
+      ],
+      "evidence": "2024 theory couples Raman-active material phonons to cavity photons and evaluates transition-metal dichalcogenide parameters: CavMat.",
+      "citationReplacements": [
+        {
+          "before": "In npj Quantum Materials special issue on \"Light Induced States of Matter\"",
+          "after": "In the npj Quantum Materials special issue on “Light Induced States of Matter”.",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-038"
+        }
+      ]
     },
     "publication-a-scanning-quantum-cryogenic-atom-microscope-at-6-k": {
       "title": "A scanning quantum cryogenic atom microscope at 6 K",
-      "projects": ["sqcramscope"],
+      "projects": [
+        "sqcramscope"
+      ],
       "evidence": "2021 paper explicitly describes SQCRAMscope cryogenic and atom-chip improvements, reaching 5.7 K; not CavMat cavity-material coupling."
     },
     "publication-nematic-transitions-in-iron-pnictide-superconductors-imaged-with-a-quantum-gas": {
       "title": "Nematic Transitions in Iron-Pnictide Superconductors Imaged with a Quantum Gas",
-      "projects": ["sqcramscope"],
-      "evidence": "2020 primary preprint explicitly uses SQCRAMscope BEC magnetometry plus birefringence imaging to study iron-pnictide nematicity."
+      "projects": [
+        "sqcramscope"
+      ],
+      "evidence": "2020 primary preprint explicitly uses SQCRAMscope BEC magnetometry plus birefringence imaging to study iron-pnictide nematicity.",
+      "citationReplacements": [
+        {
+          "before": "Nature Physcis",
+          "after": "Nature Physics",
+          "reason": "Correct the misspelled journal name.",
+          "findingId": "PUB-007"
+        },
+        {
+          "before": "Featured in<strong> Phys.org</strong> in article by Ingrid Fadelli:",
+          "after": "Featured in a <strong>Phys.org</strong> article by Ingrid Fadelli:",
+          "reason": "Supply the missing article and remove the repeated in without changing attribution.",
+          "findingId": "PUB-008"
+        },
+        {
+          "before": "Featured in <strong>Physics World</strong> article by Margaret Harris:",
+          "after": "Featured in a <strong>Physics World</strong> article by Margaret Harris:",
+          "reason": "Supply the missing indefinite article before the publication/article phrase.",
+          "findingId": "PUB-050"
+        }
+      ]
     },
     "publication-a-scanning-quantum-cryogenic-atom-microscope": {
       "title": "A Scanning Quantum Cryogenic Atom Microscope",
-      "projects": ["sqcramscope"],
-      "evidence": "2017 paper introduces SQCRAMscope, a scanning probe magnetometer employing a magnetically levitated BEC."
+      "projects": [
+        "sqcramscope"
+      ],
+      "evidence": "2017 paper introduces SQCRAMscope, a scanning probe magnetometer employing a magnetically levitated BEC.",
+      "citationReplacements": [
+        {
+          "before": "<strong>Sensing Magnetic Fields with a Giant Quantum Wave</strong>,",
+          "after": "<strong>Sensing Magnetic Fields with a Giant Quantum Wave</strong>.",
+          "reason": "Replace the dangling final comma with a full stop; primary title/byline verified.",
+          "findingId": "PUB-010"
+        }
+      ]
     },
     "publication-trapping-ultracold-gases-near-cryogenic-materials-with-rapid-reconfigurability": {
       "title": "Trapping ultracold gases near cryogenic materials with rapid reconfigurability",
-      "projects": ["sqcramscope"],
+      "projects": [
+        "sqcramscope"
+      ],
       "evidence": "2013 atom-chip apparatus places ultracold atoms near exchangeable cryogenic samples and independently controls sample temperature. SQCRAMscope precursor; Rb species alone does not make this the Rubidium cavity project."
     },
     "publication-imaging-topologically-protected-transport-with-quantum-degenerate-gases": {
       "title": "Imaging topologically protected transport with quantum degenerate gases",
-      "projects": ["sqcramscope"],
+      "projects": [
+        "sqcramscope"
+      ],
       "evidence": "2012 proposal uses atom-chip microscopy of current flow near topological-insulator surfaces. SQCRAMscope sensing precursor, not CavMat optical cavity control."
     },
     "publication-fabrication-of-micro-magnetic-traps-for-cold-neutral-atoms": {
       "title": "Fabrication of Micro-Magnetic Traps for Cold Neutral Atoms",
-      "projects": ["sqcramscope"],
+      "projects": [
+        "sqcramscope"
+      ],
       "evidence": "2003 Caltech/pre-LevLab atom-chip fabrication methods paper: lithographic microwires make magnetic traps for neutral atoms. Retain as historical SQCRAMscope/atom-chip foundation per user direction and original combined-project association, not as a CavMat paper or a report of the later SQCRAMscope instrument. Preserve its separate Pre-LevLab metadata.",
       "journalUrl": "https://doi.org/10.26421/QIC3.5-5",
       "journalUrlEvidence": {
         "verifiedOn": "2026-10-29",
         "url": "https://api.crossref.org/works/10.26421/QIC3.5-5",
         "note": "Publisher-deposited Crossref DOI metadata verifies the article title, journal and volume/pages; use its DOI landing page instead of the original PDF or unlinked citation."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "450-464, (2003)",
+          "after": "450–464 (2003)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-027"
+        }
+      ]
     },
     "publication-dynamic-polarizabilities-and-magic-wavelengths-for-dysprosium": {
       "title": "Dynamic polarizabilities and magic wavelengths for dysprosium",
-      "projects": ["dysprosium"],
-      "evidence": "2011 primary PDF abstract explicitly calculates dysprosium ground/excited-state polarizabilities and magic wavelengths for cooling/spectroscopy. Missing source project tag should be Dysprosium."
+      "projects": [
+        "dysprosium"
+      ],
+      "evidence": "2011 primary PDF abstract explicitly calculates dysprosium ground/excited-state polarizabilities and magic wavelengths for cooling/spectroscopy. Missing source project tag should be Dysprosium.",
+      "citationReplacements": [
+        {
+          "before": "Physical Review A, <strong>83</strong>",
+          "after": "Physical Review A <strong>83</strong>",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-022"
+        }
+      ]
     },
     "publication-effects-of-intertube-dipole-dipole-interactions-in-nearly-integrable-one-dimensional-162dy-gases": {
       "title": "Effects of intertube dipole-dipole interactions in nearly integrable one-dimensional 162Dy gases",
@@ -124,7 +194,21 @@
         "verifiedOn": "2026-10-29",
         "url": "https://www.tandfonline.com/doi/abs/10.1080/14786435.2011.637980",
         "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "Philosophical Magazine, <strong>92</strong>",
+          "after": "Philosophical Magazine <strong>92</strong>",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-021"
+        },
+        {
+          "before": "Special issue in honor of David Sherrington",
+          "after": "Special issue in honor of David Sherrington.",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-039"
+        }
+      ]
     },
     "publication-quantum-information-processing-in-optical-lattices-and-magnetic-microtraps": {
       "title": "Quantum Information Processing in Optical Lattices and Magnetic Microtraps",
@@ -133,7 +217,21 @@
         "verifiedOn": "2026-10-29",
         "url": "https://onlinelibrary.wiley.com/doi/10.1002/prop.200610325",
         "note": "Publisher or author institution metadata verifies the DOI and citation; use the article landing page in place of the historical PDF-only journal link."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "121-144",
+          "after": "121–144",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-026"
+        },
+        {
+          "before": "W.P. Schleich",
+          "after": "W. P. Schleich",
+          "reason": "Separate the editor’s initials consistently.",
+          "findingId": "PUB-031"
+        }
+      ]
     },
     "publication-feasibility-of-detecting-single-atoms-using-photonic-bandgap-cavities": {
       "title": "Feasibility of Detecting Single Atoms using Photonic Bandgap Cavities",
@@ -157,7 +255,15 @@
         "reviewedOn": "2026-11-05",
         "url": "https://people.seas.harvard.edu/~loncar/publications/hideo_paper.pdf",
         "reason": "The paper first page lists S. J. van Enk after the nine Caltech authors. Restore the omitted final coauthor."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "7-12, (2001)",
+          "after": "7–12 (2001)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-029"
+        }
+      ]
     },
     "publication-radiation-hardness-evaluation-of-the-analog-devices-ad9042-adc-for-use-in-the-cms-electromagnetic-calorimeter": {
       "title": "Radiation Hardness Evaluation of the Analog Devices AD9042 ADC for Use in the CMS Electromagnetic Calorimeter",
@@ -172,7 +278,21 @@
         "reviewedOn": "2026-11-05",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S016890029800775X",
         "reason": "Publisher byline is P. Denes, B. Lev, R. Wixted. Correct Wixted’s first initial and restore published author order."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "Section A, </span>",
+          "after": "Section A </span>",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-030"
+        },
+        {
+          "before": "371-376, (1998)",
+          "after": "371–376 (1998)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-030"
+        }
+      ]
     },
     "publication-powerful-narrow-line-source-of-blue-light-for-laser-cooling-yb-er-and-dysprosium-atoms": {
       "title": "Powerful narrow-line source of blue light for laser cooling Yb/Er and Dysprosium atoms",
@@ -190,7 +310,21 @@
         "verifiedOn": "2026-10-29",
         "url": "https://api.crossref.org/works/10.1063/1.2400637",
         "note": "Publisher-deposited Crossref metadata verifies the 2006 primary AIP Conference Proceedings 869, 80–91 citation. Keep its separate 2007 republication text and the 2006 catalog year."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "80-91",
+          "after": "80–91",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-024"
+        },
+        {
+          "before": "2481 - 2494",
+          "after": "2481–2494",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-025"
+        }
+      ]
     },
     "publication-phantom-energy-in-the-nonlinear-response-of-a-quantum-many-body-scar-state": {
       "title": "Phantom energy in the nonlinear response of a quantum many-body scar state",
@@ -214,7 +348,8 @@
           "Kuan-Yu Lin"
         ],
         "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
-      }
+      },
+      "authorsHtml": "K. Yang, Y. Zhang, K.-Y. Li, K.-Y. Lin, S. Gopalakrishnan, M. Rigol, and B. L. Lev"
     },
     "publication-high-cooperativity-using-a-confocal-cavity-qed-microscope": {
       "title": "High Cooperativity Using a Confocal-Cavity–QED Microscope",
@@ -303,7 +438,15 @@
         "doi": "10.1103/PhysRevLett.122.193601",
         "url": "https://doi.org/10.1103/PhysRevLett.122.193601",
         "reason": "Published PRL title spells out quantum electrodynamics; cached preprint title abbreviates QED."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "Selected for Editors' Suggestion",
+          "after": "Selected as an Editors' Suggestion.",
+          "reason": "Use grammatical wording for the existing distinction; no award/status change.",
+          "findingId": "PUB-012"
+        }
+      ]
     },
     "publication-supermode-density-wave-polariton-condensation": {
       "title": "Supermode-density-wave-polariton condensation",
@@ -355,7 +498,15 @@
         "doi": "10.1063/1.2356892",
         "url": "https://doi.org/10.1063/1.2356892",
         "reason": "Use the published title, retaining its silicon-nitride chemical formula with subscript x; the captured expanded magnetostatic wording is not the final title."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "September 25th, 2006",
+          "after": "September 25, 2006",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-044"
+        }
+      ]
     },
     "publication-real-time-observation-of-fluctuations-at-the-driven-dissipative-dicke-phase-transition": {
       "title": "Real-time observation of fluctuations at the driven-dissipative Dicke phase transition",
@@ -375,7 +526,271 @@
         "doi": "10.1103/PhysRevLett.107.140402",
         "url": "https://doi.org/10.1103/PhysRevLett.107.140402",
         "reason": "Restore the missing final words phase transition in the truncated source title."
-      }
+      },
+      "citationReplacements": [
+        {
+          "before": "140402(2011)",
+          "after": "140402 (2011)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-019"
+        }
+      ]
+    },
+    "publication-dicke-quantum-phase-transition-with-a-superfluid-gas-in-an-optical-cavity": {
+      "title": "Dicke quantum phase transition with a superfluid gas in an optical cavity",
+      "authorsHtml": "K. Baumann, C. Guerlin, F. Brennecke, and T. Esslinger"
+    },
+    "publication-organic-mixed-order-photonic-crystal-lasers-with-ultrasmall-footprint": {
+      "title": "Organic mixed-order photonic crystal lasers with ultrasmall footprint",
+      "authorsHtml": "K. Baumann, T. Stöferle, N. Moll, R. F. Mahrt, T. Wahlbrink, J. Bolten, T. Mollenhauer, C. Moormann and U. Scherf"
+    },
+    "publication-superfluid-helium-converter-for-accumulation-and-extraction-of-ultracold-neutrons": {
+      "title": "Superfluid-Helium Converter for Accumulation and Extraction of Ultracold Neutrons",
+      "authorsHtml": "O. Zimmer, K. Baumann, M. Fertl, B. Franke, S. Mironov, C. Plonka, D. Rich, P. Schmidt-Wellenburg, H.-F. Wirth and B. van den Brandt"
+    },
+    "publication-time-lens-for-high-resolution-neutron-time-of-flight-spectrometers": {
+      "title": "Time lens for high-resolution neutron time-of-flight spectrometers",
+      "authorsHtml": "K. Baumann, R. Gähler, P. Grigoriev and E. I. Kats"
+    },
+    "publication-tunable-range-photon-mediated-atomic-interactions-in-multimode-cavity-qed": {
+      "title": "Tunable-range, photon-mediated atomic interactions in multimode cavity QED​",
+      "citationReplacements": [
+        {
+          "before": "A Multimode Dial for Interatomic Interactions,",
+          "after": "A Multimode Dial for Interatomic Interactions.",
+          "reason": "Replace the dangling final comma with a full stop; primary title/byline verified.",
+          "findingId": "PUB-009"
+        },
+        {
+          "before": "Tunable-range, photon-mediated atomic interactions in multimode cavity QED​",
+          "after": "Tunable-range, photon-mediated atomic interactions in multimode cavity QED",
+          "reason": "Remove the trailing zero-width space from title, document title, search and metadata; visible scholarly wording is unchanged.",
+          "findingId": "PUB-033"
+        }
+      ],
+      "displayTitle": "Tunable-range, photon-mediated atomic interactions in multimode cavity QED"
+    },
+    "publication-emergent-and-broken-symmetries-of-atomic-self-organization-arising-from-gouy-phase-shifts-in-multimode-cavity-qed": {
+      "title": "Emergent and broken symmetries of atomic self-organization arising from Gouy phase shifts in multimode cavity QED",
+      "citationReplacements": [
+        {
+          "before": "Selected for Editors' Suggestion",
+          "after": "Selected as an Editors' Suggestion.",
+          "reason": "Use grammatical wording for the existing distinction; no award/status change.",
+          "findingId": "PUB-011"
+        }
+      ]
+    },
+    "publication-one-particle-measurement-of-the-antiproton-magnetic-moment": {
+      "title": "One-Particle Measurement of the Antiproton Magnetic Moment",
+      "citationReplacements": [
+        {
+          "before": "Selected as <em>Editors' Suggestion</em> and featured in <a href=\"http://physics.aps.org/articles/v6/36\">Physics Viewpoint</a>.",
+          "after": "Selected as an <em>Editors' Suggestion</em> and featured in a <a href=\"http://physics.aps.org/articles/v6/36\">Physics Viewpoint</a>.",
+          "reason": "Supply the omitted articles and terminal punctuation; preserve both existing distinctions.",
+          "findingId": "PUB-013"
+        },
+        {
+          "before": "130801(2013)",
+          "after": "130801 (2013)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-017"
+        }
+      ]
+    },
+    "publication-quantum-degenerate-dipolar-fermi-gas": {
+      "title": "Quantum Degenerate Dipolar Fermi Gas",
+      "citationReplacements": [
+        {
+          "before": "Selected as <em>Editors' Suggestion</em> and featured in <a href=\"http://physics.aps.org/articles/v5/58\">Physics </a></span><a href=\"http://physics.aps.org/articles/v5/58\" style=\"line-height: 1.6em;\" target=\"_blank\">Viewpoint</a><a href=\"http://physics.aps.org/articles/v5/58\"><span style=\"line-height: 1.6em;\"> </span></a>",
+          "after": "Selected as an <em>Editors' Suggestion</em> and featured in a <a href=\"http://physics.aps.org/articles/v5/58\">Physics Viewpoint</a>.</span>",
+          "reason": "Supply the omitted articles and terminal punctuation; preserve both existing distinctions.",
+          "findingId": "PUB-014"
+        }
+      ]
+    },
+    "publication-rapidity-and-momentum-distributions-of-one-dimensional-dipolar-quantum-gases": {
+      "title": "Rapidity and momentum distributions of one-dimensional dipolar quantum gases",
+      "citationReplacements": [
+        {
+          "before": "Selected as a Letter and Editors' Suggestion",
+          "after": "Selected as a Letter and an Editors' Suggestion.",
+          "reason": "Supply the article before Editors’ Suggestion and close the highlight with a full stop.",
+          "findingId": "PUB-015"
+        }
+      ]
+    },
+    "publication-an-atomic-interface-between-microwave-and-optical-photons": {
+      "title": "An atomic interface between microwave and optical photons",
+      "citationReplacements": [
+        {
+          "before": "Physical Review A, Rapid communications",
+          "after": "Physical Review A, Rapid Communications",
+          "reason": "Match the section-label capitalization used for the other Rapid Communications citations.",
+          "findingId": "PUB-016"
+        }
+      ]
+    },
+    "publication-roton-type-mode-softening-in-a-quantum-gas-with-cavity-mediated-long-range-interactions": {
+      "title": "Roton-type mode softening in a quantum gas with cavity-mediated long-range interactions",
+      "citationReplacements": [
+        {
+          "before": "1570(2012)",
+          "after": "1570 (2012)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-018"
+        }
+      ]
+    },
+    "publication-self-excitation-and-feedback-cooling-of-an-isolated-proton": {
+      "title": "Self-Excitation and Feedback Cooling of an Isolated Proton",
+      "citationReplacements": [
+        {
+          "before": "143001(2010)",
+          "after": "143001 (2010)",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-020"
+        }
+      ]
+    },
+    "publication-emergent-crystallinity-and-frustration-with-bose-einstein-condensates-in-multimode-cavities": {
+      "title": "Emergent crystallinity and frustration with Bose-Einstein condensates in multimode cavities",
+      "citationReplacements": [
+        {
+          "before": "845 - 850",
+          "after": "845–850",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-023"
+        }
+      ]
+    },
+    "publication-atom-mirror-etched-from-a-hard-drive": {
+      "title": "Atom Mirror Etched from a Hard Drive",
+      "citationReplacements": [
+        {
+          "before": "395-397",
+          "after": "395–397",
+          "reason": "Normalize citation punctuation/spacing while preserving the verified journal, volume, pages/article number, and year.",
+          "findingId": "PUB-028"
+        }
+      ]
+    },
+    "publication-topological-pumping-of-a-1d-dipolar-gas-into-strongly-correlated-prethermal-states": {
+      "title": "Topological pumping of a 1D dipolar gas into strongly correlated prethermal states​",
+      "displayTitle": "Topological pumping of a 1D dipolar gas into strongly correlated prethermal states",
+      "citationReplacements": [
+        {
+          "before": "Topological pumping of a 1D dipolar gas into strongly correlated prethermal states​",
+          "after": "Topological pumping of a 1D dipolar gas into strongly correlated prethermal states",
+          "reason": "Remove the trailing zero-width space from title, document title, search and metadata; visible scholarly wording is unchanged.",
+          "findingId": "PUB-032"
+        }
+      ]
+    },
+    "publication-meissner-like-effect-for-synthetic-gauge-field-in-multimode-cavity-qed": {
+      "title": "Meissner-like effect for synthetic gauge field in multimode cavity QED​",
+      "displayTitle": "Meissner-like effect for synthetic gauge field in multimode cavity QED",
+      "citationReplacements": [
+        {
+          "before": "Meissner-like effect for synthetic gauge field in multimode cavity QED​",
+          "after": "Meissner-like effect for synthetic gauge field in multimode cavity QED",
+          "reason": "Remove the trailing zero-width space from title, document title, search and metadata; visible scholarly wording is unchanged.",
+          "findingId": "PUB-034"
+        }
+      ]
+    },
+    "publication-bose-einstein-condensation-of-162-dy-and-160-dy": {
+      "title": "Bose-Einstein condensation of 162 Dy and 160 Dy",
+      "citationReplacements": [
+        {
+          "before": "Focus on New Frontiers of Cold Molecules Research​",
+          "after": "Focus on New Frontiers of Cold Molecules Research",
+          "reason": "Remove the trailing zero-width source artifact from the collection link label.",
+          "findingId": "PUB-035"
+        }
+      ],
+      "displayTitle": "Bose-Einstein condensation of 162Dy and 160Dy",
+      "preserveCitationTitle": true
+    },
+    "publication-s-wave-scattering-lengths-of-the-strongly-dipolar-bosons-162-dy-and-164-dy": {
+      "title": "s -wave scattering lengths of the strongly dipolar bosons 162 Dy and 164 Dy",
+      "displayTitle": "s-wave scattering lengths of the strongly dipolar bosons 162Dy and 164Dy",
+      "preserveCitationTitle": true
+    },
+    "publication-trapping-ultracold-dysprosium-a-highly-magnetic-gas-for-dipolar-physics": {
+      "title": "Trapping ultracold dysprosium: A highly magnetic gas for dipolar physics",
+      "citationReplacements": [
+        {
+          "before": "February 25th, 2010",
+          "after": "February 25, 2010",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-040"
+        },
+        {
+          "before": "February 18th, 2010",
+          "after": "February 18, 2010",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-041"
+        }
+      ]
+    },
+    "publication-magneto-electrostatic-trapping-of-ground-state-oh-molecules": {
+      "title": "Magneto-electrostatic trapping of ground state OH molecules",
+      "citationReplacements": [
+        {
+          "before": "June 22nd, 2007",
+          "after": "June 22, 2007.",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-042"
+        },
+        {
+          "before": "July 13th, 2007",
+          "after": "July 13, 2007",
+          "reason": "Apply consistent editorial article/date/punctuation style without changing any title, date or distinction.",
+          "findingId": "PUB-043"
+        },
+        {
+          "before": "Science’s Editor’s Choice",
+          "after": "Science’s Editors’ Choice",
+          "reason": "Use the publisher’s official plural possessive Editors’ Choice section label; preserve OH Trapped by Magnets exactly.",
+          "findingId": "PUB-051"
+        }
+      ]
+    },
+    "publication-thermalization-near-integrability-in-a-dipolar-quantum-newton-s-cradle": {
+      "title": "Thermalization near integrability in a dipolar quantum Newton's cradle",
+      "citationReplacements": [
+        {
+          "before": "See <a href=\"http://science.sciencemag.org/content/360/6390/twil\">Editors' Choice</a><strong> Watching magnetic atoms thermalize</strong> in Science",
+          "after": "See the Science Editors' Choice: “<a href=\"http://science.sciencemag.org/content/360/6390/twil\">Watching magnetic atoms thermalize</a>”.",
+          "reason": "Separate publication, article type and article title with clear syntax; retain the existing coverage title verbatim.",
+          "findingId": "PUB-045"
+        },
+        {
+          "before": "See <a href=\"https://www.sciencenews.org/article/tiny-physics-toy-newton-cradle-revealing-quantum-secrets\">News: Quantum Physics</a> <strong>A tiny version of this physics toy is revealing quantum secrets</strong> in ScienceNews",
+          "after": "See Science News (Quantum Physics): “<a href=\"https://www.sciencenews.org/article/tiny-physics-toy-newton-cradle-revealing-quantum-secrets\">A tiny version of this physics toy is revealing quantum secrets</a>”.",
+          "reason": "Separate publication, article type and article title with clear syntax; retain the existing coverage title verbatim.",
+          "findingId": "PUB-046"
+        },
+        {
+          "before": "See <a href=\"https://physics.aps.org/synopsis-for/10.1103/PhysRevX.8.021030\">Synopsis</a> <strong>Pathway to Quantum Thermalization</strong><strong> </strong>in APS Physics",
+          "after": "See the APS Physics Synopsis: “<a href=\"https://physics.aps.org/synopsis-for/10.1103/PhysRevX.8.021030\">Pathway to Quantum Thermalization</a>”.",
+          "reason": "Separate publication, article type and article title with clear syntax; retain the existing coverage title verbatim.",
+          "findingId": "PUB-047"
+        },
+        {
+          "before": "See <a href=\"https://www.nature.com/articles/s41567-018-0146-4.pdf\">Research Highlight</a> <strong>Towards thermalization</strong> in Nature Physics",
+          "after": "See the Nature Physics Research Highlight: “<a href=\"https://www.nature.com/articles/s41567-018-0146-4.pdf\">Towards thermalization</a>”.",
+          "reason": "Separate publication, article type and article title with clear syntax; retain the existing coverage title verbatim.",
+          "findingId": "PUB-048"
+        },
+        {
+          "before": "See <a href=\"https://news.stanford.edu/2018/05/02/toy-inspires-experiment-behavior-quantum-systems/\">Article</a> <strong>Toy inspires experiment on behavior of quantum systems</strong> in Stanford News",
+          "after": "See the Stanford News article: “<a href=\"https://news.stanford.edu/2018/05/02/toy-inspires-experiment-behavior-quantum-systems/\">Toy inspires experiment on behavior of quantum systems</a>”.",
+          "reason": "Separate publication, article type and article title with clear syntax; retain the existing coverage title verbatim.",
+          "findingId": "PUB-049"
+        }
+      ]
     }
   },
   "reviewEvidence": "publication-review.json"

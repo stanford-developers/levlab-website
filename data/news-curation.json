@@ -37,7 +37,15 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "First science from SQCRAMscope!  We have imaged the electron nematic transport in iron-based pnictide high-Tc superconductors. Read about it in Nature Physics here ."
+    "evidence": "First science from SQCRAMscope!  We have imaged the electron nematic transport in iron-based pnictide high-Tc superconductors. Read about it in Nature Physics here . November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-34-01).",
+    "imageAlt": {
+      "from": "SCRAMscope imaging nematic LevLab",
+      "to": "SQCRAMscope imaging nematic LevLab",
+      "sourceImage": "/sites/default/files/styles/medium/public/pnictide.png?itok=OWc_Nst2"
+    },
+    "copyeditReviewIds": [
+      "news-34-01"
+    ]
   },
   {
     "path": "/news-events/congratulations-dr-edkins",
@@ -45,7 +53,16 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Historical team milestone, not CavMat apparatus research. Source Stephen Edkins profile is Former Postdocs; its linked publication is the SQCRAMscope nematic-transition study. Body concerns his 2016 superconductivity thesis award; preserve as historical team news without implying the award was for SQCRAMscope."
+    "evidence": "Historical team milestone, not CavMat apparatus research. Source Stephen Edkins profile is Former Postdocs; its linked publication is the SQCRAMscope nematic-transition study. Body concerns his 2016 superconductivity thesis award; preserve as historical team news without implying the award was for SQCRAMscope. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-43-01).",
+    "replacements": [
+      {
+        "from": "<p>Dr. Steve Edkins won Institute of Physics prize for best PhD thesis in the field of superconductivity for 2016. Congratulations, Steve!</p>\n",
+        "to": "<p>Dr. Steve Edkins won the Institute of Physics prize for the best PhD thesis in the field of superconductivity for 2016. Congratulations, Steve!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-43-01"
+    ]
   },
   {
     "path": "/news-events/pnas-sqcramscope",
@@ -61,7 +78,16 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Physics Viewpoint on SQCRAMscope"
+    "evidence": "Physics Viewpoint on SQCRAMscope November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-48-01).",
+    "replacements": [
+      {
+        "from": "<p>Physics <a href=\"http://physics.aps.org/articles/v10/30\">Viewpoint</a> on SQCRAMscope</p>\n",
+        "to": "<p>Physics <a href=\"http://physics.aps.org/articles/v10/30\">Viewpoint</a> on SQCRAMscope.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-48-01"
+    ]
   },
   {
     "path": "/news-events/sqcramscope-news-article",
@@ -69,7 +95,16 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Check-out recent news !"
+    "evidence": "Check-out recent news ! November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-49-01).",
+    "replacements": [
+      {
+        "from": "<p>Check-out recent <a href=\"https://www.insidescience.org/news/brief-introducing-new-kind-microscope\">news</a>!<br> </p>\n",
+        "to": "<p>Check out recent <a href=\"https://www.insidescience.org/news/brief-introducing-new-kind-microscope\">news</a>!<br> </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-49-01"
+    ]
   },
   {
     "path": "/news-events/sqcramscope-lives",
@@ -77,7 +112,16 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Introducing the SQCRAMscope.  ArXiv paper describes new microscope functionality."
+    "evidence": "Introducing the SQCRAMscope.  ArXiv paper describes new microscope functionality. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-52-01).",
+    "replacements": [
+      {
+        "from": "<p>Introducing the SQCRAMscope.  ArXiv <a href=\"http://arxiv.org/abs/1608.06922\">paper</a> describes new microscope functionality.</p>\n",
+        "to": "<p>Introducing the SQCRAMscope.  An arXiv <a href=\"http://arxiv.org/abs/1608.06922\">paper</a> describes new microscope functionality.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-52-01"
+    ]
   },
   {
     "path": "/news-events/congratulations-dr-naides",
@@ -85,7 +129,16 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Historical atom-chip team milestone. Source Matthew Naides profile is Former Graduate Students; linked publication is the SQCRAMscope precursor Trapping ultracold gases near cryogenic materials with rapid reconfigurability. Thesis announcement is not CavMat."
+    "evidence": "Historical atom-chip team milestone. Source Matthew Naides profile is Former Graduate Students; linked publication is the SQCRAMscope precursor Trapping ultracold gases near cryogenic materials with rapid reconfigurability. Thesis announcement is not CavMat. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-68-01).",
+    "replacements": [
+      {
+        "from": "<p>Matt Naides just defended his Ph.D. thesis! Way to go Dr. Naides!</p>\n",
+        "to": "<p>Matt Naides just defended his Ph.D. thesis! Way to go, Dr. Naides!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-68-01"
+    ]
   },
   {
     "path": "/news-events/cryogenic-atom-chip",
@@ -93,7 +146,17 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Paper on the reconfigurable atom chip trapping of atoms near cryogenic materials published in Appl. Phys. Lett.  We demonstrate a novel atom chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns from any <100 um-thin, UHV-compatible material, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system."
+    "evidence": "Paper on the reconfigurable atom chip trapping of atoms near cryogenic materials published in Appl. Phys. Lett.  We demonstrate a novel atom chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns from any <100 um-thin, UHV-compatible material, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-70-01, news-70-02).",
+    "replacements": [
+      {
+        "from": "<p>Paper on the reconfigurable atom chip trapping of atoms near cryogenic materials published in Appl. Phys. Lett.  We demonstrate a novel atom chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns from any &lt;100 um-thin, UHV-compatible material, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system.</p>\n",
+        "to": "<p>Our paper on reconfigurable atom-chip trapping of atoms near cryogenic materials is published in Appl. Phys. Lett.  We demonstrate a novel atom-chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns of any UHV-compatible material less than 100 µm thick, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-70-01",
+      "news-70-02"
+    ]
   },
   {
     "path": "/news-events/topological-insulator-proposal",
@@ -101,7 +164,16 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Lev publishes proposal for atom chip microscopy of transport in topological insulators Phys. Rev. B ."
+    "evidence": "Lev publishes proposal for atom chip microscopy of transport in topological insulators Phys. Rev. B . November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-94-01).",
+    "replacements": [
+      {
+        "from": "<p>Lev publishes proposal for atom chip microscopy of transport in topological insulators <a href=\"http://prb.aps.org/abstract/PRB/v85/i20/e205442\">Phys. Rev. B</a>.</p>\n",
+        "to": "<p>Lev publishes a proposal for atom-chip microscopy of transport in topological insulators in <a href=\"http://prb.aps.org/abstract/PRB/v85/i20/e205442\">Phys. Rev. B</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-94-01"
+    ]
   },
   {
     "path": "/node/620",
@@ -130,39 +202,63 @@
     "title": "Spin glass in multimode cavity QED proposal",
     "replacements": [
       {
-        "from": "Hopefield neural network",
-        "to": "Hopfield neural network"
+        "from": "<p>Spin glass and Hopefield neural network in multimode cQED paper appears in <a href=\"http://prl.aps.org/abstract/PRL/v107/i27/e277201\">PRL</a>.  Collaboration between Lev and theorists Paul Goldbart (GaTech) and Sarang Gopalakrishnan (Harvard).</p>\n",
+        "to": "<p>A paper on a spin glass and a Hopfield neural network in multimode cavity QED appears in <a href=\"http://prl.aps.org/abstract/PRL/v107/i27/e277201\">PRL</a>.  This is a collaboration between Lev and theorists Paul Goldbart (GaTech) and Sarang Gopalakrishnan (Harvard).</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-93-01).",
+    "copyeditReviewIds": [
+      "news-93-01"
+    ]
   },
   {
     "path": "/news-events/chip-bsed-single-atom-detector",
     "title": "Chip-bsed single atom detector",
-    "displayTitle": "Chip-based single atom detector",
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "displayTitle": "Chip-based single-atom detector",
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-86-01, news-86-02). Root review follow-up: make single-atom consistent in the news heading, body and alt text.",
+    "replacements": [
+      {
+        "from": "<p>Publication in <a href=\"http://prl.aps.org/abstract/PRL/v104/i20/e203602\">Phys. Rev. Lett.</a> of the best on-chip cavity-based single atom detector with <a href=\"http://www.lkb.ens.fr/-Cavity-QED-with-neutral-atoms-\">ENS collaborators</a>.</p>\n",
+        "to": "<p>Our work with <a href=\"http://www.lkb.ens.fr/-Cavity-QED-with-neutral-atoms-\">ENS collaborators</a> on the best on-chip cavity-based single-atom detector is published in <a href=\"http://prl.aps.org/abstract/PRL/v104/i20/e203602\">Phys. Rev. Lett.</a></p>\n"
+      }
+    ],
+    "imageAlt": {
+      "from": "Chip-bsed single atom detector",
+      "to": "Chip-based single-atom detector",
+      "sourceImage": "/sites/default/files/styles/medium/public/Logo_1.png?itok=r4ploB06"
+    },
+    "copyeditReviewIds": [
+      "news-86-01",
+      "news-86-02"
+    ]
   },
   {
     "path": "/node/622",
     "title": "Phantom energy paper in Science",
     "replacements": [
       {
-        "from": "phenominon",
-        "to": "phenomenon"
+        "from": "<p>We observe a novel quantum many-body phenominon in quench compressed scar states.  Published in <a href=\"https://www.science.org/stoken/author-tokens/ST-2045/full\">Science</a>.</p>\n",
+        "to": "<p>We observe a novel quantum many-body phenomenon in quench-compressed scar states.  Published in <a href=\"https://www.science.org/stoken/author-tokens/ST-2045/full\">Science</a>.</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-15-01).",
+    "copyeditReviewIds": [
+      "news-15-01"
+    ]
   },
   {
     "path": "/news-events/video-levs-vamos-seminar-talk",
     "title": "Video of Lev's VAMOS seminar talk",
     "replacements": [
       {
-        "from": "repored",
-        "to": "reported"
+        "from": "<p>Watch <a href=\"https://www.youtube.com/watch?v=qTCA-EvFZHc\">here</a> for Prof. Benjamin Lev's <a href=\"https://sites.google.com/stanford.edu/virtual-amo-seminar/schedule\">VAMOS seminar</a> talk on \"Topological pumping of a 1D dipolar gas into strongly correlated prethermal states.\"  This work was repored in <a href=\"https://science.sciencemag.org/content/371/6526/296\">Science</a>.</p>\n",
+        "to": "<p>Watch <a href=\"https://www.youtube.com/watch?v=qTCA-EvFZHc\">Prof. Benjamin Lev's</a> <a href=\"https://sites.google.com/stanford.edu/virtual-amo-seminar/schedule\">VAMOS seminar</a> talk on \"Topological pumping of a 1D dipolar gas into strongly correlated prethermal states.\"  This work was reported in <a href=\"https://science.sciencemag.org/content/371/6526/296\">Science</a>.</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-22-01).",
+    "copyeditReviewIds": [
+      "news-22-01"
+    ]
   },
   {
     "path": "/news-events/pairing-atoms-1d-photons",
@@ -180,33 +276,44 @@
     "title": "Dynamical Spin-Orbit Coupling",
     "replacements": [
       {
-        "from": "polarition",
-        "to": "polariton"
+        "from": "<p>We <a href=\"/sites/default/files/PhysRevLett.123.160404.pdf\">demonstrated</a> <em>dynamical </em>spin-orbit-coupling in a BEC for the first time using an optical cavity.  The resulting state is a spinor-helix polarition condensate.  Paper appeared in <a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.160404\">PRL</a>.</p>\n",
+        "to": "<p>We <a href=\"/sites/default/files/PhysRevLett.123.160404.pdf\">demonstrated</a> <em>dynamical </em>spin-orbit coupling in a BEC for the first time using an optical cavity.  The resulting state is a spinor-helix polariton condensate.  The paper appeared in <a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.160404\">PRL</a>.</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-35-01, news-35-02).",
+    "copyeditReviewIds": [
+      "news-35-01",
+      "news-35-02"
+    ]
   },
   {
     "path": "/news-events/interactions-gouy-phases",
     "title": "Interactions from Gouy phases",
     "replacements": [
       {
-        "from": "Physicis",
-        "to": "Physics"
+        "from": "<p>Two papers, <a href=\"http://levlab.stanford.edu/sites/default/files/Phys.%20Rev.%20Lett.%202019%20Guo.pdf\">here</a> and <a href=\"http://levlab.stanford.edu/sites/default/files/Phys.%20Rev.%20A%202019%20Guo.pdf\">here</a>, show how Gouy phases modify photon-mediated interactions in multimode cavity QED.  Both chosen for Editors' Suggestion and featured in APS Physicis <a href=\"http://levlab.stanford.edu/sites/default/files/Physics%20-%20Synopsis%3A%20A%20Step%20Toward%20Simulating%20Spin%20Glasses.pdf\">Synopsis</a>: A Step Toward Simulating Spin Glasses</p>\n",
+        "to": "<p>Two papers, in <a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.193601\">PRL</a> and <a href=\"https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.053818\">PRA</a>, show how Gouy phases modify photon-mediated interactions in multimode cavity QED.  Both received Editors’ Suggestions and were featured in the APS Physics <a href=\"https://physics.aps.org/synopsis-for/10.1103/PhysRevLett.122.193601\">Synopsis</a>: “A Step Toward Simulating Spin Glasses”.</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-36-01, news-36-02).",
+    "copyeditReviewIds": [
+      "news-36-01",
+      "news-36-02"
+    ]
   },
   {
     "path": "/news-events/tunable-interactions-prx",
     "title": "Tunable interactions PRX",
     "replacements": [
       {
-        "from": "demostrate",
-        "to": "demonstrate"
+        "from": "<p>PRX <a href=\"https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.011002\">paper</a> published.  Results demostrate tunable range, photon-mediated atom-atom interactions using BECs in multimode cavity QED.  See also APS Physics <a href=\"https://physics.aps.org/articles/v11/3\">Viewpoint</a> by Hakan Türeci.</p>\n",
+        "to": "<p>Our PRX <a href=\"https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.011002\">paper</a> is published. The results demonstrate photon-mediated atom-atom interactions with a tunable range using BECs in multimode cavity QED.  See also the APS Physics <a href=\"https://physics.aps.org/articles/v11/3\">Viewpoint</a> by Hakan Türeci.</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-41-01).",
+    "copyeditReviewIds": [
+      "news-41-01"
+    ]
   },
   {
     "path": "/news-events/viewpoint-arrested-implosion",
@@ -217,7 +324,15 @@
         "to": "fluctuations"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-58-01).",
+    "imageAlt": {
+      "from": "Viewpoint:  An Arrested Implosion",
+      "to": "Viewpoint: An Arrested Implosion",
+      "sourceImage": "/sites/default/files/styles/medium/public/viewpoint.png?itok=sJtkj2HQ"
+    },
+    "copyeditReviewIds": [
+      "news-58-01"
+    ]
   },
   {
     "path": "/news-events/superstripes-paper-nature-physics",
@@ -235,10 +350,796 @@
     "title": "Winning MURI team",
     "replacements": [
       {
-        "from": "team lead by",
-        "to": "team led by"
+        "from": "<p>LevLab is part of the winning MURI team lead by Chris Monroe at the JQI for development of <em>Quantum Optical</em> <em>Circuits of Hybrid Quantum Memories</em>. See our <a href=\"http://qcircuitmuri.jqi.umd.edu/\">MURI website</a> and <a href=\"http://www.defenselink.mil/releases/release.aspx?releaseid=12657\">news bulletin</a>.</p>\n",
+        "to": "<p>LevLab is part of the winning MURI team led by Chris Monroe at the JQI for the development of <em>Quantum Optical</em> <em>Circuits of Hybrid Quantum Memories</em>. See our <a href=\"http://qcircuitmuri.jqi.umd.edu/\">MURI website</a> and <a href=\"http://www.defenselink.mil/releases/release.aspx?releaseid=12657\">news bulletin</a>.</p>\n"
       }
     ],
-    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path. November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-90-01).",
+    "copyeditReviewIds": [
+      "news-90-01"
+    ]
+  },
+  {
+    "path": "/node/654",
+    "title": "Stanford Report on Assoc Memory",
+    "replacements": [
+      {
+        "from": "<p>Stanford Report publishes news article on recent Science paper.  Here's the <a href=\"https://news.stanford.edu/stories/2026/09/spin-glass-memory-ai-research\">Stanford Report article</a> and more info:<br>We have created the first quantum-optical associative memory, published in <a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">Science <strong>394</strong>, 212 (2026)</a>!   We experimentally show that one can store and recall memories in a spin glass, which was long thought not possible.  The exponentially many glassy minima—which cannot be used as memories under equilibrium recall—can now be turned into reliable memories under driven-dissipative cavity dynamics.  By doing so, we achieve a storage capacity that exceeds the classical Hopfield limit by as much as seven-fold.  A second key discovery is a polaronic “elasticity” that mimics the short-term synaptic plasticity inherent to biological systems.  We show that this doubles memory capacity and points to future directions whereby our neural network can be trained using a naturally occurring synaptic plasticity.<a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">  Read paper here.</a></p>\n",
+        "to": "<p>Stanford Report publishes a news article on our recent Science paper.  Here's the <a href=\"https://news.stanford.edu/stories/2026/09/spin-glass-memory-ai-research\">Stanford Report article</a> and more info:<br>We have created the first quantum-optical associative memory, published in <a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">Science <strong>394</strong>, 212 (2026)</a>!   We experimentally show that one can store and recall memories in a spin glass, which was long thought not possible.  The exponentially many glassy minima—which cannot be used as memories under equilibrium recall—can now be turned into reliable memories under driven-dissipative cavity dynamics.  By doing so, we achieve a storage capacity that exceeds the classical Hopfield limit by as much as sevenfold.  A second key discovery is a polaronic “elasticity” that mimics the short-term synaptic plasticity inherent to biological systems.  We show that this doubles memory capacity and points to future directions in which our neural network can be trained using naturally occurring synaptic plasticity.<a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">  Read the paper here.</a></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-01-01",
+      "news-01-02",
+      "news-01-03",
+      "news-01-04"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-01-01, news-01-02, news-01-03, news-01-04)."
+  },
+  {
+    "path": "/node/653",
+    "title": "Endowed Professorship!",
+    "replacements": [
+      {
+        "from": "<p>Prof. Lev has been awarded a named, endowed chair---he is now the Stanford Fortitude Professor.  </p>\n",
+        "to": "<p>Prof. Lev has been awarded a named, endowed chair—he is now the Stanford Fortitude Professor.  </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-02-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-02-01)."
+  },
+  {
+    "path": "/node/648",
+    "title": "\"Sizzle reel\" for Lev talk",
+    "replacements": [
+      {
+        "from": "<p>Prof. Lev gave a Fireside Chat talk on quantum and STEM to <a href=\"https://www.castilleja.org/\">Castilleja School</a>, a girls middle and high school in the Bay Area.  This is the \"<a href=\"https://next.frame.io/share/e43d89eb-a31f-4e01-a54e-f7893bd83b0b/view/5ec0775c-677d-4088-9820-ce1f7b7cbf8e\">Sizzle reel</a>\" movie they made for his introduction. </p>\n",
+        "to": "<p>Prof. Lev gave a Fireside Chat talk on quantum science and STEM at <a href=\"https://www.castilleja.org/\">Castilleja School</a>, a girls’ middle and high school in the Bay Area.  This is the \"<a href=\"https://next.frame.io/share/e43d89eb-a31f-4e01-a54e-f7893bd83b0b/view/5ec0775c-677d-4088-9820-ce1f7b7cbf8e\">Sizzle reel</a>\" movie they made for his introduction. </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-04-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-04-01)."
+  },
+  {
+    "path": "/node/647",
+    "title": "PRL Collection of the Year, 2025!",
+    "replacements": [
+      {
+        "from": "<p>Our Ising spin glass paper made the <a href=\"https://promo.aps.org/PRL2025?_gl=1*mcy87q*_gcl_au*NDY2NTQxNTUyLjE3NzA1NzUzMzM.*_ga*OTc5OTcxMjE0LjE3MzI4MzU1NzE.*_ga_ZS5V2B2DR1*czE3NzUzNTg2MzckbzckZzEkdDE3NzUzNTg4OTkkajYwJGwwJGgxNzM5NzAwODUw\">PRL Collection of the Year, 2025</a>!  See paper <a href=\"https://journals.aps.org/prl/abstract/10.1103/x19r-pzyb\">here</a>.</p>\n",
+        "to": "<p>Our Ising spin glass paper made the <a href=\"https://promo.aps.org/PRL2025?_gl=1*mcy87q*_gcl_au*NDY2NTQxNTUyLjE3NzA1NzUzMzM.*_ga*OTc5OTcxMjE0LjE3MzI4MzU1NzE.*_ga_ZS5V2B2DR1*czE3NzUzNTg2MzckbzckZzEkdDE3NzUzNTg4OTkkajYwJGwwJGgxNzM5NzAwODUw\">PRL Collection of the Year, 2025</a>!  See the paper <a href=\"https://journals.aps.org/prl/abstract/10.1103/x19r-pzyb\">here</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-05-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-05-01)."
+  },
+  {
+    "path": "/node/643",
+    "title": "CBS news on WSP@Stanford",
+    "replacements": [
+      {
+        "from": "<p>For Veteran's Day 2025, <a href=\"https://www.youtube.com/watch?v=qAtjXAVU5Q4\">KPIX CBS News Bay Area interviews </a>Prof. Benjamin Lev and Stanford veteran Oscar Mier about the <a href=\"https://www.warrior-scholar.org/academic-boot-camps/\">Warrior-Scholar Project</a> STEM bootcamp Lev <a href=\"https://humsci.stanford.edu/feature/stanford-participates-pathway-college-military-vets\">leads at Stanford</a>.  </p>\n",
+        "to": "<p>For Veterans Day 2025, <a href=\"https://www.youtube.com/watch?v=qAtjXAVU5Q4\">KPIX CBS News Bay Area interviews </a>Prof. Benjamin Lev and Stanford veteran Oscar Mier about the <a href=\"https://www.warrior-scholar.org/academic-boot-camps/\">Warrior-Scholar Project</a> STEM boot camp Lev <a href=\"https://humsci.stanford.edu/feature/stanford-participates-pathway-college-military-vets\">leads at Stanford</a>.  </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-06-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-06-01)."
+  },
+  {
+    "path": "/node/642",
+    "title": "Our PRL featured by QNEXT",
+    "replacements": [
+      {
+        "from": "<p>Read announcement:  <a href=\"https://q-next.org/spin-glass-for-studying-behavior-in-quantum-materials/\">Spin glass for studying behavior in quantum materials</a></p>\n",
+        "to": "<p>Read the announcement: “<a href=\"https://q-next.org/spin-glass-for-studying-behavior-in-quantum-materials/\">Spin glass for studying behavior in quantum materials</a>”.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-07-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-07-01)."
+  },
+  {
+    "path": "/node/641",
+    "title": "Phys.Org news article",
+    "replacements": [
+      {
+        "from": "<p>Phys.Org did a news piece on our Ising spin glass. <a href=\"https://phys.org/news/2025-10-driven-dissipative-ising-glass-cavity.html\">Check it out!</a></p>\n",
+        "to": "<p>Phys.org published a news article on our Ising spin glass. <a href=\"https://phys.org/news/2025-10-driven-dissipative-ising-glass-cavity.html\">Check it out!</a></p>\n"
+      }
+    ],
+    "displayTitle": "Phys.org news article",
+    "copyeditReviewIds": [
+      "news-08-01",
+      "news-08-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-08-01, news-08-02)."
+  },
+  {
+    "path": "/node/638",
+    "title": "New Science paper!",
+    "replacements": [
+      {
+        "from": "<p>We have created the first quantum-optical associative memory, published in <a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">Science <strong>394</strong>, 212 (2026)</a>!   We experimentally show that one can store and recall memories in a spin glass, which was long thought not possible.  The exponentially many glassy minima—which cannot be used as memories under equilibrium recall—can now be turned into reliable memories under driven-dissipative cavity dynamics.  By doing so, we achieve a storage capacity that exceeds the classical Hopfield limit by as much as seven-fold.  A second key discovery is a polaronic “elasticity” that mimics the short-term synaptic plasticity inherent to biological systems.  We show that this doubles memory capacity and points to future directions whereby our neural network can be trained using a naturally occurring synaptic plasticity.<a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">  Read paper here.</a></p>\n<p>Highlighted “<a href=\"https://www.science.org/doi/10.1126/science.aem9876#sec-5\">In Science Journals.</a>”</p>\n",
+        "to": "<p>We have created the first quantum-optical associative memory, published in <a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">Science <strong>394</strong>, 212 (2026)</a>!   We experimentally show that one can store and recall memories in a spin glass, which was long thought not possible.  The exponentially many glassy minima—which cannot be used as memories under equilibrium recall—can now be turned into reliable memories under driven-dissipative cavity dynamics.  By doing so, we achieve a storage capacity that exceeds the classical Hopfield limit by as much as sevenfold.  A second key discovery is a polaronic “elasticity” that mimics the short-term synaptic plasticity inherent to biological systems.  We show that this doubles memory capacity and points to future directions in which our neural network can be trained using naturally occurring synaptic plasticity.<a href=\"https://www.science.org/eprint/QNUQ2PJNJ6ZMFKPESVBP/full?activationRedirect=/doi/full/10.1126/science.aec3917\">  Read the paper here.</a></p>\n<p>Highlighted “<a href=\"https://www.science.org/doi/10.1126/science.aem9876#sec-5\">In Science Journals.</a>”</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-10-01",
+      "news-10-02",
+      "news-10-03"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-10-01, news-10-02, news-10-03)."
+  },
+  {
+    "path": "/node/628",
+    "title": "Lev leads bootcamp for veterans",
+    "replacements": [
+      {
+        "from": "<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\">A summer STEM academic bootcamp for veterans helps pave a path to higher education. </p>\n<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\">The Warrior-Scholar Project, launched in 2011, aims to remove veterans’ barriers to higher education by introducing small groups of former enlisted service members to college experiences, coaching them in the skills required to be successful students, and connecting them with other vets embarking on academic tours of duty. </p>\n<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\"><a data-cke-saved-href=\"https://profiles.stanford.edu/benjamin-lev\" href=\"https://profiles.stanford.edu/benjamin-lev\">Benjamin Lev</a>, a professor of physics and applied physics in H&amp;S, worked with <a data-cke-saved-href=\"https://profiles.stanford.edu/mary-beth-mudgett\" href=\"https://profiles.stanford.edu/mary-beth-mudgett\">Mary Beth Mudgett</a>, senior associate dean for the natural sciences, Susan B. Ford Professor, and a professor of biology in H&amp;S, to bring the program to campus this year. </p>\n<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\"><a data-cke-saved-href=\"https://humsci.stanford.edu/feature/stanford-participates-pathway-college-military-vets\" href=\"https://humsci.stanford.edu/feature/stanford-participates-pathway-college-military-vets\">Read Stanford News article by Cameron Scott.</a><br>Image credit: LiPo Ching/Stanford University</p>\n",
+        "to": "<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\">A summer STEM academic bootcamp for veterans helps pave a path to higher education. </p>\n<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\">The Warrior-Scholar Project, launched in 2011, aims to remove veterans’ barriers to higher education by introducing small groups of former enlisted service members to college experiences, coaching them in the skills required to be successful students, and connecting them with other vets embarking on academic tours of duty. </p>\n<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\"><a data-cke-saved-href=\"https://profiles.stanford.edu/benjamin-lev\" href=\"https://profiles.stanford.edu/benjamin-lev\">Benjamin Lev</a>, a professor of physics and applied physics in H&amp;S, worked with <a data-cke-saved-href=\"https://profiles.stanford.edu/mary-beth-mudgett\" href=\"https://profiles.stanford.edu/mary-beth-mudgett\">Mary Beth Mudgett</a>, senior associate dean for the natural sciences, Susan B. Ford Professor, and a professor of biology in H&amp;S, to bring the program to campus this year. </p>\n<p style=\"-webkit-text-stroke-width:0px;caret-color:rgb(0, 0, 0);color:rgb(0, 0, 0);font-style:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:auto;text-align:start;text-decoration:none;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;\"><a data-cke-saved-href=\"https://humsci.stanford.edu/feature/stanford-participates-pathway-college-military-vets\" href=\"https://humsci.stanford.edu/feature/stanford-participates-pathway-college-military-vets\">Read the Stanford News article by Cameron Scott.</a><br>Image credit: LiPo Ching/Stanford University</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-13-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-13-02)."
+  },
+  {
+    "path": "/news-events/benjamin-lev-2021-aps-fellow",
+    "title": "Benjamin Lev 2021 APS Fellow",
+    "replacements": [
+      {
+        "from": "<p>Benjamin Lev, Physics &amp; Applied Physics Professor, along with Physics Professors Srinivas Raghu and Monika Schleier-Smith, are new APS Fellows for work in quantum physics.</p>\n<p>By Taylor Kubota<br>The <a href=\"https://www.aps.org/programs/honors/fellowships/\">APS Fellowship Program</a> was created to recognize members who have made advances in physics through original research and publications or made significant innovative contributions in the application of physics to science and technology. They may also have made significant contributions to the teaching of physics or service and participation in the activities of the society.</p>\n<p>Lev, associate professor of applied physics and of physics in the School of Humanities and Sciences (H&amp;S), was nominated “for groundbreaking experiments on quantum gases of lanthanide atoms with large magnetic dipole moments, theoretically proposing and experimentally demonstrating many-body multimode cavity QED for many-body physics and the demonstration of novel scanning quantum gas imaging of quantum materials.” Lev is also a member of <a href=\"http://biox.stanford.edu/\">Stanford Bio-X</a>.</p>\n<p>Raghu, an associate professor of physics in H&amp;S and of photon science at SLAC National Accelerator Laboratory, was nominated “for fundamental theoretical studies of the emergent properties of quantum materials, particularly for developing controlled field-theoretic approaches to such problems.”</p>\n<p>Schleier-Smith, an associate professor of physics in H&amp;S, was nominated “for pioneering experimental and theoretical contributions to quantum measurements and quantum simulation with ultracold atoms.”</p>\n<p>The Fellowship is a distinct honor signifying recognition by one’s professional peers. Each year, no more than one-half of one percent of the society’s membership (excluding student members) is recognized for election to the status of Fellow of the American Physical Society.</p>\n<p><a href=\"https://news.stanford.edu/report/2021/10/13/new-stanford-aps-fellows/\">Read more</a> and <a href=\"https://www.q-next.org/category/news-articles/\">here too</a><br><br>(Image credit: Courtesy Benjamin Lev/Courtesy Srinivas Raghu/John D. and Catherine T. MacArthur Foundation)</p>\n<p> </p>\n",
+        "to": "<p>Benjamin Lev, professor of physics and applied physics, and physics professors Srinivas Raghu and Monika Schleier-Smith are new APS Fellows for work in quantum physics.</p>\n<p>By Taylor Kubota<br>The <a href=\"https://www.aps.org/programs/honors/fellowships/\">APS Fellowship Program</a> was created to recognize members who have made advances in physics through original research and publications or made significant innovative contributions in the application of physics to science and technology. They may also have made significant contributions to the teaching of physics or service and participation in the activities of the society.</p>\n<p>Lev, associate professor of applied physics and of physics in the School of Humanities and Sciences (H&amp;S), was nominated “for groundbreaking experiments on quantum gases of lanthanide atoms with large magnetic dipole moments, theoretically proposing and experimentally demonstrating many-body multimode cavity QED for many-body physics and the demonstration of novel scanning quantum gas imaging of quantum materials.” Lev is also a member of <a href=\"http://biox.stanford.edu/\">Stanford Bio-X</a>.</p>\n<p>Raghu, an associate professor of physics in H&amp;S and of photon science at SLAC National Accelerator Laboratory, was nominated “for fundamental theoretical studies of the emergent properties of quantum materials, particularly for developing controlled field-theoretic approaches to such problems.”</p>\n<p>Schleier-Smith, an associate professor of physics in H&amp;S, was nominated “for pioneering experimental and theoretical contributions to quantum measurements and quantum simulation with ultracold atoms.”</p>\n<p>The Fellowship is a distinct honor signifying recognition by one’s professional peers. Each year, no more than one-half of one percent of the society’s membership (excluding student members) is recognized for election to the status of Fellow of the American Physical Society.</p>\n<p><a href=\"https://news.stanford.edu/report/2021/10/13/new-stanford-aps-fellows/\">Read more</a> and <a href=\"https://www.q-next.org/category/news-articles/\">here too</a><br><br>(Image credit: Courtesy Benjamin Lev/Courtesy Srinivas Raghu/John D. and Catherine T. MacArthur Foundation)</p>\n<p> </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-21-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-21-01)."
+  },
+  {
+    "path": "/news-events/nature-optical-lattice-sound",
+    "title": "Nature: Optical lattice with sound",
+    "replacements": [
+      {
+        "from": "<p>Our paper has appeared in <a href=\"https://rdcu.be/cBax4\">Nature</a> regarding the creation of the first optical lattice with sound vibrations---phonons.  This opens many new directions in the field of quantum simulation of quantum many-body systems.  Read more in <a href=\"https://news.stanford.edu/2021/11/10/adding-sound-quantum-simulations/\">Stanford News</a> and <a href=\"http://physics.aps.org/articles/v14/159\" rel=\"noopener noreferrer\" target=\"_blank\">APS Physics Magazine</a>.</p>\n",
+        "to": "<p>Our paper on the creation of the first optical lattice with sound vibrations—phonons—has appeared in <a href=\"https://rdcu.be/cBax4\">Nature</a>.  This opens many new directions in the field of quantum simulation of quantum many-body systems.  Read more in <a href=\"https://news.stanford.edu/2021/11/10/adding-sound-quantum-simulations/\">Stanford News</a> and <a href=\"http://physics.aps.org/articles/v14/159\" rel=\"noopener noreferrer\" target=\"_blank\">APS Physics Magazine</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-23-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-23-01)."
+  },
+  {
+    "path": "/news-events/quantum-archimedes-screw-published-science",
+    "title": "Quantum Archimedes' Screw published in Science",
+    "replacements": [
+      {
+        "from": "<p>LevLab has created a quantum Archimedes' screw. See paper published in <a href=\"https://science.sciencemag.org/content/371/6526/296\">Science</a></p>\n<p>From Stanford News <a href=\"https://news.stanford.edu/2021/01/14/new-state-matter-one-dimensional-quantum-gas/\">article</a></p>\n<h2>By adding some magnetic flair to an exotic quantum experiment, Benjamin Lev's group produced an ultra-stable 1D quantum gas with never-before-seen “scar” states, a feature that could someday be useful for securing quantum information.</h2>\n<p>BY TAYLOR KUBOTA<br>As the story goes, the Greek mathematician and tinkerer Archimedes came across an invention while traveling through ancient Egypt that would later bear his name. It was a machine consisting of a screw housed inside a hollow tube that trapped and drew water upon rotation. Now, researchers led by Stanford University physicist <a href=\"https://appliedphysics.stanford.edu/users/benjamin-lev#profile-main\">Benjamin Lev</a> have developed a quantum version of Archimedes’ screw that, instead of water, hauls fragile collections of gas atoms to higher and higher energy states without collapsing. Their discovery is detailed in a paper <a href=\"https://science.sciencemag.org/content/371/6526/296\">published</a> Jan. 14 in <em>Science.</em></p>\n<p>“My expectation for our system was that the stability of the gas would only shift a little,” said Lev, who is an associate professor of applied physics and of physics in the <a href=\"https://humsci.stanford.edu/\">School of Humanities and Sciences</a> at Stanford. “I did not expect that I would see a dramatic, complete stabilization of it. That was beyond my wildest conception.”</p>\n<p>Along the way, the researchers also observed the development of scar states – extremely rare trajectories of particles in an otherwise chaotic quantum system in which the particles repeatedly retrace their steps like tracks overlapping in the woods. Scar states are of particular interest because they may offer a protected refuge for information encoded in a quantum system. The existence of scar states within a quantum system with many interacting particles – known as a quantum many-body system – has only recently been confirmed. The Stanford experiment is the first example of the scar state in a many-body quantum gas and only the second ever real-world sighting of the phenomenon.</p>\n<p><a href=\"https://news.stanford.edu/2021/01/14/new-state-matter-one-dimensional-quantum-gas/\" target=\"_blank\">Read More</a></p>\n",
+        "to": "<p>LevLab has created a quantum Archimedes' screw. See the paper published in <a href=\"https://science.sciencemag.org/content/371/6526/296\">Science</a>.</p>\n<p>From a Stanford News <a href=\"https://news.stanford.edu/2021/01/14/new-state-matter-one-dimensional-quantum-gas/\">article</a>:</p>\n<h2>By adding some magnetic flair to an exotic quantum experiment, Benjamin Lev's group produced an ultra-stable 1D quantum gas with never-before-seen “scar” states, a feature that could someday be useful for securing quantum information.</h2>\n<p>BY TAYLOR KUBOTA<br>As the story goes, the Greek mathematician and tinkerer Archimedes came across an invention while traveling through ancient Egypt that would later bear his name. It was a machine consisting of a screw housed inside a hollow tube that trapped and drew water upon rotation. Now, researchers led by Stanford University physicist <a href=\"https://appliedphysics.stanford.edu/users/benjamin-lev#profile-main\">Benjamin Lev</a> have developed a quantum version of Archimedes’ screw that, instead of water, hauls fragile collections of gas atoms to higher and higher energy states without collapsing. Their discovery is detailed in a paper <a href=\"https://science.sciencemag.org/content/371/6526/296\">published</a> Jan. 14 in <em>Science.</em></p>\n<p>“My expectation for our system was that the stability of the gas would only shift a little,” said Lev, who is an associate professor of applied physics and of physics in the <a href=\"https://humsci.stanford.edu/\">School of Humanities and Sciences</a> at Stanford. “I did not expect that I would see a dramatic, complete stabilization of it. That was beyond my wildest conception.”</p>\n<p>Along the way, the researchers also observed the development of scar states – extremely rare trajectories of particles in an otherwise chaotic quantum system in which the particles repeatedly retrace their steps like tracks overlapping in the woods. Scar states are of particular interest because they may offer a protected refuge for information encoded in a quantum system. The existence of scar states within a quantum system with many interacting particles – known as a quantum many-body system – has only recently been confirmed. The Stanford experiment is the first example of the scar state in a many-body quantum gas and only the second ever real-world sighting of the phenomenon.</p>\n<p><a href=\"https://news.stanford.edu/2021/01/14/new-state-matter-one-dimensional-quantum-gas/\" target=\"_blank\">Read More</a></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-24-01",
+      "news-24-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-24-01, news-24-02)."
+  },
+  {
+    "path": "/news-events/cavity-qed-neural-network",
+    "title": "Cavity QED neural network",
+    "replacements": [
+      {
+        "from": "<p class=\"text-align-justify\" style=\"border:none;margin-left:-18px;margin-right:-6px;\"><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">New theoretical </span><a href=\"https://journals.aps.org/prx/pdf/10.1103/PhysRevX.11.021048\"><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">work</span></a><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\"> appeared in PRX and was highlighted in an APS Physics </span><a href=\"https://physics.aps.org/articles/v14/s72\"><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">Synopsis</span></a><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">. It marks a major advance in our understanding of the exciting and highly active topic of quantum optical systems and dynamics for use in information processing.  Specifically, we show that associative memory---the storage and recall of multiple memories---is possible in a system of atoms and photons.  The photonic modes serve as the synapses connecting a network of superradiant atomic spin ensembles. Memories are encoded in the atomic positions and can be accessed through the input and output of patterns of light. Ours is the first to present a practicable scheme based on already-demonstrated quantum optical technology.</span></p>\n",
+        "to": "<p class=\"text-align-justify\" style=\"border:none;margin-left:-18px;margin-right:-6px;\"><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">New theoretical </span><a href=\"https://journals.aps.org/prx/pdf/10.1103/PhysRevX.11.021048\"><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">work</span></a><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\"> appeared in PRX and was highlighted in an APS Physics </span><a href=\"https://physics.aps.org/articles/v14/s72\"><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">Synopsis</span></a><span style=\"color:black;font-family:Calibri, sans-serif;font-size:10.5pt;font-style:normal;font-weight:normal;line-height:12.600000381469727px;text-decoration:none;white-space:normal;\">. It marks a major advance in our understanding of the exciting and highly active topic of quantum optical systems and dynamics for use in information processing.  Specifically, we show that associative memory—the storage and recall of multiple memories—is possible in a system of atoms and photons.  The photonic modes serve as the synapses connecting a network of superradiant atomic spin ensembles. Memories are encoded in the atomic positions and can be accessed through the input and output of patterns of light. Our work is the first to present a practicable scheme based on already demonstrated quantum optical technology.</span></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-27-01",
+      "news-27-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-27-01, news-27-02)."
+  },
+  {
+    "path": "/news-events/light-plays-role-sound",
+    "title": "Light plays the role of sound",
+    "replacements": [
+      {
+        "from": "<p>Read <a href=\"https://jqi.umd.edu/news/quantum-simulation-stars-light-role-sound\">news article</a> \"Quantum Simulation Stars Light in the Role of Sound\" by Bailey Bedford on our recent theory paper in <a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.010404\">PRL</a>.</p>\n",
+        "to": "<p>Read the <a href=\"https://jqi.umd.edu/news/quantum-simulation-stars-light-role-sound\">news article</a> \"Quantum Simulation Stars Light in the Role of Sound\" by Bailey Bedford on our recent theory paper in <a href=\"https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.010404\">PRL</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-28-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-28-01)."
+  },
+  {
+    "path": "/news-events/cover-art-pras-50th",
+    "title": "Cover art for PRA's 50th",
+    "replacements": [
+      {
+        "from": "<p>PRA's 50th <a href=\"https://physics.aps.org/articles/v13/24?utm_campaign=weekly&amp;utm_medium=email&amp;utm_source=emailalert\">celebrated</a> with our multimode cavity cartoon. (Collage credit APS/Alan Stonebraker.)</p>\n",
+        "to": "<p>PRA's 50th anniversary is <a href=\"https://physics.aps.org/articles/v13/24?utm_campaign=weekly&amp;utm_medium=email&amp;utm_source=emailalert\">celebrated</a> with our multimode cavity cartoon. (Collage credit: APS/Alan Stonebraker.)</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-32-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-32-01)."
+  },
+  {
+    "path": "/news-events/quantum-many-body-scars",
+    "title": "Quantum many-body scars",
+    "replacements": [
+      {
+        "from": "<p>We have <a href=\"http://arxiv.org/abs/2002.10475\">created</a> novel quantum many-body scar states by topologically pumping a 1D dipolar Bose gas of dysprosium. Wow quantum holonomy!</p>\n",
+        "to": "<p>We have <a href=\"http://arxiv.org/abs/2002.10475\">created</a> novel quantum many-body scar states by topologically pumping a 1D dipolar Bose gas of dysprosium. Wow, quantum holonomy!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-33-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-33-01)."
+  },
+  {
+    "path": "/news-events/dipolar-quantum-newtons-cradle-0",
+    "title": "Dipolar Quantum Newton's Cradle",
+    "replacements": [
+      {
+        "from": "<p>Published in <a href=\"https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.021030\">Phys. Rev X</a>. New work on thermalization in near-integrable system. See popular press:<br><a href=\"http://science.sciencemag.org/content/360/6390/twil\">Editors' Choice</a><strong> Watching magnetic atoms thermalize</strong> in Science <br><a href=\"https://www.sciencenews.org/article/tiny-physics-toy-newton-cradle-revealing-quantum-secrets\">News: Quantum Physics</a><strong> A tiny version of this physics toy is revealing quantum secrets</strong> in ScienceNews<br><a href=\"https://physics.aps.org/synopsis-for/10.1103/PhysRevX.8.021030\" target=\"_blank\">Synopsis</a> <strong>Pathway to Quantum Thermalization </strong>in APS Physics<br><a href=\"https://www.nature.com/articles/s41567-018-0146-4.pdf\" target=\"_blank\">Research Highlight</a> <strong>Towards thermalization</strong> in Nature Physics<br><a href=\"https://news.stanford.edu/2018/05/02/toy-inspires-experiment-behavior-quantum-systems/\">Article</a> <strong>Toy inspires experiment on behavior of quantum systems</strong> Stanford News</p>\n",
+        "to": "<p>Our new work on thermalization in a near-integrable system is published in <a href=\"https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.021030\">Phys. Rev. X</a>. See related coverage:<br><a href=\"http://science.sciencemag.org/content/360/6390/twil\">Editors' Choice</a>: <strong>“Watching magnetic atoms thermalize”</strong> in Science <br><a href=\"https://www.sciencenews.org/article/tiny-physics-toy-newton-cradle-revealing-quantum-secrets\">News: Quantum Physics</a>: <strong>“A tiny version of this physics toy is revealing quantum secrets”</strong> in Science News<br><a href=\"https://physics.aps.org/synopsis-for/10.1103/PhysRevX.8.021030\" target=\"_blank\">Synopsis</a>: <strong>“Pathway to Quantum Thermalization” </strong>in APS Physics<br><a href=\"https://www.nature.com/articles/s41567-018-0146-4.pdf\" target=\"_blank\">Research Highlight</a>: <strong>“Towards thermalization”</strong> in Nature Physics<br><a href=\"https://news.stanford.edu/2018/05/02/toy-inspires-experiment-behavior-quantum-systems/\">Article</a>: <strong>“Toy inspires experiment on behavior of quantum systems”</strong> in Stanford News</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-40-01",
+      "news-40-02",
+      "news-40-03",
+      "news-40-04",
+      "news-40-05",
+      "news-40-06"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-40-01, news-40-02, news-40-03, news-40-04, news-40-05, news-40-06)."
+  },
+  {
+    "path": "/news-events/edkins-thesis-prize",
+    "title": "Edkins Thesis Prize",
+    "replacements": [
+      {
+        "from": "<p>Congratulations to Steve Edkins on winning the Springer Thesis Prize!  Springer published his PhD thesis as a <a href=\"https://www.amazon.com/Visualising-Cooper-Pair-Density-Cuprates-Springer/dp/331965974X/ref=mt_hardcover?_encoding=UTF8&amp;me=\">book on Amazon</a>. Check it out!</p>\n",
+        "to": "<p>Congratulations to Steve Edkins on winning the Springer Thesis Prize!  Springer published his PhD thesis as a <a href=\"https://www.amazon.com/Visualising-Cooper-Pair-Density-Cuprates-Springer/dp/331965974X/ref=mt_hardcover?_encoding=UTF8&amp;me=\">book, available on Amazon</a>. Check it out!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-44-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-44-01)."
+  },
+  {
+    "path": "/news-events/dipolar-quantum-newtons-cradle",
+    "title": "Dipolar Quantum Newton's Cradle",
+    "replacements": [
+      {
+        "from": "<p>New <a href=\"https://arxiv.org/abs/1707.07031\">work </a>on thermalization in near-integrable system.</p>\n",
+        "to": "<p>New <a href=\"https://arxiv.org/abs/1707.07031\">work </a>on thermalization in a near-integrable system.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-45-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-45-01)."
+  },
+  {
+    "path": "/news-events/congratulations-ronen",
+    "title": "Congratulations, Ronen!",
+    "replacements": [
+      {
+        "from": "<p>Congratulations to Ronen Kroeze for winning <a href=\"http://https://www.tue.nl/en/university/about-the-university/academic-events/tue-academic-awards-ceremony/\">master's thesis prize</a>!</p>\n",
+        "to": "<p>Congratulations to Ronen Kroeze for winning a <a href=\"http://https://www.tue.nl/en/university/about-the-university/academic-events/tue-academic-awards-ceremony/\">master's thesis prize</a>!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-46-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-46-01)."
+  },
+  {
+    "path": "/news-events/dynamic-synthetic-gauge-field",
+    "title": "Dynamic synthetic gauge field",
+    "replacements": [
+      {
+        "from": "<p><a href=\"http://arxiv.org/abs/1608.07246\">Proposal</a> for creating Meissner-like effect in multimode cavity QED.</p>\n",
+        "to": "<p><a href=\"http://arxiv.org/abs/1608.07246\">Proposal</a> for creating a Meissner-like effect in multimode cavity QED.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-51-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-51-01)."
+  },
+  {
+    "path": "/news-events/smashing-magnets",
+    "title": "Smashing magnets",
+    "replacements": [
+      {
+        "from": "<p>Collisions of Dy BECs yield halos of dipolar scattered atoms. <a href=\"/sites/default/files/Halo_Animation_v3.dvd.mpg\">See movie made by Andrew Sykes.</a>  See also <a href=\"/sites/default/files/IgorPrespective.pdf\">Perspective</a> \"Smashing Magnets\" by Igor Ferrier-Barbut. Published in <a href=\"http://iopscience.iop.org/article/10.1088/1367-2630/18/11/113004\">New Journal of Physics</a>.</p>\n",
+        "to": "<p>Collisions of Dy BECs yield halos of dipolarly scattered atoms. <a href=\"/sites/default/files/Halo_Animation_v3.dvd.mpg\">See the movie made by Andrew Sykes.</a>  See also the <a href=\"/sites/default/files/IgorPrespective.pdf\">Perspective</a> \"Smashing Magnets\" by Igor Ferrier-Barbut. Published in <a href=\"http://iopscience.iop.org/article/10.1088/1367-2630/18/11/113004\">New Journal of Physics</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-53-01",
+      "news-53-02",
+      "news-53-03"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-53-01, news-53-02, news-53-03)."
+  },
+  {
+    "path": "/news-events/thermometry-dipolar-bose-gas",
+    "title": "Thermometry of dipolar Bose gas",
+    "replacements": [
+      {
+        "from": "<p>Anisotropic expansion of thermal dipolar Bose gas. <a href=\"http://arxiv.org/abs/1606.08856\">P</a><a href=\"http://journals.aps.org/prl/pdf/10.1103/PhysRevLett.117.155301\">RL</a></p>\n",
+        "to": "<p>Anisotropic expansion of a thermal dipolar Bose gas. See the <a href=\"http://arxiv.org/abs/1606.08856\">arXiv preprint</a> and <a href=\"http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.117.155301\">PRL paper</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-54-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-54-01)."
+  },
+  {
+    "path": "/news-events/supermode-condensate",
+    "title": "Supermode condensate",
+    "replacements": [
+      {
+        "from": "<p>A new nonequilibrium state of matter.  To appear in Phys Rev Applied.  <a href=\"http://arxiv.org/abs/1606.04127\">ArXiv version</a> </p>\n",
+        "to": "<p>A new nonequilibrium state of matter.  To appear in Phys. Rev. Applied.  <a href=\"http://arxiv.org/abs/1606.04127\">arXiv version</a>. </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-55-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-55-01)."
+  },
+  {
+    "path": "/news-events/congrats-nate",
+    "title": "Congrats Nate!",
+    "replacements": [
+      {
+        "from": "<p>Congratulations Nate Burdick, PhD!</p>\n",
+        "to": "<p>Congratulations, Nate Burdick, PhD!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-56-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-56-01)."
+  },
+  {
+    "path": "/news-events/congrats-alicia",
+    "title": "Congrats Alicia!",
+    "replacements": [
+      {
+        "from": "<p>Congratulations Alicia Kollár, PhD!</p>\n",
+        "to": "<p>Congratulations, Alicia Kollár, PhD!</p>\n"
+      }
+    ],
+    "imageAlt": {
+      "from": "Dr. Alicia Kollar",
+      "to": "Dr. Alicia Kollár",
+      "sourceImage": "/sites/default/files/styles/medium/public/Kollar_1.jpg?itok=TkLQjLV2"
+    },
+    "copyeditReviewIds": [
+      "news-57-01",
+      "news-57-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-57-01, news-57-02)."
+  },
+  {
+    "path": "/news-events/dy-spin-orbit-coupling",
+    "title": "Dy spin-orbit-coupling",
+    "displayTitle": "Dy spin-orbit coupling",
+    "copyeditReviewIds": [
+      "news-59-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-59-01)."
+  },
+  {
+    "path": "/news-events/coupling-cavity-dmd",
+    "title": "Coupling to cavity with DMD",
+    "replacements": [
+      {
+        "from": "<p>Digital Micromirror Devices (DMD) provide a robust platform with which to implement digital holography, in principle providing the means to rapidly generate propagating transverse electromagnetic fields with arbitrary mode profiles at visible and IR wavelengths. We use a DMD to probe a Fabry-Pérot cavity in single-mode and near-degenerate confocal configurations. Pumping arbitrary modes of the cavity is possible with excellent specificity by virtue of the spatial overlap between the incident light field and the cavity mode. See <a href=\"https://www.osapublishing.org/oe/abstract.cfm?uri=oe-24-11-11447\">Optics Express</a> publication.</p>\n",
+        "to": "<p>Digital micromirror devices (DMDs) provide a robust platform with which to implement digital holography, in principle providing the means to rapidly generate propagating transverse electromagnetic fields with arbitrary mode profiles at visible and IR wavelengths. We use a DMD to probe a Fabry-Pérot cavity in single-mode and near-degenerate confocal configurations. Pumping arbitrary modes of the cavity is possible with excellent specificity by virtue of the spatial overlap between the incident light field and the cavity mode. See the <a href=\"https://www.osapublishing.org/oe/abstract.cfm?uri=oe-24-11-11447\">Optics Express</a> publication.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-60-01",
+      "news-60-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-60-01, news-60-02)."
+  },
+  {
+    "path": "/news-events/tenure",
+    "title": "Tenure",
+    "replacements": [
+      {
+        "from": "<p>Benjamin promoted to Associate Professor with tenure.</p>\n",
+        "to": "<p>Benjamin has been promoted to associate professor with tenure.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-61-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-61-01)."
+  },
+  {
+    "path": "/news-events/new-dy-becs",
+    "title": "New Dy BECs!",
+    "replacements": [
+      {
+        "from": "<p><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.1599998474121px;\">We </span><a href=\"http://iopscience.iop.org/1367-2630/17/4/045006/article\"><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.1599998474121px;\">report</span></a><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.1599998474121px;\"> Bose-Einstein condensation of two isotopes of the highly magnetic element dysprosium: 162Dy and 160Dy. For 162Dy, condensates with 10^5 atoms form below T = 50 nK. We find the evaporation efficiency for the isotope 160Dy to be poor; however, by utilizing a low-field Fano-Feshbach resonance to carefully change the scattering properties, it is possible to produce a Bose-Einstein condensate of 160Dy with 10^3 atoms. The 162Dy BEC reported is an order of magnitude larger in atom number than that of the previously reported 164Dy BEC, and it may be produced within 18 s.</span></p>\n",
+        "to": "<p><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.1599998474121px;\">We </span><a href=\"http://iopscience.iop.org/1367-2630/17/4/045006/article\"><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.1599998474121px;\">report</span></a><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.1599998474121px;\"> Bose-Einstein condensation of two isotopes of the highly magnetic element dysprosium: <sup>162</sup>Dy and <sup>160</sup>Dy. For <sup>162</sup>Dy, condensates with 10<sup>5</sup> atoms form below T = 50 nK. We find the evaporation efficiency for the isotope <sup>160</sup>Dy to be poor; however, by utilizing a low-field Fano-Feshbach resonance to carefully change the scattering properties, it is possible to produce a Bose-Einstein condensate of <sup>160</sup>Dy with 10<sup>3</sup> atoms. The <sup>162</sup>Dy BEC reported is an order of magnitude larger in atom number than that of the previously reported <sup>164</sup>Dy BEC, and it may be produced within 18 s.</span></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-63-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-63-01)."
+  },
+  {
+    "path": "/news-events/fermionic-suppression",
+    "title": "Fermionic suppression",
+    "replacements": [
+      {
+        "from": "<p><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.15999984741211px;\">We observe the suppression of inelastic dipolar scattering due to Fermi statistics in ultracold gases of the highly magnetic atom, dysprosium. Inelastic dipolar scattering in non-zero magnetic fields leads to heating or to loss of the trapped population, both detrimental to experiments intended to study quantum many-body physics with strongly dipolar gases. Fermi statistics, however, should lead to a kinematic suppression of these harmful reactions. Indeed, we observe a 120-fold suppression of dipolar relaxation in fermionic versus bosonic Dy, as expected from theory describing universal inelastic dipolar scattering. Similarly low inelastic cross sections are observed in spin mixtures, also with striking correspondence to theory predictions. The suppression of relaxation opens the possibility of employing fermionic dipolar species---atoms or molecules---in studies of quantum many-body physics involving, e.g., synthetic gauge fields and pairing.  See Physical Review Letters </span><a href=\"http://levlab.stanford.edu/sites/default/files/PhysRevLett.114.023201.pdf\"><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.15999984741211px;\">paper</span></a><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.15999984741211px;\">.</span></p>\n",
+        "to": "<p><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.15999984741211px;\">We observe the suppression of inelastic dipolar scattering due to Fermi statistics in ultracold gases of the highly magnetic atom dysprosium. Inelastic dipolar scattering in nonzero magnetic fields leads to heating or to loss of the trapped population, both detrimental to experiments intended to study quantum many-body physics with strongly dipolar gases. Fermi statistics, however, should lead to a kinematic suppression of these harmful reactions. Indeed, we observe a 120-fold suppression of dipolar relaxation in fermionic versus bosonic Dy, as expected from theory describing universal inelastic dipolar scattering. Similarly low inelastic cross sections are observed in spin mixtures, also with striking correspondence to theory predictions. The suppression of relaxation opens the possibility of employing fermionic dipolar species—atoms or molecules—in studies of quantum many-body physics involving, e.g., synthetic gauge fields and pairing.  See the Physical Review Letters </span><a href=\"http://levlab.stanford.edu/sites/default/files/PhysRevLett.114.023201.pdf\"><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.15999984741211px;\">paper</span></a><span style=\"color:rgb(0, 0, 0);font-family:'Lucida Grande', helvetica, arial, verdana, sans-serif;font-size:14px;line-height:20.15999984741211px;\">.</span></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-66-01",
+      "news-66-02",
+      "news-66-03",
+      "news-66-04"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-66-01, news-66-02, news-66-03, news-66-04)."
+  },
+  {
+    "path": "/news-events/congratulations-dr-lu",
+    "title": "Congratulations Dr. Lu!",
+    "replacements": [
+      {
+        "from": "<p>Congratulations to Mingwu!  Dr. Mingwu Lu defended his thesis June 2014 and is now a postdoc with Prof. Jeff Kimble at Caltech. </p>\n",
+        "to": "<p>Congratulations to Mingwu!  Dr. Mingwu Lu defended his thesis in June 2014 and is now a postdoc with Prof. Jeff Kimble at Caltech. </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-67-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-67-01)."
+  },
+  {
+    "path": "/news-events/dy-feshbach-resonances",
+    "title": "Dy Feshbach resonances",
+    "replacements": [
+      {
+        "from": "<p>We report in this <a href=\"http://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.020701\">Phys. Rev. A Rapid</a> paper (<a href=\"http://arxiv.org/abs/1312.6401\">arXiv</a>) the observation of resonance-like loss in the trap population of ultracold dysprosium as a function of magnetic field, which we attribute to anisotropy-induced Fano-Feshbach resonances arising from Dy's large magnetic dipole moment and nonzero electronic orbital angular momentum.  We  recorded these resonances for four different isotopes, three bosonic and one fermionic, over a field range of 0-6 G and show that the number of resonances changes significantly as a function of temperature, even in the nK regime.  Most of the observed resonances are of very narrow width. The fermionic isotope, unlike its bosonic counterparts, possesses nonzero nuclear spin and exhibits a much higher density of resonances.</p>\n",
+        "to": "<p>We report in this <a href=\"http://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.020701\">Phys. Rev. A Rapid</a> paper (<a href=\"http://arxiv.org/abs/1312.6401\">arXiv</a>) the observation of resonance-like loss in the trap population of ultracold dysprosium as a function of magnetic field, which we attribute to anisotropy-induced Fano-Feshbach resonances arising from Dy's large magnetic dipole moment and nonzero electronic orbital angular momentum.  We  recorded these resonances for four different isotopes, three bosonic and one fermionic, over a field range of 0–6 G and show that the number of resonances changes significantly as a function of temperature, even in the nK regime.  Most of the observed resonances are of very narrow width. The fermionic isotope, unlike its bosonic counterparts, possesses nonzero nuclear spin and exhibits a much higher density of resonances.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-69-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-69-01)."
+  },
+  {
+    "path": "/news-events/dy-so-coupling-proposal",
+    "title": "Dy SO-coupling proposal",
+    "replacements": [
+      {
+        "from": "<p>Lev and theory collaborators publish paper in <a href=\"http://pra.aps.org/abstract/PRA/v88/i1/e011601\">PRA Rapid Communications</a> on creating synthetic gauge fields with Dy. </p>\n",
+        "to": "<p>Lev and theory collaborators publish a paper in <a href=\"http://pra.aps.org/abstract/PRA/v88/i1/e011601\">PRA Rapid Communications</a> on creating synthetic gauge fields with Dy. </p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-71-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-71-01)."
+  },
+  {
+    "path": "/news-events/worlds-first-dipolar-dy-dfg",
+    "title": "World's first dipolar Dy DFG",
+    "replacements": [
+      {
+        "from": "<p>PRL announcing <a href=\"http://prl.aps.org/abstract/PRL/v108/i21/e215301\" style=\"line-height:1.6em;\">world's first dipolar Dy DFG</a><span style=\"line-height:1.6em;\"> selected as Editors' Suggestion, and featured in </span><a href=\"http://physics.aps.org/articles/v5/58\" style=\"line-height:1.6em;\"><em>Physics</em> Viewpoint</a><span style=\"line-height:1.6em;\">.</span></p>\n",
+        "to": "<p>The PRL paper announcing the <a href=\"http://prl.aps.org/abstract/PRL/v108/i21/e215301\" style=\"line-height:1.6em;\">world's first dipolar Dy DFG</a><span style=\"line-height:1.6em;\"> was selected as an Editors' Suggestion and featured in a </span><a href=\"http://physics.aps.org/articles/v5/58\" style=\"line-height:1.6em;\"><em>Physics</em> Viewpoint</a><span style=\"line-height:1.6em;\">.</span></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-72-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-72-01)."
+  },
+  {
+    "path": "/news-events/lev-wins-darpa-yfa",
+    "title": "Lev wins DARPA YFA",
+    "replacements": [
+      {
+        "from": "<p>Lev wins DARPA Young Faculty Award <a href=\"http://www.darpa.mil/Opportunities/Universities/Young_Faculty_Award_Recipients_2012.aspx\">YFA</a>!</p>\n",
+        "to": "<p>Lev wins a DARPA Young Faculty Award <a href=\"http://www.darpa.mil/Opportunities/Universities/Young_Faculty_Award_Recipients_2012.aspx\">(YFA)</a>!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-73-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-73-01)."
+  },
+  {
+    "path": "/news-events/lev-wins-onr-yip",
+    "title": "Lev wins ONR YIP",
+    "replacements": [
+      {
+        "from": "<p>Lev wins Office of Naval Research Young Investigator Award <a href=\"http://www.onr.navy.mil/en/Science-Technology/Directorates/office-research-discovery-invention/Sponsored-Research/YIP/2012-young-investigator-recipients.aspx\">ONR YIP</a>!</p>\n",
+        "to": "<p>Lev wins an Office of Naval Research Young Investigator Award <a href=\"http://www.onr.navy.mil/en/Science-Technology/Directorates/office-research-discovery-invention/Sponsored-Research/YIP/2012-young-investigator-recipients.aspx\">(ONR YIP)</a>!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-74-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-74-01)."
+  },
+  {
+    "path": "/news-events/hopfield-associative-memory",
+    "title": "Hopfield Associative Memory",
+    "replacements": [
+      {
+        "from": "<p>Paper on neural network in multimode cavity.  <a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/sites/default/files/Memory.pdf\">Special issue</a> in honor David Sherrington.</p>\n",
+        "to": "<p>Our paper on a neural network in a multimode cavity appears in a  <a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/sites/default/files/Memory.pdf\">special issue</a> in honor of David Sherrington.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-75-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-75-01)."
+  },
+  {
+    "path": "/news-events/seo-ho-youn-receives-phd",
+    "title": "Seo Ho Youn receives PhD",
+    "replacements": [
+      {
+        "from": "<p>First LevLab graduate student receives Ph.D.! Congratulations <a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/people/dr-seo-ho-youn\">Seo Ho</a>!</p>\n",
+        "to": "<p>The first LevLab graduate student receives a Ph.D.! Congratulations, <a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/people/dr-seo-ho-youn\">Seo Ho</a>!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-77-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-77-01)."
+  },
+  {
+    "path": "/news-events/levlab-moves-stanford",
+    "title": "LevLab moves to Stanford",
+    "replacements": [
+      {
+        "from": "<p>LevLab moved to <a href=\"http://www.stanford.edu/dept/app-physics/cgi-bin/person/benjamin-lev-sep-11/\">Stanford</a> Fall 2011.</p>\n",
+        "to": "<p>LevLab moved to <a href=\"http://www.stanford.edu/dept/app-physics/cgi-bin/person/benjamin-lev-sep-11/\">Stanford</a> in fall 2011.</p>\n"
+      }
+    ],
+    "imageAlt": {
+      "from": "Dy ODT theory paper",
+      "to": "Stanford University wordmark and seal",
+      "sourceImage": "/sites/default/files/styles/medium/public/SUSig_Seal_Stacked.png?itok=6JnEUUjH"
+    },
+    "copyeditReviewIds": [
+      "news-78-01",
+      "news-78-02"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-78-01, news-78-02)."
+  },
+  {
+    "path": "/news-events/lev-wins-pecase",
+    "title": "Lev wins PECASE",
+    "replacements": [
+      {
+        "from": "<p>Lev wins a PECASE award. See <a href=\"http://news.stanford.edu/news/2011/september/benjamin-lev-award-092711.html\">press release</a>.</p>\n",
+        "to": "<p>Lev wins a PECASE award. See the <a href=\"http://news.stanford.edu/news/2011/september/benjamin-lev-award-092711.html\">press release</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-79-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-79-01)."
+  },
+  {
+    "path": "/news-events/dy-odt-theory-paper",
+    "title": "Dy ODT theory paper",
+    "replacements": [
+      {
+        "from": "<p>Paper on Dy optical dipole trapping at magic wavelengths published in <a href=\"http://pra.aps.org/abstract/PRA/v83/i3/e032502\">PRA</a></p>\n",
+        "to": "<p>Our paper on Dy optical dipole trapping at magic wavelengths is published in <a href=\"http://pra.aps.org/abstract/PRA/v83/i3/e032502\">PRA</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-80-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-80-01)."
+  },
+  {
+    "path": "/news-events/dy-narrow-line-spectroscopy",
+    "title": "Dy narrow-line spectroscopy",
+    "replacements": [
+      {
+        "from": "<p>Paper on Dy narrow-line spectroscopy published in <a href=\"http://pra.aps.org/abstract/PRA/v83/i1/e012510\">PRA</a>.</p>\n",
+        "to": "<p>Our paper on Dy narrow-line spectroscopy is published in <a href=\"http://pra.aps.org/abstract/PRA/v83/i1/e012510\">PRA</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-81-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-81-01)."
+  },
+  {
+    "path": "/news-events/soft-quantum-matter-pra",
+    "title": "Soft quantum matter PRA",
+    "replacements": [
+      {
+        "from": "<p>Theory paper on soft quantum matter in multimode cavity QED published in <a href=\"http://pra.aps.org/abstract/PRA/v82/i4/e043612\">Phys. Rev. A</a> and selected for a <a href=\"http://physics.aps.org/articles/v3/88\">Viewpoint</a> in APS <em>Physics</em>.</p>\n",
+        "to": "<p>Our theory paper on soft quantum matter in multimode cavity QED is published in <a href=\"http://pra.aps.org/abstract/PRA/v82/i4/e043612\">Phys. Rev. A</a> and selected for a <a href=\"http://physics.aps.org/articles/v3/88\">Viewpoint</a> in APS <em>Physics</em>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-83-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-83-01)."
+  },
+  {
+    "path": "/news-events/lev-wins-packard-fellowship",
+    "title": "Lev wins Packard Fellowship",
+    "replacements": [
+      {
+        "from": "<p>Lev awarded a 2010 Packard Fellowship! See <a href=\"http://www.news.illinois.edu/news/10/1015packard_benjamin_lev.html\">news articles</a> for <a href=\"http://physics.illinois.edu/news/story.asp?id=1158\">more information</a>.</p>\n",
+        "to": "<p>Lev has been awarded a 2010 Packard Fellowship! See <a href=\"http://www.news.illinois.edu/news/10/1015packard_benjamin_lev.html\">news articles</a> for <a href=\"http://physics.illinois.edu/news/story.asp?id=1158\">more information</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-84-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-84-01)."
+  },
+  {
+    "path": "/news-events/two-dy-pras",
+    "title": "Two Dy PRAs",
+    "replacements": [
+      {
+        "from": "<p>Two dysprosium papers published in PRA fall 2010. Papers detail <a href=\"http://pra.aps.org/abstract/PRA/v82/i4/e043425\">Dy MOT physics</a> and a <a href=\"http://pra.aps.org/abstract/PRA/v82/i4/e043403\">novel sub-Doppler laser cooling</a> mechanism in Dy.</p>\n",
+        "to": "<p>Two dysprosium papers were published in PRA in fall 2010. The papers detail <a href=\"http://pra.aps.org/abstract/PRA/v82/i4/e043425\">Dy MOT physics</a> and a <a href=\"http://pra.aps.org/abstract/PRA/v82/i4/e043403\">novel sub-Doppler laser cooling</a> mechanism in Dy.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-85-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-85-01)."
+  },
+  {
+    "path": "/news-events/dy-mot-prl",
+    "title": "Dy MOT PRL",
+    "replacements": [
+      {
+        "from": "<p>Dy MOT and magnetic trap collisions paper published in <a href=\"http://dx.doi.org/10.1103/PhysRevLett.104.063001\">Phys. Rev. Lett.</a>  Research highlight in <a href=\"http://www.nature.com/nature/journal/v463/n7284/full/4631002c.html\">Nature</a>, and popular science article in <a href=\"http://physicsworld.com/cws/article/news/41752\">Physics World</a>.</p>\n",
+        "to": "<p>Our paper on Dy MOT and magnetic trap collisions is published in <a href=\"http://dx.doi.org/10.1103/PhysRevLett.104.063001\">Phys. Rev. Lett.</a>  It is featured in a research highlight in <a href=\"http://www.nature.com/nature/journal/v463/n7284/full/4631002c.html\">Nature</a> and a popular science article in <a href=\"http://physicsworld.com/cws/article/news/41752\">Physics World</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-87-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-87-01)."
+  },
+  {
+    "path": "/news-events/levlab-wins-doe-grant",
+    "title": "LevLab wins DOE grant",
+    "replacements": [
+      {
+        "from": "<p>LevLab wins single PI grant from the DOE, division BES in the Electron and Scanning Probe Microscopies program for development of cryogenic atom chip microscopy.</p>\n",
+        "to": "<p>LevLab wins a single-PI grant from DOE BES in the Electron and Scanning Probe Microscopies program for the development of cryogenic atom-chip microscopy.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-89-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-89-01)."
+  },
+  {
+    "path": "/news-events/uiuc-levlab-complete",
+    "title": "UIUC LevLab complete",
+    "replacements": [
+      {
+        "from": "<p>Loomis 334 &amp; 332 lab construction at UIUC complete! See pictures <a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/uiuc-levlab-construction\">here</a>.</p>\n",
+        "to": "<p>Lab construction in Loomis 334 and 332 at UIUC is complete! See pictures <a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/uiuc-levlab-construction\">here</a>.</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-91-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-91-01)."
+  },
+  {
+    "path": "/news-events/worlds-first-dy-mot",
+    "title": "World's First Dy MOT",
+    "replacements": [
+      {
+        "from": "<p>Announcing the world's first Dysprosium magneto-optical trap (MOT)!  <a href=\"http://illinois.edu/lb/article/1353/26858/page=3/list=list\">News bulletin</a></p>\n",
+        "to": "<p>Announcing the world's first dysprosium magneto-optical trap (MOT)!  <a href=\"http://illinois.edu/lb/article/1353/26858/page=3/list=list\">News bulletin</a></p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-92-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-92-01)."
+  },
+  {
+    "path": "/news-events/papageorge-wins-ndseg",
+    "title": "Papageorge wins NDSEG",
+    "replacements": [
+      {
+        "from": "<p>Alexander Papageorge wins NDSEG fellowship.  Congratulations!</p>\n",
+        "to": "<p>Alexander Papageorge wins an NDSEG fellowship.  Congratulations!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-95-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-95-01)."
+  },
+  {
+    "path": "/news-events/koll%C3%A1r-wins-ndseg-fellowship",
+    "title": "Kollár wins NDSEG fellowship",
+    "replacements": [
+      {
+        "from": "<p><a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/people/ms-alicia-koll%C3%A1r\">Alicia Kollár</a> wins NDSEG fellowship.  Congratulations!</p>\n",
+        "to": "<p><a href=\"http://www.stanford.edu/group/levlab/cgi-bin/drupal/people/ms-alicia-koll%C3%A1r\">Alicia Kollár</a> wins an NDSEG fellowship.  Congratulations!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-96-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-96-01)."
+  },
+  {
+    "path": "/news-events/lev-wins-afosr-yip",
+    "title": "Lev wins AFOSR YIP",
+    "replacements": [
+      {
+        "from": "<p>Lev wins Air Force Office of Scientific Research Young Investigator Program (<a href=\"http://www.afmc.af.mil/news/story.asp?id=123119933\"><span class=\"s1\">AFOSR YIP</span></a>) award for the laser cooling of Dy project!</p>\n",
+        "to": "<p>Lev wins an Air Force Office of Scientific Research Young Investigator Program (<a href=\"http://www.afmc.af.mil/news/story.asp?id=123119933\"><span class=\"s1\">AFOSR YIP</span></a>) award for the Dy laser-cooling project!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-97-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-97-01)."
+  },
+  {
+    "path": "/news-events/lev-wins-nsf-career-award",
+    "title": "Lev wins NSF CAREER award",
+    "replacements": [
+      {
+        "from": "<p>Lev wins <a href=\"http://illinois.edu/lb/article/1353/19714/page=8/list=list\">NSF CAREER</a> award for the laser cooling of Dy project!</p>\n",
+        "to": "<p>Lev wins an <a href=\"http://illinois.edu/lb/article/1353/19714/page=8/list=list\">NSF CAREER</a> award for the Dy laser-cooling project!</p>\n"
+      }
+    ],
+    "copyeditReviewIds": [
+      "news-98-01"
+    ],
+    "evidence": " November 6 word-by-word copy edit: exact original HTML is preserved as the unique guarded anchor; source archive, names, scientific values, historical dates and quoted excerpts remain intact. Review: outputs/copyedit-2026-11-06/news-review.json (news-98-01)."
   }
 ]

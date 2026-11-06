@@ -35,7 +35,7 @@ test("historical biographies retain verified dates without claiming old jobs are
   assert.equal((text(byClass(ben, "profile-summary")[0]).match(/Stanford Fortitude Professor/g) || []).length, 1);
   assert.match(text(profile("Seo Ho Youn")), /Previously a postdoc with Prof. Jungsang Kim at Duke/);
   assert.match(text(profile("Mingwu Lu")), /After his Ph.D., he was a postdoc/);
-  assert.match(text(profile("Alicia Kollár")), /Joined JQI\/U. of Maryland as an assistant professor in Fall 2019/);
+  assert.match(text(profile("Alicia Kollár")), /Joined JQI\/University of Maryland as an assistant professor in fall 2019/);
   assert.match(text(profile("Kristian Baumann")), /Stanford University \(started 2012\)/);
   assert.match(text(profile("Jack DiSciacca")), /Stanford University \(started 2013\)/);
   for (const person of data.people) {
@@ -77,5 +77,5 @@ test("reviewed external destinations replace only the exact archived links", () 
   assert.equal(reviewedExternalLink("https://example.org/unreviewed"), "https://example.org/unreviewed");
   const award = page("/news-events/congratulations-ronen");
   assert.match(text(award), /Ronen/);
-  assert.match(text(award), /Congratulations to Ronen Kroeze for winning master's thesis prize!/);
+  assert.match(text(award), /Congratulations to Ronen Kroeze for winning a master's thesis prize!/);
 });

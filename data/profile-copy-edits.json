@@ -1,0 +1,689 @@
+{
+  "version": 1,
+  "reviewDate": "2026-11-06",
+  "scope": "Reviewed profile display copy; exact historical identities, authorship, projects, contacts, original source and routes remain intact. Apply after the earlier verified historical biography/date corrections.",
+  "edits": [
+    {
+      "id": "people-001",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Deputy Director of QFARM",
+      "after": "Deputy Director of Q-FARM",
+      "visibleBefore": "Deputy Director of QFARM",
+      "visibleAfter": "Deputy Director of Q-FARM",
+      "reason": "Use the same established Q-FARM spelling already used in the biography and shared footer.",
+      "evidence": []
+    },
+    {
+      "id": "people-002",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Deputy Director of Ginzton Lab",
+      "after": "Deputy Director of Ginzton Laboratory",
+      "visibleBefore": "Deputy Director of Ginzton Lab",
+      "visibleAfter": "Deputy Director of Ginzton Laboratory",
+      "reason": "Use the laboratory name already given in the biography.",
+      "evidence": []
+    },
+    {
+      "id": "people-003",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Stanford University 2015 - 2022",
+      "after": "Stanford University, 2015–2022",
+      "visibleBefore": "Stanford University 2015 - 2022",
+      "visibleAfter": "Stanford University, 2015–2022",
+      "reason": "Separate institution from dates and use the en dash already used for the two reviewed recent appointments.",
+      "evidence": []
+    },
+    {
+      "id": "people-004",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Stanford University 2011 - 2015",
+      "after": "Stanford University, 2011–2015",
+      "visibleBefore": "Stanford University 2011 - 2015",
+      "visibleAfter": "Stanford University, 2011–2015",
+      "reason": "Separate institution from dates and use the en dash already used for the two reviewed recent appointments.",
+      "evidence": []
+    },
+    {
+      "id": "people-005",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "University of Illinois at Urbana-Champaign 2008-2011",
+      "after": "University of Illinois at Urbana-Champaign, 2008–2011",
+      "visibleBefore": "University of Illinois at Urbana-Champaign 2008-2011",
+      "visibleAfter": "University of Illinois at Urbana-Champaign, 2008–2011",
+      "reason": "Separate institution from dates and use the en dash already used for the two reviewed recent appointments.",
+      "evidence": []
+    },
+    {
+      "id": "people-006",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "JILA &amp; NIST 2006-2007",
+      "after": "JILA &amp; NIST, 2006–2007",
+      "visibleBefore": "JILA & NIST 2006-2007",
+      "visibleAfter": "JILA & NIST, 2006–2007",
+      "reason": "Separate institution from dates and use the en dash already used for the two reviewed recent appointments.",
+      "evidence": []
+    },
+    {
+      "id": "people-007",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Ph.D. Caltech, Physics, 2005",
+      "after": "Ph.D., Caltech, Physics, 2005",
+      "visibleBefore": "Ph.D. Caltech, Physics, 2005",
+      "visibleAfter": "Ph.D., Caltech, Physics, 2005",
+      "reason": "Add the missing separator after the degree, matching the other CV entries.",
+      "evidence": []
+    },
+    {
+      "id": "people-008",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "A.B. Princeton, Physics, Magna Cum Laude, 1999",
+      "after": "A.B., Princeton, Physics, magna cum laude, 1999",
+      "visibleBefore": "A.B. Princeton, Physics, Magna Cum Laude, 1999",
+      "visibleAfter": "A.B., Princeton, Physics, magna cum laude, 1999",
+      "reason": "Add the missing degree separator and lowercase the Latin honor.",
+      "evidence": []
+    },
+    {
+      "id": "people-009",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Allen Goodrich Schenstone Prize",
+      "after": "Allen Goodrich Shenstone Prize",
+      "visibleBefore": "Allen Goodrich Schenstone Prize",
+      "visibleAfter": "Allen Goodrich Shenstone Prize",
+      "reason": "Correct the misspelled namesake; Princeton identifies its award as the Allen G. Shenstone Prize in Physics.",
+      "evidence": [
+        {
+          "url": "https://www.princeton.edu/news/2011/09/11/students-honored-opening-exercises",
+          "support": "Official Princeton story names the Allen G. Shenstone Prize in Physics. This verifies spelling, not the already-captured award/date."
+        }
+      ]
+    },
+    {
+      "id": "people-010",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "phenomena; i.e., the physics",
+      "after": "phenomena, including the physics",
+      "visibleBefore": "phenomena; i.e., the physics",
+      "visibleAfter": "phenomena, including the physics",
+      "reason": "Replace the incorrect semicolon before the explanatory phrase; preserve all scientific claims.",
+      "evidence": []
+    },
+    {
+      "id": "people-011",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Bachelor’s degree Magna Cum Laude",
+      "after": "bachelor’s degree magna cum laude",
+      "visibleBefore": "Bachelor’s degree Magna Cum Laude",
+      "visibleAfter": "bachelor’s degree magna cum laude",
+      "reason": "Lowercase the general degree and Latin honor in prose.",
+      "evidence": []
+    },
+    {
+      "id": "people-012",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "both in Physics",
+      "after": "both in physics",
+      "visibleBefore": "both in Physics",
+      "visibleAfter": "both in physics",
+      "reason": "Lowercase the academic discipline in prose.",
+      "evidence": []
+    },
+    {
+      "id": "people-013",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "an Assistant Professor at the University of Illinois",
+      "after": "an assistant professor at the University of Illinois",
+      "visibleBefore": "an Assistant Professor at the University of Illinois",
+      "visibleAfter": "an assistant professor at the University of Illinois",
+      "reason": "Lowercase a role used descriptively in prose.",
+      "evidence": []
+    },
+    {
+      "id": "people-014",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "He joined the Stanford faculty in 2011, where he is the Stanford Fortitude Professor with appointments in the Departments of Physics and Applied Physics.",
+      "after": "He joined the Stanford faculty in 2011 and holds appointments in the Departments of Physics and Applied Physics.",
+      "visibleBefore": "He joined the Stanford faculty in 2011, where he is the Stanford Fortitude Professor with appointments in the Departments of Physics and Applied Physics.",
+      "visibleAfter": "He joined the Stanford faculty in 2011 and holds appointments in the Departments of Physics and Applied Physics.",
+      "reason": "Remove the endowed-title repetition immediately after the opening sentence while preserving the approved exact title and appointments.",
+      "evidence": []
+    },
+    {
+      "id": "people-015",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Presidential Early Career Award for Scientists and Engineers (PECASE) award",
+      "after": "Presidential Early Career Award for Scientists and Engineers (PECASE)",
+      "visibleBefore": "Presidential Early Career Award for Scientists and Engineers (PECASE) award",
+      "visibleAfter": "Presidential Early Career Award for Scientists and Engineers (PECASE)",
+      "reason": "Remove the repeated word award.",
+      "evidence": []
+    },
+    {
+      "id": "people-016",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Benjamin currently serves as Deputy Director of Stanford’s Ginzton Laboratory as well as Deputy Director of Q-FARM",
+      "after": "Benjamin currently serves as deputy director of Stanford’s Ginzton Laboratory as well as deputy director of Q-FARM",
+      "visibleBefore": "Benjamin currently serves as Deputy Director of Stanford’s Ginzton Laboratory as well as Deputy Director of Q-FARM",
+      "visibleAfter": "Benjamin currently serves as deputy director of Stanford’s Ginzton Laboratory as well as deputy director of Q-FARM",
+      "reason": "Lowercase descriptive role names in prose while preserving the appointments.",
+      "evidence": []
+    },
+    {
+      "id": "people-017",
+      "name": "Kuan-Yu Lin",
+      "path": "/people/mr-kuan-yu-lin",
+      "before": "PhD Stanford, LevLab",
+      "after": "Ph.D., Stanford, LevLab",
+      "visibleBefore": "PhD Stanford, LevLab",
+      "visibleAfter": "Ph.D., Stanford, LevLab",
+      "reason": "Standardize degree punctuation without changing the institution, laboratory, role, or dates.",
+      "evidence": []
+    },
+    {
+      "id": "people-018",
+      "name": "Pranav Parakh",
+      "path": "/node/630",
+      "before": "<p>Undergrad:  Yale</p>",
+      "after": "<p>Undergraduate studies: Yale</p>",
+      "visibleBefore": "Undergrad: Yale",
+      "visibleAfter": "Undergraduate studies: Yale",
+      "reason": "Expand informal shorthand consistently without inventing a degree or graduation year.",
+      "evidence": []
+    },
+    {
+      "id": "people-019",
+      "name": "Giulia Socolof",
+      "path": "/node/631",
+      "before": "<p>Undergrad:  Stanford</p>",
+      "after": "<p>Undergraduate studies: Stanford</p>",
+      "visibleBefore": "Undergrad: Stanford",
+      "visibleAfter": "Undergraduate studies: Stanford",
+      "reason": "Expand informal shorthand consistently without inventing a degree or graduation year.",
+      "evidence": []
+    },
+    {
+      "id": "people-020",
+      "name": "Deven Bowman",
+      "path": "/node/632",
+      "before": "<p>Undergrad:  University of Maryland</p>",
+      "after": "<p>Undergraduate studies: University of Maryland</p>",
+      "visibleBefore": "Undergrad: University of Maryland",
+      "visibleAfter": "Undergraduate studies: University of Maryland",
+      "reason": "Expand informal shorthand consistently without inventing a degree or graduation year.",
+      "evidence": []
+    },
+    {
+      "id": "people-021",
+      "name": "Tony (Peiyang) He",
+      "path": "/node/633",
+      "before": "<p>Undergrad:  Oxford</p>",
+      "after": "<p>Undergraduate studies: Oxford</p>",
+      "visibleBefore": "Undergrad: Oxford",
+      "visibleAfter": "Undergraduate studies: Oxford",
+      "reason": "Expand informal shorthand consistently without inventing a degree or graduation year.",
+      "evidence": []
+    },
+    {
+      "id": "people-022",
+      "name": "Rin Kuroda",
+      "path": "/node/644",
+      "before": "A.B. Princeton",
+      "after": "A.B., Princeton",
+      "visibleBefore": "A.B. Princeton",
+      "visibleAfter": "A.B., Princeton",
+      "reason": "Add the degree/institution separator used in the CV style.",
+      "evidence": []
+    },
+    {
+      "id": "people-023",
+      "name": "Kristian Baumann",
+      "path": "/people/dr-kristian-baumann",
+      "before": "PostDoc, Group of T. Esslinger, ETH Zurich 2011-2012",
+      "after": "Postdoc, Group of T. Esslinger, ETH Zurich, 2011–2012",
+      "visibleBefore": "PostDoc, Group of T. Esslinger, ETH Zurich 2011-2012",
+      "visibleAfter": "Postdoc, Group of T. Esslinger, ETH Zurich, 2011–2012",
+      "reason": "Match the reviewed Postdoc spelling and separate/date-range style; preserve historical dates.",
+      "evidence": []
+    },
+    {
+      "id": "people-024",
+      "name": "Varun Vaidya",
+      "path": "/people/dr-varun-vaidya",
+      "before": "U. Maryland",
+      "after": "University of Maryland",
+      "visibleBefore": "U. Maryland",
+      "visibleAfter": "University of Maryland",
+      "reason": "Expand the institutional shorthand already used in project/profile content; no new affiliation or degree.",
+      "evidence": []
+    },
+    {
+      "id": "people-025",
+      "name": "Sangwon Seo",
+      "path": "/people/dr-sangwon-seo",
+      "before": "Korea Advanced Institute Of Science",
+      "after": "Korea Advanced Institute of Science and Technology",
+      "visibleBefore": "Korea Advanced Institute Of Science",
+      "visibleAfter": "Korea Advanced Institute of Science and Technology",
+      "reason": "Restore the full institutional name applicable in the captured degree year and lowercase of.",
+      "evidence": [
+        {
+          "url": "https://www.kaist.ac.kr/eng/",
+          "support": "Official KAIST history says renamed Korea Advanced Institute of Science and Technology in 1980, before the captured 2010 degree."
+        }
+      ]
+    },
+    {
+      "id": "people-026",
+      "name": "Brian Kasch",
+      "path": "/people/dr-brian-kasch",
+      "before": "Sandia National Laboratory",
+      "after": "Sandia National Laboratories",
+      "visibleBefore": "Sandia National Laboratory",
+      "visibleAfter": "Sandia National Laboratories",
+      "reason": "Correct the institutional proper name while preserving the captured association.",
+      "evidence": [
+        {
+          "url": "https://www.sandia.gov/",
+          "support": "Official institution name is Sandia National Laboratories."
+        }
+      ]
+    },
+    {
+      "id": "people-027",
+      "name": "Di Lao",
+      "path": "/people/dr-di-lao",
+      "before": "GaTech PhD",
+      "after": "Ph.D., Georgia Tech",
+      "visibleBefore": "GaTech PhD",
+      "visibleAfter": "Ph.D., Georgia Tech",
+      "reason": "Expand unclear institutional shorthand and standardize degree punctuation; preserve degree and school.",
+      "evidence": []
+    },
+    {
+      "id": "people-028",
+      "name": "Zhendong Zhang",
+      "path": "/people/dr-zhendong-zhang",
+      "before": "PhD U. Chicago",
+      "after": "Ph.D., University of Chicago",
+      "visibleBefore": "PhD U. Chicago",
+      "visibleAfter": "Ph.D., University of Chicago",
+      "reason": "Standardize degree punctuation and expand the university abbreviation.",
+      "evidence": []
+    },
+    {
+      "id": "people-029",
+      "name": "Yunpeng Ji",
+      "path": "/node/626",
+      "before": "PhD Yale",
+      "after": "Ph.D., Yale",
+      "visibleBefore": "PhD Yale",
+      "visibleAfter": "Ph.D., Yale",
+      "reason": "Standardize degree punctuation and add the institution separator.",
+      "evidence": []
+    },
+    {
+      "id": "people-030",
+      "name": "Seo Ho Youn",
+      "path": "/people/dr-seo-ho-youn",
+      "before": "PhD UIUC 2011",
+      "after": "Ph.D., University of Illinois at Urbana-Champaign, 2011",
+      "visibleBefore": "PhD UIUC 2011",
+      "visibleAfter": "Ph.D., University of Illinois at Urbana-Champaign, 2011",
+      "reason": "Expand the institution abbreviation and separate degree, school, and captured year.",
+      "evidence": []
+    },
+    {
+      "id": "people-031",
+      "name": "Alicia Kollár",
+      "path": "/people/dr-alicia-koll%C3%A1r",
+      "before": "Princeton; PhD in LevLab at Stanford.  Postdoc In Levlab.",
+      "after": "Princeton; Ph.D. in LevLab at Stanford. Postdoc in LevLab.",
+      "visibleBefore": "Princeton; PhD in LevLab at Stanford. Postdoc In Levlab.",
+      "visibleAfter": "Princeton; Ph.D. in LevLab at Stanford. Postdoc in LevLab.",
+      "reason": "Standardize degree punctuation and fix in/LevLab capitalization.",
+      "evidence": []
+    },
+    {
+      "id": "people-032",
+      "name": "Alicia Kollár",
+      "path": "/people/dr-alicia-koll%C3%A1r",
+      "before": "Postdoc with Houck Princeton.",
+      "after": "Postdoc with Houck at Princeton.",
+      "visibleBefore": "Postdoc with Houck Princeton.",
+      "visibleAfter": "Postdoc with Houck at Princeton.",
+      "reason": "Add the missing preposition without guessing a first name or dates.",
+      "evidence": []
+    },
+    {
+      "id": "people-033",
+      "name": "Alicia Kollár",
+      "path": "/people/dr-alicia-koll%C3%A1r",
+      "before": "Joined JQI/U. of Maryland as an assistant professor in Fall 2019.",
+      "after": "Joined JQI/University of Maryland as an assistant professor in fall 2019.",
+      "visibleBefore": "Joined JQI/U. of Maryland as an assistant professor in Fall 2019.",
+      "visibleAfter": "Joined JQI/University of Maryland as an assistant professor in fall 2019.",
+      "reason": "Expand university shorthand and lowercase the season; retain the already-verified historical appointment/date.",
+      "evidence": []
+    },
+    {
+      "id": "people-034",
+      "name": "Richard Turner",
+      "path": "/people/dr-richard-turner",
+      "before": "U. Michigan",
+      "after": "University of Michigan",
+      "visibleBefore": "U. Michigan",
+      "visibleAfter": "University of Michigan",
+      "reason": "Expand the institutional shorthand without adding any degree or dates.",
+      "evidence": []
+    },
+    {
+      "id": "people-035",
+      "name": "Richard Turner",
+      "path": "/people/dr-richard-turner",
+      "before": "UIUC",
+      "after": "University of Illinois at Urbana-Champaign",
+      "visibleBefore": "UIUC",
+      "visibleAfter": "University of Illinois at Urbana-Champaign",
+      "reason": "Expand the institutional shorthand consistently with Ben’s CV.",
+      "evidence": []
+    },
+    {
+      "id": "people-036",
+      "name": "Brandon Freudenstein",
+      "path": "/people/mr-brandon-freudenstein",
+      "before": "Stanford Physics Masters Degree",
+      "after": "Master’s degree in physics, Stanford",
+      "visibleBefore": "Stanford Physics Masters Degree",
+      "visibleAfter": "Master’s degree in physics, Stanford",
+      "reason": "Restore the possessive apostrophe and use ordinary prose capitalization without changing the captured degree.",
+      "evidence": []
+    },
+    {
+      "id": "people-037",
+      "name": "Brandon Freudenstein",
+      "path": "/people/mr-brandon-freudenstein",
+      "before": "U. Michigan",
+      "after": "University of Michigan",
+      "visibleBefore": "U. Michigan",
+      "visibleAfter": "University of Michigan",
+      "reason": "Expand the institutional shorthand; do not infer a degree.",
+      "evidence": []
+    },
+    {
+      "id": "people-038",
+      "name": "Brendan Marsh",
+      "path": "/people/mr-brendan-marsh",
+      "before": "Brendan earned a master’s degree in applied mathematics and theoretical physics from the University of Cambridge in 2018, also known as Part III of the mathematical tripos.",
+      "after": "In 2018, Brendan earned a master’s degree in applied mathematics and theoretical physics from the University of Cambridge through Part III of the mathematical tripos.",
+      "visibleBefore": "Brendan earned a master’s degree in applied mathematics and theoretical physics from the University of Cambridge in 2018, also known as Part III of the mathematical tripos.",
+      "visibleAfter": "In 2018, Brendan earned a master’s degree in applied mathematics and theoretical physics from the University of Cambridge through Part III of the mathematical tripos.",
+      "reason": "Attach the Part III phrase to the program rather than the year/person; preserve the captured program and date.",
+      "evidence": []
+    },
+    {
+      "id": "people-039",
+      "name": "Brendan Marsh",
+      "path": "/people/mr-brendan-marsh",
+      "before": "single molecule biophysics",
+      "after": "single-molecule biophysics",
+      "visibleBefore": "single molecule biophysics",
+      "visibleAfter": "single-molecule biophysics",
+      "reason": "Hyphenate the compound modifier before biophysics.",
+      "evidence": []
+    },
+    {
+      "id": "people-040",
+      "name": "Brendan Marsh",
+      "path": "/people/mr-brendan-marsh",
+      "before": "He was a recipient of the 2015 Goldwater Scholarship and is an NSF GRFP Fellow.",
+      "after": "He received the 2015 Goldwater Scholarship and an NSF Graduate Research Fellowship.",
+      "visibleBefore": "He was a recipient of the 2015 Goldwater Scholarship and is an NSF GRFP Fellow.",
+      "visibleAfter": "He received the 2015 Goldwater Scholarship and an NSF Graduate Research Fellowship.",
+      "reason": "State the captured awards as historical achievements, avoiding an unsupported claim that a graduate fellowship is still active after the Ph.D.",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/brendanpatrickmarsh",
+          "support": "His own profile lists National Science Foundation Graduate Research Fellowship, March 2017; captured bio already records the fellowship."
+        }
+      ]
+    },
+    {
+      "id": "people-041",
+      "name": "Brendan Marsh",
+      "path": "/people/mr-brendan-marsh",
+      "before": "Now a postdoc with Prof. Adam Kaufman at JILA.",
+      "after": "He later became a postdoc with Prof. Adam Kaufman at JILA.",
+      "visibleBefore": "Now a postdoc with Prof. Adam Kaufman at JILA.",
+      "visibleAfter": "He later became a postdoc with Prof. Adam Kaufman at JILA.",
+      "reason": "Turn the sentence fragment into historical prose without asserting an end date or a current job.",
+      "evidence": [
+        {
+          "url": "https://www.colorado.edu/jila/brendan-marsh-0",
+          "support": "JILA’s official profile lists Brendan Marsh as a research associate."
+        },
+        {
+          "url": "https://jila.colorado.edu/sites/default/files/group-files/2025-05/2025_May.pdf",
+          "support": "Cindy Regal’s official May 2025 CV identifies Brendan Marsh as a co-advised postdoctoral researcher; captured lab bio identifies Kaufman."
+        }
+      ]
+    },
+    {
+      "id": "people-042",
+      "name": "Alexander N. Bourzutschky",
+      "path": "/people/mr-alexander-n-bourzutschky",
+      "before": "Caltech BS 2014-2018",
+      "after": "B.S., Caltech, 2014–2018",
+      "visibleBefore": "Caltech BS 2014-2018",
+      "visibleAfter": "B.S., Caltech, 2014–2018",
+      "reason": "Standardize degree punctuation, separators, and range dash; preserve all dates.",
+      "evidence": []
+    },
+    {
+      "id": "people-043",
+      "name": "Alexander N. Bourzutschky",
+      "path": "/people/mr-alexander-n-bourzutschky",
+      "before": "Google software engineer 2018-2020",
+      "after": "Software engineer, Google, 2018–2020",
+      "visibleBefore": "Google software engineer 2018-2020",
+      "visibleAfter": "Software engineer, Google, 2018–2020",
+      "reason": "Separate historical role, employer, and dates consistently.",
+      "evidence": []
+    },
+    {
+      "id": "people-044",
+      "name": "Alec Shelley",
+      "path": "/people/mr-alec-shelley",
+      "before": "UC Berkeley undergrad.",
+      "after": "Undergraduate studies: UC Berkeley",
+      "visibleBefore": "UC Berkeley undergrad.",
+      "visibleAfter": "Undergraduate studies: UC Berkeley",
+      "reason": "Expand informal shorthand consistently without changing the November 6 SQCRAMscope association.",
+      "evidence": []
+    },
+    {
+      "id": "people-046",
+      "name": "Chen Wu",
+      "path": "/people/mr-chen-wu",
+      "before": "Masters program Stanford Applied Physics",
+      "after": "Master’s program in Applied Physics, Stanford",
+      "visibleBefore": "Masters program Stanford Applied Physics",
+      "visibleAfter": "Master’s program in Applied Physics, Stanford",
+      "reason": "Restore the possessive apostrophe and missing preposition while preserving the historical program.",
+      "evidence": []
+    },
+    {
+      "id": "people-047",
+      "name": "Jeffrey Brown",
+      "path": "/people/mr-jeffrey-brown",
+      "before": "Stanford Undergraduate",
+      "after": "Undergraduate studies: Stanford",
+      "visibleBefore": "Stanford Undergraduate",
+      "visibleAfter": "Undergraduate studies: Stanford",
+      "reason": "Use the same explicit background label as the other undergraduate records.",
+      "evidence": []
+    },
+    {
+      "id": "people-048",
+      "name": "Jingjin `Jenny' Hu",
+      "path": "/people/ms-jingjin-jenny-hu",
+      "before": "Peking University Undergraduate",
+      "after": "Undergraduate studies: Peking University",
+      "visibleBefore": "Peking University Undergraduate",
+      "visibleAfter": "Undergraduate studies: Peking University",
+      "reason": "Use the same background wording without changing the two preserved project associations.",
+      "evidence": []
+    },
+    {
+      "id": "people-050",
+      "name": "Hunter Swan",
+      "path": "/people/mr-hunter-swan",
+      "before": "Cornell undergrad",
+      "after": "Undergraduate studies: Cornell",
+      "visibleBefore": "Cornell undergrad",
+      "visibleAfter": "Undergraduate studies: Cornell",
+      "reason": "Expand the informal shorthand consistently.",
+      "evidence": []
+    },
+    {
+      "id": "people-051",
+      "name": "Hunter Swan",
+      "path": "/people/mr-hunter-swan",
+      "before": "Stanford Physics Grad student",
+      "after": "Graduate studies in physics: Stanford",
+      "visibleBefore": "Stanford Physics Grad student",
+      "visibleAfter": "Graduate studies in physics: Stanford",
+      "reason": "Expand shorthand and normalize capitalization; do not assert current enrollment, graduation, or a degree.",
+      "evidence": []
+    },
+    {
+      "id": "people-052",
+      "name": "Anjun Chu",
+      "path": "/people/mr-anjun-chu",
+      "before": "Tsinghua Undergraduate",
+      "after": "Undergraduate studies: Tsinghua",
+      "visibleBefore": "Tsinghua Undergraduate",
+      "visibleAfter": "Undergraduate studies: Tsinghua",
+      "reason": "Expand and standardize the background label; do not infer a degree.",
+      "evidence": []
+    },
+    {
+      "id": "people-053",
+      "name": "Naijun Jin",
+      "path": "/people/mr-naijun-jin",
+      "before": "Tsinghua Undergraduate",
+      "after": "Undergraduate studies: Tsinghua",
+      "visibleBefore": "Tsinghua Undergraduate",
+      "visibleAfter": "Undergraduate studies: Tsinghua",
+      "reason": "Expand and standardize the background label; do not infer a degree.",
+      "evidence": []
+    },
+    {
+      "id": "people-054",
+      "name": "Melis Tekant",
+      "path": "/people/ms-melis-tekant",
+      "before": "Stanford Undergrad",
+      "after": "Undergraduate studies: Stanford",
+      "visibleBefore": "Stanford Undergrad",
+      "visibleAfter": "Undergraduate studies: Stanford",
+      "reason": "Expand the informal shorthand consistently.",
+      "evidence": []
+    },
+    {
+      "id": "people-055",
+      "name": "Melis Tekant",
+      "path": "/people/ms-melis-tekant",
+      "before": "Now grad student at MIT in physics",
+      "after": "Ph.D. in physics, MIT, 2021",
+      "visibleBefore": "Now grad student at MIT in physics",
+      "visibleAfter": "Ph.D. in physics, MIT, 2021",
+      "reason": "Replace a demonstrably stale current-student claim with a primary-verified completed degree; preserve the historical background and avoid introducing a current employer.",
+      "evidence": [
+        {
+          "url": "https://melistekant.com/",
+          "support": "Her own site says she received her MIT physics Ph.D. in 2021 and records Stanford LevLab undergraduate research in 2013–2014."
+        },
+        {
+          "url": "https://cpls.mit.edu/students/",
+          "support": "Official MIT alumni list also identifies Melis Tekant as a former student with a subsequent research position."
+        }
+      ]
+    },
+    {
+      "id": "people-degree-001",
+      "name": "Kuan-Yu Lin",
+      "path": "/people/mr-kuan-yu-lin",
+      "before": "<p>BA MIT</p>",
+      "after": "<p>Bachelor’s degree, MIT</p>",
+      "visibleBefore": "BA MIT",
+      "visibleAfter": "Bachelor’s degree, MIT",
+      "reason": "User-approved neutral display: preserve the captured bachelor-level credential and institution without guessing B.A., B.S., or S.B. Source degree abbreviation remains archived.",
+      "evidence": [
+        {
+          "kind": "reviewed-source-and-user-decision",
+          "source": "data/content.json",
+          "support": "Captured BA entry establishes the bachelor level; November 6 copyedit review approved the generic degree wording."
+        }
+      ]
+    },
+    {
+      "id": "people-degree-002",
+      "name": "Derek Baldwin",
+      "path": "/node/625",
+      "before": "<p>BA MIT Physics</p>",
+      "after": "<p>Bachelor’s degree in physics, MIT</p>",
+      "visibleBefore": "BA MIT Physics",
+      "visibleAfter": "Bachelor’s degree in physics, MIT",
+      "reason": "User-approved neutral display: preserve the captured bachelor-level credential and institution without guessing B.A., B.S., or S.B. Source degree abbreviation remains archived.",
+      "evidence": [
+        {
+          "kind": "reviewed-source-and-user-decision",
+          "source": "data/content.json",
+          "support": "Captured BA entry establishes the bachelor level; November 6 copyedit review approved the generic degree wording."
+        }
+      ]
+    },
+    {
+      "id": "people-followup-bullet-1",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "Major achievements include:<br>-Production",
+      "after": "Major achievements include:<br>• Production",
+      "reason": "Use a spaced bullet in the existing line-separated achievements, preserving the wording and layout.",
+      "evidence": []
+    },
+    {
+      "id": "people-followup-bullet-2",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "<br>-Development",
+      "after": "<br>• Development",
+      "reason": "Use a spaced bullet in the existing line-separated achievements, preserving the wording and layout.",
+      "evidence": []
+    },
+    {
+      "id": "people-followup-bullet-3",
+      "name": "Benjamin Lev",
+      "path": "/people/person-3-0",
+      "before": "<br>-Initial development",
+      "after": "<br>• Initial development",
+      "reason": "Use a spaced bullet in the existing line-separated achievements, preserving the wording and layout.",
+      "evidence": []
+    }
+  ]
+}

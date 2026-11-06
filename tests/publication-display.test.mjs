@@ -109,3 +109,40 @@ test("reviewed Nature article uses published title and year while preserving cap
   assert.equal(publication.title, "Superradiant Charge Density Waves in a Driven Cavity-Matter Hybrid");
   assert.equal(publication.citationHtml, source.publications.find((record) => record.id === publication.id).citationHtml);
 });
+
+test("publication copy-edits stop when an exact source anchor changes or repeats", () => {
+  const id = "publication-nematic-transitions-in-iron-pnictide-superconductors-imaged-with-a-quantum-gas";
+  for (const substitute of ["Nature Physics", "Nature Physcis Nature Physcis"]) {
+    const changed = structuredClone(source.publications);
+    const record = changed.find((publication) => publication.id === id);
+    record.citationHtml = record.citationHtml.replace("Nature Physcis", substitute);
+    assert.throws(() => curatePublications(changed), /copy-edit requires review after source anchor changed/);
+  }
+  for (const publication of publications)
+    assert.equal(publication.citationHtml, source.publications.find((record) => record.id === publication.id).citationHtml);
+});
+
+test("plain scientific headings retain the separately formatted citation titles", () => {
+  const scattering = byId("s-wave-scattering-lengths-of-the-strongly-dipolar-bosons-162-dy-and-164-dy");
+  assert.equal(scattering.displayTitle, "s-wave scattering lengths of the strongly dipolar bosons 162Dy and 164Dy");
+  assert.equal(getPublicationDisplay(scattering).titleHtml, "<em>s</em>-wave scattering lengths of the strongly dipolar bosons <sup>162</sup>Dy and <sup>164</sup>Dy");
+  const condensation = byId("bose-einstein-condensation-of-162-dy-and-160-dy");
+  assert.equal(condensation.displayTitle, "Bose-Einstein condensation of 162Dy and 160Dy");
+  assert.equal(getPublicationDisplay(condensation).titleHtml, "Bose-Einstein condensation of <sup>162</sup>Dy and <sup>160</sup>Dy");
+});
+
+test("editorial typography preserves protected names and exact cited highlight titles", () => {
+  const apparatus = getPublicationDisplay(byId("a-cryogenic-apparatus-for-coupling-two-dimensional-materials-to-a-confocal-multimode-optical-cavity"));
+  assert.match(apparatus.authorsHtml, /P\. D\. Parakh/);
+  const phantom = getPublicationDisplay(byId("phantom-energy-in-the-nonlinear-response-of-a-quantum-many-body-scar-state"));
+  assert.match(phantom.authorsHtml, /K\.-Y\. Lin/);
+  assert.doesNotMatch(phantom.authorsHtml, /K\. -Y\./);
+  const nematic = text(parse(getPublicationDisplay(byId("nematic-transitions-in-iron-pnictide-superconductors-imaged-with-a-quantum-gas")).highlightsHtml.join(" ")));
+  assert.match(nematic, /Nature Physics/);
+  assert.doesNotMatch(nematic, /Physcis|Cooking with a quantum gas/);
+  assert.match(nematic, /Cooking with quantum gas/);
+  const raman = text(parse(getPublicationDisplay(byId("raman-phonon-polariton-condensation-in-a-transversely-pumped-cavity")).highlightsHtml.join(" ")));
+  assert.match(raman, /“Light Induced States of Matter”\./);
+  for (const suffix of ["high-capacity-associative-memory-in-a-quantum-optical-spin-glass", "directly-observing-replica-symmetry-breaking-in-a-vector-quantum-optical-spin-glass"])
+    assert.equal(text(parse(getPublicationDisplay(byId(suffix)).highlightsHtml.join(" "))), "Highlighted “ In Science Journals. ”");
+});

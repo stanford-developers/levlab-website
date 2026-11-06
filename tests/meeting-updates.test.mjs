@@ -60,7 +60,7 @@ test("project descriptions, related news, and research overview match approved c
   const newtonsCradle = links(dy).find((node) => /Newton's cradle toy/.test(text(node)));
   assert.ok(newtonsCradle);
   assert.match(text(newtonsCradle), /^quantum and magnetic version/);
-  assert.match(visible(rb), /We recently created a supersolid that vibrates by forming an optical lattice with sound\./);
+  assert.match(visible(rb), /We created a supersolid that vibrates by forming an optical lattice with sound\./);
   assert.doesNotMatch(visible(rb), /quantum liquid crystals|As a first step toward the latter/i);
   assert.match(visible(sq), /The SQCRAMscope[^.]* used an ultracold quantum gas/);
   assert.match(visible(sq), /It was capable of imaging/);

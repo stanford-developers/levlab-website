@@ -1,7 +1,7 @@
 {
   "basePath": "",
   "origin": "https://levlab.stanford.edu",
-  "builtAt": "2026-11-06T06:41:13.978Z",
+  "builtAt": "2026-11-06T20:45:17.315Z",
   "contentHash": "c56cc23339da298e01554f4f8ad561c57a263a9c046474262377912251b05fd9",
   "publicationCurationHash": "3c3cef6536d2448d5d0432dde0f18f6815acd1233ffdfe3ad4eed2a5b6f6b7ef",
   "publicationAuthorReviewHash": "ff1934039fca404925cca8f37e24a4c13380adf2a4153f1a8d33ec68c87d6ece",
@@ -533,7 +533,7 @@
   },
   "publication": {
     "branch": "main",
-    "sourceCommit": "9a38a65ec65179b5c6c9a021bfa72c32ecb81e7c",
+    "sourceCommit": "f31e7aef3097b56f8e8e857926fa29f45011a1b9",
     "method": "branch"
   }
 }

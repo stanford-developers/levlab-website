@@ -26,6 +26,10 @@ export const personUpdates = {
   "Stephen Taylor": { projects: ["sqcramscope"] },
   "Brandon Freudenstein": { projects: ["sqcramscope"] },
   "Alexander N. Bourzutschky": { projects: ["cavmat", "rubidium"] },
+  // Display follows Pranav's November 6 recollection of the combined category.
+  // Retain Jenny's separately recorded Rubidium affiliation.
+  "Alec Shelley": { projects: ["sqcramscope"] },
+  "Jingjin `Jenny' Hu": { projects: ["rubidium", "sqcramscope"] },
 };
 export const benTitle = "Stanford Fortitude Professor; Professor of Physics and Applied Physics";
 export function terminology(value = "") {

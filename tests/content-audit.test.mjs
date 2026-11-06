@@ -18,6 +18,8 @@ test("reviewed historical projects link to SQCRAMscope without relabeling it Cav
     "Alicia Kollár": ["rubidium", "sqcramscope"], "Fan Yang": ["sqcramscope"],
     "Stephen Taylor": ["sqcramscope"], "Brandon Freudenstein": ["sqcramscope"],
     "Alexander N. Bourzutschky": ["cavmat", "rubidium"],
+    "Alec Shelley": ["sqcramscope"],
+    "Jingjin `Jenny' Hu": ["rubidium", "sqcramscope"],
   };
   for (const [name, slugs] of Object.entries(expected)) {
     const summary = byClass(profile(name), "profile-summary")[0];

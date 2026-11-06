@@ -1,12 +1,13 @@
 {
   "basePath": "",
   "origin": "https://levlab.stanford.edu",
-  "builtAt": "2026-11-06T20:45:17.315Z",
+  "builtAt": "2026-11-06T21:06:59.907Z",
   "contentHash": "c56cc23339da298e01554f4f8ad561c57a263a9c046474262377912251b05fd9",
-  "publicationCurationHash": "3c3cef6536d2448d5d0432dde0f18f6815acd1233ffdfe3ad4eed2a5b6f6b7ef",
-  "publicationAuthorReviewHash": "ff1934039fca404925cca8f37e24a4c13380adf2a4153f1a8d33ec68c87d6ece",
-  "newsCurationHash": "0ff5d2e86aee2988ee083749e2f73eb784852ea1e21139725f777e4868d88d51",
+  "publicationCurationHash": "cc4cff3fd8448a4f435a8280a2395c0f1acc6af4238e64bce2f78f4298c1f002",
+  "publicationAuthorReviewHash": "8a6b23ab058080f3884f5a95688879f77c514b7d91373e49fd708aa266847785",
+  "newsCurationHash": "7311dcdc3380b47ebe253ae0765dabcb0ac5b53773ac755b16a1fc678d2ea0b0",
   "externalLinkCurationHash": "9390410832535a190d036a0109987d44c3ce4ff268ef9f96e437283e4b0e9c3f",
+  "profileCopyEditsHash": "d972105829b8f2116150bc6730bfa1b63f3707f0c3d2f36649c12bf472ccec35",
   "sourceImportedAt": "2026-10-22T00:56:08.541Z",
   "routes": [
     "/",
@@ -533,7 +534,7 @@
   },
   "publication": {
     "branch": "main",
-    "sourceCommit": "f31e7aef3097b56f8e8e857926fa29f45011a1b9",
+    "sourceCommit": "59e106acd0a1f8fc09c03e335477ee870c233a82",
     "method": "branch"
   }
 }

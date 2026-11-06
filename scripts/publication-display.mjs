@@ -3,11 +3,18 @@ import { all, decode, escape, parse, text } from "./html.mjs";
 const inlineTags = new Set(["a", "strong", "b", "em", "i", "sup", "sub", "abbr"]);
 const downloadLabel = /^(?:(?:link\s+to\s+)?pdf|SM|supplement(?:ary|al)?(?:\s+(?:material|information))?|updated version)$/i;
 const pdfUrl = (url) => /\.pdf(?:[?#]|$)|\/article-pdf\/|\/pdf\//i.test(url);
+const removedDownload = "\uE001";
 const arxivId = (value) =>
   String(value).match(/(?:\d{4}[.:]\d{4,5}|[a-z-]+(?:\.[A-Z]{2})?\/\d{7})(?:v\d+)?/i)?.[0]?.replace(/^(\d{4}):(\d{4,5})/, "$1.$2");
 
 function cleanWhitespace(html) {
-  return html.replace(/\s+/g, " ").trim();
+  // A captured "pdf & SM" pair leaves an ampersand after both downloads
+  // are suppressed. Remove only a separator between two removed links;
+  // ampersands in journal names or scientific text must remain intact.
+  return html
+    .replace(new RegExp(`${removedDownload}\\s*&amp;\\s*${removedDownload}`, "g"), "")
+    .replaceAll(removedDownload, "")
+    .replace(/\s+/g, " ").trim();
 }
 
 function meaningful(html) {
@@ -50,7 +57,7 @@ export function getPublicationDisplay(publication) {
           return "";
         }
       }
-      if (downloadLabel.test(label)) return "";
+      if (downloadLabel.test(label)) return removedDownload;
       const content = (node.children || []).map((child) => render(child, extractingTitle)).join("");
       // Keep citation/coverage text whose only historical destination was a PDF.
       // Primary citation URLs are supplied by reviewed curation when available.

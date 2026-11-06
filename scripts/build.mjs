@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { curateNews, newsCurationHash } from "./news-curation.mjs";
+import { reviewedExternalLink, externalLinkCurationHash } from "./external-links.mjs";
 import { createHash } from "node:crypto";
 import { createAssetResolver, encodedAssetPath } from "./assets.mjs";
 import { imageDimensions } from "./image-dimensions.mjs";
@@ -25,6 +26,7 @@ import { validatePublicationAuthors, publicationAuthorReviewHash } from "./publi
 import {
   hiddenDirectoryNames, hiddenDirectoryGroups, personUpdates, benTitle, terminology,
   editorialHtml, projectDescription, newsTitle, projectNewsPreview, withoutPdfLinks,
+  profileEditorialHtml,
 } from "./site-editorial.mjs";
 const contentSource = fs.readFileSync("data/content.json", "utf8");
 const data = JSON.parse(contentSource);
@@ -166,15 +168,7 @@ if (fs.existsSync("data/preview-image-fallbacks.json")) {
 }
 function rewriteUrl(value, attr = "href", pagePath = "/") {
   let input = value.trim();
-  // Preserve the captured record, correcting only this unambiguous doubled
-  // protocol in the rendered link. The external destination was not fetched.
-  if (
-    pagePath === "/news-events/congratulations-ronen" &&
-    input ===
-      "http://https://www.tue.nl/en/university/about-the-university/academic-events/tue-academic-awards-ceremony/"
-  )
-    input =
-      "https://www.tue.nl/en/university/about-the-university/academic-events/tue-academic-awards-ceremony/";
+  if (attr === "href") input = reviewedExternalLink(input);
   if (!input) return "";
   if (input.startsWith("#")) return input;
   if (/^mailto:|^tel:/i.test(input)) return input;
@@ -457,9 +451,10 @@ const supporters = () =>
       .join("")}</div>`,
   );
 function newsSummary(story) {
-  const full = text(parse(story.bodyHtml || ""));
-  const legacy = full.slice(0, 210).replace(/\s+\S*$/, "") + "…";
+  const original = text(parse(story.bodyHtml || ""));
+  const legacy = original.slice(0, 210).replace(/\s+\S*$/, "") + "…";
   if (story.summary && story.summary !== legacy) return story.summary.replace(/---/g, "—");
+  const full = text(parse(withoutPdfLinks(story.bodyHtml || "")));
   const readable = full.replace(/\s+([,.;:!?])/g, "$1").replace(/---/g, "—");
   return readable.length <= 210
     ? readable
@@ -479,7 +474,7 @@ function newsArchive(items, placeholder) {
       <div class="news-pagination-links">
         <a class="pagination-link pagination-previous" data-page-step="-1" href="?page=1#news-page-1" hidden>Previous</a>
         ${Array.from({ length: pageCount }, (_, index) => `<a class="pagination-link" data-page-number="${index + 1}" href="?page=${index + 1}#news-page-${index + 1}"${index === 0 ? ' aria-current="page"' : ""} aria-label="Page ${index + 1}">${index + 1}</a>`).join("")}
-        <a class="pagination-link pagination-next" data-page-step="1" href="?page=2#news-page-2"${pageCount < 2 ? " hidden" : ""}>Next</a>
+        <a class="pagination-link pagination-next" data-page-step="1" href="?page=${Math.min(2, pageCount)}#news-page-${Math.min(2, pageCount)}"${pageCount < 2 ? " hidden" : ""}>Next</a>
       </div>
       <p class="news-pagination-summary" data-page-summary></p>
     </nav>`
@@ -573,6 +568,7 @@ function personCard(p, small = false, loading = "lazy", headingTag = "h3") {
                 cavmat: "CavMat",
                 rubidium: "Rb Spin Glass Machine",
                 dysprosium: "Dysprosium Cavity Machine",
+                sqcramscope: "SQCRAMscope",
               })[project],
           )
           .filter(Boolean)
@@ -595,7 +591,7 @@ function profileFieldContent(node) {
   return raw({ ...node, children: [{ text: children }] });
 }
 function profileBody(person) {
-  const tree = parse(person.bodyHtml || "");
+  const tree = parse(profileEditorialHtml(person));
   const sections = [
     ["field-short-cv", "Background"],
     ["field-research-interests", "Research interests"],
@@ -605,10 +601,17 @@ function profileBody(person) {
     .flatMap(([field, label]) => {
       const node = byClass(tree, "field--name-" + field)[0];
       const content = profileFieldContent(node);
-      return text(parse(content)).trim() ||
-        all(parse(content), (n) => n.tag === "img").length
+      const rendered = clean(content, person.path);
+      const cleanedTree = parse(rendered);
+      // Attachment lists containing only suppressed PDFs and byte counts have
+      // no remaining document action. Do not leave orphan Documents headings.
+      if (field === "field-files" && !all(cleanedTree, (n) =>
+        (n.tag === "a" && n.attrs.href) || n.tag === "img",
+      ).length) return [];
+      return text(cleanedTree).trim() ||
+        all(cleanedTree, (n) => n.tag === "img").length
         ? [
-            `<section class="profile-content-section"><h2>${label}</h2>${clean(content, person.path)}</section>`,
+            `<section class="profile-content-section"><h2>${label}</h2>${rendered}</section>`,
           ]
         : [];
     })
@@ -618,7 +621,7 @@ function profileBody(person) {
   ).length;
   return (
     sections ||
-    (!hasSourceFields ? clean(person.bodyHtml || "", person.path) : "")
+    (!hasSourceFields ? clean(profileEditorialHtml(person), person.path) : "")
   );
 }
 function publicationMetadata(publication) {
@@ -954,7 +957,7 @@ for (const person of data.people) {
           person.projects.length
             ? `<nav class="profile-projects" aria-label="Associated research">${person.projects
                 .map((id) => {
-                  const p = data.projects.find((p) => p.slug === id);
+                  const p = researchProjects.find((p) => p.slug === id);
                   return p
                     ? `<p><a href="${local(p.path)}">${e(terminology(p.title))}</a></p>`
                     : "";
@@ -1100,6 +1103,7 @@ fs.writeFileSync(
       publicationCurationHash,
       publicationAuthorReviewHash,
       newsCurationHash,
+      externalLinkCurationHash,
       sourceImportedAt: data.importedAt,
       routes: [...routes.keys()],
       counts: {

@@ -32,7 +32,7 @@ test("all captured citations have title, authors, journal and no PDF destination
 
 test("legacy title-first, nested scientific markup, multiline authors and split arXiv links survive", () => {
   const review = getPublicationDisplay(byId("review-article-dipolar-physics-with-atomic-quantum-gases"));
-  assert.match(review.titleHtml, /^Review article:/);
+  assert.equal(review.titleHtml, "Dipolar physics: a review of experiments with magnetic quantum gases");
   assert.match(review.authorsHtml, /L\. Chomaz.*T\. Pfau/);
   const scattering = getPublicationDisplay(byId("s-wave-scattering-lengths-of-the-strongly-dipolar-bosons-162-dy-and-164-dy"));
   assert.match(scattering.titleHtml, /<em>s<\/em>-wave.*<sup>162<\/sup>Dy/);
@@ -42,6 +42,46 @@ test("legacy title-first, nested scientific markup, multiline authors and split 
   const split = getPublicationDisplay(byId("strongly-dipolar-bose-einstein-condensate-of-dysprosium"));
   assert.equal(all(parse(split.preprintHtml), (node) => node.tag === "a").length, 1);
   assert.match(split.preprintHtml, /https:\/\/arxiv.org\/abs\/1108.5993/);
+});
+
+test("published titles repair incomplete public headings without changing captured identities", () => {
+  const expected = new Map([
+    ["exploring-symmetry-breaking-at-the-dicke-quantum", "Exploring symmetry breaking at the Dicke quantum phase transition"],
+    ["mitigation-of-loss-within-a-molecular-stark-decelerato", "Mitigation of loss within a molecular Stark decelerator"],
+    ["a-long-lived-spin-orbit-coupled-dipolar-fermi-gas", "Long-lived spin-orbit-coupled degenerate dipolar Fermi gas"],
+    ["supermode-density-wave-polariton-condensation", "Supermode-density-wave-polariton condensation with a Bose–Einstein condensate in a multimode cavity"],
+    ["integration-of-fiber-coupled-high-q-silicon-nitride-microdisks-with-magnetostatic-atom-chips", "Integration of fiber-coupled high-Q SiNₓ microdisks with atom chips"],
+  ]);
+  for (const [suffix, title] of expected) {
+    const publication = byId(suffix);
+    assert.equal(publication.displayTitle, title, `${suffix}: shared public-heading title`);
+    assert.equal(getPublicationDisplay(publication).titleHtml, title, `${suffix}: citation title`);
+    const captured = source.publications.find((record) => record.id === publication.id);
+    assert.equal(publication.title, captured.title, `${suffix}: captured identity retained`);
+    assert.equal(publication.citationHtml, captured.citationHtml, `${suffix}: captured citation retained`);
+  }
+});
+
+test("suppressed download pairs remove only their own separator", () => {
+  const pumping = getPublicationDisplay(byId("topological-pumping-of-a-1d-dipolar-gas-into-strongly-correlated-prethermal-states"));
+  assert.equal(text(parse(pumping.journalHtml)), "Science 371 , 296 (2021)");
+  assert.doesNotMatch(pumping.journalHtml, /&amp;|\uE001/);
+  const fixture = getPublicationDisplay({
+    id: "download-separator-fixture",
+    citationHtml: '<p>A. Researcher<br><strong>A scientific title with sufficient length</strong><br><a href="https://example.com/article">Sensors &amp; Actuators <strong>1</strong>, 2 (2020).</a> <a href="/paper.pdf">pdf</a> &amp; <a href="/supplement.pdf">SM</a><br>Retained coverage &amp; commentary</p>',
+  });
+  assert.equal(text(parse(fixture.journalHtml)), "Sensors & Actuators 1 , 2 (2020)");
+  assert.equal(text(parse(fixture.highlightsHtml.join(" "))), "Retained coverage & commentary");
+});
+
+test("reviewed journal names and the crystallization article destination are correct", () => {
+  const stark = getPublicationDisplay(byId("mitigation-of-loss-within-a-molecular-stark-decelerato"));
+  assert.match(stark.journalHtml, /The European Physical Journal D/);
+  const fluctuations = getPublicationDisplay(byId("real-time-observation-of-fluctuations-at-the-driven-dissipative-dicke-phase-transition"));
+  assert.match(fluctuations.journalHtml, /Proceedings of the National Academy of Sciences/);
+  const crystal = getPublicationDisplay(byId("atom-light-crystallization-of-becs-in-multimode-cavities-nonequilibrium-classical-and-quantum-phase-transitions-emergent-lattices-supersolidity-and-frustration"));
+  assert.match(crystal.journalHtml, /href="https:\/\/doi\.org\/10\.1103\/PhysRevA\.82\.043612"/);
+  assert.match(crystal.titleHtml, /Bose-Einstein condensates/);
 });
 
 test("preprints precede retained coverage and errata, including PDF-backed source text", () => {

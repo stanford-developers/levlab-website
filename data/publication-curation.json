@@ -284,6 +284,98 @@
         "added": [],
         "reason": "Checked profile identities against the paper byline; both publication and person pages use this reviewed association."
       }
+    },
+    "publication-review-article-dipolar-physics-with-atomic-quantum-gases": {
+      "title": "Review article: Dipolar physics with atomic quantum gases",
+      "displayTitle": "Dipolar physics: a review of experiments with magnetic quantum gases",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1088/1361-6633/aca814",
+        "url": "https://doi.org/10.1088/1361-6633/aca814",
+        "reason": "Use the full published review title; preserve 2023 issue year despite online publication in December 2022."
+      }
+    },
+    "publication-sign-changing-photon-mediated-atom-interactions-in-multimode-cavity-qed": {
+      "title": "Sign-changing photon-mediated atom interactions in multimode cavity QED",
+      "displayTitle": "Sign-changing photon-mediated atom interactions in multimode cavity quantum electrodynamics",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1103/PhysRevLett.122.193601",
+        "url": "https://doi.org/10.1103/PhysRevLett.122.193601",
+        "reason": "Published PRL title spells out quantum electrodynamics; cached preprint title abbreviates QED."
+      }
+    },
+    "publication-supermode-density-wave-polariton-condensation": {
+      "title": "Supermode-density-wave-polariton condensation",
+      "displayTitle": "Supermode-density-wave-polariton condensation with a Bose–Einstein condensate in a multimode cavity",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1038/ncomms14386",
+        "url": "https://doi.org/10.1038/ncomms14386",
+        "reason": "Restore the complete published title rather than the shorter preprint title."
+      }
+    },
+    "publication-a-long-lived-spin-orbit-coupled-dipolar-fermi-gas": {
+      "title": "A long-lived spin-orbit-coupled dipolar Fermi gas",
+      "displayTitle": "Long-lived spin-orbit-coupled degenerate dipolar Fermi gas",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1103/PhysRevX.6.031022",
+        "url": "https://doi.org/10.1103/PhysRevX.6.031022",
+        "reason": "Restore degenerate from the published title; preserve the scientific meaning of the title."
+      }
+    },
+    "publication-atom-light-crystallization-of-becs-in-multimode-cavities-nonequilibrium-classical-and-quantum-phase-transitions-emergent-lattices-supersolidity-and-frustration": {
+      "title": "Atom-light crystallization of BECs in multimode cavities: Nonequilibrium classical and quantum phase transitions, emergent lattices, supersolidity, and frustration",
+      "displayTitle": "Atom-light crystallization of Bose-Einstein condensates in multimode cavities: Nonequilibrium classical and quantum phase transitions, emergent lattices, supersolidity, and frustration",
+      "journalUrl": "https://doi.org/10.1103/PhysRevA.82.043612",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1103/PhysRevA.82.043612",
+        "url": "https://doi.org/10.1103/PhysRevA.82.043612",
+        "reason": "Use the full published title and repair the captured journal link whose article number was truncated to e04361."
+      }
+    },
+    "publication-mitigation-of-loss-within-a-molecular-stark-decelerato": {
+      "title": "Mitigation of loss within a molecular Stark decelerato",
+      "displayTitle": "Mitigation of loss within a molecular Stark decelerator",
+      "journalCitationHtml": "<a href=\"https://doi.org/10.1140/epjd/e2008-00097-y\">The European Physical Journal D <strong>48</strong>, 197 (2008)</a>",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1140/epjd/e2008-00097-y",
+        "url": "https://doi.org/10.1140/epjd/e2008-00097-y",
+        "reason": "Restore the last title letter in page headings as well as citations and correct the journal name from European Journal of Physics D."
+      }
+    },
+    "publication-integration-of-fiber-coupled-high-q-silicon-nitride-microdisks-with-magnetostatic-atom-chips": {
+      "title": "Integration of Fiber Coupled High-Q Silicon Nitride Microdisks with Magnetostatic Atom Chips",
+      "displayTitle": "Integration of fiber-coupled high-Q SiNₓ microdisks with atom chips",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1063/1.2356892",
+        "url": "https://doi.org/10.1063/1.2356892",
+        "reason": "Use the published title, retaining its silicon-nitride chemical formula with subscript x; the captured expanded magnetostatic wording is not the final title."
+      }
+    },
+    "publication-real-time-observation-of-fluctuations-at-the-driven-dissipative-dicke-phase-transition": {
+      "title": "Real-time observation of fluctuations at the driven-dissipative Dicke phase transition",
+      "journalCitationHtml": "<a href=\"https://doi.org/10.1073/pnas.1306993110\">Proceedings of the National Academy of Sciences <strong>110</strong>, 11763 (2013)</a>",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1073/pnas.1306993110",
+        "url": "https://doi.org/10.1073/pnas.1306993110",
+        "reason": "Correct the official journal name to Sciences (plural)."
+      }
+    },
+    "publication-exploring-symmetry-breaking-at-the-dicke-quantum": {
+      "title": "Exploring symmetry breaking at the Dicke quantum",
+      "displayTitle": "Exploring symmetry breaking at the Dicke quantum phase transition",
+      "bibliographyEvidence": {
+        "verifiedOn": "2026-11-05",
+        "doi": "10.1103/PhysRevLett.107.140402",
+        "url": "https://doi.org/10.1103/PhysRevLett.107.140402",
+        "reason": "Restore the missing final words phase transition in the truncated source title."
+      }
     }
   },
   "reviewEvidence": "publication-review.json"

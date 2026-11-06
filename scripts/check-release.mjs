@@ -15,7 +15,8 @@ const staleBuild =
     createHash("sha256").update(contentSource).digest("hex") ||
   (build.publicationCurationHash ?? null) !== publicationCurationHash ||
   build.publicationAuthorReviewHash !== publicationAuthorReviewHash ||
-  build.newsCurationHash !== createHash("sha256").update(fs.readFileSync("data/news-curation.json")).digest("hex");
+  build.newsCurationHash !== createHash("sha256").update(fs.readFileSync("data/news-curation.json")).digest("hex") ||
+  build.externalLinkCurationHash !== createHash("sha256").update(fs.readFileSync("data/external-link-curation.json")).digest("hex");
 const expected = JSON.parse(
   fs.readFileSync("data/expected-records.json", "utf8"),
 );

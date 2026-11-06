@@ -29,7 +29,7 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "News & Views in Nature Physics on imaging iron superconductors using\u00a0SQCRAMscope."
+    "evidence": "News & Views in Nature Physics on imaging iron superconductors using SQCRAMscope."
   },
   {
     "path": "/news-events/imaging-sqcramscope",
@@ -37,7 +37,7 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "First science from SQCRAMscope! \u00a0We have imaged the electron nematic transport in iron-based pnictide high-Tc superconductors. Read about it in Nature Physics here ."
+    "evidence": "First science from SQCRAMscope!  We have imaged the electron nematic transport in iron-based pnictide high-Tc superconductors. Read about it in Nature Physics here ."
   },
   {
     "path": "/news-events/congratulations-dr-edkins",
@@ -77,7 +77,7 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Introducing the SQCRAMscope. \u00a0ArXiv paper describes new microscope functionality."
+    "evidence": "Introducing the SQCRAMscope.  ArXiv paper describes new microscope functionality."
   },
   {
     "path": "/news-events/congratulations-dr-naides",
@@ -93,7 +93,7 @@
     "projects": [
       "sqcramscope"
     ],
-    "evidence": "Paper on the reconfigurable atom chip trapping of atoms near cryogenic materials published in Appl. Phys. Lett.\u00a0 We demonstrate a novel atom chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns from any <100 um-thin, UHV-compatible material, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system."
+    "evidence": "Paper on the reconfigurable atom chip trapping of atoms near cryogenic materials published in Appl. Phys. Lett.  We demonstrate a novel atom chip trapping system that allows the placement and high-resolution imaging of ultracold atoms within microns from any <100 um-thin, UHV-compatible material, while also allowing sample exchange with minimal experimental downtime. The sample is not connected to the atom chip, allowing rapid exchange without perturbing the atom chip or laser cooling apparatus. Moreover, the decoupling of sample and atom chip provides the ability to independently tune the sample temperature from 300 to 35 K and below, while allowing the sample to scan with respect to the gas fixed at the focus of a high-resolution imaging system."
   },
   {
     "path": "/news-events/topological-insulator-proposal",
@@ -102,5 +102,143 @@
       "sqcramscope"
     ],
     "evidence": "Lev publishes proposal for atom chip microscopy of transport in topological insulators Phys. Rev. B ."
+  },
+  {
+    "path": "/node/620",
+    "title": "Entanglement in a spin glass",
+    "replacements": [
+      {
+        "from": "http://levlab.stanford.edu/sites/default/files/PhysRevA.107.L061302.pdf",
+        "to": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.14.011026"
+      }
+    ],
+    "evidence": "Primary APS publisher pages confirm this story describes PhysRevX.14.011026 (entanglement and replica symmetry breaking), not the unrelated PhysRevA.107.L061302 Dy rapidity paper in its inherited URL."
+  },
+  {
+    "path": "/node/635",
+    "title": "Ising spin glass in PRL",
+    "replacements": [
+      {
+        "from": "https://journals-aps-org.stanford.idm.oclc.org/prl/issues/135/16",
+        "to": "https://journals.aps.org/prl/issues/135/16"
+      }
+    ],
+    "evidence": "Public PRL cover links should use the publisher issue URL already used by news /node/640, rather than the Stanford library access proxy."
+  },
+  {
+    "path": "/news-events/spin-glass-multimode-cavity-qed-proposal",
+    "title": "Spin glass in multimode cavity QED proposal",
+    "replacements": [
+      {
+        "from": "Hopefield neural network",
+        "to": "Hopfield neural network"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/chip-bsed-single-atom-detector",
+    "title": "Chip-bsed single atom detector",
+    "displayTitle": "Chip-based single atom detector",
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/node/622",
+    "title": "Phantom energy paper in Science",
+    "replacements": [
+      {
+        "from": "phenominon",
+        "to": "phenomenon"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/video-levs-vamos-seminar-talk",
+    "title": "Video of Lev's VAMOS seminar talk",
+    "replacements": [
+      {
+        "from": "repored",
+        "to": "reported"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/pairing-atoms-1d-photons",
+    "title": "Pairing atoms in 1D with photons",
+    "replacements": [
+      {
+        "from": "to induces a peierls transition",
+        "to": "to induce a Peierls transition"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/dynamical-spin-orbit-coupling",
+    "title": "Dynamical Spin-Orbit Coupling",
+    "replacements": [
+      {
+        "from": "polarition",
+        "to": "polariton"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/interactions-gouy-phases",
+    "title": "Interactions from Gouy phases",
+    "replacements": [
+      {
+        "from": "Physicis",
+        "to": "Physics"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/tunable-interactions-prx",
+    "title": "Tunable interactions PRX",
+    "replacements": [
+      {
+        "from": "demostrate",
+        "to": "demonstrate"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/viewpoint-arrested-implosion",
+    "title": "Viewpoint:  An Arrested Implosion",
+    "replacements": [
+      {
+        "from": "flucuations",
+        "to": "fluctuations"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/superstripes-paper-nature-physics",
+    "title": "Superstripes paper in Nature Physics",
+    "replacements": [
+      {
+        "from": "aricle",
+        "to": "article"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
+  },
+  {
+    "path": "/news-events/winning-muri-team",
+    "title": "Winning MURI team",
+    "replacements": [
+      {
+        "from": "team lead by",
+        "to": "team led by"
+      }
+    ],
+    "evidence": "November 5 exhaustive news audit: correct an unambiguous inherited spelling or grammar error for display while preserving the archived record and its legacy path."
   }
 ]

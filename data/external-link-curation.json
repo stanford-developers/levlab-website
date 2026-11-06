@@ -1,0 +1,118 @@
+[
+  {
+    "from": "http://physicsworld.com/cws/article/news/41752",
+    "to": "https://physicsworld.com/a/ultracold-magnetic-atoms-bode-well-for-quantum-studies/",
+    "evidence": {
+      "publisher": "Physics World",
+      "title": "Ultracold magnetic atoms bode well for quantum studies",
+      "date": "2010-02-18",
+      "byline": "Jon Cartwright",
+      "match": "Publisher indexed article specifically describes Benjamin Lev’s Illinois group trapping ultracold dysprosium and cites Phys. Rev. Lett.104063001, precisely matching the news/publication."
+    }
+  },
+  {
+    "from": "https://www.q-next.org/category/news-articles/",
+    "to": "https://q-next.org/four-q-next-scientists-elected-american-physical-society-fellows/",
+    "evidence": {
+      "publisher": "Q-NEXT",
+      "title": "Four Q-NEXT scientists elected American Physical Society fellows",
+      "date": "2021-10-19",
+      "match": "Primary Q-NEXT news story explicitly reports the 2021 APS election of Benjamin Lev and Monika Schleier-Smith and gives the same Lev citation as the archived news item."
+    }
+  },
+  {
+    "from": "https://www.insidescience.org/news/brief-introducing-new-kind-microscope",
+    "to": "https://www.aip.org/inside-science/brief-introducing-a-new-kind-of-microscope",
+    "evidence": {
+      "publisher": "American Institute of Physics / Inside Science",
+      "title": "BRIEF: Introducing a New Kind of Microscope",
+      "date": "2017-03-17",
+      "byline": "Yuen Yiu",
+      "match": "Exact same news article title and subject preserved under publisher AIP archive. Article explicitly names SQCRAMscope, Benjamin Lev, and its magnetic microscopy technique."
+    }
+  },
+  {
+    "from": "http://www.darpa.mil/Opportunities/Universities/Young_Faculty_Award_Recipients_2012.aspx",
+    "to": "https://www.darpa.mil/work-with-us/communities/academia/young-faculty-award",
+    "evidence": {
+      "publisher": "DARPA",
+      "title": "Young Faculty Award",
+      "match": "Official current YFA page contains historical awardees and its 2012 table explicitly lists Benjamin Lev, Stanford University, Prem Kumar, Quantum Brazovskii Physics via Fully Emergent and Compliant Optical Lattices."
+    }
+  },
+  {
+    "from": "http://news.stanford.edu/news/2011/september/benjamin-lev-award-092711.html",
+    "to": "https://obamawhitehouse.archives.gov/the-press-office/2011/09/26/president-obama-honors-outstanding-early-career-scientists",
+    "evidence": {
+      "publisher": "White House Office of the Press Secretary",
+      "title": "President Obama Honors Outstanding Early-Career Scientists",
+      "date": "2011-09-26",
+      "match": "Primary official award press release names Dr. Benjamin L. Lev, Stanford University, among NSF-nominated PECASE recipients. Appropriate replacement for the label press release; same award/date, rather than generic Stanford News homepage."
+    }
+  },
+  {
+    "from": "http://www.news.illinois.edu/news/10/1015packard_benjamin_lev.html",
+    "to": "https://news.illinois.edu/u-of-i-physicist-named-packard-fellow-in-science-and-engineering/",
+    "evidence": {
+      "publisher": "University of Illinois News Bureau",
+      "title": "U. of I. physicist named Packard Fellow in Science and Engineering",
+      "date": "2010-10-15",
+      "match": "Exact original institution news announcement survives in current News Bureau migration, same date, Liz Ahlberg byline, Benjamin Lev and Packard award."
+    }
+  },
+  {
+    "from": "http://physics.illinois.edu/news/story.asp?id=1158",
+    "to": "https://physics.illinois.edu/news/34277",
+    "evidence": {
+      "publisher": "Illinois Physics",
+      "title": "Lev named Packard Fellow",
+      "date": "2010-10-15",
+      "match": "Exact original department announcement survives at modern numeric route, same date, Celia Elliott byline and Benjamin Lev award."
+    }
+  },
+  {
+    "from": "http://illinois.edu/lb/article/1353/30179",
+    "to": "https://physics.illinois.edu/news/34167",
+    "evidence": {
+      "publisher": "Illinois Physics",
+      "title": "A method to observe supersolids?",
+      "date": "2009-10-04",
+      "match": "Current university department article, authored by Benjamin Lev, Paul Goldbart and Sarang Gopalakrishnan, describes the same Nature Physics proposal for multimode-cavity supersolids and superstripes. Headline is slightly shortened but primary scientific paper/topic match precisely."
+    }
+  },
+  {
+    "from": "http://www.cas.illinois.edu/faculty/futureassocfellow.aspx",
+    "to": "https://cas.illinois.edu/",
+    "evidence": {
+      "publisher": "University of Illinois Center for Advanced Study",
+      "title": "Homepage",
+      "date": null,
+      "match": "Source anchor says Center for Advanced Study. Current official institution homepage matches that label; historical exact award-list page is unavailable. No claim that Ben appears on its current fellows archive (he was not found)."
+    }
+  },
+  {
+    "from": "http://www.stanford.edu/dept/app-physics/cgi-bin/person/benjamin-lev-sep-11/",
+    "to": "https://appliedphysics.stanford.edu/profile/23",
+    "evidence": "Official Applied Physics faculty index links Benjamin L. Lev to this profile, which identifies his endowed title, biography, and lab."
+  },
+  {
+    "from": "http://www.lkb.ens.fr/-Cavity-QED-with-neutral-atoms-",
+    "to": "https://www.lkb.fr/atomchips/",
+    "evidence": "Current official group of Jakob Reichel and Romain Long at LKB, the collaborators on the cited PhysRevLett.104.203602 paper."
+  },
+  {
+    "from": "http://https://www.tue.nl/en/university/about-the-university/academic-events/tue-academic-awards-ceremony/",
+    "to": "",
+    "evidence": "TU/e ceremony URL returns404; only a university magazine PDF confirms the historical award. Preserve complete story and link label without a dead anchor; PDF links remain suppressed."
+  },
+  {
+    "from": "http://www.nature.com/nphys/journal/vaop/ncurrent/full/nphys1403.html",
+    "to": "https://www.nature.com/articles/nphys1403",
+    "evidence": "Same publisher article identifier nphys1403, verified final publication; obsolete URL redirects to generic journal articles."
+  },
+  {
+    "from": "http://www.uibk.ac.at/th-physik/people/staffdb/354194.xml",
+    "to": "https://www.uibk.ac.at/de/th-physik/staff/ritsch/",
+    "evidence": "Old staffdb404; current official staff page identifies Professor Helmut Ritsch and his cavity-QED group."
+  }
+]

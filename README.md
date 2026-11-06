@@ -11,7 +11,7 @@ npm run build
 npm run dev
 ```
 
-Open `http://127.0.0.1:4173/levlab-website/`. Stop with Control-C. To validate the future Stanford domain layout without changing DNS:
+Open `http://127.0.0.1:4173/levlab-website/`. Stop with Control-C. To validate the live Stanford domain layout locally:
 
 ```sh
 BASE_PATH='' SITE_ORIGIN='https://levlab.stanford.edu' npm run build
@@ -36,9 +36,13 @@ Add a record to `publications` in `data/content.json` with a unique `id`, exact 
 
 Project membership derives from `projects`. Both publication author-profile links and person publication lists derive from the same curated `authorPaths`; captured `metadataHtml` and `people.publicationIds` are historical evidence, not alternate sources of authorship. Verify each linked identity against the paper byline, including all available local profiles. Record corrections in `data/publication-curation.json` (`authorPaths` or `authorsHtml`) and review the corresponding entries in `data/publication-author-review.json`. The review ledger records citation author text, profile identities, and primary evidence; builds reject changed or unreviewed author data. Adding or renaming a person also requires rechecking the catalog for their authored papers and updating the reviewed people inventory. Do not regenerate this ledger from unchecked source associations. PDF attachments remain in the archive, but no PDF download links are rendered. Keep `date` empty unless known, and include its readable form in `metadataHtml` if supplied. Build and inspect the catalog, detail, author, and project pages together. Do not change existing paths or source associations while adding a new record.
 
+Check published titles, journal names, volume/page/year, and destination identity against the publisher or final paper. Working URLs and internally consistent copied fields do not establish factual correctness. `displayTitle`, `journalCitationHtml`, and `journalUrl` in publication curation correct display while preserving captured identities; retain evidence and distinguish final articles from older preprints.
+
 ### Add news
 
 Add a record to `news` with a unique `path`, `title`, full `bodyHtml`, short `summary`, local `image`, and associated `projects` using the project IDs above. Include the required `aliases: []` array for a new story; retain existing aliases when editing an imported story. Put it at the appropriate position (most recent first). Only enter a known `date` in `YYYY-MM-DD` form and a readable `dateLabel`; both can be empty strings. `image` can be empty if there is no picture. A detail page and listing entry are generated automatically. Add its path to the beginning of `homeNewsPaths` to feature it among the homepage's first five stories. Preserve descriptive `imageAlt` text for the news detail image.
+
+For reviewed corrections to captured stories, use `data/news-curation.json`: optional `projects`, `displayTitle`, and exact `replacements` with `from`/`to` and supporting evidence. Replacements must match once in the source body; changed or ambiguous anchors stop the build for review. Check that scientific links identify the paper described in the story, including when the old link text looked correct.
 
 ### Add images, PDFs, or other media
 
@@ -66,6 +70,8 @@ npm run check:release
 
 Tests check captured routes, local links/media under the configured path, citation/news counts, corrected citations, project associations, accessible landmarks, and sanitized imported HTML. `migration-issues.json` lists unresolved source links for review and is not published. Invalid source links retain their text without an invented destination. External embedded media becomes an accessible link, avoiding a dependency on third-party embedded scripts.
 
+`data/external-link-curation.json` records exact replacements for independently verified obsolete or misdirected external URLs. Preserve the original captured URL and record evidence for the equivalent destination. An empty replacement removes only a confirmed dead hyperlink while keeping its label. Access restrictions, timeouts, or automated-check failures alone are not evidence that a URL is wrong. The release gate rejects a build with a stale link-curation hash.
+
 ## GitHub Pages
 
 Repository Settings → Pages uses **Deploy from a branch → main → / (root)**, matching Stanford's [KB00020629](https://stanford.service-now.com/it_services/en?id=kb_article&number=KB00020629). The public `main` branch contains finished HTML, CSS, JavaScript, media, `.nojekyll`, and a public README directly at its root. Its homepage is `index.html`. Editable source and this maintenance guide are on the `source` branch. Pushing source alone does not update the website. There is no custom GitHub Actions workflow.
@@ -83,7 +89,7 @@ git push origin main
 
 `prepare:pages` requires a clean `source` checkout, fetches remote state, reads the existing Pages hostname, builds locally, runs all checks and the mandatory release gate, then creates a local publishing commit on `main` containing only finished website files and the public README. It never pushes, changes Pages settings, or modifies the source checkout/index. It preserves exact-case legacy asset paths even on a case-insensitive Mac. Review the commit before pushing normally; never force-push. If a local release is already prepared, review/push it before preparing another. If the remote changes, reconcile those changes before preparing a replacement release. Routine edits belong on `source`; a prepared release replaces the published tree, so preserve any direct HTML corrections in source before rebuilding.
 
-The current Pages hostname produces `/levlab-website` links. When Stanford IT coordinates the custom domain, configure the approved domain in Pages, then prepare/publish a new release: the command uses the domain root, updates canonical URLs/sitemap entries, and adds its `CNAME`. Retain the old host for the agreed rollback period. The obsolete `gh-pages` branch was removed after its last release was preserved under the recovery tag `archive/gh-pages-2026-10-26`; `main` remains the publishing source.
+The live Pages hostname is `levlab.stanford.edu`, connected November 2, 2026, with HTTPS enforced. `prepare:pages` derives its empty base path, canonical URLs, sitemap, and `CNAME` from the Pages settings. Never publish the default local `/levlab-website` preview build to this domain. Old-host retirement remains separate from site publication. The obsolete `gh-pages` branch was removed after its last release was preserved under the recovery tag `archive/gh-pages-2026-10-26`; `main` remains the publishing source.
 
 GitHub's built-in branch Pages deployment still appears under Actions. This repository supplies no custom workflow. Verify the native deployment and public pages/assets after every release.
 

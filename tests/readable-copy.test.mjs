@@ -10,6 +10,7 @@ test("inline scientific notation and punctuation survive teaser extraction", () 
 
 test("descriptions exclude navigation and duplicate headings, with whole-word excerpts", () => {
   assert.equal(pageDescription('A result', '<nav>Home / News</nav><h1>A result</h1><p>Here is the result.</p>'), 'A result: Here is the result.');
+  assert.equal(pageDescription('162Dy gas', '<h1>162Dy gas</h1><p><sup>162</sup>Dy gas</p><p>A. Author</p>'), '162Dy gas: A. Author');
   assert.equal(excerpt('A complete phrase followed by more.', 20), 'A complete phrase…');
   assert.equal(excerpt('A short sentence.', 20), 'A short sentence.');
 });

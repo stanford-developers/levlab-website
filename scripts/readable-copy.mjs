@@ -34,7 +34,7 @@ export function pageDescription(title, body, route = "") {
   const tree = parse(body);
   // Navigation, controls and duplicate headings are not descriptive prose.
   const candidates = all(tree, (node) => node.tag === "p" && !hasClass(node, "content-date"))
-    .map(readableText).filter((value) => value && value !== title);
+    .map(readableText).filter((value) => value && value.normalize("NFKC") !== title.normalize("NFKC"));
   const first = candidates[0] || readableText(tree).replace(/^Home\s*\/\s*/, "");
   const standalone = title === "Home" || first.startsWith(title) ||
     all(tree, (node) => hasClass(node, "detail-content") || hasClass(node, "lead")).length;

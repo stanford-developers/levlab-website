@@ -86,11 +86,13 @@ test("project descriptions, related news, and research overview match approved c
   }
 });
 
-test("publication citations keep scholarly titles and generated pages contain no PDF endpoint links", () => {
+test("publication citations keep scholarly titles and only Ben's requested CV links to a PDF", () => {
   assert.match(visible("/publications"), /confocal multimode optical cavity/);
   assert.doesNotMatch(page("/publications"), /\b\d+\s+(?:results|papers|publications)\b/i);
   for (const route of info.routes) {
     for (const link of links(route)) {
+      if (["/people/person-3-0", "/node/59"].includes(route) &&
+          link.attrs.href === info.basePath + "/sites/default/files/CVBenLevWeb.pdf") continue;
       assert.doesNotMatch(link.attrs.href, /\.pdf(?:[?#]|$)|\/pdf(?:\/|[?#]|$)/i,
         `${route} links to a PDF endpoint`);
     }

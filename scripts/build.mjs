@@ -28,7 +28,7 @@ import { validatePublicationAuthors, publicationAuthorReviewHash } from "./publi
 import {
   hiddenDirectoryNames, hiddenDirectoryGroups, personUpdates, benTitle, terminology,
   editorialHtml, projectDescription, newsTitle, projectNewsPreview, withoutPdfLinks,
-  profileEditorialHtml,
+  profileEditorialHtml, benCvPath,
   researchOverviewHtml,
 } from "./site-editorial.mjs";
 const contentSource = fs.readFileSync("data/content.json", "utf8");
@@ -314,9 +314,9 @@ function previewImageClass(source, resolved) {
   } catch {}
   return "";
 }
-const clean = (html, p = "/") =>
+const clean = (html, p = "/", allowedPdfLinks = []) =>
   sanitize(
-    withoutPdfLinks(html),
+    withoutPdfLinks(html, allowedPdfLinks),
     (value, attr) => rewriteUrl(value, attr, p),
     previewImageClass,
   );
@@ -602,7 +602,9 @@ function profileBody(person) {
     .flatMap(([field, label]) => {
       const node = byClass(tree, "field--name-" + field)[0];
       const content = profileFieldContent(node);
-      const rendered = clean(content, person.path);
+      const allowedPdfLinks = person.path === "/people/person-3-0" && field === "field-short-cv"
+        ? [benCvPath] : [];
+      const rendered = clean(content, person.path, allowedPdfLinks);
       const cleanedTree = parse(rendered);
       // Attachment lists containing only suppressed PDFs and byte counts have
       // no remaining document action. Do not leave orphan Documents headings.

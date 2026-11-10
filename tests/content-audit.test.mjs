@@ -32,6 +32,19 @@ test("historical biographies retain verified dates without claiming old jobs are
   const ben = profile("Benjamin Lev");
   assert.match(text(ben), /Stanford University, June 2026–present/);
   assert.match(text(ben), /Stanford University, September 2022–June 2026/);
+  const positions = all(ben, (node) => node.tag === "li").map((node) => text(node).replace(/\s+/g, " ").trim());
+  const cisac = positions.indexOf("Stanford CISAC faculty affiliate");
+  assert.ok(cisac > 0);
+  assert.match(positions[cisac - 1], /Professor,.*September 2022–June 2026$/);
+  assert.equal(positions[cisac + 1], "Deputy Director of Q-FARM");
+  for (const route of ["/people/person-3-0", "/node/59"]) {
+    const cvLinks = all(page(route), (node) => node.tag === "a" &&
+      node.attrs.href === info.basePath + "/sites/default/files/CVBenLevWeb.pdf");
+    assert.equal(cvLinks.length, 1, `${route}: one current CV link`);
+    assert.equal(text(cvLinks[0]), "Download CV (PDF)");
+  }
+  assert.ok(fs.existsSync("dist/sites/default/files/CVBenLevWeb.pdf"));
+  assert.ok(fs.existsSync("dist/sites/default/files/CVBenLev_Sept.pdf"), "Archived CV preserved");
   assert.equal((text(byClass(ben, "profile-summary")[0]).match(/Stanford Fortitude Professor/g) || []).length, 1);
   assert.match(text(profile("Seo Ho Youn")), /Previously a postdoc with Prof. Jungsang Kim at Duke/);
   assert.match(text(profile("Mingwu Lu")), /After his Ph.D., he was a postdoc/);

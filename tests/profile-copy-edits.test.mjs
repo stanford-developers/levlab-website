@@ -12,7 +12,7 @@ const people = JSON.parse(fs.readFileSync(new URL("../data/content.json", import
 const person = (name) => people.find((entry) => entry.name === name);
 const profileText = (name) => text(parse(profileEditorialHtml(person(name))));
 
-test("every reviewed profile edit reaches the editorial output without altering source records or link destinations", () => {
+test("reviewed profile edits preserve source records and destinations except Ben's requested CV update", () => {
   const original = JSON.stringify(people);
   for (const entry of people) {
     const html = profileEditorialHtml(entry);
@@ -20,9 +20,14 @@ test("every reviewed profile edit reaches the editorial output without altering 
       assert.ok(html.includes(edit.after), `${edit.id}: missing reviewed display`);
     const destinations = (value) => all(parse(value), (node) =>
       node.tag === "a" && node.attrs.href).map((node) => node.attrs.href);
-    // The earlier verified Ben appointment correction duplicates one linked
-    // position into two dated entries. Its set of destinations stays intact.
-    assert.deepEqual(new Set(destinations(html)), new Set(destinations(entry.bodyHtml)), `${entry.name}: original link destinations preserved`);
+    const expected = new Set(destinations(entry.bodyHtml));
+    if (entry.name === "Benjamin Lev") {
+      // The November 9 request replaces the visible CV destination; the
+      // captured attachment and archived file remain untouched.
+      expected.delete("https://levlab.stanford.edu/sites/default/files/CVBenLev_Sept.pdf");
+      expected.add("/sites/default/files/CVBenLevWeb.pdf");
+    }
+    assert.deepEqual(new Set(destinations(html)), expected, `${entry.name}: reviewed link destinations preserved`);
   }
   assert.equal(JSON.stringify(people), original, "Captured identities, affiliations, publication IDs, and contacts stay untouched");
   assert.equal(profileCopyEditsHash, createHash("sha256").update(source).digest("hex"));

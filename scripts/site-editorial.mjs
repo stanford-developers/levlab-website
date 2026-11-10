@@ -34,6 +34,7 @@ export const personUpdates = {
   "Jingjin `Jenny' Hu": { projects: ["rubidium", "sqcramscope"] },
 };
 export const benTitle = "Stanford Fortitude Professor; Professor of Physics and Applied Physics";
+export const benCvPath = "/sites/default/files/CVBenLevWeb.pdf";
 export function terminology(value = "") {
   return value.replace(/confocal\s+multimode/gi, "multimode")
     .replace(/\bconfocal\b/gi, "multimode")
@@ -60,7 +61,13 @@ export function profileEditorialHtml(person) {
     const current = prior.replace("Stanford University 2022 -", "Stanford University, June 2026–present");
     const previous = prior.replace("Stanford Fortitude Professor,", "Professor,")
       .replace("Stanford University 2022 -", "Stanford University, September 2022–June 2026");
-    replaceOnce(prior, current + previous);
+    replaceOnce(prior, current + previous + "<li>Stanford CISAC faculty affiliate</li>");
+    // Ben's November 2026 CV is an explicitly requested exception to the
+    // general PDF-link suppression. Keep the archived CV and raw capture intact.
+    replaceOnce(
+      '<h2><a href="https://levlab.stanford.edu/sites/default/files/CVBenLev_Sept.pdf"><span style="line-height:1.6em;"><strong>CV</strong></span></a></h2>',
+      `<p><a href="${benCvPath}">Download CV (PDF)</a></p>`,
+    );
   }
   // Verified historical appointments, without guessing present jobs/end dates.
   // Duke MIST alumni, Caltech IQIM alumni, UMD faculty CV, and archived lab CVs.
@@ -125,7 +132,7 @@ export function projectNewsPreview(stories, slug) {
   const selected = new Set([...stories.slice(0, 2), featured]);
   return stories.filter((story) => selected.has(story));
 }
-export function withoutPdfLinks(html = "") {
+export function withoutPdfLinks(html = "", allowedPdfLinks = []) {
   const tree = parse(html);
   function visit(node) {
     if (node.tag === "a" && node.attrs.href) {
@@ -134,7 +141,8 @@ export function withoutPdfLinks(html = "") {
       node.attrs.href = node.attrs.href
         .replace(/(https?:\/\/(?:www\.)?arxiv\.org)\/pdf\/([^?#]+?)(?:\.pdf)?(?=[?#]|$)/i, "$1/abs/$2")
         .replace(/(https?:\/\/journals\.aps\.org\/[^/]+)\/pdf\//i, "$1/abstract/");
-      if (/\.pdf(?:[?#]|$)|\/pdf(?:\/|[?#]|$)/i.test(node.attrs.href)) {
+      if (/\.pdf(?:[?#]|$)|\/pdf(?:\/|[?#]|$)/i.test(node.attrs.href) &&
+          !allowedPdfLinks.includes(node.attrs.href)) {
         const label = text(node).trim();
         if (/^(?:pdf|download(?:\s+(?:pdf|file|cv))?|(?:short\s+)?cv|.+\.pdf)$/i.test(label))
           return { text: "" };

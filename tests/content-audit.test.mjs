@@ -41,7 +41,7 @@ test("historical biographies retain verified dates without claiming old jobs are
     const cvLinks = all(page(route), (node) => node.tag === "a" &&
       node.attrs.href === info.basePath + "/sites/default/files/CVBenLevWeb.pdf");
     assert.equal(cvLinks.length, 1, `${route}: one current CV link`);
-    assert.equal(text(cvLinks[0]), "Download CV (PDF)");
+    assert.equal(text(cvLinks[0]), "CV");
   }
   assert.ok(fs.existsSync("dist/sites/default/files/CVBenLevWeb.pdf"));
   assert.ok(fs.existsSync("dist/sites/default/files/CVBenLev_Sept.pdf"), "Archived CV preserved");

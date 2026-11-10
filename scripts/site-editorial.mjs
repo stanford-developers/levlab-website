@@ -66,7 +66,7 @@ export function profileEditorialHtml(person) {
     // general PDF-link suppression. Keep the archived CV and raw capture intact.
     replaceOnce(
       '<h2><a href="https://levlab.stanford.edu/sites/default/files/CVBenLev_Sept.pdf"><span style="line-height:1.6em;"><strong>CV</strong></span></a></h2>',
-      `<h2><a href="${benCvPath}"><span style="line-height:1.6em;"><strong>CV</strong></span></a></h2>`,
+      `<h2><a href="${benCvPath}"><span style="line-height:1.6em;">CV</span></a></h2>`,
     );
   }
   // Verified historical appointments, without guessing present jobs/end dates.
